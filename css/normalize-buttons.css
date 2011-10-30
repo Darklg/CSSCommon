@@ -1,0 +1,37 @@
+
+/* =============================================================================
+   Boutons par défaut
+   ========================================================================== */
+
+.le-button {
+	padding:0;
+    background:#fff;
+	border:0px;
+}
+
+.le-button,
+.le-button > span {
+	display:inline-block;*display:inline;zoom:1;
+}
+
+.le-button > span {
+	padding:0 5px;
+	height:25px;
+    color:#333;
+    text-transform:uppercase;
+    font:12px/25px sans-serif;
+    border:1px solid #ccc;
+	-moz-border-radius : 3px;
+	-webkit-border-radius : 3px;
+	-webkit-background-clip: padding-box;
+	border-radius : 3px;
+	-moz-transition: background 0.3s ease;
+	-webkit-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+	transition: background 0.3s ease;
+}
+
+.le-button > span:hover {
+	background:#e0e0e0;
+	border-color:#999;
+}

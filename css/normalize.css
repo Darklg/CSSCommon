@@ -25,21 +25,31 @@ body {
 	color:#212121; /* Dark Grey is the new black */
 }
 
+#main-container {
+	width:940px;
+	margin:0 auto;
+	padding-bottom:30px;
+}
+
 h1 {
-	font:25px/40px inherit;
+	font-size:25px;
+	line-height:40px;
 }
 
 h2 {
-	font:20px/30px inherit;
+	font-size:20px;
+	line-height:30px;
 	margin:10px 0 5px 0;
 }
 
 h3 {
-	font:15px/20px inherit;
+	font-size:15px;
+	line-height:20px;
 }
 
 p, li {
-	font:12px/16px inherit;
+	font-size:12px;
+	line-height:16px;
 }
 
 .le-content h3 {

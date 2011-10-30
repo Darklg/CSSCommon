@@ -1,0 +1,64 @@
+/* =============================================================================
+Grids
+========================================================================== */
+
+.clearfix { /* IE 7 */
+	display:block;
+	width:100%;
+	height:1px;
+	border:0;
+	margin:0;
+	padding:0;
+	visibility:hidden;
+	clear:both;
+}
+
+.the_grid {
+	clear:both;
+	overflow: hidden;
+}
+
+.the_grid > * {
+	overflow: hidden;
+	float: left;
+	zoom:1;
+}
+
+.the_grid:after {
+	content: " ";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/*
+Formats basiques de grilles
+( Eviter les nouvelles balises de HTML 5 pour IE )
+*/
+
+.the_grid.col-20 > * + * {
+	margin-left:20px;
+}
+
+.col-620 {
+	width:620px;
+}
+
+.col-300 {
+	width:300px;
+}
+
+.the_grid.gri-1-2 > :last-child,
+.the_grid.gri-2-1 > :first-child {
+	width:66.6%;
+}
+
+.the_grid.gri-1-2 > :first-child,
+.the_grid.gri-2-1 > :last-child {
+	width:33.3%;
+}
+
+.the_grid.gri-1-1 > * {
+	width:50%;
+}

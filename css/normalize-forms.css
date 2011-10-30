@@ -41,7 +41,7 @@ button {
 
 .clrz_form label {
 	padding-top:7px;
-	font:12px sans-serif;
+	font-size:12px;
 }
 
 .clrz_form.float_form .box label {
@@ -81,13 +81,16 @@ button {
 }
 
 .clrz_form textarea,
+.clrz_form .faux-input,
 .clrz_form input[type=text],
 .clrz_form input[type=email],
 .clrz_form input[type=password] {
     color:#333;
-    font:12px sans-serif;
+    font-size:12px;
     background:#fafafa;
 	outline:0;
+	margin:0 2px;
+	width:200px;
     border:1px solid #999;
 	-moz-border-radius : 2px;
 	-webkit-border-radius : 2px;
@@ -102,10 +105,22 @@ button {
 	transition: all 0.3s ease;
 }
 
+.clrz_form .faux-input {
+	display:inline-block;*display:inline;zoom:1;
+	line-height:25px;
+}
+
+.clrz_form .faux-input,
+.clrz_form input[disabled] {
+	color:#999;
+	cursor: not-allowed;
+}
+
 .clrz_form textarea {
 	padding: 5px;
 }
 
+.clrz_form .faux-input,
 .clrz_form input[type=text],
 .clrz_form input[type=email],
 .clrz_form input[type=password] {

@@ -26,7 +26,7 @@
 .le-tableau td,
 .le-tableau th {
 	padding:5px;
-	font:12px sans-serif;
+	font-size:12px;
 }
 
 .le-tableau td {

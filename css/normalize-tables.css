@@ -1,0 +1,40 @@
+
+/* =============================================================================
+   Tableaux
+   ========================================================================== */
+
+.le-tableau {
+	width:100%;
+	background:#fff;
+	color:#333;
+}
+
+.le-tableau,
+.le-tableau tr,
+.le-tableau td,
+.le-tableau th {
+	border:1px solid #ccc;
+	border-collapse:collapse;
+	vertical-align:middle;
+}
+
+.le-tableau tr:hover {
+	background:#fafafa;
+	color:#000;
+}
+
+.le-tableau td,
+.le-tableau th {
+	padding:5px;
+	font:12px sans-serif;
+}
+
+.le-tableau td {
+	text-align:left;
+}
+
+.le-tableau th {
+	text-align:center;
+	font-weight:bold;
+	background:#f0f0f0;
+}

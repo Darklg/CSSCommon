@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/normalize.css" type="text/css" />
 		<link rel="stylesheet" href="css/normalize-buttons.css" type="text/css" />
 		<link rel="stylesheet" href="css/normalize-forms.css" type="text/css" />
+		<link rel="stylesheet" href="css/normalize-tables.css" type="text/css" />
     </head>
 	<!--[if lt IE 7 ]><body class="is_ie6 lt_ie7 lt_ie8 lt_ie9 lt_ie10"><![endif]--> 
 	<!--[if IE 7 ]><body class="is_ie7 lt_ie8 lt_ie9 lt_ie10"><![endif]--> 
@@ -82,6 +83,37 @@
 			</div>
 		</form>
 		
+		<h2>Tableaux</h2>
+		<table class="le-tableau">
+		    <thead>
+		        <tr>
+		            <th>Entete</th>
+		            <th>Entete</th>
+		            <th>Entete</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr>
+		            <td>contenu <br />avec sauts <br />de ligne</td>
+		            <td>contenu</td>
+		            <td>contenu</td>
+		        </tr>
+				<tr>
+				    <td>contenu</td>
+				    <td colspan="2">Contenu sur deux colonnes</td>
+				</tr>
+		        <tr>
+		            <td>contenu un peu plus long que les autres, car il faut bien tester</td>
+		            <td rowspan="2">contenu sur deux lignes</td>
+		            <td>contenu</td>
+		        </tr>
+				<tr>
+				    <td>contenu</td>
+				    <td>contenu</td>
+				</tr>
+		    </tbody>
+		</table>
+
 
     </body>
 </html>

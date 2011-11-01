@@ -3,17 +3,17 @@
    Formulaires
    ========================================================================== */
 
-.clrz_form {
+.cssn_form {
 	padding:10px 0;
 }
 
-.clrz_form .box {
+.cssn_form .box {
 	margin-bottom:10px;
 	vertical-align:baseline;
 }
 
-.clrz_form:after,
-.clrz_form .box:after {
+.cssn_form:after,
+.cssn_form .box:after {
     content: " ";
     display: block;
     height: 0;
@@ -25,19 +25,19 @@
 Labels
 */
 
-.clrz_form.float_form .box {
+.cssn_form.float_form .box {
 	padding-left:100px;
 	position:relative;
 	min-height:25px;
 }
 
-.clrz_form label {
+.cssn_form label {
 	padding-top:7px;
 	font-size:12px;
 	line-height:16px;
 }
 
-.clrz_form.float_form .box label {
+.cssn_form.float_form .box label {
 	display:block;
 	float:left;
 	width:90px;
@@ -48,16 +48,16 @@ Labels
 	text-align:right;
 }
 
-.clrz_form.block_form .box label {
+.cssn_form.block_form .box label {
 	display:block;
 	line-height:25px;
 	padding-top:0;
 }
 
-.clrz_form.block_form .radio-box label,
-.clrz_form.block_form .checked-box label,
-.clrz_form.float_form .radio-box label,
-.clrz_form.float_form .checked-box label {
+.cssn_form.block_form .radio-box label,
+.cssn_form.block_form .checked-box label,
+.cssn_form.float_form .radio-box label,
+.cssn_form.float_form .checked-box label {
 	position:static;
 	display:inline-block;
 	width:auto;
@@ -82,19 +82,19 @@ button {
 	cursor: pointer;
 }
 
-.clrz_form input[type=radio],
-.clrz_form input[type=checkbox]{
+.cssn_form input[type=radio],
+.cssn_form input[type=checkbox]{
 	margin:0;
 	vertical-align:middle;
 	height:12px;
 	width:12px;
 }
 
-.clrz_form textarea,
-.clrz_form .faux-input,
-.clrz_form input[type=text],
-.clrz_form input[type=email],
-.clrz_form input[type=password] {
+.cssn_form textarea,
+.cssn_form .faux-input,
+.cssn_form input[type=text],
+.cssn_form input[type=email],
+.cssn_form input[type=password] {
     color:#333;
     font-size:12px;
 	font-family:inherit;
@@ -116,35 +116,35 @@ button {
 	transition: all 0.3s ease;
 }
 
-.clrz_form .faux-input {
+.cssn_form .faux-input {
 	display:inline-block;*display:inline;zoom:1;
 	line-height:25px;
 }
 
-.clrz_form .faux-input,
-.clrz_form [disabled] {
+.cssn_form .faux-input,
+.cssn_form [disabled] {
 	color:#999;
 	cursor: not-allowed;
 }
 
-.clrz_form textarea {
+.cssn_form textarea {
 	padding: 5px;
 }
 
-.clrz_form .faux-input,
-.clrz_form input[type=text],
-.clrz_form input[type=email],
-.clrz_form input[type=password] {
+.cssn_form .faux-input,
+.cssn_form input[type=text],
+.cssn_form input[type=email],
+.cssn_form input[type=password] {
 	line-height:25px;
     height:25px;
     padding:0 5px;
     vertical-align:middle;
 }
 
-.clrz_form textarea:focus,
-.clrz_form input[type=text]:focus,
-.clrz_form input[type=email]:focus,
-.clrz_form input[type=password]:focus {
+.cssn_form textarea:focus,
+.cssn_form input[type=text]:focus,
+.cssn_form input[type=email]:focus,
+.cssn_form input[type=password]:focus {
 	-moz-box-shadow: inset 1px 1px 1px #dedede, 0 0 2px rgba(0,0,0,0.3);
 	-webkit-box-shadow: inset 1px 1px 1px #dedede, 0 0 2px rgba(0,0,0,0.3);
 	box-shadow: inset 1px 1px 1px #dedede, 0 0 2px rgba(0,0,0,0.3);
@@ -157,7 +157,7 @@ button {
 Aide
 */
 
-.clrz_form small {
+.cssn_form small {
 	display:block;
 	font-size:11px;
 	color:#676767;

@@ -1,0 +1,40 @@
+/* =============================================================================
+   Messages d'interaction
+   ========================================================================== */
+
+.cssn_message {
+	display: block;
+	padding: 7px;
+	color: #333;
+	border: 1px solid #ccc;
+	background: #fff;
+	margin-bottom: 5px;
+	-moz-border-radius : 2px;
+	-webkit-border-radius : 2px;
+	-webkit-background-clip: padding-box;
+	border-radius : 2px;
+}
+
+.cssn_message.error {
+	color:#880000;
+	border-color:#C66;
+	background-color:#FFEEEE;
+}
+
+.cssn_message.notice {
+	color:#000088;
+	border-color:#66C;
+	background-color:#EEEEFF;
+}
+
+.cssn_message.success {
+	color:#008800;
+	border-color:#6C6;
+	background-color:#EEFFEE;
+}
+
+.cssn_message.warning {
+	color:#888800;
+	border-color:#CC6;
+	background-color:#FFFFEE;
+}

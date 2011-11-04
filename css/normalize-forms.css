@@ -116,6 +116,7 @@ button {
 	transition: all 0.3s ease;
 }
 
+
 .cssn_form .faux-input {
 	display:inline-block;*display:inline;zoom:1;
 	line-height:25px;
@@ -135,10 +136,15 @@ button {
 .cssn_form input[type=text],
 .cssn_form input[type=email],
 .cssn_form input[type=password] {
-	line-height:25px;
     height:25px;
     padding:0 5px;
     vertical-align:middle;
+}
+
+.lt_ie9 .cssn_form input[type=text],
+.lt_ie9 .cssn_form input[type=email],
+.lt_ie9 .cssn_form input[type=password] {
+	line-height:25px;
 }
 
 .cssn_form textarea:focus,

@@ -45,15 +45,12 @@ h2 {
 h3 {
 	font-size:15px;
 	line-height:20px;
+	margin:5px 0;
 }
 
 p, li {
 	font-size:12px;
 	line-height:16px;
-}
-
-.le-content h3 {
-	margin-bottom:5px;
 }
 
 .le-content ul,

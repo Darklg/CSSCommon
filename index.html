@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="css/normalize-tables.css" type="text/css" />
 		<link rel="stylesheet" href="css/normalize-grid.css" type="text/css" />
 		<link rel="stylesheet" href="css/normalize-messages.css" type="text/css" />
+		<link rel="stylesheet" href="css/normalize-code.css" type="text/css" />
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -184,7 +185,19 @@
 			</ul>
 		</section>
 	
-	
+		<section class="block-content">
+			<h2 id="normalize-code">Présentation de code</h2>
+			<h3>Balise &lt;pre /&gt;</h3>
+			<pre>&lt;script&gt;
+	var i;
+	for (i=0;i&lt;3;i++){
+		console.log(i);
+	}
+&lt;/script&gt;</pre>
+			<h3>Balise &lt;code /&gt;</h3>
+			<code>1. Hello.</code>
+		</section>
+		
 	<footer class="fixed-footer">
 	<nav>
 		<ul>
@@ -193,6 +206,7 @@
 		    <li><a href="#normalize-tables">Tables</a></li>
 		    <li><a href="#normalize-grid">Grilles</a></li>
 			<li><a href="#normalize-messages">Messages d'avertissement</a></li>
+			<li><a href="#normalize-code">Présentation de code</a></li>
 		</ul>
 	</nav>
 	</footer>

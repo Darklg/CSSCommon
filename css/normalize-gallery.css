@@ -1,0 +1,33 @@
+/* --------------------------------------------------------------------
+   Galeries
+   ----------------------------------------------------------------- */
+
+/* Peut se merger avec le clear de grid */
+
+.subfloat:after {
+	content: " ";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.subfloat {
+	position:relative;
+}
+
+.subfloat > * {
+	float:left;
+}
+
+/* 
+	width = Largeur du bloc container + marge droite d'un sous-element
+*/
+
+.sf_100_20 {
+	width:960px;
+}
+
+.sf_100_20  > * {
+	margin:0 20px 20px 0 ;
+}

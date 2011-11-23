@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="css/normalize-grid.css" type="text/css" />
 		<link rel="stylesheet" href="css/normalize-messages.css" type="text/css" />
 		<link rel="stylesheet" href="css/normalize-code.css" type="text/css" />
+		<link rel="stylesheet" href="css/normalize-gallery.css" type="text/css" />
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -54,59 +55,61 @@
 			<h2 id="normalize-forms">Formulaires</h2>
 	<!--    <form id="form_demo" action="" class="cssn_form float_form" method="post"> -->
 			<form id="form_demo" action="" class="cssn_form block_form" method="post">
-				<div class="box buttons-box">
-					<a href="#" class="le-button" id="set_form_block"><span>Form type Block</span></a>
-					<a href="#" class="le-button" id="set_form_float"><span>Form type Float</span></a>
-				</div>
-			    <div class="box input-box">
-				    <label for="form_text">Texte un peu trop long, hélas.</label>
-				    <input name="form_text" id="form_text" type="text" placeholder="Du texte" />
-				</div>
-			    <div class="box input-box">
-				    <label for="form_text">Désactivé.</label>
-				    <input name="form_text" id="form_text" type="text" placeholder="Du texte non accessible" disabled unselectable="on" />
-				</div>
-				<div class="box input-box">
-					<label>Faux Input</label>
-					<span class="faux-input" unselectable="on">Edit me if u can</span>
-				</div>
-			    <div class="box email-box">
-				    <label for="form_email">Email</label>
-				    <input name="form_email" id="form_email" type="email" placeholder="Email" />
-					<small>Une explication est-elle nécessaire ?</small>
-				</div>
-			    <div class="box password-box">
-				    <label for="form_passwd">Password</label>
-				    <input name="form_passwd" id="form_passwd" type="password" placeholder="Mot de passe" />
-				</div>
-				<div class="box buttons-box">
-					<a href="#" class="le-button"><span>Le button</span></a>
-					<button class="le-button"><span>Le button</span></button>
-				</div>
-				<div class="box checked-box">
-					<input type="checkbox" name="form_checkbox" id="form_checkbox" />
-					<label for="form_checkbox">Checkbox</label>
-				</div>	
-				<div class="box checked-box">
-					<label for="form_checkbox2">Checkbox</label>
-					<input type="checkbox" name="form_checkbox2" id="form_checkbox2" />
-				</div>
-				<div class="box checked-box">
-					<label for="form_radiobox">Radio un</label>
-					<input name="form_radiobox" id="form_radiobox" type="radio" />
-					<label for="form_radiobox2">Radio deux</label>
-					<input name="form_radiobox" id="form_radiobox2" type="radio" />
-				</div>
-				<div class="box checked-box">
-					<input name="form_radiobox3" id="form_radiobox3" type="radio" />
-					<label for="form_radiobox3">Radio 3</label>
-					<input name="form_radiobox3" id="form_radiobox4" type="radio" />
-					<label for="form_radiobox4">Radio 4</label>
-				</div>
-				<div class="box textarea-box">
-					<label for="form_textarea">Textarea</label>
-					<textarea rows="5" cols="20" name="form_textarea" id="form_textarea"></textarea>
-				</div>
+				<ul>
+					<li class="box buttons-box">
+						<a href="#" class="le-button" id="set_form_block"><span>Form type Block</span></a>
+						<a href="#" class="le-button" id="set_form_float"><span>Form type Float</span></a>
+					</li>
+				    <li class="box input-box">
+					    <label for="form_text">Texte un peu trop long, hélas.</label>
+					    <input name="form_text" id="form_text" type="text" placeholder="Du texte" />
+					</li>
+				    <li class="box input-box">
+					    <label for="form_text">Désactivé.</label>
+					    <input name="form_text" id="form_text" type="text" placeholder="Du texte non accessible" disabled unselectable="on" />
+					</li>
+					<li class="box input-box">
+						<label>Faux Input</label>
+						<span class="faux-input" unselectable="on">Edit me if u can</span>
+					</li>
+				    <li class="box email-box">
+					    <label for="form_email">Email</label>
+					    <input name="form_email" id="form_email" type="email" placeholder="Email" />
+						<small>Une explication est-elle nécessaire ?</small>
+					</li>
+				    <li class="box password-box">
+					    <label for="form_passwd">Password</label>
+					    <input name="form_passwd" id="form_passwd" type="password" placeholder="Mot de passe" />
+					</li>
+					<li class="box buttons-box">
+						<a href="#" class="le-button"><span>Le button</span></a>
+						<button class="le-button"><span>Le button</span></button>
+					</li>
+					<li class="box checked-box">
+						<input type="checkbox" name="form_checkbox" id="form_checkbox" />
+						<label for="form_checkbox">Checkbox</label>
+					</li>	
+					<li class="box checked-box">
+						<label for="form_checkbox2">Checkbox</label>
+						<input type="checkbox" name="form_checkbox2" id="form_checkbox2" />
+					</li>
+					<li class="box checked-box">
+						<label for="form_radiobox">Radio un</label>
+						<input name="form_radiobox" id="form_radiobox" type="radio" />
+						<label for="form_radiobox2">Radio deux</label>
+						<input name="form_radiobox" id="form_radiobox2" type="radio" />
+					</li>
+					<li class="box checked-box">
+						<input name="form_radiobox3" id="form_radiobox3" type="radio" />
+						<label for="form_radiobox3">Radio 3</label>
+						<input name="form_radiobox3" id="form_radiobox4" type="radio" />
+						<label for="form_radiobox4">Radio 4</label>
+					</li>
+					<li class="box textarea-box">
+						<label for="form_textarea">Textarea</label>
+						<textarea rows="5" cols="20" name="form_textarea" id="form_textarea"></textarea>
+					</li>
+				</ul>
 			</form>
 		</section>
 		
@@ -198,6 +201,28 @@
 			<code>1. Hello.</code>
 		</section>
 		
+		<section class="block-content">
+			<h2 id="normalize-gallery">Galerie</h2>
+			<ul class="subfloat sf_100_20">
+			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+			</ul>
+		</section>
+
 	<footer class="fixed-footer">
 	<nav>
 		<ul>
@@ -207,6 +232,7 @@
 		    <li><a href="#normalize-grid">Grilles</a></li>
 			<li><a href="#normalize-messages">Messages d'avertissement</a></li>
 			<li><a href="#normalize-code">Présentation de code</a></li>
+			<li><a href="#normalize-galerie">Galerie</a></li>
 		</ul>
 	</nav>
 	</footer>

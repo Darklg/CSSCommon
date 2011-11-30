@@ -22,6 +22,25 @@
 }
 
 /*
+Fieldset
+*/
+
+.cssn_form fieldset {
+	padding:10px 0;
+	border-top:1px solid #CCC;
+}
+
+.cssn_form fieldset:last-child {
+	border-bottom:1px solid #CCC;
+}
+
+.cssn_form legend {
+	font-size:14px;
+	font-weight:bold;
+	padding-right:5px;
+}
+
+/*
 Labels
 */
 

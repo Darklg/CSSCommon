@@ -73,10 +73,10 @@ Labels
 	padding-top:0;
 }
 
-.cssn_form.block_form .radio-box label,
-.cssn_form.block_form .checked-box label,
-.cssn_form.float_form .radio-box label,
-.cssn_form.float_form .checked-box label {
+.cssn_form.block_form .box.radio-box label,
+.cssn_form.block_form .box.checked-box label,
+.cssn_form.float_form .box.radio-box label,
+.cssn_form.float_form .box.checked-box label {
 	position:static;
 	display:inline-block;
 	width:auto;

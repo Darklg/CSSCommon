@@ -112,6 +112,7 @@ button {
 .cssn_form textarea,
 .cssn_form .faux-input,
 .cssn_form input[type=text],
+.cssn_form input[type=url],
 .cssn_form input[type=email],
 .cssn_form input[type=password] {
     color:#333;
@@ -153,6 +154,7 @@ button {
 
 .cssn_form .faux-input,
 .cssn_form input[type=text],
+.cssn_form input[type=url],
 .cssn_form input[type=email],
 .cssn_form input[type=password] {
     height:25px;
@@ -161,6 +163,7 @@ button {
 }
 
 .lt_ie9 .cssn_form input[type=text],
+.lt_ie9 .cssn_form input[type=url],
 .lt_ie9 .cssn_form input[type=email],
 .lt_ie9 .cssn_form input[type=password] {
 	line-height:25px;
@@ -168,6 +171,7 @@ button {
 
 .cssn_form textarea:focus,
 .cssn_form input[type=text]:focus,
+.cssn_form input[type=url]:focus,
 .cssn_form input[type=email]:focus,
 .cssn_form input[type=password]:focus {
 	-moz-box-shadow: inset 1px 1px 1px #dedede, 0 0 2px rgba(0,0,0,0.3);

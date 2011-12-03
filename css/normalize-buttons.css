@@ -9,6 +9,12 @@
 	border:0px;
 	margin:0;
 	vertical-align:middle;
+	-moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    user-select: none;
+	-moz-user-drag: -moz-none;
+    -webkit-user-drag: none;
+    user-drag: none;
 }
 
 .le-button > span {

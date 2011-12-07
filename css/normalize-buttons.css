@@ -21,6 +21,7 @@
 	padding:0 5px;
 	height:25px;
     color:#333;
+	white-space:nowrap;
     text-transform:uppercase;
     font-size:12px;
 	line-height:25px;

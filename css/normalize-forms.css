@@ -123,6 +123,9 @@ button {
 	vertical-align:middle;
 	outline:0;
 	width:200px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
     border:1px solid #999;
 	-moz-border-radius : 2px;
 	-webkit-border-radius : 2px;
@@ -135,6 +138,25 @@ button {
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+	
+}
+
+.cssn_form.block_form textarea,
+.cssn_form.block_form .faux-input,
+.cssn_form.block_form input[type=text],
+.cssn_form.block_form input[type=email],
+.cssn_form.block_form input[type=password] {
+	width:100%;
+}
+
+
+/* Fix pour IE<8 */
+.lt_ie8 .cssn_form.block_form textarea,
+.lt_ie8 .cssn_form.block_form .faux-input,
+.lt_ie8 .cssn_form.block_form input[type=text],
+.lt_ie8 .cssn_form.block_form input[type=email],
+.lt_ie8 .cssn_form.block_form input[type=password] {
+	width:90%;
 }
 
 

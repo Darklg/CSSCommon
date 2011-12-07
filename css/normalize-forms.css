@@ -54,6 +54,7 @@ Labels
 	padding-top:7px;
 	font-size:12px;
 	line-height:16px;
+	cursor:pointer;
 }
 
 .cssn_form.float_form .box label {

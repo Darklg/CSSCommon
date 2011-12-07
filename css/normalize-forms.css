@@ -215,3 +215,39 @@ Aide
 	color:#676767;
 	line-height:16px;
 }
+
+/*
+Deux blocs
+*/
+
+.cssn_form.block_form .twoboxes {
+	overflow:hidden;
+}
+
+.cssn_form.block_form .twoboxes li.box {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float:left;
+	width:50%;
+}
+
+.lt_ie8 .cssn_form.block_form .twoboxes li.box {
+	width:43%;
+}
+
+.cssn_form.block_form .twoboxes li.box:first-child {
+	padding-right:10px;
+}
+
+.cssn_form.block_form .twoboxes li.box + li.box {
+	padding-left:10px;
+}
+
+/*
+	Pour la démo
+*/
+
+.cssn_form {
+	width:450px;
+}

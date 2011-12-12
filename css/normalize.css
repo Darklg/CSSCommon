@@ -77,37 +77,3 @@ p, li {
 	border-bottom:1px solid #f0f0f0;
 	margin-bottom:50px;
 }
-
-/* =============================================================================
-   Fixed footer // Technique inspirée de @Nalao
-   ========================================================================== */
-
-body {
-	padding-bottom:30px;
-}
-
-.fixed-footer {
-	position:fixed;
-	bottom:0;
-	left:0;
-	width:100%;
-	height:30px;
-	background:#000;
-	background:rgba(0,0,0,0.8);
-}
-
-.fixed-footer ul {
-	margin:0 auto;
-	width:940px;
-}
-
-.fixed-footer li {
-	float:left;
-	margin-right:15px;
-} 
-
-.fixed-footer li a {
-	display:inline-block;*display:inline;zoom:1;
-	line-height:30px;
-	color:#fff;
-}

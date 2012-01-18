@@ -35,4 +35,4 @@ input[type="checkbox"] { vertical-align: bottom;}
 .lt_ie7 input { vertical-align: text-bottom; }
 input:focus {outline:0}
 input:-webkit-autofill{background-color:#ccc!important}
-
+video, img, object {max-width: 100%;}

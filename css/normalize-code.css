@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
-pre,code {
-	border:1px solid #ccc;
-	background:#f0f0f0;
-	color:#676767;
-	padding:2px;
-	font:12px 'Lucida Console', Monospace;
+pre,
+code,
+kbd,
+samp {
+	border: 1px solid #ccc;
+	background: #f0f0f0;
+	color: #676767;
+	padding: 2px;
+	font: 12px 'Lucida Console', Monospace;
 }

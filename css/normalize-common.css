@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-/* =============================================================================
+/* ----------------------------------------------------------
    Fixed footer // Technique inspirée de @Nalao
-   ========================================================================== */
+   ------------------------------------------------------- */
 
 body {
 	padding-bottom:30px;
@@ -19,14 +19,14 @@ body {
 }
 
 .fixed-footer ul {
-	margin:0 auto;
 	width:940px;
+	margin:0 auto;
 }
 
 .fixed-footer li {
 	float:left;
 	margin-right:15px;
-} 
+}
 
 .fixed-footer li a {
 	display:inline-block;*display:inline;zoom:1;
@@ -34,12 +34,12 @@ body {
 	color:#fff;
 }
 
-/* --------------------------------------------------------------------
+/* ----------------------------------------------------------
    Images masquées (Pour push, etc)
-   ----------------------------------------------------------------- */
+   ------------------------------------------------------- */
 
 .image_masquee {
-	text-indent:-9999px;
-	text-align:left;
 	overflow:hidden;
+	text-align:left;
+	text-indent:-9999px;
 }

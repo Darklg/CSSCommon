@@ -1,42 +1,43 @@
 @charset "UTF-8";
 
-/* =============================================================================
+/* ----------------------------------------------------------
    Messages d'interaction
-   ========================================================================== */
+   ------------------------------------------------------- */
+
 
 .cssn_message {
-	display: block;
-	padding: 7px;
-	color: #333;
-	border: 1px solid #ccc;
-	background: #fff;
-	margin-bottom: 5px;
-	-moz-border-radius : 2px;
-	-webkit-border-radius : 2px;
-	-webkit-background-clip: padding-box;
-	border-radius : 2px;
+	display:block;
+	margin-bottom:5px;
+	padding:7px;
+	border:1px solid #ccc;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	color:#333;
+	background:#fff;
+	-webkit-background-clip:padding-box;
 }
 
 .cssn_message.error {
-	color:#880000;
 	border-color:#C66;
-	background-color:#FFEEEE;
+	color:#800;
+	background-color:#FEE;
 }
 
 .cssn_message.notice {
-	color:#000088;
 	border-color:#66C;
-	background-color:#EEEEFF;
+	color:#008;
+	background-color:#EEF;
 }
 
 .cssn_message.success {
-	color:#008800;
 	border-color:#6C6;
-	background-color:#EEFFEE;
+	color:#080;
+	background-color:#EFE;
 }
 
 .cssn_message.warning {
-	color:#888800;
 	border-color:#CC6;
-	background-color:#FFFFEE;
+	color:#880;
+	background-color:#FFE;
 }

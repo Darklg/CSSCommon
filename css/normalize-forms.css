@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-/* =============================================================================
+/* ----------------------------------------------------------
    Formulaires
-   ========================================================================== */
+   ------------------------------------------------------- */
 
 .cssn_form {
 	padding:10px 0;
@@ -15,16 +15,14 @@
 
 .cssn_form:after,
 .cssn_form .box:after {
-    content: " ";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+	content:" ";
+	display:block;
+	visibility:hidden;
+	clear:both;
+	height:0;
 }
 
-/*
-Fieldset
-*/
+/* Fieldset */
 
 .cssn_form fieldset {
 	padding:10px 0;
@@ -36,18 +34,16 @@ Fieldset
 }
 
 .cssn_form legend {
+	padding-right:5px;
 	font-size:14px;
 	font-weight:bold;
-	padding-right:5px;
 }
 
-/*
-Labels
-*/
+/* Labels */
 
 .cssn_form.float_form .box {
-	padding-left:100px;
 	position:relative;
+	padding-left:100px;
 	min-height:25px;
 }
 
@@ -61,54 +57,52 @@ Labels
 .cssn_form.float_form .box label {
 	display:block;
 	float:left;
-	width:90px;
 	position:absolute;
 	top:0;
 	left:0;
+	width:90px;
 	padding-right:10px;
 	text-align:right;
 }
 
 .cssn_form.block_form .box label {
 	display:block;
-	line-height:25px;
 	padding-top:0;
+	line-height:25px;
 }
 
 .cssn_form.block_form .box.radio-box label,
 .cssn_form.block_form .box.checked-box label,
 .cssn_form.float_form .box.radio-box label,
 .cssn_form.float_form .box.checked-box label {
-	position:static;
 	display:inline-block;
-	width:auto;
 	float:none;
+	position:static;
+	width:auto;
 	padding:5px 0 0 0;
 	line-height:inherit;
 }
 
-/*
-Champs
-*/
+/* Champs */
 
 textarea {
-	resize: vertical;
-	max-width: 100%;
-	overflow: auto
+	max-width:100%;
+	overflow:auto;
+	resize:vertical;
 }
 
 input[type="submit"],
 input[type="image"],
 button {
-	cursor: pointer;
+	cursor:pointer;
 }
 
 .cssn_form input[type=radio],
-.cssn_form input[type=checkbox]{
+.cssn_form input[type=checkbox] {
+	width:12px;
+	height:12px;
 	margin:0;
 	vertical-align:middle;
-	height:12px;
-	width:12px;
 }
 
 .cssn_form textarea,
@@ -117,29 +111,28 @@ button {
 .cssn_form input[type=url],
 .cssn_form input[type=email],
 .cssn_form input[type=password] {
-    color:#333;
-    font-size:12px;
+	width:200px;
+	border:1px solid #999;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
 	font-family:inherit;
-    background:#fafafa;
+	font-size:12px;
 	vertical-align:middle;
 	outline:0;
-	width:200px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-    border:1px solid #999;
-	-moz-border-radius : 2px;
-	-webkit-border-radius : 2px;
-	-webkit-background-clip: padding-box;
-	border-radius : 2px;
-    -moz-box-shadow:inset 1px 1px 1px #ccc;
-    -webkit-box-shadow:inset 1px 1px 1px #ccc;
-    box-shadow:inset 1px 1px 1px #ccc;
-	-moz-transition: all 0.3s ease;
-	-webkit-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-	
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+	color:#333;
+	background:#fafafa;
+	-webkit-background-clip:padding-box;
+	-webkit-box-shadow:inset 1px 1px 1px #ccc;
+	-moz-box-shadow:inset 1px 1px 1px #ccc;
+	box-shadow:inset 1px 1px 1px #ccc;
 }
 
 .cssn_form.block_form textarea,
@@ -150,8 +143,8 @@ button {
 	width:100%;
 }
 
-
 /* Fix pour IE<8 */
+
 .lt_ie8 .cssn_form.block_form textarea,
 .lt_ie8 .cssn_form.block_form .faux-input,
 .lt_ie8 .cssn_form.block_form input[type=text],
@@ -159,7 +152,6 @@ button {
 .lt_ie8 .cssn_form.block_form input[type=password] {
 	width:90%;
 }
-
 
 .cssn_form .faux-input {
 	display:inline-block;*display:inline;zoom:1;
@@ -169,11 +161,11 @@ button {
 .cssn_form .faux-input,
 .cssn_form [disabled] {
 	color:#999;
-	cursor: not-allowed;
+	cursor:not-allowed;
 }
 
 .cssn_form textarea {
-	padding: 5px;
+	padding:5px;
 }
 
 .cssn_form .faux-input,
@@ -181,9 +173,9 @@ button {
 .cssn_form input[type=url],
 .cssn_form input[type=email],
 .cssn_form input[type=password] {
-    height:25px;
-    padding:0 5px;
-    vertical-align:middle;
+	height:25px;
+	padding:0 5px;
+	vertical-align:middle;
 }
 
 .lt_ie9 .cssn_form input[type=text],
@@ -198,39 +190,35 @@ button {
 .cssn_form input[type=url]:focus,
 .cssn_form input[type=email]:focus,
 .cssn_form input[type=password]:focus {
-	-moz-box-shadow: inset 1px 1px 1px #dedede, 0 0 2px rgba(0,0,0,0.3);
-	-webkit-box-shadow: inset 1px 1px 1px #dedede, 0 0 2px rgba(0,0,0,0.3);
-	box-shadow: inset 1px 1px 1px #dedede, 0 0 2px rgba(0,0,0,0.3);
-    color:#000;
-    background-color:#fff;
-    border-color:#333;
+	border-color:#333;
+	color:#000;
+	background-color:#fff;
+	-webkit-box-shadow:inset 1px 1px 1px #dedede,0 0 2px rgba(0,0,0,0.3);
+	-moz-box-shadow:inset 1px 1px 1px #dedede,0 0 2px rgba(0,0,0,0.3);
+	box-shadow:inset 1px 1px 1px #dedede,0 0 2px rgba(0,0,0,0.3);
 }
 
-/*
-Aide
-*/
+/* Aide */
 
 .cssn_form small {
 	display:block;
 	font-size:11px;
-	color:#676767;
 	line-height:16px;
+	color:#676767;
 }
 
-/*
-Deux blocs
-*/
+/* Deux blocs */
 
 .cssn_form.block_form .twoboxes {
 	overflow:hidden;
 }
 
 .cssn_form.block_form .twoboxes li.box {
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-	box-sizing: border-box;
 	float:left;
 	width:50%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
 }
 
 .lt_ie8 .cssn_form.block_form .twoboxes li.box {
@@ -245,9 +233,7 @@ Deux blocs
 	padding-left:10px;
 }
 
-/*
-	Pour la démo
-*/
+/* Style de la démo */
 
 .cssn_form {
 	width:450px;

@@ -1,17 +1,18 @@
 @charset "UTF-8";
 
-/* --------------------------------------------------------------------
+/* ----------------------------------------------------------
    Galeries
-   ----------------------------------------------------------------- */
+   ------------------------------------------------------- */
+
 
 /* Peut se merger avec le clear de grid */
 
 .subfloat:after {
-	content: " ";
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
+	content:" ";
+	display:block;
+	visibility:hidden;
+	clear:both;
+	height:0;
 }
 
 .subfloat {
@@ -22,14 +23,12 @@
 	float:left;
 }
 
-/* 
-	width = Largeur du bloc container + marge droite d'un sous-element
-*/
+/* width = Largeur du bloc container + marge droite d'un sous-element */
 
 .sf_100_20 {
 	width:960px;
 }
 
-.sf_100_20  > * {
-	margin:0 20px 20px 0 ;
+.sf_100_20 > * {
+	margin:0 20px 20px 0;
 }

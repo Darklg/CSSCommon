@@ -1,48 +1,50 @@
 @charset "UTF-8";
 
-/* =============================================================================
+/* ----------------------------------------------------------
    Boutons par défaut
-   ========================================================================== */
+   ------------------------------------------------------- */
 
 .le-button {
-	padding:0;
-    background:#fff;
-	border:0px;
 	margin:0;
+	padding:0;
+	border:0;
 	vertical-align:middle;
-	-moz-user-select: -moz-none;
-    -webkit-user-select: none;
-    user-select: none;
-	-moz-user-drag: -moz-none;
-    -webkit-user-drag: none;
-    user-drag: none;
+	background:#fff;
+	-webkit-user-select:none;
+	-moz-user-select:-moz-none;
+	user-select:none;
+	-webkit-user-drag:none;
+	-moz-user-drag:-moz-none;
+	user-drag:none;
 }
 
 .le-button > span {
-	padding:0 5px;
 	height:25px;
-    color:#333;
-	white-space:nowrap;
-    text-transform:uppercase;
-    font-size:12px;
+	padding:0 5px;
+	border:1px solid #ccc;
+	text-transform:uppercase;
+	font-size:12px;
 	line-height:25px;
-    border:1px solid #ccc;
-	-moz-transition: background 0.3s ease;
-	-webkit-transition: background 0.3s ease;
-	-o-transition: background 0.3s ease;
-	transition: background 0.3s ease;
+	white-space:nowrap;
+	-webkit-transition:background 0.3s ease;
+	-moz-transition:background 0.3s ease;
+	-o-transition:background 0.3s ease;
+	transition:background 0.3s ease;
+	color:#333;
 }
 
 .le-button,
 .le-button > span {
-	display:inline-block;*display:inline;zoom:1;
-	-moz-border-radius : 3px;
-	-webkit-border-radius : 3px;
-	-webkit-background-clip: padding-box;
-	border-radius : 3px;
+	display:inline-block;
+	zoom:1;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	-webkit-background-clip:padding-box;
+	*display:inline;
 }
 
 .le-button > span:hover {
-	background:#e0e0e0;
 	border-color:#999;
+	background:#e0e0e0;
 }

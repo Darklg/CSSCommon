@@ -1,12 +1,22 @@
 @charset "UTF-8";
 
-/* =============================================================================
+/* ----------------------------------------------------------
    Règlages de base
-   ========================================================================== */
+   ------------------------------------------------------- */
 
-html{height:100%;}
-body{line-height:1;min-height:100%;position:relative;}
-.lt_ie7 body {height:100%;}
+html {
+	height:100%;
+}
+
+body {
+	position:relative;
+	min-height:100%;
+	line-height:1;
+}
+
+.lt_ie7 body {
+	height:100%;
+}
 
 /* Prevents sub and sup affecting line-height in all browsers | gist.github.com/413930 */
 sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
@@ -18,9 +28,9 @@ sub{bottom:-0.25em;}
 /* Aligne les images inline sur le texte */
 img,input[type=image]{vertical-align:bottom;}
 
-/* =============================================================================
+/* ----------------------------------------------------------
    Contenu par défaut
-   ========================================================================== */
+   ------------------------------------------------------- */
 
 body {
 	font:62.5% Arial, Helvetica, sans-serif;
@@ -39,18 +49,19 @@ h1 {
 }
 
 h2 {
+	margin:10px 0 5px 0;
 	font-size:20px;
 	line-height:30px;
-	margin:10px 0 5px 0;
 }
 
 h3 {
+	margin:5px 0;
 	font-size:15px;
 	line-height:20px;
-	margin:5px 0;
 }
 
-p, li {
+p,
+li {
 	font-size:12px;
 	line-height:16px;
 }
@@ -75,14 +86,14 @@ p, li {
 }
 
 .block-content {
+	margin-bottom:50px;
 	padding-bottom:50px;
 	border-bottom:1px solid #f0f0f0;
-	margin-bottom:50px;
 }
 
-/* --------------------------------------------------------------------
+/* ----------------------------------------------------------
    Liens
-   ----------------------------------------------------------------- */
+   ------------------------------------------------------- */
 
 a {
 	color:#69C;
@@ -92,13 +103,14 @@ a:hover {
 	color:#C96;
 }
 
-/* --------------------------------------------------------------------
+/* ----------------------------------------------------------
    Transitions
-   ----------------------------------------------------------------- */
+   ------------------------------------------------------- */
+
 
 a {
-	-moz-transition: color 0.3s ease;
-	-webkit-transition: color 0.3s ease;
-	-o-transition: color 0.3s ease;
-	transition: color 0.3s ease;
+	-webkit-transition:color 0.3s ease;
+	-moz-transition:color 0.3s ease;
+	-o-transition:color 0.3s ease;
+	transition:color 0.3s ease;
 }

@@ -1,12 +1,16 @@
 @charset "UTF-8";
 
+/* ----------------------------------------------------------
+   Style du code
+   ------------------------------------------------------- */
+
 pre,
 code,
 kbd,
 samp {
-	border: 1px solid #ccc;
-	background: #f0f0f0;
-	color: #676767;
-	padding: 2px;
-	font: 12px 'Lucida Console', Monospace;
+	padding:2px;
+	border:1px solid #ccc;
+	font:12px 'Lucida Console',Monospace;
+	color:#676767;
+	background:#f0f0f0;
 }

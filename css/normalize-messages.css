@@ -1,14 +1,13 @@
 @charset "UTF-8";
 /*
-Version: 1.0
+Version: 1.1
 */
 
 /* ----------------------------------------------------------
    Messages d'interaction
    ------------------------------------------------------- */
 
-
-.cssn_message {
+.cssn_messages > li {
 	display:block;
 	margin-bottom:5px;
 	padding:7px;
@@ -21,25 +20,25 @@ Version: 1.0
 	-webkit-background-clip:padding-box;
 }
 
-.cssn_message.error {
+.cssn_messages .error {
 	border-color:#C66;
 	color:#800;
 	background-color:#FEE;
 }
 
-.cssn_message.notice {
+.cssn_messages .notice {
 	border-color:#66C;
 	color:#008;
 	background-color:#EEF;
 }
 
-.cssn_message.success {
+.cssn_messages .success {
 	border-color:#6C6;
 	color:#080;
 	background-color:#EFE;
 }
 
-.cssn_message.warning {
+.cssn_messages .warning {
 	border-color:#CC6;
 	color:#880;
 	background-color:#FFE;

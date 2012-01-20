@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.0
+Version: 1.0.1
 */
 
 /* ----------------------------------------------------------
@@ -12,6 +12,7 @@ body {
 }
 
 .fixed-footer {
+	z-index:10;
 	position:fixed;
 	bottom:0;
 	left:0;

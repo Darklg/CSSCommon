@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.0.1
+Version: 1.0.2
 */
 
 /* ----------------------------------------------------------
@@ -71,7 +71,7 @@ Version: 1.0.1
 }
 
 .push_double .after,
-.push_simple .background {
+.push_simple .after {
 	background-image:url(http://dummyimage.com/300x100/CCC/999.png);
 }
 

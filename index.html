@@ -251,14 +251,14 @@
 			<h3>Push avec simple fondu</h3>
 			
 			<div class="the_grid gri-1-2">
-				<div><a href="#" class="le_push push_simple"><span class="background"></span></a></div>
+				<div><a href="#" class="le_push push_simple"><span class="after"></span></a></div>
 				<div>
 					<pre>&lt;a href=&quot;#&quot; class=&quot;le_push push_simple&quot;&gt;
-&lt;span class=&quot;background&quot;&gt;&lt;/span&gt;
+	&lt;span class=&quot;after&quot;&gt;&lt;/span&gt;
 &lt;/a&gt;</pre>
 					<p>
 						Pas de pseudo-classes, &eacute;tant donn&eacute; que certains navigateurs ne supportent pas les transitions.<br /> 
-						L&#x27;image &agrave; l&#x27;avant est progressivement affich&eacute;e.
+						Au :hover, .after est progressivement affich&eacute;.
 					</p>
 				</div>
 			</div>
@@ -267,12 +267,12 @@
 				<div class="example_right"><a href="#" class="le_push push_double"><span class="before"></span><span class="after"></span></a></div>
 				<div>
 					<pre>&lt;a href=&quot;#&quot; class=&quot;le_push push_double&quot;&gt;
-&lt;span class=&quot;before&quot;&gt;&lt;/span&gt;
-&lt;span class=&quot;after&quot;&gt;&lt;/span&gt;
+	&lt;span class=&quot;before&quot;&gt;&lt;/span&gt;
+	&lt;span class=&quot;after&quot;&gt;&lt;/span&gt;
 &lt;/a&gt;</pre>
 					<p>
-						L&#x27;image &agrave; l&#x27;avant est affich&eacute;e pendant que celle &agrave; l&#x27;arri&egrave;re est masqu&eacute;e.<br />
-						Moins de soucis en cas de sprite avec deux images semi-transparentes.
+						Moins de soucis en cas de sprite avec deux images semi-transparentes.<br />
+						Au :hover, .after est progressivement affich&eacute; pendant que .before est progressivement masqu&eacute;.
 					</p>
 				</div>
 			</div>

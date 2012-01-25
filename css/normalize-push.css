@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/*
+Version: 1.0
+*/
+
+/* ----------------------------------------------------------
+   Push
+   ------------------------------------------------------- */
+
+.le_push {
+	display:inline-block;*display:inline;zoom:1;
+	position:relative;
+}
+
+.le_push,
+.le_push .background {
+	background : transparent no-repeat top left;
+	overflow:hidden;
+}
+
+.le_push .before,
+.le_push .after,
+.le_push .background {
+	text-indent:-9999px;
+	text-align:left;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+}
+
+.le_push .after,
+.le_push .background,
+.le_push .before {
+	-moz-transition: opacity 0.2s ease-in;
+	-webkit-transition: opacity 0.2s ease-in;
+	-o-transition: opacity 0.2s ease-in;
+	transition: opacity 0.2s ease-in;
+}
+
+.le_push .background,
+.le_push .after,
+.le_push:hover .before {
+	-ms-filter: "alpha(opacity=0)"
+	filter: alpha(opacity=0);
+	opacity:0.0;
+}
+
+.le_push:hover .after,
+.le_push .before,
+.le_push:hover .background {
+	-ms-filter: "alpha(opacity=100)"
+	filter: alpha(opacity=100);
+	opacity:1;
+}
+
+/* ----------------------------------------------------------
+   Exemple de push
+   ------------------------------------------------------- */
+
+.push_example {
+	width:300px;
+	height:100px;
+}
+
+.push_example .before,
+.push_example {
+	background-image:url(http://dummyimage.com/300x100/333/fff.png);
+}
+
+.push_example .after,
+.push_example .background {
+	background-image:url(http://dummyimage.com/300x100/CCC/999.png);
+}
+
+/* ----------------------------------------------------------
+   Demo
+   ------------------------------------------------------- */
+
+.block-normalize-push .the_grid {
+	margin-bottom:10px;
+}
+
+.block-normalize-push pre {
+	margin-bottom:8px;
+}

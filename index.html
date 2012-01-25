@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="css/normalize-messages.css" type="text/css" />
 		<link rel="stylesheet" href="css/normalize-code.css" type="text/css" />
 		<link rel="stylesheet" href="css/normalize-gallery.css" type="text/css" />
+		<link rel="stylesheet" href="css/normalize-push.css" type="text/css" />
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -244,6 +245,42 @@
 			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
 			</ul>
 		</section>
+		
+		<section class="block-content block-normalize-push">
+			<h2 id="normalize-push">Pushs</h2>
+			<h3>Push avec simple fondu</h3>
+			
+			<div class="the_grid gri-1-2">
+				<div><a href="#" class="le_push push_example"><span class="background"></span></a></div>
+				<div>
+					<pre>&lt;a href=&quot;#&quot; class=&quot;le_push push_example&quot;&gt;
+&lt;span class=&quot;background&quot;&gt;&lt;/span&gt;
+&lt;/a&gt;</pre>
+					<p>
+						Pas de pseudo-classes, &eacute;tant donn&eacute; que certains navigateurs ne supportent pas les transitions.<br /> 
+						L&#x27;image &agrave; l&#x27;avant est progressivement affich&eacute;e.
+					</p>
+				</div>
+			</div>
+			<h3>Push avec double fondu</h3>
+			<div class="the_grid gri-1-2">
+				<div class="example_right"><a href="#" class="le_push push_example"><span class="before"></span><span class="after"></span></a></div>
+				<div>
+					<pre>&lt;a href=&quot;#&quot; class=&quot;le_push push_example&quot;&gt;
+&lt;span class=&quot;before&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;after&quot;&gt;&lt;/span&gt;
+&lt;/a&gt;</pre>
+					<p>
+						L&#x27;image &agrave; l&#x27;avant est affich&eacute;e pendant que celle &agrave; l&#x27;arri&egrave;re est masqu&eacute;e.<br />
+						Moins de soucis en cas de sprite avec deux images semi-transparentes.
+					</p>
+				</div>
+			</div>
+		</section>
+		
+		
+		
+		
 </div>
 	<footer class="fixed-footer">
 	<nav>
@@ -255,6 +292,7 @@
 			<li><a href="#normalize-messages">Messages d'avertissement</a></li>
 			<li><a href="#normalize-code">Présentation de code</a></li>
 			<li><a href="#normalize-gallery">Galerie</a></li>
+			<li><a href="#normalize-push">Pushs</a></li>
 		</ul>
 	</nav>
 	</footer>

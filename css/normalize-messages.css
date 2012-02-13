@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /*
-Version: 1.1
+Version: 1.1.1
 */
 
 /* ----------------------------------------------------------
    Messages d'interaction
    ------------------------------------------------------- */
 
-.cssn_messages > li {
+.cssn_messages a {
 	display:block;
 	margin-bottom:5px;
 	padding:7px;

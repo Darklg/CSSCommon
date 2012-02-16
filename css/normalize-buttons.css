@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.0
+Version: 1.1
 */
 
 /* ----------------------------------------------------------
@@ -50,4 +50,37 @@ Version: 1.0
 .le-button > span:hover {
 	border-color:#999;
 	background:#e0e0e0;
+}
+
+/* ----------------------------------------------------------
+   Bouton image
+   ------------------------------------------------------- */
+
+/* Reset */
+
+.le_btn {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+}
+
+/* Effets */
+
+.le_btn {
+	overflow:hidden;
+	text-indent:-9999px;
+	text-align:left;
+	-moz-transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+
+/* :Hover */
+
+.le_btn:hover {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity:0.50;
 }

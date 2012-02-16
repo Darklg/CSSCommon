@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.0
+Version: 1.1
 */
 
 /* ----------------------------------------------------------
@@ -114,7 +114,7 @@ button {
 .cssn_form input[type=url],
 .cssn_form input[type=email],
 .cssn_form input[type=password] {
-	width:200px;
+	width:100%;
 	border:1px solid #999;
 	-webkit-border-radius:2px;
 	-moz-border-radius:2px;
@@ -138,21 +138,13 @@ button {
 	box-shadow:inset 1px 1px 1px #ccc;
 }
 
-.cssn_form.block_form textarea,
-.cssn_form.block_form .faux-input,
-.cssn_form.block_form input[type=text],
-.cssn_form.block_form input[type=email],
-.cssn_form.block_form input[type=password] {
-	width:100%;
-}
-
 /* Fix pour IE<8 */
 
-.lt_ie8 .cssn_form.block_form textarea,
-.lt_ie8 .cssn_form.block_form .faux-input,
-.lt_ie8 .cssn_form.block_form input[type=text],
-.lt_ie8 .cssn_form.block_form input[type=email],
-.lt_ie8 .cssn_form.block_form input[type=password] {
+.lt_ie8 .cssn_form textarea,
+.lt_ie8 .cssn_form .faux-input,
+.lt_ie8 .cssn_form input[type=text],
+.lt_ie8 .cssn_form input[type=email],
+.lt_ie8 .cssn_form input[type=password] {
 	width:90%;
 }
 

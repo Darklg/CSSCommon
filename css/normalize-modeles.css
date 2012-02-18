@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.0
+Version: 1.0.1
 Name: Modèles basiques
 */
 
@@ -21,9 +21,9 @@ Name: Modèles basiques
 .cssn_pagination li,
 .cssn_pagination strong,
 .cssn_pagination a {
+	height:100%;
 	display:inline-block;*display:inline;zoom:1;
 	line-height:inherit;
-	
 }
 
 .cssn_pagination strong,
@@ -67,6 +67,7 @@ Name: Modèles basiques
 .cssn_mainmenusocial > li,
 .cssn_mainmenu > li > a,
 .cssn_mainmenu > li {
+	height:100%;
 	float:left;
 	line-height:inherit;
 }

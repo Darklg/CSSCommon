@@ -1,11 +1,10 @@
 @charset "UTF-8";
 /*
-Version: 1.0
+Version: 1.1
+Name: Grids
 */
 
-/* ----------------------------------------------------------
-   Grids
-   ------------------------------------------------------- */
+/* Grille principale */
 
 .the_grid {
 	clear:both;
@@ -57,13 +56,13 @@ Version: 1.0
 	width:300px;
 }
 
-.the_grid.gri-1-2 > :last-child,
-.the_grid.gri-2-1 > :first-child {
+.the_grid.gri-1-2 > * + *,
+.the_grid.gri-2-1 > *:first-child {
 	width:66.6%;
 }
 
-.the_grid.gri-1-2 > :first-child,
-.the_grid.gri-2-1 > :last-child {
+.the_grid.gri-1-2 > *:first-child,
+.the_grid.gri-2-1 > * + * {
 	width:33.3%;
 }
 

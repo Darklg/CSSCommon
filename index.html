@@ -189,7 +189,6 @@
 						</div>					
 
 					</div>
-					<span class="clearfix"></span>
 				</div>
 				<div class="col-300">
 					<ul>
@@ -245,12 +244,14 @@
 			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
 			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
 			</ul>
+			<!--[if lt IE 8 ]> <hr class="clearfix" /><![endif]--> 
+			
 		</section>
 		
 		<section class="block-content block-normalize-push">
 			<h2 id="normalize-push">Pushs</h2>
-			<h3>Push avec simple fondu</h3>
 			
+			<h3>Push avec simple fondu</h3>
 			<div class="the_grid gri-1-2">
 				<div><a href="#" class="le_push push_simple"><span class="after"></span></a></div>
 				<div>
@@ -263,6 +264,7 @@
 					</p>
 				</div>
 			</div>
+			
 			<h3>Push avec double fondu</h3>
 			<div class="the_grid gri-1-2">
 				<div class="example_right"><a href="#" class="le_push push_double"><span class="before"></span><span class="after"></span></a></div>
@@ -277,6 +279,7 @@
 					</p>
 				</div>
 			</div>
+			
 		</section>
 		
 		
@@ -310,21 +313,20 @@
 			    <li><a href="#" class="next">Suivant &rsaquo;</a></li>
 			</ul>
 			
-			
-			
 			<h3>Menu Principal avec sous-menu</h3>
-			
 			<nav class="cssn_mainnav">
 				<ul class="cssn_mainmenu">
 				    <li><a href="#">Accueil</a></li>
 				    <li><a href="#">Lien normal</a></li>
-				    <li>
+				    <li class="withsubmenu">
 				    	<a href="#">[+] Produits</a>
 						<div class="submenu">
 							<ul>
 							    <li><a href="#">Template HTML</a></li>
 							    <li><a href="#">Template WordPress</a></li>
 							    <li><a href="#">Template Magento</a></li>
+							    <li><a href="#">Template Newsletter</a></li>
+							    <li><a href="#">Template Mobile</a></li>
 							</ul>
 						</div>
 				    </li>
@@ -348,17 +350,16 @@
 			
 			
 			<h3>Fil d'ariane</h3>
-			
 			<ul class="cssn_ariane">
 			    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
 			    	<a href="#" itemprop="url" rel="home">
 						<span itemprop="title">Accueil</span>
-					</a> &rsaquo; 
+					</a> &rsaquo;&nbsp;
 			    </li>
 			    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
 			    	<a href="#" itemprop="url" rel="home">
 						<span itemprop="title">Mod&egrave;les</span>
-					</a> &rsaquo; 
+					</a> &rsaquo;&nbsp;
 			    </li>
 			    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
 					<strong itemprop="title">Fil d'ariane</strong>

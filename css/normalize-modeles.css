@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/*
+Version: 1.0
+Name: Modèles basiques
+*/
+
+/* ----------------------------------------------------------
+	Modèle : Pagination
+   ------------------------------------------------------- */
+
+.cssn_pagination {
+	line-height:30px;
+	margin-bottom:30px;
+}
+
+.cssn_pagination_center {
+	text-align:center;
+}
+
+.cssn_pagination ul,
+.cssn_pagination li,
+.cssn_pagination strong,
+.cssn_pagination a {
+	display:inline-block;*display:inline;zoom:1;
+	line-height:inherit;
+	
+}
+
+.cssn_pagination strong,
+.cssn_pagination a {
+	padding:0 7px;
+	border:1px solid #eee;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	-webkit-background-clip:border;
+}
+
+.cssn_pagination strong,
+.cssn_pagination a.current,
+.cssn_pagination a:hover {
+	border-color:#ccc;
+}
+
+/* ----------------------------------------------------------
+	Modèle : Menu Principal
+   ------------------------------------------------------- */
+
+.cssn_mainnav {
+	height:30px;
+	margin-bottom:30px;
+	border:1px solid #eee;
+	line-height:30px;
+}
+
+.cssn_mainmenusocial,
+.cssn_mainmenu {
+	height:100%;
+}
+
+.cssn_mainmenusocial {
+	float:right;
+	border-left:1px solid #eee;
+}
+
+.cssn_mainmenusocial > li > a,
+.cssn_mainmenusocial > li,
+.cssn_mainmenu > li > a,
+.cssn_mainmenu > li {
+	float:left;
+	line-height:inherit;
+}
+
+.cssn_mainmenusocial > li > a,
+.cssn_mainmenu > li > a {
+	display:block;
+	padding:0 10px;
+}
+
+.cssn_mainmenu > li:hover > a,
+.cssn_mainmenu > .current > a {
+	color:#000;
+}
+
+.cssn_mainmenu > li > a {
+	border-right:1px solid #eee;
+}
+
+/* Gestion sous-menu */
+
+.cssn_mainmenu > li {
+	position:relative;
+}
+
+.cssn_mainmenu .submenu {
+	display:none;
+	z-index:2;
+	position:absolute;
+	top:100%;
+	left:0;
+	padding:10px;
+	border:1px solid #eee;
+	border-width:0 0 1px 1px;
+	background:#fff;
+	background:#f9f9f9;
+}
+
+.cssn_mainmenu > li:hover .submenu {
+	display:block;
+}
+
+.cssn_mainmenu .submenu a {
+	white-space:nowrap;
+}
+
+/* ----------------------------------------------------------
+   Modèle : Fil d'ariane
+   ------------------------------------------------------- */
+
+.cssn_ariane {
+	height:20px;
+	margin-bottom:30px;
+	line-height:20px;
+}
+
+.cssn_ariane > li {
+	display:inline-block;*display:inline;zoom:1;
+}

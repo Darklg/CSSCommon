@@ -1,15 +1,10 @@
 @charset "UTF-8";
 /*
-Version: 1.0
+Version: 1.1
+Name: Galeries
 */
 
-/* ----------------------------------------------------------
-   Galeries
-   ------------------------------------------------------- */
-
-
 /* Peut se merger avec le clear de grid */
-
 .subfloat:after {
 	content:" ";
 	display:block;
@@ -26,12 +21,13 @@ Version: 1.0
 	float:left;
 }
 
-/* width = Largeur du bloc container + marge droite d'un sous-element */
+/* margin-right = 0-marge droite d'un élément */
 
 .sf_100_20 {
-	width:960px;
+	margin-right:-20px;
 }
 
 .sf_100_20 > * {
+	width:100px;
 	margin:0 20px 20px 0;
 }

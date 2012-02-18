@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.0.1
+Version: 1.0.2
 Name: Modèles basiques
 */
 
@@ -51,6 +51,7 @@ Name: Modèles basiques
 	margin-bottom:30px;
 	border:1px solid #eee;
 	line-height:30px;
+	vertical-align:middle;
 }
 
 .cssn_mainmenusocial,

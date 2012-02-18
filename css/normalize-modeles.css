@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.0.2
+Version: 1.1
 Name: Modèles basiques
 */
 
@@ -9,7 +9,6 @@ Name: Modèles basiques
    ------------------------------------------------------- */
 
 .cssn_pagination {
-	line-height:30px;
 	margin-bottom:30px;
 }
 
@@ -21,9 +20,8 @@ Name: Modèles basiques
 .cssn_pagination li,
 .cssn_pagination strong,
 .cssn_pagination a {
-	height:100%;
 	display:inline-block;*display:inline;zoom:1;
-	line-height:inherit;
+	line-height:30px;
 }
 
 .cssn_pagination strong,
@@ -50,13 +48,7 @@ Name: Modèles basiques
 	height:30px;
 	margin-bottom:30px;
 	border:1px solid #eee;
-	line-height:30px;
 	vertical-align:middle;
-}
-
-.cssn_mainmenusocial,
-.cssn_mainmenu {
-	height:100%;
 }
 
 .cssn_mainmenusocial {
@@ -68,15 +60,15 @@ Name: Modèles basiques
 .cssn_mainmenusocial > li,
 .cssn_mainmenu > li > a,
 .cssn_mainmenu > li {
-	height:100%;
+	line-height:30px;
 	float:left;
-	line-height:inherit;
 }
 
 .cssn_mainmenusocial > li > a,
 .cssn_mainmenu > li > a {
 	display:block;
 	padding:0 10px;
+	vertical-align:middle;
 }
 
 .cssn_mainmenu > li:hover > a,
@@ -90,8 +82,12 @@ Name: Modèles basiques
 
 /* Gestion sous-menu */
 
-.cssn_mainmenu > li {
+.cssn_mainmenu > .withsubmenu {
 	position:relative;
+}
+
+.lt_ie8 .cssn_mainmenu > .withsubmenu {
+	z-index:3;
 }
 
 .cssn_mainmenu .submenu {
@@ -103,7 +99,6 @@ Name: Modèles basiques
 	padding:10px;
 	border:1px solid #eee;
 	border-width:0 0 1px 1px;
-	background:#fff;
 	background:#f9f9f9;
 }
 

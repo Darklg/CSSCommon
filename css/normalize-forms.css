@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.1.1
+Version: 1.1.2
 */
 
 /* ----------------------------------------------------------
@@ -44,7 +44,7 @@ Version: 1.1.1
 
 /* Labels */
 
-.cssn_form.float_form .box {
+.float_form .box {
 	position:relative;
 	padding-left:100px;
 	min-height:25px;
@@ -57,7 +57,7 @@ Version: 1.1.1
 	cursor:pointer;
 }
 
-.cssn_form.float_form .box label {
+.float_form .box label {
 	display:block;
 	float:left;
 	position:absolute;
@@ -68,16 +68,16 @@ Version: 1.1.1
 	text-align:right;
 }
 
-.cssn_form.block_form .box label {
+.block_form .box label {
 	display:block;
 	padding-top:0;
 	line-height:25px;
 }
 
-.cssn_form.block_form .box.radio-box label,
-.cssn_form.block_form .box.checked-box label,
-.cssn_form.float_form .box.radio-box label,
-.cssn_form.float_form .box.checked-box label {
+.block_form .box.radio-box label,
+.block_form .box.checked-box label,
+.float_form .box.radio-box label,
+.float_form .box.checked-box label {
 	display:inline-block;
 	float:none;
 	position:static;
@@ -204,11 +204,11 @@ button {
 
 /* Deux blocs */
 
-.cssn_form.block_form .twoboxes {
+.block_form .twoboxes {
 	overflow:hidden;
 }
 
-.cssn_form.block_form .twoboxes li.box {
+.block_form .twoboxes li.box {
 	float:left;
 	width:50%;
 	-webkit-box-sizing:border-box;
@@ -216,15 +216,15 @@ button {
 	box-sizing:border-box;
 }
 
-.lt_ie8 .cssn_form.block_form .twoboxes li.box {
+.lt_ie8 .block_form .twoboxes li.box {
 	width:43%;
 }
 
-.cssn_form.block_form .twoboxes li.box:first-child {
+.block_form .twoboxes li.box:first-child {
 	padding-right:10px;
 }
 
-.cssn_form.block_form .twoboxes li.box + li.box {
+.block_form .twoboxes li.box + li.box {
 	padding-left:10px;
 }
 

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.1
+Version: 1.1.1
 Name: Modèles basiques
 */
 
@@ -36,6 +36,7 @@ Name: Modèles basiques
 
 .cssn_pagination strong,
 .cssn_pagination a.current,
+.cssn_pagination a:focus,
 .cssn_pagination a:hover {
 	border-color:#ccc;
 }
@@ -72,6 +73,7 @@ Name: Modèles basiques
 }
 
 .cssn_mainmenu > li:hover > a,
+.cssn_mainmenu > li > a:focus,
 .cssn_mainmenu > .current > a {
 	color:#000;
 }
@@ -102,6 +104,7 @@ Name: Modèles basiques
 	background:#f9f9f9;
 }
 
+.cssn_mainmenu > li > a:focus + .submenu,
 .cssn_mainmenu > li:hover .submenu {
 	display:block;
 }

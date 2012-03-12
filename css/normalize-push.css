@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.0.2
+Version: 1.0.3
 */
 
 /* ----------------------------------------------------------
@@ -41,14 +41,18 @@ Version: 1.0.2
 
 .le_push .background,
 .le_push .after,
+.le_push:focus .before,
 .le_push:hover .before {
 	-ms-filter: "alpha(opacity=0)"
 	filter: alpha(opacity=0);
 	opacity:0.0;
 }
 
-.le_push:hover .after,
+
 .le_push .before,
+.le_push:focus .after,
+.le_push:focus .background,
+.le_push:hover .after,
 .le_push:hover .background {
 	-ms-filter: "alpha(opacity=100)"
 	filter: alpha(opacity=100);

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.1.1
+Version: 1.1.2
 Name: Modèles basiques
 */
 
@@ -93,7 +93,8 @@ Name: Modèles basiques
 }
 
 .cssn_mainmenu .submenu {
-	display:none;
+	visibility:hidden;
+	opacity:0;
 	z-index:2;
 	position:absolute;
 	top:100%;
@@ -102,11 +103,17 @@ Name: Modèles basiques
 	border:1px solid #eee;
 	border-width:0 0 1px 1px;
 	background:#f9f9f9;
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	-ms-transition: opacity 0.3s ease;
+	-o-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
 }
 
 .cssn_mainmenu > li > a:focus + .submenu,
 .cssn_mainmenu > li:hover .submenu {
-	display:block;
+	visibility:visible;
+	opacity:1;
 }
 
 .cssn_mainmenu .submenu a {

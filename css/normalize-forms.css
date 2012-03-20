@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.1.2
+Version: 1.2
 */
 
 /* ----------------------------------------------------------
@@ -108,6 +108,8 @@ button {
 	vertical-align:middle;
 }
 
+/* Reset des éléments */
+.inputreset,
 .cssn_form textarea,
 .cssn_form .faux-input,
 .cssn_form input[type=text],
@@ -115,82 +117,37 @@ button {
 .cssn_form input[type=email],
 .cssn_form input[type=password] {
 	width:100%;
-	border:1px solid #999;
-	-webkit-border-radius:2px;
-	-moz-border-radius:2px;
-	border-radius:2px;
+	margin:0;
+	padding:0;
+	border:0;
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 	font-family:inherit;
-	font-size:12px;
 	vertical-align:middle;
 	outline:0;
 	-webkit-transition:all 0.3s ease;
 	-moz-transition:all 0.3s ease;
 	-o-transition:all 0.3s ease;
 	transition:all 0.3s ease;
-	color:#333;
-	background:#fafafa;
-	-webkit-background-clip:padding-box;
-	-webkit-box-shadow:inset 1px 1px 1px #ccc;
-	-moz-box-shadow:inset 1px 1px 1px #ccc;
-	box-shadow:inset 1px 1px 1px #ccc;
+}
+
+.cssn_form .faux-input {
+	display:inline-block;*display:inline;zoom:1;
+}
+
+.cssn_form .faux-input,
+.cssn_form [disabled] {
+	cursor:not-allowed;
 }
 
 /* Fix pour IE<8 */
-
 .lt_ie8 .cssn_form textarea,
 .lt_ie8 .cssn_form .faux-input,
 .lt_ie8 .cssn_form input[type=text],
 .lt_ie8 .cssn_form input[type=email],
 .lt_ie8 .cssn_form input[type=password] {
 	width:90%;
-}
-
-.cssn_form .faux-input {
-	display:inline-block;*display:inline;zoom:1;
-	line-height:25px;
-}
-
-.cssn_form .faux-input,
-.cssn_form [disabled] {
-	color:#999;
-	cursor:not-allowed;
-}
-
-.cssn_form textarea {
-	padding:5px;
-}
-
-.cssn_form .faux-input,
-.cssn_form input[type=text],
-.cssn_form input[type=url],
-.cssn_form input[type=email],
-.cssn_form input[type=password] {
-	height:25px;
-	padding:0 5px;
-	vertical-align:middle;
-}
-
-.lt_ie9 .cssn_form input[type=text],
-.lt_ie9 .cssn_form input[type=url],
-.lt_ie9 .cssn_form input[type=email],
-.lt_ie9 .cssn_form input[type=password] {
-	line-height:25px;
-}
-
-.cssn_form textarea:focus,
-.cssn_form input[type=text]:focus,
-.cssn_form input[type=url]:focus,
-.cssn_form input[type=email]:focus,
-.cssn_form input[type=password]:focus {
-	border-color:#333;
-	color:#000;
-	background-color:#fff;
-	-webkit-box-shadow:inset 1px 1px 1px #dedede,0 0 2px rgba(0,0,0,0.3);
-	-moz-box-shadow:inset 1px 1px 1px #dedede,0 0 2px rgba(0,0,0,0.3);
-	box-shadow:inset 1px 1px 1px #dedede,0 0 2px rgba(0,0,0,0.3);
 }
 
 /* Aide */
@@ -232,4 +189,55 @@ button {
 
 .cssn_form {
 	width:450px;
+}
+
+.cssn_form textarea,
+.cssn_form .faux-input,
+.cssn_form input[type=text],
+.cssn_form input[type=url],
+.cssn_form input[type=email],
+.cssn_form input[type=password] {
+	border:1px solid #999;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	font-size:12px;
+	color:#333;
+	background:#fafafa;
+	-webkit-background-clip:padding-box;
+	-webkit-box-shadow:inset 1px 1px 1px #ccc;
+	-moz-box-shadow:inset 1px 1px 1px #ccc;
+	box-shadow:inset 1px 1px 1px #ccc;
+	height:25px;
+	padding:0 5px;
+}
+
+.cssn_form textarea {
+	height:80px;
+	padding:5px;
+}
+
+.cssn_form .faux-input,
+.lt_ie9 .cssn_form input[type=text],
+.lt_ie9 .cssn_form input[type=url],
+.lt_ie9 .cssn_form input[type=email],
+.lt_ie9 .cssn_form input[type=password] {
+	line-height:25px;
+}
+
+.cssn_form textarea:focus,
+.cssn_form input[type=text]:focus,
+.cssn_form input[type=url]:focus,
+.cssn_form input[type=email]:focus,
+.cssn_form input[type=password]:focus {
+	border-color:#333;
+	color:#000;
+	background-color:#fff;
+	-webkit-box-shadow:inset 1px 1px 1px #dedede,0 0 2px rgba(0,0,0,0.3);
+	-moz-box-shadow:inset 1px 1px 1px #dedede,0 0 2px rgba(0,0,0,0.3);
+	box-shadow:inset 1px 1px 1px #dedede,0 0 2px rgba(0,0,0,0.3);
+}
+
+.cssn_form .faux-input {
+	color:#999;
 }

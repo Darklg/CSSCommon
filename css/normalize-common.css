@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.0.1
+Version: 1.0.2
 */
 
 /* ----------------------------------------------------------
@@ -43,7 +43,9 @@ body {
    ------------------------------------------------------- */
 
 .image_masquee {
+	display:inline-block;*display:inline;zoom:1;
 	overflow:hidden;
 	text-align:left;
+	white-space:nowrap;
 	text-indent:-9999px;
 }

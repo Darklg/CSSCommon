@@ -238,6 +238,7 @@ button {
 	box-shadow:inset 1px 1px 1px #dedede,0 0 2px rgba(0,0,0,0.3);
 }
 
+.cssn_form input[disabled],
 .cssn_form .faux-input {
 	color:#999;
 }

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.2
+Version: 1.2.0.1
 */
 
 /* ----------------------------------------------------------
@@ -12,7 +12,7 @@ Version: 1.2
 }
 
 .cssn_form .box {
-	margin-bottom:10px;
+	padding-bottom:10px;
 	vertical-align:baseline;
 }
 

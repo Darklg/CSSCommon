@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="fr-FR">
-    <head>
+	<head>
 		<title>CSS Normalize - Framework CSS</title>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=980" />
 		<!-- Styles de base -->
 		<link rel="stylesheet" href="css/reset.css?v=1.0" type="text/css" />
 		<link rel="stylesheet" href="css/normalize.css?v=1.0" type="text/css" />
-		<link rel="stylesheet" href="css/normalize-common.css?v=1.0.2" type="text/css" />
+		<link rel="stylesheet" href="css/normalize-common.css?v=1.1" type="text/css" />
 		<!-- Modules -->
 		<link rel="stylesheet" href="css/normalize-buttons.css?v=1.1" type="text/css" />
 		<link rel="stylesheet" href="css/normalize-forms.css?v=1.2" type="text/css" />
@@ -21,7 +21,7 @@
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-    </head>
+	</head>
 
 	<!--[if lt IE 7 ]><body class="is_ie6 lt_ie7 lt_ie8 lt_ie9 lt_ie10"><![endif]--> 
 	<!--[if IE 7 ]><body class="is_ie7 lt_ie8 lt_ie9 lt_ie10"><![endif]--> 
@@ -40,7 +40,7 @@
 					<strong>CSS Normalize</strong> est un framework, ou plutôt une base de départ en CSS, qui comprend :
 				</p>
 				<ul>
-				    <li>Un <em>reset CSS</em> inspiré de celui de <a href="http://html5boilerplate.com/" target="_blank">HTML Boilerplate</a>.</li>
+					<li>Un <em>reset CSS</em> inspiré de celui de <a href="http://html5boilerplate.com/" target="_blank">HTML Boilerplate</a>.</li>
 					<li>Une feuille de style par défaut, stylisant les balises HTML les plus utilisées.</li>
 					<li>Une feuille d'objets CSS utilisés fréquemment.</li>
 					<li>Des modules fonctionnant indépendamment.</li>
@@ -55,7 +55,7 @@
 		<section class="block-content">
 			<h2 id="normalize-forms">Formulaires</h2>
 			<p>Un modèle de formulaire à labels flottants et un modèle simple. Cliquez ci-dessous.</p>
-	<!--    <form id="form_demo" action="" class="cssn_form float_form" method="post"> -->
+	<!--	<form id="form_demo" action="" class="cssn_form float_form" method="post"> -->
 			<form id="form_demo" action="/" class="cssn_form block_form" method="post">
 				<ul>
 					<li class="box buttons-box">
@@ -66,13 +66,13 @@
 				<fieldset>
 					<legend>Actions sur INPUTs</legend>
 					<ul>
-					    <li class="box">
-						    <label for="form_text">Input normal</label>
-						    <input name="form_text" id="form_text" type="text" placeholder="Du texte" />
+						<li class="box">
+							<label for="form_text">Input normal</label>
+							<input name="form_text" id="form_text" type="text" placeholder="Du texte" />
 						</li>
-					    <li class="box">
-						    <label for="form_text2">Input désactivé</label>
-						    <input name="form_text2" id="form_text2" type="text" placeholder="Du texte non accessible" disabled />
+						<li class="box">
+							<label for="form_text2">Input désactivé</label>
+							<input name="form_text2" id="form_text2" type="text" placeholder="Du texte non accessible" disabled />
 						</li>
 						<li class="box">
 							<label>Faux Input</label>
@@ -84,25 +84,25 @@
 					<legend>Test de legend pour fieldset</legend>
 					<ul class="twoboxes">
 						<li class="box">
-						    <label for="form_text3">Un input</label>
-						    <input name="form_text3" id="form_text3" type="text" placeholder="Un placeholder classique" />
+							<label for="form_text3">Un input</label>
+							<input name="form_text3" id="form_text3" type="text" placeholder="Un placeholder classique" />
 						</li>
 						<li class="box">
-						    <label for="form_text4">Un autre input</label>
-						    <input name="form_text4" id="form_text4" type="text" placeholder="Un placeholder classique" />
+							<label for="form_text4">Un autre input</label>
+							<input name="form_text4" id="form_text4" type="text" placeholder="Un placeholder classique" />
 						</li>
 					</ul>
 				</fieldset>
 				<fieldset>
 					<ul>	
-					    <li class="box email-box">
-						    <label for="form_email">Email</label>
-						    <input name="form_email" id="form_email" type="email" placeholder="Email" />
+						<li class="box email-box">
+							<label for="form_email">Email</label>
+							<input name="form_email" id="form_email" type="email" placeholder="Email" />
 							<small>Une explication est-elle nécessaire ?</small>
 						</li>
-					    <li class="box password-box">
-						    <label for="form_passwd">Password</label>
-						    <input name="form_passwd" id="form_passwd" type="password" placeholder="Mot de passe" />
+						<li class="box password-box">
+							<label for="form_passwd">Password</label>
+							<input name="form_passwd" id="form_passwd" type="password" placeholder="Mot de passe" />
 						</li>
 						<li class="box buttons-box">
 							<a href="#" class="le-button"><span>Le button</span></a>
@@ -140,33 +140,33 @@
 		<section class="block-content">
 			<h2 id="normalize-tables">Tableaux</h2>
 			<table class="le-tableau">
-			    <thead>
-			        <tr>
-			            <th>Entete</th>
-			            <th>Entete</th>
-			            <th>Entete</th>
-			        </tr>
-			    </thead>
-			    <tbody>
-			        <tr>
-			            <td>contenu <br />avec sauts <br />de ligne</td>
-			            <td>contenu</td>
-			            <td>contenu</td>
-			        </tr>
+				<thead>
 					<tr>
-					    <td>contenu</td>
-					    <td colspan="2">Contenu sur deux colonnes</td>
+						<th>Entete</th>
+						<th>Entete</th>
+						<th>Entete</th>
 					</tr>
-			        <tr>
-			            <td>contenu un peu plus long que les autres, car il faut bien tester</td>
-			            <td rowspan="2">contenu sur deux lignes</td>
-			            <td>contenu</td>
-			        </tr>
+				</thead>
+				<tbody>
 					<tr>
-					    <td>contenu</td>
-					    <td>contenu</td>
+						<td>contenu <br />avec sauts <br />de ligne</td>
+						<td>contenu</td>
+						<td>contenu</td>
 					</tr>
-			    </tbody>
+					<tr>
+						<td>contenu</td>
+						<td colspan="2">Contenu sur deux colonnes</td>
+					</tr>
+					<tr>
+						<td>contenu un peu plus long que les autres, car il faut bien tester</td>
+						<td rowspan="2">contenu sur deux lignes</td>
+						<td>contenu</td>
+					</tr>
+					<tr>
+						<td>contenu</td>
+						<td>contenu</td>
+					</tr>
+				</tbody>
 			</table>
 		</section>
 
@@ -193,9 +193,9 @@
 				</div>
 				<div class="col-300">
 					<ul>
-					    <li><a href="#">lorem ipsum</a></li>
-					    <li><a href="#">dolor sit amet</a></li>
-					    <li><a href="#">consectetur adipiscing elit</a></li>
+						<li><a href="#">lorem ipsum</a></li>
+						<li><a href="#">dolor sit amet</a></li>
+						<li><a href="#">consectetur adipiscing elit</a></li>
 					</ul>
 				</div>
 			</div>
@@ -205,10 +205,10 @@
 		<section class="block-content">
 			<h2 id="normalize-messages">Messages d'avertissement</h2>
 			<ul class="cssn_messages">
-			    <li><a class="error" href="#">lorem ipsum</a></li>
-			    <li><a class="notice" href="#">dolor sit amet</a></li>
-			    <li><a class="success" href="#">consectetur adipiscing elit</a></li>
-			    <li><a class="warning" href="#">consectetur adipiscing elit</a></li>
+				<li><a class="error" href="#">lorem ipsum</a></li>
+				<li><a class="notice" href="#">dolor sit amet</a></li>
+				<li><a class="success" href="#">consectetur adipiscing elit</a></li>
+				<li><a class="warning" href="#">consectetur adipiscing elit</a></li>
 			</ul>
 		</section>
 	
@@ -228,22 +228,22 @@
 		<section class="block-content">
 			<h2 id="normalize-gallery">Galerie</h2>
 			<ul class="subfloat sf_100_20">
-			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
-			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
-			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
-			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
-			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
-			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
-			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
-			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
-			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
-			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
-			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
-			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
-			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
-			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
-			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
-			    <li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+				<li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+				<li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+				<li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+				<li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+				<li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+				<li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+				<li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+				<li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+				<li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+				<li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+				<li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+				<li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+				<li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+				<li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+				<li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
+				<li><a href="#"><img src="http://dummyimage.com/100x100/333/fff.png" alt="" /></a></li>
 			</ul>
 			<!--[if lt IE 8 ]> <hr class="clearfix" /><![endif]--> 
 			
@@ -256,7 +256,7 @@
 			<div class="the_grid gri-1-2">
 				<div><a href="#" class="le_push push_simple"><span class="after"></span></a></div>
 				<div>
-					<pre>&lt;a href=&quot;#&quot; class=&quot;le_push push_simple&quot;&gt;
+					<pre contenteditable>&lt;a href=&quot;#&quot; class=&quot;le_push push_simple&quot;&gt;
 	&lt;span class=&quot;after&quot;&gt;&lt;/span&gt;
 &lt;/a&gt;</pre>
 					<p>
@@ -270,7 +270,7 @@
 			<div class="the_grid gri-1-2">
 				<div class="example_right"><a href="#" class="le_push push_double"><span class="before"></span><span class="after"></span></a></div>
 				<div>
-					<pre>&lt;a href=&quot;#&quot; class=&quot;le_push push_double&quot;&gt;
+					<pre contenteditable>&lt;a href=&quot;#&quot; class=&quot;le_push push_double&quot;&gt;
 	&lt;span class=&quot;before&quot;&gt;&lt;/span&gt;
 	&lt;span class=&quot;after&quot;&gt;&lt;/span&gt;
 &lt;/a&gt;</pre>
@@ -290,81 +290,81 @@
 			
 			<h3>Pagination</h3>
 			<ul class="cssn_pagination">
-			    <li><a href="#" class="prev">&lsaquo; Pr&eacute;c&eacute;dent</a></li>
+				<li><a href="#" class="prev">&lsaquo; Pr&eacute;c&eacute;dent</a></li>
 				<li>
 					<ul>
-					    <li><a href="#">1</a></li>
+						<li><a href="#">1</a></li>
 						<li><strong>2</strong></li>
-					    <li><a href="#">3</a></li>
+						<li><a href="#">3</a></li>
 					</ul>
 				</li>
-			    <li><a href="#" class="next">Suivant &rsaquo;</a></li>
+				<li><a href="#" class="next">Suivant &rsaquo;</a></li>
 			</ul>
 			
 			<h3>Pagination centrée</h3>
 			<ul class="cssn_pagination cssn_pagination_center">
-			    <li><a href="#" class="prev">&lsaquo; Pr&eacute;c&eacute;dent</a></li>
+				<li><a href="#" class="prev">&lsaquo; Pr&eacute;c&eacute;dent</a></li>
 				<li>
 					<ul>
-					    <li><a href="#">1</a></li>
+						<li><a href="#">1</a></li>
 						<li><strong>2</strong></li>
-					    <li><a href="#">3</a></li>
+						<li><a href="#">3</a></li>
 					</ul>
 				</li>
-			    <li><a href="#" class="next">Suivant &rsaquo;</a></li>
+				<li><a href="#" class="next">Suivant &rsaquo;</a></li>
 			</ul>
 			
 			<h3>Menu Principal avec sous-menu</h3>
 			<nav class="cssn_mainnav">
 				<ul class="cssn_mainmenu">
-				    <li><a href="#">Accueil</a></li>
-				    <li><a href="#">Lien normal</a></li>
-				    <li class="withsubmenu">
-				    	<a href="#">[+] Produits</a>
+					<li><a href="#">Accueil</a></li>
+					<li><a href="#">Lien normal</a></li>
+					<li class="withsubmenu">
+						<a href="#">[+] Produits</a>
 						<div class="submenu">
 							<ul>
-							    <li><a href="#">Template HTML</a></li>
-							    <li><a href="#">Template WordPress</a></li>
-							    <li><a href="#">Template Magento</a></li>
-							    <li><a href="#">Template Newsletter</a></li>
-							    <li><a href="#">Template Mobile</a></li>
+								<li><a href="#">Template HTML</a></li>
+								<li><a href="#">Template WordPress</a></li>
+								<li><a href="#">Template Magento</a></li>
+								<li><a href="#">Template Newsletter</a></li>
+								<li><a href="#">Template Mobile</a></li>
 							</ul>
 						</div>
-				    </li>
-				    <li class="current"><a href="#">Lien actuel</a></li>
+					</li>
+					<li class="current"><a href="#">Lien actuel</a></li>
 				</ul>
 			</nav>
 			
 			<h3>Menu Principal avec Social links</h3>
 			<nav class="cssn_mainnav">
 				<ul class="cssn_mainmenuplus">
-				    <li><a href="#">Twitter</a></li>
-				    <li><a href="#">Facebook</a></li>
-				    <li><a href="#">Google+</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Google+</a></li>
 				</ul>
 				<ul class="cssn_mainmenu">
-				    <li><a href="#">Accueil</a></li>
-				    <li><a href="#">Lien normal</a></li>
-				    <li class="current"><a href="#">Lien actuel</a></li>
+					<li><a href="#">Accueil</a></li>
+					<li><a href="#">Lien normal</a></li>
+					<li class="current"><a href="#">Lien actuel</a></li>
 				</ul>
 			</nav>
 			
 			
 			<h3>Fil d'ariane</h3>
 			<ul class="cssn_ariane">
-			    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-			    	<a href="#" itemprop="url" rel="home">
+				<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="#" itemprop="url" rel="home">
 						<span itemprop="title">Accueil</span>
 					</a> &rsaquo;&nbsp;
-			    </li>
-			    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-			    	<a href="#" itemprop="url" rel="home">
+				</li>
+				<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="#" itemprop="url" rel="home">
 						<span itemprop="title">Mod&egrave;les</span>
 					</a> &rsaquo;&nbsp;
-			    </li>
-			    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				</li>
+				<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
 					<strong itemprop="title">Fil d'ariane</strong>
-			    </li>
+				</li>
 			</ul>
 
 		</section>
@@ -375,15 +375,15 @@
 	<footer class="fixed-footer">
 	<nav>
 		<ul>
-		    <li><a href="#le-content">Contenu</a></li>
-		    <li><a href="#normalize-forms">Formulaires</a></li>
-		    <li><a href="#normalize-tables">Tables</a></li>
-		    <li><a href="#normalize-grid">Grilles</a></li>
+			<li><a href="#le-content">Contenu</a></li>
+			<li><a href="#normalize-forms">Formulaires</a></li>
+			<li><a href="#normalize-tables">Tables</a></li>
+			<li><a href="#normalize-grid">Grilles</a></li>
 			<li><a href="#normalize-messages">Messages d'avertissement</a></li>
 			<li><a href="#normalize-code">Présentation de code</a></li>
 			<li><a href="#normalize-gallery">Galerie</a></li>
 			<li><a href="#normalize-push">Pushs</a></li>
-		    <li><a href="#normalize-modeles">Mod&egrave;les</a></li>
+			<li><a href="#normalize-modeles">Mod&egrave;les</a></li>
 		</ul>
 	</nav>
 	</footer>
@@ -406,5 +406,5 @@
 	</script>
 	
 	
-    </body>
+	</body>
 </html>

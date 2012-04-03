@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.0.2
+Version: 1.1
 */
 
 /* ----------------------------------------------------------
@@ -42,10 +42,72 @@ body {
    Images masquées (Pour push, etc)
    ------------------------------------------------------- */
 
-.image_masquee {
-	display:inline-block;*display:inline;zoom:1;
-	overflow:hidden;
-	text-align:left;
-	white-space:nowrap;
+.le_btn,
+.ir {
+	position:relative;
+	display:inline-block;
+	overflow : hidden;
 	text-indent:-9999px;
+	text-align:left;
+	white-space : nowrap;
+	*text-indent:0;
+	*color:transparent;
+	*font-size:1px;
+	*display:inline;
+	*zoom:1;
+}
+
+
+/* ----------------------------------------------------------
+   Bouton image
+   ------------------------------------------------------- */
+
+/* Reset */
+
+.le_btn {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+}
+
+/* Effets */
+
+.le_btn {
+	-moz-transition: opacity 0.3s ease;
+	-webkit-transition: opacity 0.3s ease;
+	-o-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+
+/* :Hover */
+
+.le_btn:focus,
+.le_btn:hover {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	opacity:0.50;
+}
+
+/* ----------------------------------------------------------
+   "..." automatique à la fin d'une ligne
+   ------------------------------------------------------- */
+
+.non_depassement {
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+
+/* ----------------------------------------------------------
+   Suppression d'élément
+   ------------------------------------------------------- */
+
+.suppression_element {
+	font-size:1px;
+	color:transparent;
+	position:absolute;
+	top:-9999px;
+	left:-9999px;
 }

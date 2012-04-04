@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.2.0.1
+Version: 1.2.0.2
 */
 
 /* ----------------------------------------------------------
@@ -47,7 +47,6 @@ Version: 1.2.0.1
 .float_form .box {
 	position:relative;
 	padding-left:100px;
-	min-height:25px;
 }
 
 .cssn_form label {
@@ -189,6 +188,10 @@ button {
 
 .cssn_form {
 	width:450px;
+}
+
+.float_form .box {
+	min-height:25px;
 }
 
 .cssn_form textarea,

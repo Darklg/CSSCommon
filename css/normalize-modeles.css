@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.2
+Version: 1.3
 Name: Modèles basiques
 */
 
@@ -57,6 +57,10 @@ Name: Modèles basiques
 	vertical-align:middle;
 }
 
+.cssn_mainmenu {
+	height:100%;
+}
+
 .cssn_mainmenuplus {
 	float:right;
 }
@@ -76,26 +80,42 @@ Name: Modèles basiques
 
 /* Gestion sous-menu */
 
-.cssn_mainmenu > .withsubmenu {
+.cssn_mainmenu:hover,
+.cssn_mainmenu:hover > li {
 	position:relative;
+	z-index: 3;
 }
 
-.lt_ie8 .cssn_mainmenu > .withsubmenu {
-	z-index:3;
+/* Si sous-menu de largeur 100% */
+.cssn_mainmenu:hover > .richsubmenu {
+	position:static;
+}
+.richsubmenu .submenu {
+	position:absolute;
+	right:0;
+	width:auto;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+/* Si sous-menu de largeur fixe*/
+.richsubmenu2 > .submenu {
+	width:600px;
 }
 
 .cssn_mainmenu .submenu {
 	visibility:hidden;
-	opacity:0;
 	z-index:2;
 	position:absolute;
 	top:100%;
 	left:0;
-	-webkit-transition: opacity 0.3s ease;
-	-moz-transition: opacity 0.3s ease;
-	-ms-transition: opacity 0.3s ease;
-	-o-transition: opacity 0.3s ease;
-	transition: opacity 0.3s ease;
+	white-space:nowrap;
+	-webkit-transition:opacity 0.3s ease;
+	-moz-transition:opacity 0.3s ease;
+	-ms-transition:opacity 0.3s ease;
+	-o-transition:opacity 0.3s ease;
+	transition:opacity 0.3s ease;
+	opacity:0;
 }
 
 .cssn_mainmenu > li > a:focus + .submenu,
@@ -106,6 +126,11 @@ Name: Modèles basiques
 
 .cssn_mainmenu .submenu a {
 	white-space:nowrap;
+}
+
+.cssn_mainmenu .submenu .subcol > ul,
+.cssn_mainmenu .submenu .subcol {
+	float:left;
 }
 
 /* Style d'exemple */
@@ -147,6 +172,19 @@ Name: Modèles basiques
 	border:1px solid #eee;
 	border-width:0 0 1px 1px;
 	background:#f9f9f9;
+}
+
+.cssn_mainmenu .subcol {
+	min-width:200px;
+}
+
+.cssn_mainmenu .subcol > ul {
+	min-width:150px;
+}
+
+.cssn_mainmenu .subcol + .subcol,
+.cssn_mainmenu .subcol > ul + ul {
+	margin-left:15px;
 }
 
 /* ----------------------------------------------------------

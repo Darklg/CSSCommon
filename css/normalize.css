@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.0
+Version: 1.0.3
 */
 
 /* ----------------------------------------------------------
@@ -46,6 +46,10 @@ body {
 	padding-bottom:30px;
 }
 
+h1,h2,h3,h4,h5 {
+	font-weight:bold;
+}
+
 h1 {
 	font-size:25px;
 	line-height:40px;
@@ -63,6 +67,12 @@ h3 {
 	line-height:20px;
 }
 
+h4 {
+	margin:5px 0;
+	font-size:13px;
+	line-height:18px;
+}
+
 p,
 li {
 	font-size:12px;
@@ -70,7 +80,7 @@ li {
 }
 
 .le-content ul,
-.le-content p {
+p {
 	margin-bottom:12px;
 }
 
@@ -102,7 +112,8 @@ a {
 	color:#69C;
 }
 
-a:hover {
+/* l'ajout d'un id permet de ne pas avoir à re-styliser :hover si on change la couleur plus tard */
+#main-container a:hover {
 	color:#C96;
 }
 

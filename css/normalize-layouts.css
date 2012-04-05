@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*
+Version: 1.0
+Name: Layouts de page
+*/
+
+/* ----------------------------------------------------------
+   Base des layouts
+   ------------------------------------------------------- */
+
+.cssn-lay {
+	width:940px;
+}
+
+.cssn-lay > * {
+	display:table-cell;
+	vertical-align:top;
+}
+
+.lt_ie8 .cssn-lay > * {
+	display:block;
+	float:left;
+}
+
+/* Base de style */
+
+.cssn-lay > * + * {
+	padding-left:20px;
+}
+
+.cssn-lay > .col-side {
+	width:200px;
+}
+
+.cssn-lay > .col-main {
+	width:720px;
+}
+
+/* Wide layout d'exemple */
+
+.clay-wide > .col-side {
+	width:300px;
+}
+
+.clay-wide > .col-main {
+	width:620px;
+}
+
+/* Couleurs pour le Debug */
+
+.cssn-lay {background-color:#c0c0c0;}
+.cssn-lay > .col-main {background-color:#e0e0e0;}
+.cssn-lay > .col-side {background-color:#f0f0f0;}

@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/*
+Version: 1.0
+Name: Onglets
+*/
+
+/*
+@TODO : polyfill :target.
+*/
+
+
+/* ----------------------------------------------------------
+   Base des onglets
+   ------------------------------------------------------- */
+
+.cssnt-tabs-clic {
+	overflow:hidden;
+	position:relative;
+	top:1px; /* superposition sur le contenu */
+}
+
+.cssnt-tabs-clic li {
+	float:left;
+}
+
+.cssnt-tabs-clic a {
+	display:block;
+	float:left;
+}
+
+.cssnt-tabs-target > * {
+	-webkit-transition: max-height 0.3s ease, opacity 0.3s ease;
+	-moz-transition: max-height 0.3s ease, opacity 0.3s ease;
+	-ms-transition: max-height 0.3s ease, opacity 0.3s ease;
+	-o-transition: max-height 0.3s ease, opacity 0.3s ease;
+	transition: max-height 0.3s ease, opacity 0.3s ease;
+	overflow:hidden;
+	visibility:hidden;
+	opacity:0;
+	max-height:0;
+}
+
+.lt_ie8 .cssnt-tabs-target > * {
+	position:absolute;
+}
+
+.cssnt-tabs-target > .current {
+	visibility:visible;
+	opacity:1;
+	max-height:10000px;
+}
+
+.lt_ie8 .cssnt-tabs-target > .current {
+	position:static;
+}
+
+/* Style par défaut */
+
+.cssnt-tabs-clic li {
+	margin-right:3px;
+}
+
+.cssnt-tabs-clic a {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	-webkit-background-clip: border;
+	-moz-background-clip: border;
+	background-clip: border;
+	padding:3px 6px;
+	border:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	background-color:#f0f0f0;
+}
+
+.cssnt-tabs-clic a.current,
+.cssnt-tabs-clic .current a,
+.cssnt-tabs-clic a:hover,
+.cssnt-tabs-clic a:focus {
+	background-color:#fff;
+	border-bottom:1px solid #fff;
+}
+
+.cssnt-tabs-target {
+	border:1px solid #ccc;
+	padding:6px;
+}

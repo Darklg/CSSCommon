@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.2.0.2
+Version: 1.2.0.3
 */
 
 /* ----------------------------------------------------------
@@ -241,7 +241,17 @@ button {
 	box-shadow:inset 1px 1px 1px #dedede,0 0 2px rgba(0,0,0,0.3);
 }
 
-.cssn_form input[disabled],
+/* Couleurs de placeholder : ne pas fusionner les sélecteurs ! */
+
+.cssn_form [disabled],
 .cssn_form .faux-input {
-	color:#999;
+	color:#A0A0A0;
+}
+
+.cssn_form ::-webkit-input-placeholder {
+   color: #A0A0A0;
+}
+
+.cssn_form :-moz-placeholder {
+   color: #A0A0A0;
 }

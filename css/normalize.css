@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.0.3
+Version: 1.0.4
 */
 
 /* ----------------------------------------------------------
@@ -26,10 +26,12 @@ sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
 sup{top:-0.5em;}
 sub{bottom:-0.25em;}
 
-/* bicubic resizing for non-native sized IMG: code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+/* bicubic resizing for non-native sized IMG | code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
 .lt_ie8 img { -ms-interpolation-mode: bicubic; }
 /* Aligne les images inline sur le texte */
 img,input[type=image]{vertical-align:bottom;}
+/* Curseur adéquat pour les boutons */
+input[type="submit"],input[type="image"],button{cursor:pointer;}
 
 /* ----------------------------------------------------------
    Contenu par défaut

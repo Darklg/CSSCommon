@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Version: 1.0
+Version: 1.0.1
 */
 
 /* =============================================================================
@@ -39,3 +39,5 @@ input[type="checkbox"] { vertical-align: bottom;}
 input:focus {outline:0}
 input:-webkit-autofill{background-color:#ccc!important}
 video, img, object {max-width: 100%;}
+/* Bug with Firefox and buttons */
+button::-moz-focus-inner {border:0;padding:0;margin:0;}

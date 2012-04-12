@@ -1,11 +1,9 @@
 @charset "UTF-8";
 /*
+Name: Messages d'interaction
+URL: http://github.com/Darklg/CSSNormalize
 Version: 1.1.1
 */
-
-/* ----------------------------------------------------------
-   Messages d'interaction
-   ------------------------------------------------------- */
 
 .cssn_messages a {
 	display:block;

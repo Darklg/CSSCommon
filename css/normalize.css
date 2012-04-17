@@ -2,7 +2,7 @@
 /*
 Name: Normalize
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.0.4
+Version: 1.1
 */
 
 /* ----------------------------------------------------------
@@ -44,10 +44,10 @@ body {
 	color:#212121; /* Dark Grey is the new black */
 }
 
-#main-container {
-	width:940px;
-	margin:0 auto;
-	padding-bottom:30px;
+.block-content {
+	margin-bottom:50px;
+	padding-bottom:50px;
+	border-bottom:1px solid #f0f0f0;
 }
 
 h1,h2,h3,h4,h5 {
@@ -106,12 +106,6 @@ p:last-child {
 	list-style:inside disc;
 }
 
-.block-content {
-	margin-bottom:50px;
-	padding-bottom:50px;
-	border-bottom:1px solid #f0f0f0;
-}
-
 /* ----------------------------------------------------------
    Liens
    ------------------------------------------------------- */
@@ -125,14 +119,39 @@ a {
 	color:#C96;
 }
 
+a:hover img {
+	filter: alpha(opacity=80);
+	opacity:0.80;
+}
+
 /* ----------------------------------------------------------
    Transitions
    ------------------------------------------------------- */
 
-
 a {
 	-webkit-transition:color 0.3s ease;
 	-moz-transition:color 0.3s ease;
+	-ms-transition:color 0.3s ease;
 	-o-transition:color 0.3s ease;
 	transition:color 0.3s ease;
 }
+
+a img {
+	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	-ms-transition: opacity 0.3s ease;
+	-o-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+
+/* ----------------------------------------------------------
+   Layout
+   ------------------------------------------------------- */
+
+#header,
+#footer,
+.block-content {
+	width:940px;
+	margin:0 auto;
+}
+

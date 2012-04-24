@@ -2,7 +2,7 @@
 /*
 Name: Modèles basiques
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.3
+Version: 1.3.5
 */
 
 /* ----------------------------------------------------------
@@ -13,15 +13,15 @@ Version: 1.3
 	text-align:center;
 }
 
-.cssn_pagination ul,
-.cssn_pagination li,
-.cssn_pagination strong,
-.cssn_pagination a {
-	display:inline-block;*display:inline;zoom:1;
+.cssn_pagination * {
+	display:inline-block;
+	*display:inline;
+	zoom:1;
 }
 
 /* Style d'exemple */
 
+.cssn_pagination span,
 .cssn_pagination strong,
 .cssn_pagination a {
 	padding:0 7px;
@@ -32,10 +32,7 @@ Version: 1.3
 	-webkit-background-clip:border;
 }
 
-.cssn_pagination ul,
-.cssn_pagination li,
-.cssn_pagination strong,
-.cssn_pagination a {
+.cssn_pagination * {
 	line-height:30px;
 }
 
@@ -44,7 +41,7 @@ Version: 1.3
 }
 
 .cssn_pagination strong,
-.cssn_pagination a.current,
+.cssn_pagination .current,
 .cssn_pagination a:focus,
 .cssn_pagination a:hover {
 	border-color:#ccc;

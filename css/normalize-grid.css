@@ -2,7 +2,7 @@
 /*
 Name: Grids
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.1
+Version: 1.1.0.1
 */
 
 /* Grille principale */
@@ -25,7 +25,6 @@ Version: 1.1
 .the_grid:after,
 .clearfix {
 	display:block;
-	visibility:hidden;
 	visibility:hidden;
 	clear:both;
 	width:100%;

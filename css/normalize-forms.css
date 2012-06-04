@@ -2,7 +2,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.2.0.3
+Version: 1.3
 */
 
 .cssn_form {
@@ -145,6 +145,18 @@ button {
 .lt_ie8 .cssn_form input[type=email],
 .lt_ie8 .cssn_form input[type=password] {
 	width:90%;
+}
+
+/* Champs multiples */
+.cssn_form .multibox-box input[type=text],
+.cssn_form .multibox-box input[type=url],
+.cssn_form .multibox-box input[type=email],
+.cssn_form .multibox-box input[type=password] {
+	width:65px;
+}
+
+.cssn_form .multibox-box input.halfling {
+	width:45px;
 }
 
 /* Aide */

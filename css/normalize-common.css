@@ -2,7 +2,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.3.1
+Version: 1.4
 */
 
 /* ----------------------------------------------------------
@@ -157,6 +157,7 @@ body {
 .bmedia,
 .bmedia-right,
 .bm-cont {
+    display:block;
     zoom:1;
     overflow:hidden;
     _overflow:visible;
@@ -173,4 +174,72 @@ body {
 }
 
 
+/* ----------------------------------------------------------
+   Barre d'avancement
+   ------------------------------------------------------- */
+/* <span class="lvl-barre"><span class="bar"></span></span> */
+
+.lvl-barre {
+    display:inline-block;
+    position:relative;
+    margin:3px;
+    *display:inline;
+    *zoom:1;
+}
+
+.lvl-barre .bar,
+.lvl-barre:before {
+    position:absolute;
+}
+
+.lvl-barre:before {
+    content:'';
+    border:3px solid #ccc;
+    z-index:9;
+    top:-3px;
+    right:-3px;
+    bottom:-3px;
+    left:-3px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+}
+
+.lvl-barre .bar {
+    top:0;
+    bottom:0;
+    left:0;
+    width:0%;
+    max-width:100%;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    -webkit-background-clip:border;
+    -moz-background-clip:border;
+    background-clip:border;
+    background: rgba(0,0,0,0) no-repeat 0 0;
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2)); 
+    background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2)); 
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(0,0,0,0)),color-stop(1, rgba(0,0,0,0.2))); 
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2)); 
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2));
+    -webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+/* Style démo */
+
+.lvl-barre {
+    width:100px;
+    height:15px;
+}
+
+.lvl-barre:before {
+    border-color:#F0F0F0;
+}
+
+.lvl-barre .bar {
+    background-color:red;
+}
 ​

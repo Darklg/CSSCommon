@@ -2,7 +2,7 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.0
+Version: 1.1
 */
 
 /* ----------------------------------------------------------
@@ -47,8 +47,54 @@ Version: 1.0
 	width:620px;
 }
 
-/* Couleurs pour le Debug */
+/* Responsive Layout */
 
+@media all and (max-width:600px) {
+    
+    /* Container mis en largeur fluide, pour l'exemple */
+    #bc-layouts {
+        width:auto;
+        padding:10px;
+    }
+    
+    .clay-resp {
+        width:auto;
+    }
+    
+	.clay-resp > .col-side,
+	.clay-resp > .col-main {
+    	display:block;
+    	width:100%;
+    }
+    
+    .clay-resp > .col-side .liste-widgets > * {
+        display:inline-block;
+        width:48%;
+    }
+    
+    .clay-resp > .col-side .liste-widgets > :nth-child(even) {
+        margin-left:2%;
+    }
+    
+    .cssn-lay > * + * {
+    	padding-left:0;
+    }
+}
+
+@media all and (max-width:400px) {
+    .clay-resp > .col-side .liste-widgets > * {
+        display:block;
+    }
+    
+    .clay-resp > .col-side .liste-widgets > :nth-child(even) {
+        margin-left:0;
+    }
+}
+
+/* Styles pour le debug */
+.liste-widgets {overflow:hidden;}
+
+/* Couleurs pour le Debug */
 .cssn-lay {background-color:#c0c0c0;}
 .cssn-lay > .col-main {background-color:#e0e0e0;}
 .cssn-lay > .col-side {background-color:#f0f0f0;}

@@ -73,12 +73,12 @@ Version: 1.0.3
 
 .push_double .before,
 .push_simple {
-	background-image:url(http://dummyimage.com/300x100/333/fff.png);
+	background-image:url(../images/300x100-black.png);
 }
 
 .push_double .after,
 .push_simple .after {
-	background-image:url(http://dummyimage.com/300x100/CCC/999.png);
+	background-image:url(../images/300x100-grey.png);
 }
 
 /* ----------------------------------------------------------

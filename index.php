@@ -67,7 +67,7 @@
     </nav>
     </footer>
     
-    <a href="http://github.com/darklg/CSSNormalize" id="fork_me"><img src="fork_me.png" alt="Fork me on GitHub" /></a>
+    <a href="http://github.com/darklg/CSSNormalize" id="fork_me"><img src="images/fork_me.png" alt="Fork me on GitHub" /></a>
     
     <script>
     function $(id){

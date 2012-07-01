@@ -31,7 +31,7 @@
     <!--[if IE 9 ]><body class="is_ie9 lt_ie10"><![endif]--> 
     <!--[if gt IE 9]><body class="is_ie10"><![endif]--> 
     <!--[if !IE]><!--> <body class=""><!--<![endif]-->
-    <div id="main-container">
+    <div id="main-container" class="">
         
         <header id="header">
             <h1>CSS Normalize - Framework CSS</h1>
@@ -81,7 +81,7 @@
             $('form_demo').className = 'cssn_form block_form';
         }); 
         $('set_form_wide').addEventListener('click',function(){
-            $('form_demo').style.width = '100%';
+            $('form_demo').style.width = 'auto';
         });
         $('set_form_normal').addEventListener('click',function(){
             $('form_demo').style.width = '450px';

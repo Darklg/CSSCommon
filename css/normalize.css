@@ -14,6 +14,7 @@ html {
 }
 
 body {
+	padding: 0 10px;
 	position:relative;
 	min-height:100%;
 	line-height:1;
@@ -153,6 +154,13 @@ a img {
 .block-content {
 	width:940px;
 	margin:0 auto;
+}
+
+.cssn-is-responsive #header,
+.cssn-is-responsive #footer,
+.cssn-is-responsive .block-content {
+	width:auto;
+	max-width:940px;
 }
 
 /* ----------------------------------------------------------

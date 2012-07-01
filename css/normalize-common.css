@@ -19,19 +19,25 @@ body {
 	bottom:0;
 	left:0;
 	width:100%;
-	height:30px;
 	background:#000;
 	background:rgba(0,0,0,0.8);
 }
 
 .fixed-footer ul {
-	width:940px;
+	width:960px;
 	margin:0 auto;
 }
 
+.cssn-is-responsive .fixed-footer ul {
+	width:auto;
+	max-width:960px;
+}
+
 .fixed-footer li {
-	float:left;
-	margin-right:15px;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	margin:0 10px;
 }
 
 .fixed-footer li a {

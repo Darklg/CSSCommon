@@ -197,7 +197,7 @@ button {
 /* Style de la démo */
 
 .cssn_form {
-	width:450px;
+	max-width:450px;
 }
 
 .float_form .box {

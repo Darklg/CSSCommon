@@ -13,6 +13,11 @@ Version: 1.1
 	width:940px;
 }
 
+.cssn-is-responsive .cssn-lay {
+	width:auto;
+	max-width:940px;
+}
+
 .cssn-lay > * {
 	display:table-cell;
 	vertical-align:top;

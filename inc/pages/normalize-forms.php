@@ -1,12 +1,19 @@
 <section class="block-content">
 	<h2 id="normalize-forms">Formulaires</h2>
-	<p>Un modèle de formulaire à labels flottants et un modèle simple. Cliquez ci-dessous.</p>
-<!--	<form id="form_demo" action="" class="cssn_form float_form" method="post"> -->
+	<p>
+	    Un modèle de formulaire à labels flottants et un modèle simple en paramétrant directement le form. <br />
+	    Cliquez sur les boutons ci-dessous pour découvrir les possibilités de CSSNormalize pour les formulaires.
+	</p>
+<!-- <form id="form_demo" action="/" class="cssn_form float_form" method="post"> -->
 	<form id="form_demo" action="/" class="cssn_form block_form" method="post">
 		<ul>
 			<li class="box buttons-box">
-				<a href="#normalize-forms" class="le-button" id="set_form_block"><span>Form type Block</span></a>
-				<a href="#normalize-forms" class="le-button" id="set_form_float"><span>Form type Float</span></a>
+				<a href="#normalize-forms" class="le-button" id="set_form_block"><span>Form Block</span></a>
+				<a href="#normalize-forms" class="le-button" id="set_form_float"><span>Form Flottant</span></a>
+			</li>
+			<li class="box buttons-box">
+				<a href="#normalize-forms" class="le-button" id="set_form_wide"><span>Form large</span></a>
+				<a href="#normalize-forms" class="le-button" id="set_form_normal"><span>Form normal</span></a>
 			</li>
 		</ul>
 		<fieldset>

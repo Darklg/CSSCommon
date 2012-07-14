@@ -23,6 +23,7 @@
         <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
+        <script src="js/functions.js"></script>
     </head>
 
     <!--[if lt IE 7 ]><body class="is_ie6 lt_ie7 lt_ie8 lt_ie9 lt_ie10"><![endif]--> 
@@ -68,25 +69,6 @@
     </footer>
     
     <a href="http://github.com/darklg/CSSNormalize" id="fork_me"><img src="images/fork_me.png" alt="Fork me on GitHub" /></a>
-    
-    <script>
-    function $(id){
-        return document.getElementById(id);
-    }
-    if($('set_form_float') && $('set_form_block') && $('set_form_wide') && $('set_form_block') && $('form_demo')){
-        $('set_form_float').addEventListener('click',function(){
-            $('form_demo').className = 'cssn_form float_form';
-        }); 
-        $('set_form_block').addEventListener('click',function(){
-            $('form_demo').className = 'cssn_form block_form';
-        }); 
-        $('set_form_wide').addEventListener('click',function(){
-            $('form_demo').style.width = 'auto';
-        });
-        $('set_form_normal').addEventListener('click',function(){
-            $('form_demo').style.width = '450px';
-        });
-    }
-    </script>
+    <script src="js/events.js"></script>    
     </body>
 </html>

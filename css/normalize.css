@@ -2,26 +2,26 @@
 /*
 Name: Normalize
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.1
+Version: 1.2
 */
 
 /* ----------------------------------------------------------
    Règlages de base
-   ------------------------------------------------------- */
+   ------------------------------------------------------- */
 
 html {
-	height:100%;
+    height: 100%;
 }
 
 body {
-	padding: 0 10px;
-	position:relative;
-	min-height:100%;
-	line-height:1;
+    position: relative;
+    padding: 10px;
+    min-height: 100%;
+    line-height: 1;
 }
 
 .lt_ie7 body {
-	height:100%;
+    height: 100%;
 }
 
 /* Prevents sub and sup affecting line-height in all browsers | gist.github.com/413930 */
@@ -38,129 +38,129 @@ input[type="submit"],input[type="image"],button{cursor:pointer;}
 
 /* ----------------------------------------------------------
    Contenu par défaut
-   ------------------------------------------------------- */
+   ------------------------------------------------------- */
 
 body {
-	font:62.5% Arial, Helvetica, sans-serif;
-	color:#212121; /* Dark Grey is the new black */
+    font: 62.5% Arial,Helvetica,sans-serif;
+    color: #212121;
 }
 
 .block-content {
-	margin-bottom:50px;
-	padding-bottom:50px;
-	border-bottom:1px solid #f0f0f0;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #f0f0f0;
 }
 
-h1,h2,h3,h4,h5 {
-	font-weight:bold;
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5 {
+    font-weight: bold;
 }
 
-h1 {
-	font-size:25px;
-	line-height:40px;
+h1, .h1 {
+    font-size: 25px;
+    line-height: 40px;
 }
 
-h2 {
-	margin:10px 0 5px 0;
-	font-size:20px;
-	line-height:30px;
+h2, .h2 {
+    margin: 10px 0 5px 0;
+    font-size: 20px;
+    line-height: 30px;
 }
 
-h3 {
-	margin:5px 0;
-	font-size:15px;
-	line-height:20px;
+h3, .h3 {
+    margin: 5px 0;
+    font-size: 15px;
+    line-height: 20px;
 }
 
-h4 {
-	margin:5px 0;
-	font-size:13px;
-	line-height:18px;
+h4, .h4 {
+    margin: 5px 0;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 p,
 li {
-	font-size:12px;
-	line-height:16px;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 .le-content ul,
 p {
-	margin-bottom:12px;
-}
-
-p:last-child {
-	margin-bottom:0;
+    margin-bottom: 12px;
 }
 
 .le-content ul ul {
-	margin-bottom:0;
-	padding-left:12px;
+    margin-bottom: 0;
+    padding-left: 12px;
 }
 
 .le-content ul:last-child,
 .le-content p:last-child {
-	margin-bottom:0;
+    margin-bottom: 0;
 }
 
 .le-content li {
-	list-style:inside disc;
+    list-style: inside disc;
 }
 
 /* ----------------------------------------------------------
    Liens
-   ------------------------------------------------------- */
+   ------------------------------------------------------- */
 
 a {
-	color:#69C;
+    color: #69C;
 }
 
 /* l'ajout d'un id permet de ne pas avoir à re-styliser :hover si on change la couleur plus tard */
 #main-container a:hover {
-	color:#C96;
+    color: #C96;
 }
 
 a:hover img {
-	filter: alpha(opacity=80);
-	opacity:0.80;
+    opacity: 0.80;
+    filter: alpha(opacity=80);
 }
 
 /* ----------------------------------------------------------
    Transitions
-   ------------------------------------------------------- */
+   ------------------------------------------------------- */
 
 a {
-	-webkit-transition:color 0.3s ease;
-	-moz-transition:color 0.3s ease;
-	-ms-transition:color 0.3s ease;
-	-o-transition:color 0.3s ease;
-	transition:color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 a img {
-	-webkit-transition: opacity 0.3s ease;
-	-moz-transition: opacity 0.3s ease;
-	-ms-transition: opacity 0.3s ease;
-	-o-transition: opacity 0.3s ease;
-	transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 /* ----------------------------------------------------------
    Layout
-   ------------------------------------------------------- */
+   ------------------------------------------------------- */
 
 #header,
 #footer,
 .block-content {
-	width:940px;
-	margin:0 auto;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .cssn-is-responsive #header,
 .cssn-is-responsive #footer,
 .cssn-is-responsive .block-content {
-	width:auto;
-	max-width:940px;
+    width: auto;
+    max-width: 940px;
 }
 
 /* ----------------------------------------------------------
@@ -168,7 +168,7 @@ a img {
    ------------------------------------------------------- */
 
 #fork_me {
-	position:absolute;
-	top:0;
-	right:0;
+    position: absolute;
+    top: 0;
+    right: 0;
 }

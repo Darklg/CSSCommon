@@ -2,41 +2,57 @@
 /*
 Name: Tables
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.0
+Version: 1.1
 */
 
 .le-tableau {
-	width:100%;
-	color:#333;
-	background:#fff;
+    width: 100%;
 }
 
 .le-tableau,
 .le-tableau tr,
 .le-tableau td,
 .le-tableau th {
-	border:1px solid #ccc;
-	border-collapse:collapse;
-	vertical-align:middle;
-}
-
-.le-tableau tr:hover {
-	color:#000;
-	background:#fafafa;
+    border-collapse: collapse;
+    vertical-align: middle;
 }
 
 .le-tableau td,
 .le-tableau th {
-	padding:5px;
-	font-size:12px;
+    padding: 5px;
+    font-size: 12px;
 }
 
 .le-tableau td {
-	text-align:left;
+    text-align: left;
 }
 
 .le-tableau th {
-	text-align:center;
-	font-weight:bold;
-	background:#f0f0f0;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* --------------------------
+    Thème du tableau
+   ----------------------- */
+
+.le-tableau {
+    color: #333;
+    background: #fff;
+}
+
+.le-tableau,
+.le-tableau tr,
+.le-tableau td,
+.le-tableau th {
+    border: 1px solid #ccc;
+}
+
+.le-tableau tr:hover {
+    color: #000;
+    background: #fafafa;
+}
+
+.le-tableau th {
+    background: #f0f0f0;
 }

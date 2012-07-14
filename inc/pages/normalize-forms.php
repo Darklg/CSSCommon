@@ -8,12 +8,12 @@
 	<form id="form_demo" action="/" class="cssn_form block_form" method="post">
 		<ul>
 			<li class="box buttons-box">
-				<a href="#normalize-forms" class="le-button" id="set_form_block"><span>Form Block</span></a>
-				<a href="#normalize-forms" class="le-button" id="set_form_float"><span>Form Flottant</span></a>
+				<a href="#normalize-forms" class="le-button" id="set_form_block">Form Block</a>
+				<a href="#normalize-forms" class="le-button" id="set_form_float">Form Flottant</a>
 			</li>
 			<li class="box buttons-box">
-				<a href="#normalize-forms" class="le-button" id="set_form_wide"><span>Form large</span></a>
-				<a href="#normalize-forms" class="le-button" id="set_form_normal"><span>Form normal</span></a>
+				<a href="#normalize-forms" class="le-button" id="set_form_wide">Form large</a>
+				<a href="#normalize-forms" class="le-button" id="set_form_normal">Form normal</a>
 			</li>
 		</ul>
 		<fieldset>
@@ -58,8 +58,8 @@
 					<input name="form_passwd" id="form_passwd" type="password" placeholder="Mot de passe" />
 				</li>
 				<li class="box buttons-box">
-					<a href="#" class="le-button"><span>Le button</span></a>
-					<button class="le-button"><span>Le button</span></button>
+					<a href="#" class="le-button">Le button</a>
+					<button class="le-button">Le button</button>
 				</li>
 				<li class="box checked-box">
 					<input type="checkbox" name="form_checkbox" id="form_checkbox" />

@@ -2,51 +2,62 @@
 /*
 Name: Boutons par défaut
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.1
+Version: 1.2
 */
 
+/* --------------------------
+    Base du bouton
+   ----------------------- */
 
 .le-button {
-	margin:0;
-	padding:0;
-	border:0;
-	vertical-align:middle;
-	background:#fff;
-	-webkit-user-select:none;
-	-moz-user-select:-moz-none;
-	user-select:none;
-	-webkit-user-drag:none;
-	-moz-user-drag:-moz-none;
-	user-drag:none;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-background-clip: padding-box;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: -moz-none;
+    user-drag: none;
+    *zoom: 1;
+    *display: inline;
+    -webkit-appearance: ;
 }
 
-.le-button > span {
-	height:25px;
-	padding:0 5px;
-	border:1px solid #ccc;
-	text-transform:uppercase;
-	font-size:12px;
-	line-height:25px;
-	white-space:nowrap;
-	-webkit-transition:background 0.3s ease;
-	-moz-transition:background 0.3s ease;
-	-o-transition:background 0.3s ease;
-	transition:background 0.3s ease;
-	color:#333;
+/* --------------------------
+    Thème basique du bouton
+   ----------------------- */
+
+.le-button {
+    height: 25px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font: 12px / 25px sans-serif;
+    color: #333;
+    background-color: #fff;
 }
 
-.le-button,
-.le-button > span {
-	display:inline-block;
-	zoom:1;
-	-webkit-border-radius:3px;
-	-moz-border-radius:3px;
-	border-radius:3px;
-	-webkit-background-clip:padding-box;
-	*display:inline;
-}
+/* Ajout d'un ID pour compatibilité avec CSSN */
 
-.le-button > span:hover {
-	border-color:#999;
-	background:#e0e0e0;
+#main-container .le-button:hover,
+.le-button:hover {
+    border-color: #999;
+    color: #000;
+    background: #e0e0e0;
 }

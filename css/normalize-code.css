@@ -2,7 +2,7 @@
 /*
 Name: Code Style
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.1
+Version: 1.2
 */
 
 /* ----------------------------------------------------------
@@ -15,9 +15,18 @@ kbd,
 samp {
     padding: 2px;
     border: 1px solid #ccc;
-    font: 12px 'Lucida Console',Monospace;
+    font: 11px/16px 'Lucida Console',Monospace;
     color: #676767;
     background: #f0f0f0;
+}
+
+pre:hover,
+code:hover,
+kbd:hover,
+samp:hover {
+    border:1px solid #d0d0d0;
+    color:#000;
+    background-color:#fff;
 }
 
 code {

@@ -2,42 +2,42 @@
 /*
 Name: Messages d'interaction
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.1.1
+Version: 1.2
 */
 
 .cssn_messages a {
-	display:block;
-	margin-bottom:5px;
-	padding:7px;
-	border:1px solid #ccc;
-	-webkit-border-radius:2px;
-	-moz-border-radius:2px;
-	border-radius:2px;
-	color:#333;
-	background:#fff;
-	-webkit-background-clip:padding-box;
+    display: block;
+    margin-bottom: 5px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #333;
+    background: #fff;
+    -webkit-background-clip: padding-box;
 }
 
 .cssn_messages .error {
-	border-color:#C66;
-	color:#800;
-	background-color:#FEE;
+    border-color: #C66;
+    color: #800;
+    background-color: #FEE;
 }
 
 .cssn_messages .notice {
-	border-color:#66C;
-	color:#008;
-	background-color:#EEF;
+    border-color: #66C;
+    color: #008;
+    background-color: #EEF;
 }
 
 .cssn_messages .success {
-	border-color:#6C6;
-	color:#080;
-	background-color:#EFE;
+    border-color: #6C6;
+    color: #080;
+    background-color: #EFE;
 }
 
 .cssn_messages .warning {
-	border-color:#CC6;
-	color:#880;
-	background-color:#FFE;
+    border-color: #CC6;
+    color: #880;
+    background-color: #FFE;
 }

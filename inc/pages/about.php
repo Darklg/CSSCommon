@@ -8,6 +8,7 @@
 			<li>Un <em>reset CSS</em> inspiré de celui de <a href="http://html5boilerplate.com/" target="_blank">HTML Boilerplate</a>.</li>
 			<li>Une feuille de style par défaut, stylisant les balises HTML les plus utilisées.</li>
 			<li>Une feuille d'objets CSS utilisés fréquemment.</li>
+			<li>Une feuille de démarrage basique.</li>
 			<li>Des modules fonctionnant indépendamment.</li>
 		</ul>
 		<h3>Sous-modules</h3>

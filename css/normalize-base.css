@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*
+Name: Base
+URL: http://github.com/Darklg/CSSNormalize
+Version: 1.0
+*/
+
+/* ----------------------------------------------------------
+   Layout
+   ------------------------------------------------------- */
+
+.block-content {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#header,
+#footer,
+.block-content {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.cssn-is-responsive #header,
+.cssn-is-responsive #footer,
+.cssn-is-responsive .block-content {
+    width: auto;
+    max-width: 940px;
+}
+
+/* ----------------------------------------------------------
+   Demo CSSNormalize
+   ------------------------------------------------------- */
+
+#fork_me {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

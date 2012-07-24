@@ -10,7 +10,7 @@
         
         <!-- Styles de base -->
         <link rel="stylesheet" href="css/reset.css?v=1.0.1" type="text/css" />
-        <link rel="stylesheet" href="css/normalize.css?v=1.2" type="text/css" />
+        <link rel="stylesheet" href="css/normalize.css?v=1.2.1" type="text/css" />
         <link rel="stylesheet" href="css/normalize-common.css?v=1.4.2" type="text/css" />
         <link rel="stylesheet" href="css/normalize-base.css?v=1.0" type="text/css" />
         

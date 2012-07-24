@@ -2,7 +2,7 @@
 /*
 Name: Normalize
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.2
+Version: 1.2.1
 */
 
 /* ----------------------------------------------------------
@@ -43,12 +43,6 @@ input[type="submit"],input[type="image"],button{cursor:pointer;}
 body {
     font: 62.5% Arial,Helvetica,sans-serif;
     color: #212121;
-}
-
-.block-content {
-    margin-bottom: 50px;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #f0f0f0;
 }
 
 h1, .h1,
@@ -143,32 +137,4 @@ a img {
     -ms-transition: opacity 0.3s ease;
     -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
-}
-
-/* ----------------------------------------------------------
-   Layout
-   ------------------------------------------------------- */
-
-#header,
-#footer,
-.block-content {
-    width: 940px;
-    margin: 0 auto;
-}
-
-.cssn-is-responsive #header,
-.cssn-is-responsive #footer,
-.cssn-is-responsive .block-content {
-    width: auto;
-    max-width: 940px;
-}
-
-/* ----------------------------------------------------------
-   Demo CSSNormalize
-   ------------------------------------------------------- */
-
-#fork_me {
-    position: absolute;
-    top: 0;
-    right: 0;
 }

@@ -1,233 +1,235 @@
 @charset "UTF-8";
+
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.4.1
+Version: 1.4.2
 */
 
 /* ----------------------------------------------------------
    Fixed footer // Technique inspirée de @Nalao
-   ------------------------------------------------------- */
+   ------------------------------------------------------- */
 
 body {
-	padding-bottom:30px;
+    padding-bottom: 30px;
 }
 
 .fixed-footer {
-	z-index:10;
-	position:fixed;
-	bottom:0;
-	left:0;
-	width:100%;
-	background:#000;
-	background:rgba(0,0,0,0.8);
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    background: rgba(0,0,0,0.8);
 }
 
 .fixed-footer ul {
-	width:960px;
-	margin:0 auto;
+    width: 960px;
+    margin: 0 auto;
 }
 
 .cssn-is-responsive .fixed-footer ul {
-	width:auto;
-	max-width:960px;
+    width: auto;
+    max-width: 960px;
 }
 
 .fixed-footer li {
-	display:inline-block;
-	*display:inline;
-	*zoom:1;
-	margin:0 10px;
+    display: inline-block;
+    margin: 0 10px;
+    *display: inline;
+    *zoom: 1;
 }
 
 .fixed-footer li a {
-	display:inline-block;*display:inline;zoom:1;
-	line-height:30px;
-	color:#fff;
+    display: inline-block;
+    zoom: 1;
+    line-height: 30px;
+    color: #fff;
+    *display: inline;
 }
 
 /* ----------------------------------------------------------
    Images masquées (Pour push, etc)
-   ------------------------------------------------------- */
+   ------------------------------------------------------- */
 
 .le_btn,
 .ir {
-	position:relative;
-	display:inline-block;
-	overflow : hidden;
-	text-indent:-9999px;
-	text-align:left;
-	white-space : nowrap;
-	*text-indent:0;
-	*color:transparent;
-	*font-size:1px;
-	*line-height:0;
-	*display:inline;
-	*zoom:1;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -9999px;
+    white-space: nowrap;
+    *text-indent: 0;
+    *color: transparent;
+    *font-size: 1px;
+    *line-height: 0;
+    *display: inline;
+    *zoom: 1;
 }
-
 
 /* ----------------------------------------------------------
    Bouton image
-   ------------------------------------------------------- */
+   ------------------------------------------------------- */
 
 /* Reset */
 
 .le_btn {
-	margin:0;
-	padding:0;
-	border:0;
-	outline:0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
 }
 
 /* Effets */
 
 .le_btn {
-	-moz-transition: opacity 0.3s ease;
-	-webkit-transition: opacity 0.3s ease;
-	-o-transition: opacity 0.3s ease;
-	transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 /* :Hover */
 
 .le_btn:focus,
 .le_btn:hover {
-	filter: alpha(opacity=50);
-	opacity:0.50;
+    opacity: 0.50;
+    filter: alpha(opacity=50);
 }
 
 /* ----------------------------------------------------------
    "..." automatique à la fin d'une ligne
-   ------------------------------------------------------- */
+   ------------------------------------------------------- */
 
 .non_depassement {
-	overflow:hidden;
-	white-space:nowrap;
-	text-overflow:ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 /* ----------------------------------------------------------
    Suppression d'élément
-   ------------------------------------------------------- */
+   ------------------------------------------------------- */
 
 .suppression_element {
-	font-size:1px;
-	color:transparent;
-	position:absolute;
-	top:-9999px;
-	left:-9999px;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    font-size: 1px;
+    color: transparent;
 }
 
 /* ----------------------------------------------------------
    Objet Tiroir
-   ------------------------------------------------------- */
+   ------------------------------------------------------- */
 
 .wdrw {
-	position:relative;
+    position: relative;
 }
 
 .wdrw > a {
-	display:block;
-	height:100%;
-	line-height:inherit;
+    display: block;
+    height: 100%;
+    line-height: inherit;
 }
 
 .wdrw .submenu {
-	visibility:hidden;
-	position:absolute;
-	top:100%;
-	left:0;
-	line-height:1;
-	-webkit-transition:opacity 0.3s ease;
-	-moz-transition:opacity 0.3s ease;
-	-ms-transition:opacity 0.3s ease;
-	-o-transition:opacity 0.3s ease;
-	transition:opacity 0.3s ease;
-	opacity:0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: 1;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .wdrw > a:focus + .submenu,
 .wdrw:hover .submenu {
-	z-index: 999;
-	visibility:visible;
-	opacity:1;
+    visibility: visible;
+    z-index: 999;
+    opacity: 1;
 }
 
 /* ----------------------------------------------------------
    Block Media : Bloc avec flottant
    From @Stubbornella : http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
-   ------------------------------------------------------- */
+   ------------------------------------------------------- */
 
 .bmedia,
 .bmedia-right,
 .bm-cont {
-    display:block;
-    zoom:1;
-    overflow:hidden;
-    _overflow:visible;
+    display: block;
+    zoom: 1;
+    overflow: hidden;
+    _overflow: visible;
 }
 
-.bmedia > :first-child {
-    float:left;
-    margin-right:10px;
+.bmedia >:first-child {
+    float: left;
+    margin-right: 10px;
 }
 
-.bmedia-right > :first-child {
-    float:right;
-    margin-left:10px;
+.bmedia-right >:first-child {
+    float: right;
+    margin-left: 10px;
 }
-
 
 /* ----------------------------------------------------------
    Barre d'avancement
    ------------------------------------------------------- */
+
 /* <span class="lvl-barre"><span class="bar"></span></span> */
 
 .lvl-barre {
-    display:inline-block;
-    position:relative;
-    margin:3px;
-    *display:inline;
-    *zoom:1;
+    display: inline-block;
+    position: relative;
+    margin: 3px;
+    *display: inline;
+    *zoom: 1;
 }
 
 .lvl-barre .bar,
 .lvl-barre:before {
-    position:absolute;
+    position: absolute;
 }
 
 .lvl-barre:before {
-    content:'';
-    border:3px solid #ccc;
-    z-index:9;
-    top:-3px;
-    right:-3px;
-    bottom:-3px;
-    left:-3px;
-    -webkit-border-radius:10px;
-    -moz-border-radius:10px;
-    border-radius:10px;
+    content: '';
+    z-index: 9;
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    left: -3px;
+    border: 3px solid #ccc;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 
 .lvl-barre .bar {
-    top:0;
-    bottom:0;
-    left:0;
-    width:0%;
-    max-width:100%;
-    -webkit-border-radius:10px;
-    -moz-border-radius:10px;
-    border-radius:10px;
-    -webkit-background-clip:border;
-    -moz-background-clip:border;
-    background-clip:border;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    max-width: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
     background: rgba(0,0,0,0) no-repeat 0 0;
-    background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2)); 
-    background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2)); 
-    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(0,0,0,0)),color-stop(1, rgba(0,0,0,0.2))); 
-    background-image: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2)); 
-    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2));
+    background-image: -moz-linear-gradient(top,rgba(0,0,0,0) ,rgba(0,0,0,0.2) );
+    background-image: -o-linear-gradient(top,rgba(0,0,0,0) ,rgba(0,0,0,0.2) );
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(0,0,0,0) ),color-stop(1,rgba(0,0,0,0.2) ));
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0) ,rgba(0,0,0,0.2) );
+    background-image: linear-gradient(rgba(0,0,0,0) ,rgba(0,0,0,0.2) );
+    -webkit-background-clip: border;
+    -moz-background-clip: border;
+    background-clip: border;
     -webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
     -moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
     box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
@@ -236,15 +238,14 @@ body {
 /* Style démo */
 
 .lvl-barre {
-    width:100px;
-    height:15px;
+    width: 100px;
+    height: 15px;
 }
 
 .lvl-barre:before {
-    border-color:#F0F0F0;
+    border-color: #F0F0F0;
 }
 
 .lvl-barre .bar {
-    background-color:red;
+    background-color: red;
 }
-​

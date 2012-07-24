@@ -1,8 +1,9 @@
 @charset "UTF-8";
+
 /*
 Name: Normalize
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.2.1
+Version: 1.2.2
 */
 
 /* ----------------------------------------------------------
@@ -15,7 +16,6 @@ html {
 
 body {
     position: relative;
-    padding: 10px;
     min-height: 100%;
     line-height: 1;
 }

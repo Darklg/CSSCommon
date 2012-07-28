@@ -3,7 +3,7 @@
 /*
 Name: Base
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.1.1
+Version: 1.2
 */
 
 /* ----------------------------------------------------------
@@ -34,4 +34,21 @@ Version: 1.1.1
 .cssn-is-responsive .block-content {
     width: auto;
     max-width: 940px;
+}
+
+/* ----------------------------------------------------------
+   Contenu
+   ------------------------------------------------------- */
+
+.content-container {
+    position: relative;
+    padding: 20px;
+}
+
+/* Zone élargie */
+
+.large-content-area {
+    position: relative;
+    margin-right: -20px;
+    margin-left: -20px;
 }

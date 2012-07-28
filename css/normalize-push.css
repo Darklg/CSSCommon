@@ -1,8 +1,9 @@
 @charset "UTF-8";
+
 /*
 Name: Push
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.0.4
+Version: 1.0.5
 */
 
 /* ----------------------------------------------------------
@@ -58,36 +59,4 @@ Version: 1.0.4
 .le_push:hover .background {
     opacity: 1;
     filter: alpha(opacity=100);
-}
-
-/* ----------------------------------------------------------
-   Exemple de push
-   ------------------------------------------------------- */
-
-.push_double,
-.push_simple {
-    width: 300px;
-    height: 100px;
-}
-
-.push_double .before,
-.push_simple {
-    background-image: url(../images/300x100-black.png);
-}
-
-.push_double .after,
-.push_simple .after {
-    background-image: url(../images/300x100-grey.png);
-}
-
-/* ----------------------------------------------------------
-   Demo
-   ------------------------------------------------------- */
-
-.block-normalize-push .the_grid {
-    margin-bottom: 10px;
-}
-
-.block-normalize-push pre {
-    margin-bottom: 8px;
 }

@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="css/normalize-messages.css?v=1.2" type="text/css" />
         <link rel="stylesheet" href="css/normalize-code.css?v=1.2" type="text/css" />
         <link rel="stylesheet" href="css/normalize-gallery.css?v=1.1" type="text/css" />
-        <link rel="stylesheet" href="css/normalize-push.css?v=1.0.4" type="text/css" />
+        <link rel="stylesheet" href="css/normalize-push.css?v=1.0.5" type="text/css" />
         <link rel="stylesheet" href="css/normalize-modeles.css?v=1.3.5" type="text/css" />
         <link rel="stylesheet" href="css/normalize-layouts.css?v=1.1" type="text/css" />
         <link rel="stylesheet" href="css/normalize-tabs.css?v=1.0" type="text/css" />

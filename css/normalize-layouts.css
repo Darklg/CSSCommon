@@ -1,105 +1,123 @@
 @charset "UTF-8";
+
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.1
+Version: 1.2
 */
 
 /* ----------------------------------------------------------
    Base des layouts
-   ------------------------------------------------------- */
+   ------------------------------------------------------- */
 
 .cssn-lay {
-	width:940px;
+    display: table;
+    width: 940px;
+    table-layout: fixed;
+    color:#ccc;
+}
+
+.lt_ie8 .cssn-lay {
+    display: block;
 }
 
 .cssn-is-responsive .cssn-lay {
-	width:auto;
-	max-width:940px;
+    width: auto;
+    max-width: 940px;
 }
 
 .cssn-lay > * {
-	display:table-cell;
-	vertical-align:top;
+    display: table-cell;
+    vertical-align: top;
 }
 
 .lt_ie8 .cssn-lay > * {
-	display:block;
-	float:left;
+    display: block;
+    float: left;
 }
 
 /* Base de style */
 
 .cssn-lay > * + * {
-	padding-left:20px;
+    padding-left: 20px;
 }
 
 .cssn-lay > .col-side {
-	width:200px;
+    width: 200px;
 }
 
 .cssn-lay > .col-main {
-	width:720px;
+    width: 720px;
 }
 
 /* Wide layout d'exemple */
 
 .clay-wide > .col-side {
-	width:300px;
+    width: 300px;
 }
 
 .clay-wide > .col-main {
-	width:620px;
+    width: 620px;
 }
 
 /* Responsive Layout */
 
 @media all and (max-width:600px) {
-    
-    /* Container mis en largeur fluide, pour l'exemple */
     #bc-layouts {
-        width:auto;
-        padding:10px;
+        width: auto;
+        padding: 10px;
     }
     
     .clay-resp {
-        width:auto;
+        width: auto;
     }
     
-	.clay-resp > .col-side,
-	.clay-resp > .col-main {
-    	display:block;
-    	width:100%;
+    .clay-resp > .col-side,
+    .clay-resp > .col-main {
+        display: block;
+        width: 100%;
     }
     
     .clay-resp > .col-side .liste-widgets > * {
-        display:inline-block;
-        width:48%;
+        display: inline-block;
+        width: 48%;
     }
     
-    .clay-resp > .col-side .liste-widgets > :nth-child(even) {
-        margin-left:2%;
+    .clay-resp > .col-side .liste-widgets >:nth-child(even) {
+        margin-left: 2%;
     }
     
     .cssn-lay > * + * {
-    	padding-left:0;
+        padding-left: 0;
     }
 }
 
 @media all and (max-width:400px) {
     .clay-resp > .col-side .liste-widgets > * {
-        display:block;
+        display: block;
     }
     
-    .clay-resp > .col-side .liste-widgets > :nth-child(even) {
-        margin-left:0;
+    .clay-resp > .col-side .liste-widgets >:nth-child(even) {
+        margin-left: 0;
     }
 }
 
 /* Styles pour le debug */
-.liste-widgets {overflow:hidden;}
+
+.liste-widgets {
+    overflow: hidden;
+}
 
 /* Couleurs pour le Debug */
-.cssn-lay {background-color:#c0c0c0;}
-.cssn-lay > .col-main {background-color:#e0e0e0;}
-.cssn-lay > .col-side {background-color:#f0f0f0;}
+
+.cssn-lay {
+    background-color: #c0c0c0;
+}
+
+.cssn-lay > .col-main {
+    background-color: #e0e0e0;
+}
+
+.cssn-lay > .col-side {
+    background-color: #f0f0f0;
+}

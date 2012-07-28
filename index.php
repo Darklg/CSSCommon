@@ -16,7 +16,7 @@
         
         <!-- Modules -->
         <link rel="stylesheet" href="css/normalize-buttons.css?v=1.2" type="text/css" />
-        <link rel="stylesheet" href="css/normalize-forms.css?v=1.3" type="text/css" />
+        <link rel="stylesheet" href="css/normalize-forms.css?v=1.3.1" type="text/css" />
         <link rel="stylesheet" href="css/normalize-tables.css?v=1.1" type="text/css" />
         <link rel="stylesheet" href="css/normalize-grid.css?v=1.1.0.1" type="text/css" />
         <link rel="stylesheet" href="css/normalize-messages.css?v=1.2" type="text/css" />

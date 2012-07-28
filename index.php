@@ -27,6 +27,9 @@
         <link rel="stylesheet" href="css/normalize-layouts.css?v=1.1" type="text/css" />
         <link rel="stylesheet" href="css/normalize-tabs.css?v=1.0" type="text/css" />
         
+        <!-- Style du site de démo -->
+        <link rel="stylesheet" href="css/demo.css?v=1.0" type="text/css" />
+
         <!-- Scripts -->
         <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
         <script src="js/functions.js"></script>

@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/*
+Name: Style de démo
+URL: http://github.com/Darklg/CSSNormalize
+Version: 1.0
+*/
+
+/* ----------------------------------------------------------
+   Contenu
+   ------------------------------------------------------- */
+
+#fork_me {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#header {
+    padding-top: 10px;
+}
+
+.container-about {
+    margin: 15px 0;
+    padding: 15px 0;
+    border: 1px solid #d5d5d5;
+    border-width: 1px 0;
+    background-color: #f5f5f5;
+}
+
+.container-about h2 {
+    margin-top: 0;
+}
+
+.block-content {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* ----------------------------------------------------------
+   Push
+   ------------------------------------------------------- */
+
+.block-normalize-push .the_grid {
+    margin-bottom: 10px;
+}
+
+.block-normalize-push pre {
+    margin-bottom: 8px;
+}
+
+/* Exemple de push */
+
+.push_double,
+.push_simple {
+    width: 300px;
+    height: 100px;
+}
+
+.push_double .before,
+.push_simple {
+    background-image: url(../images/300x100-black.png);
+}
+
+.push_double .after,
+.push_simple .after {
+    background-image: url(../images/300x100-grey.png);
+}
+
+/* ----------------------------------------------------------
+   Formulaires
+   ------------------------------------------------------- */
+
+.cssn_form {
+    max-width: 100%;
+}

@@ -3,7 +3,7 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.2
+Version: 1.2.1
 */
 
 /* ----------------------------------------------------------
@@ -67,36 +67,36 @@ Version: 1.2
         padding: 10px;
     }
     
-    .clay-resp {
+    .cssn-is-responsive .clay-resp {
         width: auto;
     }
     
-    .clay-resp > .col-side,
-    .clay-resp > .col-main {
+    .cssn-is-responsive .clay-resp > .col-side,
+    .cssn-is-responsive .clay-resp > .col-main {
         display: block;
         width: 100%;
     }
     
-    .clay-resp > .col-side .liste-widgets > * {
+    .cssn-is-responsive .clay-resp > .col-side .liste-widgets > * {
         display: inline-block;
         width: 48%;
     }
     
-    .clay-resp > .col-side .liste-widgets >:nth-child(even) {
+    .cssn-is-responsive .clay-resp > .col-side .liste-widgets >:nth-child(even) {
         margin-left: 2%;
     }
     
-    .cssn-lay > * + * {
+    .cssn-is-responsive .cssn-lay > * + * {
         padding-left: 0;
     }
 }
 
 @media all and (max-width:400px) {
-    .clay-resp > .col-side .liste-widgets > * {
+    .cssn-is-responsive .clay-resp > .col-side .liste-widgets > * {
         display: block;
     }
     
-    .clay-resp > .col-side .liste-widgets >:nth-child(even) {
+    .cssn-is-responsive .clay-resp > .col-side .liste-widgets >:nth-child(even) {
         margin-left: 0;
     }
 }

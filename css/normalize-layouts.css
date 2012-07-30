@@ -3,7 +3,7 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.2.3
+Version: 1.2.4
 */
 
 /* ----------------------------------------------------------
@@ -85,7 +85,7 @@ Version: 1.2.3
     .cssn-is-responsive .clay-resp > .col-side,
     .cssn-is-responsive .clay-resp > .col-main {
         display: block;
-        width: 100%;
+        width: auto;
     }
     
     .cssn-is-responsive .clay-resp > .col-side .liste-widgets > * {
@@ -121,7 +121,7 @@ Version: 1.2.3
 /* Couleurs pour le Debug */
 
 .cssn-lay {
-    background-color: #c0c0c0;
+    background-color: #d0d0d0;
 }
 
 .cssn-lay > .col-main {

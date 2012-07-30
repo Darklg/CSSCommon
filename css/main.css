@@ -24,4 +24,4 @@ Attention : Ne pas utiliser @import dans vos feuilles.
 @import 'normalize-tabs.css?v=1.0';
 
 /* Style du site de démo */
-@import 'demo.css?v=1.0';
+@import 'demo.css?v=1.0.1';

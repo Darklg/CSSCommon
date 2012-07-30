@@ -3,7 +3,7 @@
 /*
 Name: Style de démo
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.0
+Version: 1.0.1
 */
 
 /* ----------------------------------------------------------
@@ -32,10 +32,10 @@ Version: 1.0
     margin-top: 0;
 }
 
-.block-content {
-    margin-bottom: 50px;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #f0f0f0;
+.block-content + .block-content {
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 1px solid #f0f0f0;
 }
 
 /* ----------------------------------------------------------

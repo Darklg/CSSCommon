@@ -3,7 +3,7 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.2.1
+Version: 1.2.2
 */
 
 /* ----------------------------------------------------------
@@ -41,8 +41,16 @@ Version: 1.2.1
     padding-left: 20px;
 }
 
+.clay-resp > * + * {
+    padding-left: 0;
+}
+
 .cssn-lay > .col-side {
     width: 200px;
+}
+
+.clay-resp > .col-side {
+    width: 220px;
 }
 
 .cssn-lay > .col-main {

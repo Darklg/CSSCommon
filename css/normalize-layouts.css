@@ -3,7 +3,7 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.2.2
+Version: 1.2.3
 */
 
 /* ----------------------------------------------------------
@@ -20,9 +20,12 @@ Version: 1.2.2
     display: block;
 }
 
-.cssn-is-responsive .cssn-lay {
-    width: auto;
-    max-width: 940px;
+/* Responsive uniquement pour les navigateurs supportés */
+@media(min-width:1px) {
+    .cssn-is-responsive .cssn-lay {
+        width: auto;
+        max-width: 940px;
+    }
 }
 
 .cssn-lay > * {

@@ -8,7 +8,7 @@
 		   </div>
 	   </div>
 	   <div class="col-side">
-	       <ul class="liste-widgets">
+	       <ul class="liste-widgets content-container">
                <li>
                    <h3>A Widget</h3>
                    <ul>

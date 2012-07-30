@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         
         <!-- Magie des navigateurs -->
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=1020" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
         <!-- Feuilles Normalize -->

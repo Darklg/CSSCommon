@@ -20,6 +20,10 @@ Version: 1.0.1
     padding-top: 10px;
 }
 
+.cssn-is-responsive #header {
+    padding:20px 20px 10px 20px;
+}
+
 .container-about {
     margin: 15px 0;
     padding: 15px 0;

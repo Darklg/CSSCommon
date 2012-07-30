@@ -9,7 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         
         <!-- Feuilles Normalize -->
-        <link rel="stylesheet" href="css/main.css?v=2012-07-30-18-15" type="text/css" />
+        <link rel="stylesheet" href="css/main.css?v=2012-07-30-21-15" type="text/css" />
 
         <!-- Scripts -->
         <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->

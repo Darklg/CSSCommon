@@ -3,7 +3,7 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.2.4
+Version: 1.3
 */
 
 /* ----------------------------------------------------------
@@ -16,21 +16,13 @@ Version: 1.2.4
     table-layout: fixed;
 }
 
-.lt_ie8 .cssn-lay {
-    display: block;
-}
-
-/* Responsive uniquement pour les navigateurs supportés */
-@media(min-width:1px) {
-    .cssn-is-responsive .cssn-lay {
-        width: auto;
-        max-width: 940px;
-    }
-}
-
 .cssn-lay > * {
     display: table-cell;
     vertical-align: top;
+}
+
+.lt_ie8 .cssn-lay {
+    display: block;
 }
 
 .lt_ie8 .cssn-lay > * {
@@ -44,16 +36,8 @@ Version: 1.2.4
     padding-left: 20px;
 }
 
-.clay-resp > * + * {
-    padding-left: 0;
-}
-
 .cssn-lay > .col-side {
     width: 200px;
-}
-
-.clay-resp > .col-side {
-    width: 220px;
 }
 
 .cssn-lay > .col-main {
@@ -72,6 +56,33 @@ Version: 1.2.4
 
 /* Responsive Layout */
 
+.clay-resp {
+    width: 100%;
+    max-width: 940px;
+}
+
+.lt_ie9 .clay-resp {
+    min-width: 800px;
+}
+
+.clay-resp > * + * {
+    padding-left: 0;
+}
+
+.clay-resp > .col-main {
+    width: 720px;
+}
+
+@media(min-width:1px) {
+    .clay-resp > .col-main {
+        width: auto;
+    }
+}
+
+.clay-resp > .col-side {
+    width: 220px;
+}
+
 @media all and (max-width:600px) {
     #bc-layouts {
         width: auto;
@@ -79,6 +90,7 @@ Version: 1.2.4
     }
     
     .cssn-is-responsive .clay-resp {
+        display: block;
         width: auto;
     }
     

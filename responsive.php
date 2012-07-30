@@ -27,7 +27,7 @@
         
         <header id="header">
             <h1>CSS Normalize - Framework CSS</h1>
-            <p>Demo utilisant le Responsive layout de CSSNormalize.  <a href="index.php">Retour au framework</a>.</p>
+            <p>Demo utilisant le Responsive layout de CSSNormalize.<br /> Work in progress. <a href="index.php">Retour au framework</a>.</p>
         </header>
         
         <?php include dirname(__FILE__).'/inc/pages/responsive-layout.php'; ?>

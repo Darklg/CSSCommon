@@ -3,7 +3,7 @@
 /*
 Name: Normalize
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.2.2
+Version: 1.2.3
 */
 
 /* ----------------------------------------------------------
@@ -110,6 +110,7 @@ a {
 }
 
 /* l'ajout d'un id permet de ne pas avoir à re-styliser :hover si on change la couleur plus tard */
+a:hover,
 #main-container a:hover {
     color: #C96;
 }

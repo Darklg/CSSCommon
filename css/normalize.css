@@ -3,7 +3,7 @@
 /*
 Name: Normalize
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.2.3
+Version: 1.2.4
 */
 
 /* ----------------------------------------------------------
@@ -51,6 +51,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5 {
     font-weight: bold;
+    display:block;
 }
 
 h1, .h1 {
@@ -93,7 +94,7 @@ p {
 }
 
 .le-content ul:last-child,
-.le-content p:last-child {
+p:last-child {
     margin-bottom: 0;
 }
 

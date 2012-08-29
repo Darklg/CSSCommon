@@ -2,7 +2,7 @@
 /*
 Name: Base Reset ( from HTML Boilerplate )
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.0.3
+Version: 1.0.4
 */
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
@@ -36,7 +36,7 @@ del{text-decoration:line-through;}
 strong{font-weight:bold}
 em{font-style:italic}
 /* tables still need 'cellspacing="0"' in the markup */
-table{border-collapse:collapse;border-spacing:0;}
+table{border-collapse:collapse;border-spacing:0;width:100%;}
 nav ul { list-style:none; }
 input, select {vertical-align:middle;}
 /* align checkboxes, radios, text inputs with their label */

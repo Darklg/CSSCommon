@@ -3,51 +3,8 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.4.3
+Version: 1.5
 */
-
-/* ----------------------------------------------------------
-   Fixed footer // Technique inspirée de @Nalao
-   ------------------------------------------------------- */
-
-body {
-    padding-bottom: 30px;
-}
-
-.fixed-footer {
-    z-index: 10;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #000;
-    background: rgba(0,0,0,0.8);
-}
-
-.fixed-footer ul {
-    width: 960px;
-    margin: 0 auto;
-}
-
-.cssn-is-responsive .fixed-footer ul {
-    width: auto;
-    max-width: 960px;
-}
-
-.fixed-footer li {
-    display: inline-block;
-    margin: 0 10px;
-    *display: inline;
-    *zoom: 1;
-}
-
-.fixed-footer li a {
-    display: inline-block;
-    zoom: 1;
-    line-height: 30px;
-    color: #fff;
-    *display: inline;
-}
 
 /* ----------------------------------------------------------
    Images masquées (Pour push, etc)
@@ -87,6 +44,7 @@ body {
 .le_btn {
     -webkit-transition: opacity 0.3s ease;
     -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
     -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
 }
@@ -142,6 +100,7 @@ body {
     left: 0;
     line-height: 1;
     opacity: 0;
+    background-color: #fff;
     -webkit-transition: opacity 0.3s ease;
     -moz-transition: opacity 0.3s ease;
     -ms-transition: opacity 0.3s ease;
@@ -189,12 +148,11 @@ body {
    Barre d'avancement
    ------------------------------------------------------- */
 
-/* <span class="lvl-barre"><span class="bar"></span></span> */
-
 .lvl-barre {
     display: inline-block;
     position: relative;
     margin: 3px;
+    vertical-align: middle;
     *display: inline;
     *zoom: 1;
 }

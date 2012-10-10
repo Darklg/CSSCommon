@@ -3,7 +3,7 @@
 /*
 Name: Style de démo
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.0.1
+Version: 1.1
 */
 
 /* ----------------------------------------------------------
@@ -21,7 +21,7 @@ Version: 1.0.1
 }
 
 .cssn-is-responsive #header {
-    padding:20px 20px 10px 20px;
+    padding: 20px 20px 10px 20px;
 }
 
 .container-about {
@@ -78,4 +78,57 @@ Version: 1.0.1
 
 .cssn_form {
     max-width: 450px;
+}
+
+/* ----------------------------------------------------------
+   Divers
+   ------------------------------------------------------- */
+
+.demo-ir {
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/100x100-black.png);
+}
+
+/* ----------------------------------------------------------
+   Fixed footer // Technique inspirée de @Nalao
+   ------------------------------------------------------- */
+
+body {
+    padding-bottom: 30px;
+}
+
+.fixed-footer {
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    background: rgba(0,0,0,0.8);
+}
+
+.fixed-footer ul {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.cssn-is-responsive .fixed-footer ul {
+    width: auto;
+    max-width: 960px;
+}
+
+.fixed-footer li {
+    display: inline-block;
+    margin: 0 8px;
+    *display: inline;
+    *zoom: 1;
+}
+
+.fixed-footer li a {
+    display: inline-block;
+    zoom: 1;
+    line-height: 30px;
+    color: #fff;
+    *display: inline;
 }

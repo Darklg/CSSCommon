@@ -7,7 +7,7 @@ Attention : Ne pas utiliser @import dans vos feuilles.
 /* Styles de base */
 @import 'reset.css?v=1.0.4';
 @import 'normalize.css?v=1.3.2';
-@import 'normalize-common.css?v=1.5';
+@import 'normalize-common.css?v=1.6';
 @import 'normalize-base.css?v=1.2';
 
 /* Modules */
@@ -16,8 +16,6 @@ Attention : Ne pas utiliser @import dans vos feuilles.
 @import 'normalize-tables.css?v=1.1';
 @import 'normalize-grid.css?v=1.1.0.1';
 @import 'normalize-messages.css?v=1.2';
-@import 'normalize-code.css?v=1.2';
-@import 'normalize-gallery.css?v=1.1';
 @import 'normalize-push.css?v=1.0.5';
 @import 'normalize-modeles.css?v=1.3.5';
 @import 'normalize-layouts.css?v=1.3';

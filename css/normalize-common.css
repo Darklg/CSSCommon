@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.5
+Version: 1.6
 */
 
 /* ----------------------------------------------------------
@@ -185,11 +185,11 @@ Version: 1.5
     -moz-border-radius: 10px;
     border-radius: 10px;
     background: rgba(0,0,0,0) no-repeat 0 0;
-    background-image: -moz-linear-gradient(top,rgba(0,0,0,0) ,rgba(0,0,0,0.2) );
-    background-image: -o-linear-gradient(top,rgba(0,0,0,0) ,rgba(0,0,0,0.2) );
+    background-image: -moz-linear-gradient(top,rgba(0,0,0,0), rgba(0,0,0,0.2) );
+    background-image: -o-linear-gradient(top,rgba(0,0,0,0), rgba(0,0,0,0.2) );
     background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(0,0,0,0) ),color-stop(1,rgba(0,0,0,0.2) ));
-    background-image: -webkit-linear-gradient(rgba(0,0,0,0) ,rgba(0,0,0,0.2) );
-    background-image: linear-gradient(rgba(0,0,0,0) ,rgba(0,0,0,0.2) );
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2) );
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2) );
     -webkit-background-clip: border;
     -moz-background-clip: border;
     background-clip: border;
@@ -211,4 +211,71 @@ Version: 1.5
 
 .lvl-barre .bar {
     background-color: red;
+}
+
+/* ----------------------------------------------------------
+   Style du code
+   ------------------------------------------------------- */
+
+pre,
+code,
+kbd,
+samp {
+    padding: 2px;
+    border: 1px solid #ccc;
+    font: 11px/16px 'Lucida Console',Monospace;
+    color: #676767;
+    background: #f0f0f0;
+}
+
+pre:hover,
+code:hover,
+kbd:hover,
+samp:hover {
+    border: 1px solid #d0d0d0;
+    color: #000;
+    background-color: #fff;
+}
+
+code {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+pre {
+    margin-bottom: 12px;
+}
+
+/* ----------------------------------------------------------
+   Gallery
+   ------------------------------------------------------- */
+
+/* Peut se merger avec le clear de grid */
+
+.subfloat:after {
+    content: " ";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+
+.subfloat {
+    position: relative;
+}
+
+.subfloat > * {
+    float: left;
+}
+
+/* margin-right = 0-marge droite d'un élément */
+
+.sf_100_20 {
+    margin-right: -20px;
+}
+
+.sf_100_20 > * {
+    width: 100px;
+    margin: 0 20px 20px 0;
 }

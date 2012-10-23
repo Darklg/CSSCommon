@@ -1,8 +1,9 @@
 @charset "UTF-8";
+
 /*
 Name: Boutons par défaut
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.2
+Version: 1.3
 */
 
 /* --------------------------
@@ -34,6 +35,19 @@ Version: 1.2
     *zoom: 1;
     *display: inline;
     -webkit-appearance: ;
+}
+
+.le-button:before,
+.le-button:after {
+    vertical-align: 0;
+}
+
+.le-button:before {
+    margin-right: 8px;
+}
+
+.le-button:after {
+    margin-left: 8px;
 }
 
 /* --------------------------

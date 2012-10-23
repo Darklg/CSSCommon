@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.6
+Version: 1.6.1
 */
 
 /* ----------------------------------------------------------
@@ -18,6 +18,7 @@ Version: 1.6
     text-align: left;
     text-indent: -9999px;
     white-space: nowrap;
+    background: transparent no-repeat top left;
     *text-indent: 0;
     *color: transparent;
     *font-size: 1px;

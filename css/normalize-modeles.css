@@ -1,8 +1,9 @@
 @charset "UTF-8";
+
 /*
 Name: Modèles basiques
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.3.5
+Version: 1.3.6
 */
 
 /* ----------------------------------------------------------
@@ -10,13 +11,13 @@ Version: 1.3.5
    ------------------------------------------------------- */
 
 .cssn_pagination_center {
-	text-align:center;
+    text-align: center;
 }
 
 .cssn_pagination * {
-	display:inline-block;
-	*display:inline;
-	zoom:1;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
 }
 
 /* Style d'exemple */
@@ -24,27 +25,27 @@ Version: 1.3.5
 .cssn_pagination span,
 .cssn_pagination strong,
 .cssn_pagination a {
-	padding:0 7px;
-	border:1px solid #eee;
-	-webkit-border-radius:3px;
-	-moz-border-radius:3px;
-	border-radius:3px;
-	-webkit-background-clip:border;
+    padding: 0 7px;
+    border: 1px solid #eee;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-background-clip: border;
 }
 
 .cssn_pagination * {
-	line-height:30px;
+    line-height: 30px;
 }
 
 .cssn_pagination {
-	margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
 .cssn_pagination strong,
 .cssn_pagination .current,
 .cssn_pagination a:focus,
 .cssn_pagination a:hover {
-	border-color:#ccc;
+    border-color: #ccc;
 }
 
 /* ----------------------------------------------------------
@@ -52,137 +53,142 @@ Version: 1.3.5
    ------------------------------------------------------- */
 
 .cssn_mainnav {
-	vertical-align:middle;
+    vertical-align: middle;
 }
 
 .cssn_mainmenu {
-	height:100%;
+    height: 100%;
 }
 
 .cssn_mainmenuplus {
-	float:right;
+    z-index: 4;
+    float: right;
+    position: relative;
 }
 
 .cssn_mainmenuplus > li > a,
 .cssn_mainmenuplus > li,
 .cssn_mainmenu > li > a,
 .cssn_mainmenu > li {
-	float:left;
+    float: left;
 }
 
 .cssn_mainmenuplus > li > a,
 .cssn_mainmenu > li > a {
-	display:block;
-	vertical-align:middle;
+    display: block;
+    vertical-align: middle;
 }
 
 /* Gestion sous-menu */
 
 .cssn_mainmenu:hover,
 .cssn_mainmenu:hover > li {
-	position:relative;
-	z-index: 3;
+    z-index: 3;
+    position: relative;
 }
 
 /* Si sous-menu de largeur 100% */
+
 .cssn_mainmenu:hover > .richsubmenu {
-	position:static;
+    position: static;
 }
+
 .richsubmenu .submenu {
-	position:absolute;
-	right:0;
-	width:auto;
-	overflow:hidden;
-	white-space:nowrap;
+    position: absolute;
+    right: 0;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 /* Si sous-menu de largeur fixe*/
+
 .richsubmenu2 > .submenu {
-	width:600px;
+    width: 600px;
 }
 
 .cssn_mainmenu .submenu {
-	visibility:hidden;
-	z-index:2;
-	position:absolute;
-	top:100%;
-	left:0;
-	white-space:nowrap;
-	-webkit-transition:opacity 0.3s ease;
-	-moz-transition:opacity 0.3s ease;
-	-ms-transition:opacity 0.3s ease;
-	-o-transition:opacity 0.3s ease;
-	transition:opacity 0.3s ease;
-	opacity:0;
+    visibility: hidden;
+    z-index: 2;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    white-space: nowrap;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .cssn_mainmenu > li > a:focus + .submenu,
 .cssn_mainmenu > li:hover .submenu {
-	visibility:visible;
-	opacity:1;
+    visibility: visible;
+    opacity: 1;
 }
 
 .cssn_mainmenu .submenu a {
-	white-space:nowrap;
+    white-space: nowrap;
 }
 
 .cssn_mainmenu .submenu .subcol > ul,
 .cssn_mainmenu .submenu .subcol {
-	float:left;
+    float: left;
 }
 
 /* Style d'exemple */
 
 .cssn_mainnav {
-	height:30px;
-	margin-bottom:30px;
-	border:1px solid #eee;
+    height: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
 }
 
 .cssn_mainmenuplus > li > a,
 .cssn_mainmenuplus > li,
 .cssn_mainmenu > li > a,
 .cssn_mainmenu > li {
-	line-height:30px;
+    line-height: 30px;
 }
 
 .cssn_mainmenuplus {
-	border-left:1px solid #eee;
+    border-left: 1px solid #eee;
 }
 
 .cssn_mainmenuplus > li > a,
 .cssn_mainmenu > li > a {
-	padding:0 10px;
+    padding: 0 10px;
 }
 
 .cssn_mainmenu > li:hover > a,
 .cssn_mainmenu > li > a:focus,
 .cssn_mainmenu > .current > a {
-	color:#000;
+    color: #000;
 }
 
 .cssn_mainmenu > li > a {
-	border-right:1px solid #eee;
+    border-right: 1px solid #eee;
 }
 
 .cssn_mainmenu .submenu {
-	padding:10px;
-	border:1px solid #eee;
-	border-width:0 0 1px 1px;
-	background:#f9f9f9;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-width: 0 0 1px 1px;
+    background: #f9f9f9;
 }
 
 .cssn_mainmenu .subcol {
-	min-width:200px;
+    min-width: 200px;
 }
 
 .cssn_mainmenu .subcol > ul {
-	min-width:150px;
+    min-width: 150px;
 }
 
 .cssn_mainmenu .subcol + .subcol,
 .cssn_mainmenu .subcol > ul + ul {
-	margin-left:15px;
+    margin-left: 15px;
 }
 
 /* ----------------------------------------------------------
@@ -190,11 +196,13 @@ Version: 1.3.5
    ------------------------------------------------------- */
 
 .cssn_ariane {
-	height:20px;
-	margin-bottom:30px;
-	line-height:20px;
+    height: 20px;
+    margin-bottom: 30px;
+    line-height: 20px;
 }
 
 .cssn_ariane > li {
-	display:inline-block;*display:inline;zoom:1;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
 }

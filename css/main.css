@@ -6,7 +6,7 @@ Attention : Ne pas utiliser @import dans vos feuilles.
 
 /* Styles de base */
 @import 'reset.css?v=1.0.5';
-@import 'normalize.css?v=1.3.2';
+@import 'normalize.css?v=1.3.4';
 @import 'normalize-common.css?v=1.6.1';
 @import 'normalize-base.css?v=1.2';
 

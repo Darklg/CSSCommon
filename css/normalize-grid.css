@@ -1,71 +1,75 @@
 @charset "UTF-8";
+
 /*
 Name: Grids
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.1.0.1
+Version: 2.0
 */
 
-/* Grille principale */
-
-.the_grid {
-	clear:both;
-	overflow:hidden;
+.cssn_grid {
+    clear: both;
 }
 
-.the_grid > * {
-	float:left;
-	zoom:1;
-	overflow:hidden;
+.cssn_grid > * {
+    float: left;
+    zoom: 1;
+    min-height: 1px;
 }
 
-.the_grid:after {
-	content:" ";
-}
-
-.the_grid:after,
-.clearfix {
-	display:block;
-	visibility:hidden;
-	clear:both;
-	width:100%;
-	height:1px;
-	line-height:0;
+.cssn_grid:before,
+.cssn_grid:after {
+    content: '';
+    display: block;
+    clear: both;
+    max-height: 0;
+    overflow: hidden;
+    line-height: 0;
 }
 
 /* IE 7 */
 
 .clearfix {
-	margin:0;
-	padding:0;
-	border:0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
+/* ----------------------------------------------------------
+   Grille 940-24-20 : 940px / 24 cols / Gout. 20px
+   ------------------------------------------------------- */
 
-/* Formats basiques de grilles */
-/* ( Eviter les nouvelles balises de HTML 5 pour IE ) */
-
-.the_grid.col-20 > * + * {
-	margin-left:20px;
+.cssn_grid.gri-940-24-20 {
+    width: 940px;
 }
 
-.col-620 {
-	width:620px;
+.gri-940-24-20 [class^="col-"] + [class^="col-"] {
+    margin-left: 20px;
 }
 
-.col-300 {
-	width:300px;
-}
+.gri-940-24-20 .col-1 {width: 20px}
+.gri-940-24-20 .col-2 {width: 60px}
+.gri-940-24-20 .col-3 {width: 100px}
+.gri-940-24-20 .col-4 {width: 140px}
+.gri-940-24-20 .col-5 {width: 180px}
+.gri-940-24-20 .col-6 {width: 220px}
+.gri-940-24-20 .col-7 {width: 260px}
+.gri-940-24-20 .col-8 {width: 300px}
+.gri-940-24-20 .col-9 {width: 340px}
+.gri-940-24-20 .col-10 {width: 380px}
+.gri-940-24-20 .col-11 {width: 420px}
+.gri-940-24-20 .col-12 {width: 460px}
+.gri-940-24-20 .col-13 {width: 500px}
+.gri-940-24-20 .col-14 {width: 540px}
+.gri-940-24-20 .col-15 {width: 580px}
+.gri-940-24-20 .col-16 {width: 620px}
+.gri-940-24-20 .col-17 {width: 660px}
+.gri-940-24-20 .col-18 {width: 700px}
+.gri-940-24-20 .col-19 {width: 740px}
+.gri-940-24-20 .col-20 {width: 780px}
+.gri-940-24-20 .col-21 {width: 820px}
+.gri-940-24-20 .col-22 {width: 860px}
+.gri-940-24-20 .col-23 {width: 900px}
+.gri-940-24-20 .col-24 {width: 940px}
 
-.the_grid.gri-1-2 > * + *,
-.the_grid.gri-2-1 > *:first-child {
-	width:66.6%;
-}
+/* <3 http://grid.mindplay.dk/ <3 */
 
-.the_grid.gri-1-2 > *:first-child,
-.the_grid.gri-2-1 > * + * {
-	width:33.3%;
-}
-
-.the_grid.gri-1-1 > * {
-	width:50%;
-}

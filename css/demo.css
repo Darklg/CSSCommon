@@ -3,7 +3,7 @@
 /*
 Name: Style de démo
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.1
+Version: 1.1.1
 */
 
 /* ----------------------------------------------------------
@@ -46,8 +46,12 @@ Version: 1.1
    Push
    ------------------------------------------------------- */
 
-.block-normalize-push .the_grid {
-    margin-bottom: 10px;
+ #bc-grid .cssn_grid p {
+    margin-bottom: 20px;
+}
+
+.block-normalize-push .cssn_grid {
+    margin-bottom: 20px;
 }
 
 .block-normalize-push pre {

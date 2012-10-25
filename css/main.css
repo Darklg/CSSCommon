@@ -18,8 +18,8 @@ Attention : Ne pas utiliser @import dans vos feuilles.
 @import 'normalize-messages.css?v=1.2';
 @import 'normalize-push.css?v=1.0.5';
 @import 'normalize-modeles.css?v=1.3.6';
-@import 'normalize-layouts.css?v=1.3';
+@import 'normalize-layouts.css?v=1.4';
 @import 'normalize-tabs.css?v=1.0';
 
 /* Style du site de démo */
-@import 'demo.css?v=1.1.1';
+@import 'demo.css?v=1.1.2';

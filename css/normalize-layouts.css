@@ -3,7 +3,7 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.3
+Version: 1.4
 License: MIT
 */
 
@@ -125,22 +125,38 @@ License: MIT
     }
 }
 
-/* Styles pour le debug */
+@media(min-width:861px) {
+    .visible-only-full {
+        display: block;
+    }
 
-.liste-widgets {
-    overflow: hidden;
+    .hidden-on-full,
+    .visible-only-tablet,
+    .visible-only-phone {
+        display: none;
+    }
 }
 
-/* Couleurs pour le Debug */
+@media(max-width:860px) and (min-width:521px) {
+    .visible-only-tablet {
+        display: block;
+    }
 
-.cssn-lay {
-    background-color: #d0d0d0;
+    .hidden-on-tablet,
+    .visible-only-full,
+    .visible-only-phone {
+        display: none;
+    }
 }
 
-.cssn-lay > .col-main {
-    background-color: #e0e0e0;
-}
+@media(max-width:520px) {
+    .visible-only-phone {
+        display: block;
+    }
 
-.cssn-lay > .col-side {
-    background-color: #f0f0f0;
+    .hidden-on-phone,
+    .visible-only-full,
+    .visible-only-tablet {
+        display: none;
+    }
 }

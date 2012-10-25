@@ -3,7 +3,7 @@
 /*
 Name: Style de démo
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.1.1
+Version: 1.1.2
 License: MIT
 */
 
@@ -136,4 +136,26 @@ body {
     line-height: 30px;
     color: #fff;
     *display: inline;
+}
+
+/* ----------------------------------------------------------
+   Layouts
+   ------------------------------------------------------- */
+
+.liste-widgets {
+    overflow: hidden;
+}
+
+/* Couleurs pour le Debug */
+
+.cssn-lay {
+    background-color: #d0d0d0;
+}
+
+.cssn-lay > .col-main {
+    background-color: #e0e0e0;
+}
+
+.cssn-lay > .col-side {
+    background-color: #f0f0f0;
 }

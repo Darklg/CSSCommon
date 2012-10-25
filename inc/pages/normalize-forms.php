@@ -47,7 +47,7 @@
 			</ul>
 		</fieldset>
 		<fieldset>
-			<ul>	
+			<ul>
 				<li class="box email-box">
 					<label for="form_email">Email</label>
 					<input name="form_email" id="form_email" type="email" placeholder="Email" />
@@ -64,12 +64,13 @@
 				<li class="box checked-box">
 					<input type="checkbox" name="form_checkbox" id="form_checkbox" />
 					<label for="form_checkbox">Checkbox</label>
-				</li>	
+				</li>
 				<li class="box checked-box">
 					<label for="form_checkbox2">Checkbox</label>
 					<input type="checkbox" name="form_checkbox2" id="form_checkbox2" />
 				</li>
 				<li class="box checked-box">
+					<span class="fake-label">Faux Label</span>
 					<label for="form_radiobox">Radio un</label>
 					<input name="form_radiobox" id="form_radiobox" type="radio" />
 					<label for="form_radiobox2">Radio deux</label>

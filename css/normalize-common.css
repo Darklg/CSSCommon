@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.6.1
+Version: 1.6.2
 License: MIT
 */
 
@@ -113,6 +113,10 @@ License: MIT
 .wdrw .submenu-r {
     right: 0;
     left: auto;
+}
+
+.wdrw:hover {
+    z-index: 1000;
 }
 
 .wdrw > a:focus + .submenu,

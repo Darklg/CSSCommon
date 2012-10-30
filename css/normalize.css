@@ -3,7 +3,7 @@
 /*
 Name: Normalize
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.3.4
+Version: 1.4
 License: MIT
 */
 
@@ -77,6 +77,14 @@ h4, .h4 {
     line-height: 18px;
 }
 
+h1:first-child, .h1:first-child,
+h2:first-child, .h2:first-child,
+h3:first-child, .h3:first-child,
+h4:first-child, .h4:first-child,
+h5:first-child, .h5:first-child {
+    margin-top: 0;
+}
+
 p,
 li {
     font-size: 12px;
@@ -146,6 +154,7 @@ a:hover img {
    Transitions
    ------------------------------------------------------- */
 
+.trans-col,
 a {
     -webkit-transition: color 0.3s ease;
     -moz-transition: color 0.3s ease;
@@ -156,6 +165,7 @@ a {
 
 .aimg,
 .aimginv,
+.trans-opa,
 a img {
     -webkit-transition: opacity 0.3s ease;
     -moz-transition: opacity 0.3s ease;
@@ -164,7 +174,7 @@ a img {
     transition: opacity 0.3s ease;
 }
 
-.traa {
+.trans-all {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;

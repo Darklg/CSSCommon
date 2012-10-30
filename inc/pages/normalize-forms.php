@@ -41,7 +41,7 @@
 					<input name="form_text3" id="form_text3" type="text" placeholder="Un placeholder classique" />
 				</li>
 				<li class="box">
-					<label for="form_text4">Un autre input</label>
+					<label for="form_text4" class="long-label">Un autre input trop long</label>
 					<input name="form_text4" id="form_text4" type="text" placeholder="Un placeholder classique" />
 				</li>
 			</ul>

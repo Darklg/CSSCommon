@@ -3,16 +3,15 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.3.4
+Version: 1.4
 License: MIT
 */
 
 .cssn_form {
-    padding: 10px 0;
+    clear: both;
 }
 
 .cssn_form .box {
-    padding-bottom: 10px;
     vertical-align: baseline;
 }
 
@@ -23,23 +22,6 @@ License: MIT
     visibility: hidden;
     clear: both;
     height: 0;
-}
-
-/* Fieldset */
-
-.cssn_form fieldset {
-    padding: 10px 0;
-    border-top: 1px solid #CCC;
-}
-
-.cssn_form fieldset:last-child {
-    border-bottom: 1px solid #CCC;
-}
-
-.cssn_form legend {
-    padding-right: 5px;
-    font-size: 14px;
-    font-weight: bold;
 }
 
 /* Labels */
@@ -70,11 +52,15 @@ License: MIT
     text-align: right;
 }
 
+.float_form .box .long-label {
+    top: -4px;
+    padding-top: 0;
+}
+
 .block_form .box .fake-label,
 .block_form .box label {
     display: block;
     padding-top: 0;
-    line-height: 25px;
 }
 
 .block_form .box.radio-box label,
@@ -209,15 +195,49 @@ button {
     padding-left: 10px;
 }
 
-/* Style de la démo */
+/* Style de la démo
+   ----------------------- */
 
 .cssn_form {
+    padding: 10px 0;
     max-width: 100%;
+}
+
+/* Fieldset */
+
+.cssn_form fieldset {
+    padding: 10px 0;
+    border-top: 1px solid #CCC;
+}
+
+.cssn_form fieldset:last-child {
+    border-bottom: 1px solid #CCC;
+}
+
+.cssn_form legend {
+    padding-right: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Box */
+
+.cssn_form .box {
+    padding-bottom: 10px;
 }
 
 .float_form .box {
     min-height: 25px;
 }
+
+/* Labels */
+
+.block_form .box .fake-label,
+.block_form .box label {
+    line-height: 25px;
+}
+
+/* Champs */
 
 .inputbase,
 .cssn_form textarea,
@@ -241,17 +261,17 @@ button {
     box-shadow: inset 1px 1px 1px #ccc;
 }
 
-.cssn_form textarea {
-    height: 80px;
-    padding: 5px;
-}
-
 .cssn_form .faux-input,
 .lt_ie9 .cssn_form input[type=text],
 .lt_ie9 .cssn_form input[type=url],
 .lt_ie9 .cssn_form input[type=email],
 .lt_ie9 .cssn_form input[type=password] {
     line-height: 25px;
+}
+
+.cssn_form textarea {
+    height: 80px;
+    padding: 5px;
 }
 
 .cssn_form textarea:focus,

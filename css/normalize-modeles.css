@@ -3,12 +3,12 @@
 /*
 Name: Modèles basiques
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.3.6
+Version: 1.3.7
 License: MIT
 */
 
 /* ----------------------------------------------------------
-	Modèle : Pagination
+    Modèle : Pagination
    ------------------------------------------------------- */
 
 .cssn_pagination_center {
@@ -17,7 +17,8 @@ License: MIT
 
 .cssn_pagination * {
     display: inline-block;
-    zoom: 1;
+    vertical-align: middle;
+    *zoom: 1;
     *display: inline;
 }
 
@@ -50,7 +51,7 @@ License: MIT
 }
 
 /* ----------------------------------------------------------
-	Modèle : Menu Principal
+    Modèle : Menu Principal
    ------------------------------------------------------- */
 
 .cssn_mainnav {
@@ -116,11 +117,6 @@ License: MIT
     left: 0;
     white-space: nowrap;
     opacity: 0;
-    -webkit-transition: opacity 0.3s ease;
-    -moz-transition: opacity 0.3s ease;
-    -ms-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
 }
 
 .cssn_mainmenu > li > a:focus + .submenu,

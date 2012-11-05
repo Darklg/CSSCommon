@@ -1,6 +1,6 @@
 # CSSNormalize
 
-A (simple) CSS Starter, like Twitter's Bootstrap or Normalize.css by @Darklg & @Colorz
+A (simple) CSS Starter, like Twitter's Bootstrap or Normalize.css
 
 
 ## Licence MIT

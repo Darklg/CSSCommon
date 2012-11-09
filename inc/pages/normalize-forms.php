@@ -24,6 +24,10 @@
 					<input name="form_text" id="form_text" type="text" placeholder="Du texte" />
 				</li>
 				<li class="box">
+					<label for="form_textl" class="long-label">Label beaucoup trop long</label>
+					<input name="form_textl" id="form_textl" type="text" placeholder="Du texte" />
+				</li>
+				<li class="box">
 					<label for="form_text2">Input désactivé</label>
 					<input name="form_text2" id="form_text2" type="text" placeholder="Du texte non accessible" disabled />
 				</li>
@@ -37,11 +41,11 @@
 			<legend>Test de legend pour fieldset</legend>
 			<ul class="twoboxes">
 				<li class="box">
-					<label for="form_text3">Un input</label>
+					<label for="form_text3">Un mini-input</label>
 					<input name="form_text3" id="form_text3" type="text" placeholder="Un placeholder classique" />
 				</li>
 				<li class="box">
-					<label for="form_text4" class="long-label">Un autre input trop long</label>
+					<label for="form_text4">Un autre mini-input</label>
 					<input name="form_text4" id="form_text4" type="text" placeholder="Un placeholder classique" />
 				</li>
 			</ul>

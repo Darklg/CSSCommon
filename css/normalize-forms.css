@@ -3,7 +3,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.4
+Version: 1.4.1
 License: MIT
 */
 
@@ -29,6 +29,10 @@ License: MIT
 .float_form .box {
     position: relative;
     padding-left: 130px;
+}
+
+.cssn_form.float_form .twoboxes li.box + li.box {
+    padding-left: 140px;
 }
 
 .cssn_form .fake-label,
@@ -171,11 +175,11 @@ button {
 
 /* Deux blocs */
 
-.block_form .twoboxes {
+.cssn_form .twoboxes {
     overflow: hidden;
 }
 
-.block_form .twoboxes li.box {
+.cssn_form .twoboxes li.box {
     float: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -183,15 +187,15 @@ button {
     width: 50%;
 }
 
-.lt_ie8 .block_form .twoboxes li.box {
+.lt_ie8 .cssn_form .twoboxes li.box {
     width: 43%;
 }
 
-.block_form .twoboxes li.box:first-child {
+.cssn_form .twoboxes li.box:first-child {
     padding-right: 10px;
 }
 
-.block_form .twoboxes li.box + li.box {
+.cssn_form .twoboxes li.box + li.box {
     padding-left: 10px;
 }
 

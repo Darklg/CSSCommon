@@ -20,6 +20,12 @@
             <p>
                 Un exemple simplifié de <a href="responsive.php">layout Responsive</a> avec CSSNormalize.
             </p>
+            <h3>Pour démarrer</h3>
+            <p>
+                <a href="https://github.com/Darklg/CSSNormalize/archive/master.zip" class="le-button">Téléchargez une archive .zip</a>
+                 ou
+                <a href="https://github.com/Darklg/CSSNormalize" class="le-button">Forkez le projet sur Github</a>
+            </p>
         </div>
     </section>
 </div>

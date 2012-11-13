@@ -3,7 +3,7 @@
 /*
 Name: Style de démo
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.1.2
+Version: 1.1.3
 License: MIT
 */
 
@@ -35,6 +35,10 @@ License: MIT
 
 .container-about h2 {
     margin-top: 0;
+}
+
+.container-about .le-button {
+    text-transform: none;
 }
 
 .block-content + .block-content {

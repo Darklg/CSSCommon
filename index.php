@@ -34,6 +34,8 @@
         <?php include dirname(__FILE__).'/inc/pages/normalize-tables.php'; ?>
         <?php include dirname(__FILE__).'/inc/pages/normalize-grid.php'; ?>
         <?php include dirname(__FILE__).'/inc/pages/normalize-messages.php'; ?>
+        <?php include dirname(__FILE__).'/inc/pages/normalize-code.php'; ?>
+        <?php include dirname(__FILE__).'/inc/pages/normalize-gallery.php'; ?>
         <?php include dirname(__FILE__).'/inc/pages/normalize-push.php'; ?>
         <?php include dirname(__FILE__).'/inc/pages/normalize-modeles.php'; ?>
         <?php include dirname(__FILE__).'/inc/pages/normalize-layouts.php'; ?>

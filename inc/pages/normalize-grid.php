@@ -1,5 +1,11 @@
 <section class="block-content" id="bc-grid">
-    <h2 id="normalize-grid">Grilles</h2>
+    <div class="bkc-header">
+        <div class="bkch-aside">
+            Module :
+            <code>normalize-grid.css</code>
+        </div>
+        <h2 id="normalize-grid">Grilles</h2>
+    </div>
     <h3>Un système simple de grilles</h3>
     <h3>Demo</h3>
     <div class="cssn_grid gri-940-24-20">

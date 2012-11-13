@@ -1,5 +1,11 @@
 <section class="block-content block-normalize-push">
-    <h2 id="normalize-push">Pushs</h2>
+    <div class="bkc-header">
+        <div class="bkch-aside">
+            Module :
+            <code>normalize-push.css</code>
+        </div>
+        <h2 id="normalize-push">Pushs</h2>
+    </div>
     <h3>Push avec simple fondu</h3>
     <div class="cssn_grid gri-940-24-20">
         <div class="col-8">

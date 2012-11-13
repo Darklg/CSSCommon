@@ -10,7 +10,7 @@
                 <li>Une feuille de style par défaut, stylisant les balises HTML les plus utilisées.</li>
                 <li>Une feuille d'objets CSS utilisés fréquemment.</li>
                 <li>Une feuille de démarrage basique.</li>
-                <li>Des modules fonctionnant indépendamment.</li>
+                <li>Des modules à rajouter pour chaque besoin.</li>
             </ul>
             <h3>Sous-modules</h3>
             <p>

@@ -1,11 +1,5 @@
 <section class="block-content">
-    <div class="bkc-header">
-        <div class="bkch-aside">
-            Module :
-            <code>normalize-code.css</code>
-        </div>
-        <h2 id="normalize-code">Présentation de code</h2>
-    </div>
+    <h2 id="normalize-code">Présentation de code</h2>
     <h3>Balise &lt;pre /&gt;</h3>
     <pre>&lt;script&gt;
 var i;

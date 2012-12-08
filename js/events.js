@@ -1,5 +1,5 @@
 
-if($('set_form_float') && $('set_form_block') && $('set_form_wide') && $('set_form_block') && $('form_demo')){
+if(window.addEventListener && $('set_form_float') && $('set_form_block') && $('set_form_wide') && $('set_form_block') && $('form_demo')){
     $('set_form_float').addEventListener('click',function(){
         $('form_demo').className = 'cssn-form float-form';
     });

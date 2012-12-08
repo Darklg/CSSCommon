@@ -32,14 +32,14 @@
                 </h3>
                 <div class="bmedia">
                     <a href="#">
-                        <img src="http://placekitten.com/50/50" alt="" />
+                        <img src="http://placekitten.com/50/50" width="50" height="50" alt="" />
                     </a>
                     <div class="bm-cont">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
                     </div>
                 </div>
             </div>
-                        <div class="col-8">
+            <div class="col-8">
                 <h3>Remplacement d'image</h3>
                 <span class="ir demo-ir"></span>
             </div>

@@ -3,7 +3,7 @@
 /*
 Name: Style de démo
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.1.3
+Version: 1.1.4
 License: MIT
 */
 
@@ -85,7 +85,7 @@ License: MIT
    Formulaires
    ------------------------------------------------------- */
 
-.cssn_form {
+.cssn-form {
     max-width: 450px;
 }
 

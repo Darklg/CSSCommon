@@ -10,8 +10,8 @@
         Un modèle de formulaire à labels flottants et un modèle simple en paramétrant directement le form. <br />
         Cliquez sur les boutons ci-dessous pour découvrir les possibilités de CSSNormalize pour les formulaires.
     </p>
-<!-- <form id="form_demo" action="/" class="cssn_form float_form" method="post"> -->
-    <form id="form_demo" action="/" class="cssn_form block_form" method="post">
+<!-- <form id="form_demo" action="/" class="cssn-form float-form" method="post"> -->
+    <form id="form_demo" action="/" class="cssn-form block-form" method="post">
         <ul>
             <li class="box buttons-box">
                 <a href="#normalize-forms" class="le-button" id="set_form_block">Form Block</a>
@@ -39,7 +39,7 @@
                 </li>
                 <li class="box">
                     <label>Faux Input</label>
-                    <span class="faux-input">Edit me if u can</span>
+                    <span class="fake-input">Edit me if u can</span>
                 </li>
             </ul>
         </fieldset>

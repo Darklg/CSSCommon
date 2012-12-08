@@ -3,7 +3,7 @@
 /*
 Name: Boutons par défaut
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.3.1
+Version: 1.3.2
 License: MIT
 */
 
@@ -68,9 +68,6 @@ License: MIT
     background-color: #fff;
 }
 
-/* Ajout d'un ID pour compatibilité avec CSSN */
-
-#main-container .le-button:hover,
 .le-button:hover {
     border-color: #999;
     color: #000;

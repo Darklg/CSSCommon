@@ -22,9 +22,8 @@
             </p>
             <h3>Pour démarrer</h3>
             <p>
-                <a href="https://github.com/Darklg/CSSNormalize/archive/master.zip" class="le-button">Téléchargez une archive .zip</a>
-                 ou
-                <a href="https://github.com/Darklg/CSSNormalize" class="le-button">Forkez le projet sur Github</a>
+                <a target="_blank" href="https://github.com/Darklg/CSSNormalize" class="le-button le-medium-button">Forkez le projet sur Github</a>
+                <a target="_blank" href="https://github.com/Darklg/CSSNormalize/archive/master.zip" class="le-button le-medium-button">Téléchargez une archive .zip</a>
             </p>
         </div>
     </section>

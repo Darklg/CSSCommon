@@ -3,7 +3,7 @@
 /*
 Name: Boutons par défaut
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.3.2
+Version: 1.4
 License: MIT
 */
 
@@ -44,11 +44,11 @@ License: MIT
 }
 
 .le-button:before {
-    margin-right: 8px;
+    margin-right: 5px;
 }
 
 .le-button:after {
-    margin-left: 8px;
+    margin-left: 5px;
 }
 
 /* --------------------------
@@ -57,19 +57,60 @@ License: MIT
 
 .le-button {
     height: 25px;
-    padding: 0 5px;
+    padding: 0 8px;
     border: 1px solid #ccc;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
     font: 12px/25px sans-serif;
     color: #333;
-    background-color: #fff;
+    background: #d0d0d0 no-repeat 0 0;
+    background-image: -moz-linear-gradient(top,#f0f0f0,#d0d0d0);
+    background-image: -o-linear-gradient(top,#f0f0f0,#d0d0d0);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#f0f0f0),color-stop(1,#d0d0d0));
+    background-image: -webkit-linear-gradient(#f0f0f0,#d0d0d0);
+    background-image: linear-gradient(#f0f0f0,#d0d0d0);
 }
 
 .le-button:hover {
-    border-color: #999;
+    border-color: #bbb;
     color: #000;
-    background: #e0e0e0;
+    background-position: 0 -25px;
+}
+
+/* Tailles de boutons
+   ----------------------- */
+
+.le-medium-button {
+    height: 30px;
+    padding: 0 10px;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.le-big-button {
+    height: 35px;
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 35px;
+}
+
+/* Bouton icône avant
+   ----------------------- */
+
+.btn-phone:before {
+    content: '☎';
+}
+
+.btn-eject:before {
+    content: '⏏';
+}
+
+.btn-go:after {
+    content: '▶';
+}
+
+.btn-img:before {
+    content: url('http://placekitten.com/12/10');
 }

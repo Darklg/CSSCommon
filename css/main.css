@@ -11,8 +11,8 @@ Attention : Ne pas utiliser @import dans vos feuilles.
 @import 'normalize-base.css?v=1.2.1';
 
 /* Modules */
-@import 'normalize-forms.css?v=1.5';
 @import 'normalize-buttons.css?v=1.4';
+@import 'normalize-forms.css?v=1.6';
 @import 'normalize-tables.css?v=1.1';
 @import 'normalize-grid.css?v=2.0';
 @import 'normalize-messages.css?v=1.2';

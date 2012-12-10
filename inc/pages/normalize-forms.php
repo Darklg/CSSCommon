@@ -105,4 +105,26 @@
             </ul>
         </fieldset>
     </form>
+    <h3>Formulaire collé</h3>
+    <form action="#" method="post">
+        <div class="form-append form-append-demo">
+            <input class="inputbase" type="text" name="lorem" value="" />
+            <button type="submit" class="le-button">Envoyer</button>
+        </div>
+    </form>
+    <p>Formulaire type "recherche rapide" ou "inscription à la newsletter"</p>
+
+    <h3>Boutons</h3>
+    <div>
+        <button class="le-button">.le-button</button>
+        <button class="le-button le-medium-button">.le-button .le-medium-button</button>
+        <button class="le-button le-big-button">.le-button .le-big-button</button>
+    </div>
+    <h4>Boutons avec icône</h4>
+    <div>
+        <button class="le-button btn-phone">.le-button .btn-phone</button>
+        <button class="le-button btn-eject">.le-button .btn-eject</button>
+        <button class="le-button btn-img">.le-button .btn-img</button>
+        <button class="le-button btn-go">.le-button .btn-go</button>
+    </div>
 </section>

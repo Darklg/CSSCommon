@@ -3,12 +3,13 @@
 /*
 Name: Grids
 URL: http://github.com/Darklg/CSSNormalize
-Version: 2.0
+Version: 2.1
 License: MIT
 */
 
 .cssn_grid {
     clear: both;
+    max-width: 100%;
 }
 
 .cssn_grid > * {

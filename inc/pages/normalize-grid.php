@@ -6,10 +6,14 @@
         </div>
         <h2 id="normalize-grid">Grilles</h2>
     </div>
-    <h3>Un système simple de grilles</h3>
+    <p>Un système simple de grilles.</p>
     <h3>Demo</h3>
     <div class="cssn_grid gri-940-24-20">
         <div class="col-8">
+            <div class="cssn_grid gri-940-24-20">
+                <div class="col-4"><p>Gridception : Ou la possibilité d'insérer une grille dans une grille.</p></div>
+                <div class="col-4"><p>Ici aussi !</p></div>
+            </div>
             <p>
                 <strong>E.</strong>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -66,6 +70,15 @@
                     <a href="#">
                         <strong>B.</strong>
                     </a>
+                </li>
+                <li>
+                    <a href="#">lorem ipsum</a>
+                </li>
+                <li>
+                    <a href="#">dolor sit amet</a>
+                </li>
+                <li>
+                    <a href="#">consectetur adipiscing elit</a>
                 </li>
                 <li>
                     <a href="#">lorem ipsum</a>

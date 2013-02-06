@@ -3,7 +3,7 @@
 /*
 Name: Push
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.0.5
+Version: 1.0.6
 License: MIT
 */
 
@@ -32,6 +32,7 @@ License: MIT
     right: 0;
     bottom: 0;
     left: 0;
+    direction: ltr;
     text-align: left;
     text-indent: -9999px;
 }

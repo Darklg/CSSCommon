@@ -28,14 +28,13 @@
             <div class="col-8">
                 <h3>
                     Block media
-                    <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">(inspiré par @Stubbornella)</a>
                 </h3>
                 <div class="bmedia">
                     <a href="#">
                         <img src="http://placekitten.com/50/50" width="50" height="50" alt="" />
                     </a>
                     <div class="bm-cont">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing . <a target="_blank" href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">(inspiré par @Stubbornella)</a></p>
                     </div>
                 </div>
             </div>

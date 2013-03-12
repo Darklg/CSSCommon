@@ -3,7 +3,7 @@
 /*
 Name: Normalize
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.4.1
+Version: 1.4.1.1
 License: MIT
 */
 
@@ -172,6 +172,7 @@ a img {
     transition: opacity 0.3s ease;
 }
 
+.le-button,
 .trans-all {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;

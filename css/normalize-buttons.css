@@ -3,7 +3,7 @@
 /*
 Name: Boutons par défaut
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.4
+Version: 1.4.1
 License: MIT
 */
 
@@ -22,10 +22,6 @@ License: MIT
     white-space: nowrap;
     vertical-align: middle;
     -webkit-background-clip: padding-box;
-    -webkit-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: -moz-none;
@@ -73,9 +69,15 @@ License: MIT
     background-image: linear-gradient(#f0f0f0,#d0d0d0);
 }
 
+.le-button:focus,
 .le-button:hover {
     border-color: #bbb;
     color: #000;
+    background-position: 0 -12px;
+}
+
+.le-button:active {
+    border-color: #aaa;
     background-position: 0 -25px;
 }
 
@@ -112,5 +114,5 @@ License: MIT
 }
 
 .btn-img:before {
-    content: url('http://placekitten.com/12/10');
+    content: url(../images/12x10-blue.gif);
 }

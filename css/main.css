@@ -19,7 +19,7 @@ Attention : Ne pas utiliser @import dans vos feuilles.
 @import 'normalize-push.css?v=1.0.6';
 @import 'normalize-modeles.css?v=1.3.7';
 @import 'normalize-layouts.css?v=1.4';
-@import 'normalize-tabs.css?v=1.0';
+@import 'normalize-tabs.css?v=1.0.1';
 
 /* Style du site de démo */
 @import 'demo.css?v=1.1.6';

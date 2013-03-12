@@ -3,7 +3,7 @@
 /*
 Name: Style de démo
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.1.5
+Version: 1.1.6
 License: MIT
 */
 
@@ -97,6 +97,15 @@ License: MIT
     width: 300px;
     height: 60px;
     background-image: url(http://placekitten.com/300/60);
+}
+
+/* ----------------------------------------------------------
+   Block Content : fichier utilisé
+   ------------------------------------------------------- */
+
+.bkch-aside {
+    float: right;
+    font-size: 12px;
 }
 
 /* ----------------------------------------------------------

@@ -8,7 +8,7 @@ Attention : Ne pas utiliser @import dans vos feuilles.
 @import 'reset.css?v=1.0.6';
 @import 'normalize.css?v=1.4.1';
 @import 'normalize-common.css?v=1.6.5';
-@import 'normalize-base.css?v=1.2.1';
+@import 'normalize-base.css?v=1.2.2';
 
 /* Modules */
 @import 'normalize-buttons.css?v=1.4';
@@ -22,4 +22,4 @@ Attention : Ne pas utiliser @import dans vos feuilles.
 @import 'normalize-tabs.css?v=1.0';
 
 /* Style du site de démo */
-@import 'demo.css?v=1.1.5';
+@import 'demo.css?v=1.1.6';

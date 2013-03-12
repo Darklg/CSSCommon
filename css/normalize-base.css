@@ -3,7 +3,7 @@
 /*
 Name: Base
 URL: http://github.com/Darklg/CSSNormalize
-Version: 1.2.1
+Version: 1.2.2
 License: MIT
 */
 
@@ -35,15 +35,6 @@ License: MIT
 .cssn-is-responsive .block-content {
     width: auto;
     max-width: 940px;
-}
-
-/* ----------------------------------------------------------
-   Block Content
-   ------------------------------------------------------- */
-
-.bkch-aside {
-    float: right;
-    font-size: 12px;
 }
 
 /* ----------------------------------------------------------

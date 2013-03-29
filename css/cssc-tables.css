@@ -1,34 +1,34 @@
 @charset "UTF-8";
 /*
 Name: Tables
-URL: http://github.com/Darklg/CSSNormalize
-Version: 1.1
+URL: http://github.com/Darklg/CSSCommon
+Version: 1.1.1
 License: MIT
 */
 
-.le-tableau {
+.cssc-table {
     width: 100%;
 }
 
-.le-tableau,
-.le-tableau tr,
-.le-tableau td,
-.le-tableau th {
+.cssc-table,
+.cssc-table tr,
+.cssc-table td,
+.cssc-table th {
     border-collapse: collapse;
     vertical-align: middle;
 }
 
-.le-tableau td,
-.le-tableau th {
+.cssc-table td,
+.cssc-table th {
     padding: 5px;
     font-size: 12px;
 }
 
-.le-tableau td {
+.cssc-table td {
     text-align: left;
 }
 
-.le-tableau th {
+.cssc-table th {
     text-align: center;
     font-weight: bold;
 }
@@ -37,23 +37,23 @@ License: MIT
     Thème du tableau
    ----------------------- */
 
-.le-tableau {
+.cssc-table {
     color: #333;
     background: #fff;
 }
 
-.le-tableau,
-.le-tableau tr,
-.le-tableau td,
-.le-tableau th {
+.cssc-table,
+.cssc-table tr,
+.cssc-table td,
+.cssc-table th {
     border: 1px solid #ccc;
 }
 
-.le-tableau tr:hover {
+.cssc-table tr:hover {
     color: #000;
     background: #fafafa;
 }
 
-.le-tableau th {
+.cssc-table th {
     background: #f0f0f0;
 }

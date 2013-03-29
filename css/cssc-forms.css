@@ -2,22 +2,22 @@
 
 /*
 Name: Forms
-URL: http://github.com/Darklg/CSSNormalize
-Version: 1.6.1
+URL: http://github.com/Darklg/CSSCommon
+Version: 1.6.2
 License: MIT
 */
 
-.cssn-form {
+.cssc-form {
     clear: both;
 }
 
-.cssn-form .box {
+.cssc-form .box {
     vertical-align: baseline;
 }
 
-.cssn-form:after,
+.cssc-form:after,
 .form-append:after,
-.cssn-form .box:after {
+.cssc-form .box:after {
     content: " ";
     display: block;
     visibility: hidden;
@@ -32,8 +32,8 @@ License: MIT
     padding-left: 130px;
 }
 
-.cssn-form .fake-label,
-.cssn-form label {
+.cssc-form .fake-label,
+.cssc-form label {
     display: block;
     padding-top: 4px;
     font-size: 12px;
@@ -88,8 +88,8 @@ button {
     cursor: pointer;
 }
 
-.cssn-form input[type=radio],
-.cssn-form input[type=checkbox] {
+.cssc-form input[type=radio],
+.cssc-form input[type=checkbox] {
     width: 12px;
     height: 12px;
     margin: 0;
@@ -100,12 +100,12 @@ button {
 
 .inputreset,
 .inputbase,
-.cssn-form textarea,
-.cssn-form .fake-input,
-.cssn-form input[type=text],
-.cssn-form input[type=url],
-.cssn-form input[type=email],
-.cssn-form input[type=password] {
+.cssc-form textarea,
+.cssc-form .fake-input,
+.cssc-form input[type=text],
+.cssc-form input[type=url],
+.cssc-form input[type=email],
+.cssc-form input[type=password] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -122,14 +122,14 @@ button {
     transition: all 0.3s ease;
 }
 
-.cssn-form .fake-input {
+.cssc-form .fake-input {
     display: inline-block;
     zoom: 1;
     *display: inline;
 }
 
-.cssn-form .fake-input,
-.cssn-form [disabled] {
+.cssc-form .fake-input,
+.cssc-form [disabled] {
     cursor: not-allowed;
 }
 
@@ -137,30 +137,30 @@ button {
 
 .lt_ie8 .inputbase,
 .lt_ie8 .inputreset,
-.lt_ie8 .cssn-form textarea,
-.lt_ie8 .cssn-form .fake-input,
-.lt_ie8 .cssn-form input[type=text],
-.lt_ie8 .cssn-form input[type=email],
-.lt_ie8 .cssn-form input[type=password] {
+.lt_ie8 .cssc-form textarea,
+.lt_ie8 .cssc-form .fake-input,
+.lt_ie8 .cssc-form input[type=text],
+.lt_ie8 .cssc-form input[type=email],
+.lt_ie8 .cssc-form input[type=password] {
     width: 90%;
 }
 
 /* Champs multiples */
 
-.cssn-form .multibox-box input[type=text],
-.cssn-form .multibox-box input[type=url],
-.cssn-form .multibox-box input[type=email],
-.cssn-form .multibox-box input[type=password] {
+.cssc-form .multibox-box input[type=text],
+.cssc-form .multibox-box input[type=url],
+.cssc-form .multibox-box input[type=email],
+.cssc-form .multibox-box input[type=password] {
     width: 65px;
 }
 
-.cssn-form .multibox-box input.halfling {
+.cssc-form .multibox-box input.halfling {
     width: 45px;
 }
 
 /* Aide */
 
-.cssn-form small {
+.cssc-form small {
     display: block;
     font-size: 11px;
     line-height: 16px;
@@ -169,11 +169,11 @@ button {
 
 /* Deux blocs */
 
-.cssn-form .twoboxes {
+.cssc-form .twoboxes {
     overflow: hidden;
 }
 
-.cssn-form .twoboxes li.box {
+.cssc-form .twoboxes li.box {
     float: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -181,15 +181,15 @@ button {
     width: 50%;
 }
 
-.lt_ie8 .cssn-form .twoboxes li.box {
+.lt_ie8 .cssc-form .twoboxes li.box {
     width: 43%;
 }
 
-.cssn-form .twoboxes li.box:first-child {
+.cssc-form .twoboxes li.box:first-child {
     padding-right: 10px;
 }
 
-.cssn-form .twoboxes li.box + li.box {
+.cssc-form .twoboxes li.box + li.box {
     padding-left: 10px;
 }
 
@@ -200,23 +200,23 @@ button {
 /* Style de la démo
    ----------------------- */
 
-.cssn-form {
+.cssc-form {
     padding: 10px 0;
     max-width: 100%;
 }
 
 /* Fieldset */
 
-.cssn-form fieldset {
+.cssc-form fieldset {
     padding: 10px 0;
     border-top: 1px solid #CCC;
 }
 
-.cssn-form fieldset:last-child {
+.cssc-form fieldset:last-child {
     border-bottom: 1px solid #CCC;
 }
 
-.cssn-form legend {
+.cssc-form legend {
     padding-right: 5px;
     font-size: 14px;
     font-weight: bold;
@@ -224,7 +224,7 @@ button {
 
 /* Box */
 
-.cssn-form .box {
+.cssc-form .box {
     padding-bottom: 10px;
 }
 
@@ -242,12 +242,12 @@ button {
 /* Champs */
 
 .inputbase,
-.cssn-form textarea,
-.cssn-form .fake-input,
-.cssn-form input[type=text],
-.cssn-form input[type=url],
-.cssn-form input[type=email],
-.cssn-form input[type=password] {
+.cssc-form textarea,
+.cssc-form .fake-input,
+.cssc-form input[type=text],
+.cssc-form input[type=url],
+.cssc-form input[type=email],
+.cssc-form input[type=password] {
     height: 25px;
     padding: 0 5px;
     border: 1px solid #999;
@@ -263,24 +263,24 @@ button {
     box-shadow: inset 1px 1px 1px #ccc;
 }
 
-.cssn-form .fake-input,
-.lt_ie9 .cssn-form input[type=text],
-.lt_ie9 .cssn-form input[type=url],
-.lt_ie9 .cssn-form input[type=email],
-.lt_ie9 .cssn-form input[type=password] {
+.cssc-form .fake-input,
+.lt_ie9 .cssc-form input[type=text],
+.lt_ie9 .cssc-form input[type=url],
+.lt_ie9 .cssc-form input[type=email],
+.lt_ie9 .cssc-form input[type=password] {
     line-height: 25px;
 }
 
-.cssn-form textarea {
+.cssc-form textarea {
     height: 80px;
     padding: 5px;
 }
 
-.cssn-form textarea:focus,
-.cssn-form input[type=text]:focus,
-.cssn-form input[type=url]:focus,
-.cssn-form input[type=email]:focus,
-.cssn-form input[type=password]:focus {
+.cssc-form textarea:focus,
+.cssc-form input[type=text]:focus,
+.cssc-form input[type=url]:focus,
+.cssc-form input[type=email]:focus,
+.cssc-form input[type=password]:focus {
     border-color: #333;
     color: #000;
     background-color: #fff;
@@ -291,8 +291,8 @@ button {
 
 /* Couleurs de placeholder : ne pas fusionner les sélecteurs ! */
 
-.cssn-form [disabled],
-.cssn-form .fake-input {
+.cssc-form [disabled],
+.cssc-form .fake-input {
     color: #A0A0A0;
 }
 

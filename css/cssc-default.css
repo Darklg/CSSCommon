@@ -1,11 +1,53 @@
 @charset "UTF-8";
 
 /*
-Name: Normalize
-URL: http://github.com/Darklg/CSSNormalize
-Version: 1.4.1.1
+Name: Default
+URL: http://github.com/Darklg/CSSCommon
+Version: 2.0
 License: MIT
 */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,
+form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,
+audio,canvas,datagrid,datalist,details,dialog,figure,footer,header,
+menu,nav,section,video,abbr,eventsource,mark,meter,time,progress,output,bb {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent no-repeat top left;
+}
+article,aside,audio,canvas,datagrid,datalist,details,dialog,figure,
+figcaption,footer,header,hgroup,menu,nav,section,video {display:block;}
+abbr,eventsource,mark,meter,time,progress,output,bb {display:inline;}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+a,ins{text-decoration:none}
+del{text-decoration:line-through}
+strong{font-weight:bold}
+em{font-style:italic}
+/* tables still need 'cellspacing="0"' in the markup */
+table{border-collapse:collapse;border-spacing:0;width:100%}
+nav ul {list-style:none}
+input,select {vertical-align:middle}
+input[type="radio"] {vertical-align: text-bottom}
+input[type="checkbox"] {vertical-align: bottom}
+input[type="radio"],input[type="checkbox"] {margin:0}
+.lt_ie8 input[type="checkbox"] {vertical-align:baseline}
+.lt_ie7 input {vertical-align:text-bottom}
+input:focus {outline:0}
+input:-webkit-autofill {background-color:#ccc!important}
+video,img,object {max-width:100%;height:auto}
+iframe{border:0}
+/* Bug with Firefox and buttons */
+button::-moz-focus-inner {border:0;padding:0;margin:0}
+
 
 /* ----------------------------------------------------------
    Règlages de base
@@ -172,7 +214,7 @@ a img {
     transition: opacity 0.3s ease;
 }
 
-.le-button,
+.cssc-button,
 .trans-all {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;

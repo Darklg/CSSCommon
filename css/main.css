@@ -2,13 +2,12 @@
 
 /* 
 Attention : Ne pas utiliser @import dans vos feuilles.
- */
+*/
 
 /* Styles de base */
-@import 'reset.css?v=1.0.6';
-@import 'normalize.css?v=1.4.1.1';
 @import 'normalize-common.css?v=1.6.5';
 @import 'normalize-base.css?v=1.2.2';
+@import 'cssc-default.css?v=2.0';
 
 /* Modules */
 @import 'normalize-buttons.css?v=1.4.1';

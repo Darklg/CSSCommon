@@ -22,7 +22,7 @@
     </ul>
 
     <h3>Pagination centrée</h3>
-    <ul class="cssc-pagination cssc-pagination_center">
+    <ul class="cssc-pagination cssc-pagination-center">
         <li><a href="#" class="prev">&lsaquo; Pr&eacute;c&eacute;dent</a></li>
         <li>
             <ul>

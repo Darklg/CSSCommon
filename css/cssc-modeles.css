@@ -2,8 +2,8 @@
 
 /*
 Name: Modèles basiques
-URL: http://github.com/Darklg/CSSNormalize
-Version: 1.3.7
+URL: http://github.com/Darklg/CSSCommon
+Version: 1.3.8
 License: MIT
 */
 
@@ -11,11 +11,11 @@ License: MIT
     Modèle : Pagination
    ------------------------------------------------------- */
 
-.cssn_pagination_center {
+.cssc-pagination_center {
     text-align: center;
 }
 
-.cssn_pagination * {
+.cssc-pagination * {
     display: inline-block;
     vertical-align: middle;
     *zoom: 1;
@@ -24,9 +24,9 @@ License: MIT
 
 /* Style d'exemple */
 
-.cssn_pagination span,
-.cssn_pagination strong,
-.cssn_pagination a {
+.cssc-pagination span,
+.cssc-pagination strong,
+.cssc-pagination a {
     padding: 0 7px;
     border: 1px solid #eee;
     -webkit-border-radius: 3px;
@@ -35,18 +35,18 @@ License: MIT
     -webkit-background-clip: border;
 }
 
-.cssn_pagination * {
+.cssc-pagination * {
     line-height: 30px;
 }
 
-.cssn_pagination {
+.cssc-pagination {
     margin-bottom: 30px;
 }
 
-.cssn_pagination strong,
-.cssn_pagination .current,
-.cssn_pagination a:focus,
-.cssn_pagination a:hover {
+.cssc-pagination strong,
+.cssc-pagination .current,
+.cssc-pagination a:focus,
+.cssc-pagination a:hover {
     border-color: #ccc;
 }
 
@@ -54,44 +54,44 @@ License: MIT
     Modèle : Menu Principal
    ------------------------------------------------------- */
 
-.cssn_mainnav {
+.cssc-mainnav {
     vertical-align: middle;
 }
 
-.cssn_mainmenu {
+.cssc-mainmenu {
     height: 100%;
 }
 
-.cssn_mainmenuplus {
+.cssc-mainmenuplus {
     z-index: 4;
     float: right;
     position: relative;
 }
 
-.cssn_mainmenuplus > li > a,
-.cssn_mainmenuplus > li,
-.cssn_mainmenu > li > a,
-.cssn_mainmenu > li {
+.cssc-mainmenuplus > li > a,
+.cssc-mainmenuplus > li,
+.cssc-mainmenu > li > a,
+.cssc-mainmenu > li {
     float: left;
 }
 
-.cssn_mainmenuplus > li > a,
-.cssn_mainmenu > li > a {
+.cssc-mainmenuplus > li > a,
+.cssc-mainmenu > li > a {
     display: block;
     vertical-align: middle;
 }
 
 /* Gestion sous-menu */
 
-.cssn_mainmenu:hover,
-.cssn_mainmenu:hover > li {
+.cssc-mainmenu:hover,
+.cssc-mainmenu:hover > li {
     z-index: 3;
     position: relative;
 }
 
 /* Si sous-menu de largeur 100% */
 
-.cssn_mainmenu:hover > .richsubmenu {
+.cssc-mainmenu:hover > .richsubmenu {
     position: static;
 }
 
@@ -109,7 +109,7 @@ License: MIT
     width: 600px;
 }
 
-.cssn_mainmenu .submenu {
+.cssc-mainmenu .submenu {
     visibility: hidden;
     z-index: 2;
     position: absolute;
@@ -119,72 +119,72 @@ License: MIT
     opacity: 0;
 }
 
-.cssn_mainmenu > li > a:focus + .submenu,
-.cssn_mainmenu > li:hover .submenu {
+.cssc-mainmenu > li > a:focus + .submenu,
+.cssc-mainmenu > li:hover .submenu {
     visibility: visible;
     opacity: 1;
 }
 
-.cssn_mainmenu .submenu a {
+.cssc-mainmenu .submenu a {
     white-space: nowrap;
 }
 
-.cssn_mainmenu .submenu .subcol > ul,
-.cssn_mainmenu .submenu .subcol {
+.cssc-mainmenu .submenu .subcol > ul,
+.cssc-mainmenu .submenu .subcol {
     float: left;
 }
 
 /* Style d'exemple */
 
-.cssn_mainnav {
+.cssc-mainnav {
     height: 30px;
     margin-bottom: 30px;
     border: 1px solid #eee;
 }
 
-.cssn_mainmenuplus > li > a,
-.cssn_mainmenuplus > li,
-.cssn_mainmenu > li > a,
-.cssn_mainmenu > li {
+.cssc-mainmenuplus > li > a,
+.cssc-mainmenuplus > li,
+.cssc-mainmenu > li > a,
+.cssc-mainmenu > li {
     line-height: 30px;
 }
 
-.cssn_mainmenuplus {
+.cssc-mainmenuplus {
     border-left: 1px solid #eee;
 }
 
-.cssn_mainmenuplus > li > a,
-.cssn_mainmenu > li > a {
+.cssc-mainmenuplus > li > a,
+.cssc-mainmenu > li > a {
     padding: 0 10px;
 }
 
-.cssn_mainmenu > li:hover > a,
-.cssn_mainmenu > li > a:focus,
-.cssn_mainmenu > .current > a {
+.cssc-mainmenu > li:hover > a,
+.cssc-mainmenu > li > a:focus,
+.cssc-mainmenu > .current > a {
     color: #000;
 }
 
-.cssn_mainmenu > li > a {
+.cssc-mainmenu > li > a {
     border-right: 1px solid #eee;
 }
 
-.cssn_mainmenu .submenu {
+.cssc-mainmenu .submenu {
     padding: 10px;
     border: 1px solid #eee;
     border-width: 0 0 1px 1px;
     background: #f9f9f9;
 }
 
-.cssn_mainmenu .subcol {
+.cssc-mainmenu .subcol {
     min-width: 200px;
 }
 
-.cssn_mainmenu .subcol > ul {
+.cssc-mainmenu .subcol > ul {
     min-width: 150px;
 }
 
-.cssn_mainmenu .subcol + .subcol,
-.cssn_mainmenu .subcol > ul + ul {
+.cssc-mainmenu .subcol + .subcol,
+.cssc-mainmenu .subcol > ul + ul {
     margin-left: 15px;
 }
 
@@ -192,13 +192,13 @@ License: MIT
    Modèle : Fil d'ariane
    ------------------------------------------------------- */
 
-.cssn_ariane {
+.cssc-ariane {
     height: 20px;
     margin-bottom: 30px;
     line-height: 20px;
 }
 
-.cssn_ariane > li {
+.cssc-ariane > li {
     display: inline-block;
     zoom: 1;
     *display: inline;

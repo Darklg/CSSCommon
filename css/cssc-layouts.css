@@ -2,8 +2,8 @@
 
 /*
 Name: Layouts de page
-URL: http://github.com/Darklg/CSSNormalize
-Version: 1.4
+URL: http://github.com/Darklg/CSSCommon
+Version: 1.4.1
 License: MIT
 */
 
@@ -11,37 +11,37 @@ License: MIT
    Base des layouts
    ------------------------------------------------------- */
 
-.cssn-lay {
+.cssc-lay {
     display: table;
     width: 940px;
     table-layout: fixed;
 }
 
-.cssn-lay > * {
+.cssc-lay > * {
     display: table-cell;
     vertical-align: top;
 }
 
-.lt_ie8 .cssn-lay {
+.lt_ie8 .cssc-lay {
     display: block;
 }
 
-.lt_ie8 .cssn-lay > * {
+.lt_ie8 .cssc-lay > * {
     display: block;
     float: left;
 }
 
 /* Base de style */
 
-.cssn-lay > * + * {
+.cssc-lay > * + * {
     padding-left: 20px;
 }
 
-.cssn-lay > .col-side {
+.cssc-lay > .col-side {
     width: 200px;
 }
 
-.cssn-lay > .col-main {
+.cssc-lay > .col-main {
     width: 720px;
 }
 
@@ -90,37 +90,37 @@ License: MIT
         padding: 10px;
     }
 
-    .cssn-is-responsive .clay-resp {
+    .cssc-is-responsive .clay-resp {
         display: block;
         width: auto;
     }
 
-    .cssn-is-responsive .clay-resp > .col-side,
-    .cssn-is-responsive .clay-resp > .col-main {
+    .cssc-is-responsive .clay-resp > .col-side,
+    .cssc-is-responsive .clay-resp > .col-main {
         display: block;
         width: auto;
     }
 
-    .cssn-is-responsive .clay-resp > .col-side .liste-widgets > * {
+    .cssc-is-responsive .clay-resp > .col-side .liste-widgets > * {
         display: inline-block;
         width: 48%;
     }
 
-    .cssn-is-responsive .clay-resp > .col-side .liste-widgets >:nth-child(even) {
+    .cssc-is-responsive .clay-resp > .col-side .liste-widgets >:nth-child(even) {
         margin-left: 2%;
     }
 
-    .cssn-is-responsive .cssn-lay > * + * {
+    .cssc-is-responsive .cssc-lay > * + * {
         padding-left: 0;
     }
 }
 
 @media all and (max-width:400px) {
-    .cssn-is-responsive .clay-resp > .col-side .liste-widgets > * {
+    .cssc-is-responsive .clay-resp > .col-side .liste-widgets > * {
         display: block;
     }
 
-    .cssn-is-responsive .clay-resp > .col-side .liste-widgets >:nth-child(even) {
+    .cssc-is-responsive .clay-resp > .col-side .liste-widgets >:nth-child(even) {
         margin-left: 0;
     }
 }

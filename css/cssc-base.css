@@ -2,8 +2,8 @@
 
 /*
 Name: Base
-URL: http://github.com/Darklg/CSSNormalize
-Version: 1.2.2
+URL: http://github.com/Darklg/CSSCommon
+Version: 1.2.3
 License: MIT
 */
 
@@ -29,10 +29,10 @@ License: MIT
     text-align: left;
 }
 
-.cssn-is-responsive #header,
-.cssn-is-responsive #footer,
-.cssn-is-responsive .centered-container > *,
-.cssn-is-responsive .block-content {
+.cssc-is-responsive #header,
+.cssc-is-responsive #footer,
+.cssc-is-responsive .centered-container > *,
+.cssc-is-responsive .block-content {
     width: auto;
     max-width: 940px;
 }

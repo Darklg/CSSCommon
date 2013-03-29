@@ -2,8 +2,8 @@
 
 /*
 Name: Onglets
-URL: http://github.com/Darklg/CSSNormalize
-Version: 1.0.1
+URL: http://github.com/Darklg/CSSCommon
+Version: 1.0.2
 License: MIT
 */
 
@@ -15,22 +15,22 @@ License: MIT
    Base des onglets
    ------------------------------------------------------- */
 
-.cssnt-tabs-clic {
+.cssc-tabs-clic {
     position: relative;
     top: 1px; /* superposition sur le contenu */
     overflow: hidden;
 }
 
-.cssnt-tabs-clic li {
+.cssc-tabs-clic li {
     float: left;
 }
 
-.cssnt-tabs-clic a {
+.cssc-tabs-clic a {
     display: block;
     float: left;
 }
 
-.cssnt-tabs-target > * {
+.cssc-tabs-target > * {
     visibility: hidden;
     max-height: 0;
     overflow: hidden;
@@ -42,28 +42,28 @@ License: MIT
     transition: max-height 0.3s ease,opacity 0.3s ease;
 }
 
-.lt_ie8 .cssnt-tabs-target > * {
+.lt_ie8 .cssc-tabs-target > * {
     position: absolute;
 }
 
-.cssnt-tabs-target > .current {
+.cssc-tabs-target > .current {
     visibility: visible;
     max-height: 10000px;
     opacity: 1;
 }
 
-.lt_ie8 .cssnt-tabs-target > .current {
+.lt_ie8 .cssc-tabs-target > .current {
     position: static;
 }
 
 /* Style par défaut
    ----------------------- */
 
-.cssnt-tabs-clic li {
+.cssc-tabs-clic li {
     margin-right: 3px;
 }
 
-.cssnt-tabs-clic a {
+.cssc-tabs-clic a {
     padding: 3px 6px;
     border: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -84,15 +84,15 @@ License: MIT
     transition: all 0.3s ease;
 }
 
-.cssnt-tabs-clic a.current,
-.cssnt-tabs-clic .current a,
-.cssnt-tabs-clic a:hover,
-.cssnt-tabs-clic a:focus {
+.cssc-tabs-clic a.current,
+.cssc-tabs-clic .current a,
+.cssc-tabs-clic a:hover,
+.cssc-tabs-clic a:focus {
     border-bottom: 1px solid #fff;
     background-color: #fff;
 }
 
-.cssnt-tabs-target {
+.cssc-tabs-target {
     padding: 6px;
     border: 1px solid #ccc;
 }

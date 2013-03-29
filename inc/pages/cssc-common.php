@@ -1,7 +1,7 @@
 <section class="block-content" id="bc-common">
-    <h2 id="normalize-common">&Eacute;léments récurrents</h2>
+    <h2 id="cssc-common">&Eacute;léments récurrents</h2>
     <div>
-        <div class="cssn_grid gri-940-24-20">
+        <div class="cssc-grid gri-940-24-20">
             <div class="col-8">
                 <h3>Barre d’avancement :</h3>
                 <span class="lvl-barre">
@@ -24,7 +24,7 @@
                 </div>
             </div>
         </div>
-        <div class="cssn_grid gri-940-24-20">
+        <div class="cssc-grid gri-940-24-20">
             <div class="col-8">
                 <h3>
                     Block media

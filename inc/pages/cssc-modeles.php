@@ -2,14 +2,14 @@
     <div class="bkc-header">
         <div class="bkch-aside">
             Module :
-            <code>normalize-modeles.css</code>
+            <code>cssc-modeles.css</code>
         </div>
-        <h2 id="normalize-modeles">Mod&egrave;les</h2>
+        <h2 id="cssc-modeles">Mod&egrave;les</h2>
     </div>
     <p>Mod&egrave;les d&#x27;objets r&eacute;currents dans les int&eacute;grations.</p>
 
     <h3>Pagination</h3>
-    <ul class="cssn_pagination">
+    <ul class="cssc-pagination">
         <li><a href="#" class="prev">&lsaquo; Pr&eacute;c&eacute;dent</a></li>
         <li>
             <ul>
@@ -22,7 +22,7 @@
     </ul>
 
     <h3>Pagination centrée</h3>
-    <ul class="cssn_pagination cssn_pagination_center">
+    <ul class="cssc-pagination cssc-pagination_center">
         <li><a href="#" class="prev">&lsaquo; Pr&eacute;c&eacute;dent</a></li>
         <li>
             <ul>
@@ -35,8 +35,8 @@
     </ul>
 
     <h3>Menu Principal avec sous-menu</h3>
-    <nav class="cssn_mainnav">
-        <ul class="cssn_mainmenu">
+    <nav class="cssc-mainnav">
+        <ul class="cssc-mainmenu">
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Lien normal</a></li>
             <li class="withsubmenu">
@@ -57,8 +57,8 @@
 
 
     <h3>Menu Principal avec sous-menu &quot;riche&quot; de largeur fixe</h3>
-    <nav class="cssn_mainnav">
-        <ul class="cssn_mainmenu">
+    <nav class="cssc-mainnav">
+        <ul class="cssc-mainmenu">
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Lien normal</a></li>
             <li class="richsubmenu2">
@@ -98,8 +98,8 @@
     </nav>
 
     <h3>Menu Principal avec sous-menu &quot;riche&quot; 100%</h3>
-    <nav class="cssn_mainnav">
-        <ul class="cssn_mainmenu">
+    <nav class="cssc-mainnav">
+        <ul class="cssc-mainmenu">
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Lien normal</a></li>
             <li class="richsubmenu">
@@ -139,13 +139,13 @@
     </nav>
 
     <h3>Menu Principal avec Social links</h3>
-    <nav class="cssn_mainnav">
-        <ul class="cssn_mainmenuplus">
+    <nav class="cssc-mainnav">
+        <ul class="cssc-mainmenuplus">
             <li><a href="#">Twitter</a></li>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Google+</a></li>
         </ul>
-        <ul class="cssn_mainmenu">
+        <ul class="cssc-mainmenu">
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Lien normal</a></li>
             <li class="current"><a href="#">Lien actuel</a></li>
@@ -154,7 +154,7 @@
 
 
     <h3>Fil d'ariane</h3>
-    <ul class="cssn_ariane">
+    <ul class="cssc-ariane">
         <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
             <a href="#" itemprop="url" rel="home">
                 <span itemprop="title">Accueil</span>

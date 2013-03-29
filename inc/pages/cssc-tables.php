@@ -2,11 +2,11 @@
     <div class="bkc-header">
         <div class="bkch-aside">
             Module :
-            <code>normalize-tables.css</code>
+            <code>cssc-tables.css</code>
         </div>
-        <h2 id="normalize-tables">Tableaux</h2>
+        <h2 id="cssc-tables">Tableaux</h2>
     </div>
-    <table class="le-tableau">
+    <table class="cssc-table">
         <thead>
             <tr>
                 <th>Entete</th>

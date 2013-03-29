@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="fr-FR">
     <head>
-        <title>CSS Normalize - Framework CSS</title>
+        <title>CSS Common - Framework CSS</title>
         <meta charset="UTF-8" />
 
         <!-- Magie des navigateurs -->
         <meta name="viewport" content="width=device-width" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <!-- Feuilles Normalize -->
+        <!-- Feuilles CSS Common -->
         <link rel="stylesheet" href="css/main.css?v=<?php echo round(time()/10); ?>" type="text/css" />
 
         <!-- Scripts -->
@@ -23,18 +23,18 @@
     <!--[if gt IE 9]><body class="is_ie10"><![endif]-->
     <!--[if !IE]><!--> <body class=""><!--<![endif]-->
 
-    <div id="main-container" class="cssn-is-responsive">
+    <div id="main-container" class="cssc-is-responsive">
 
         <header id="header">
-            <h1>CSS Normalize - Framework CSS</h1>
-            <p>Demo utilisant le Responsive layout de CSSNormalize.<br /> Work in progress. <a href="index.php">Retour au framework</a>.</p>
+            <h1>CSS Common - Framework CSS</h1>
+            <p>Demo utilisant le Responsive layout de CSSCommon.<br /> Work in progress. <a href="index.php">Retour au framework</a>.</p>
         </header>
 
         <?php include dirname(__FILE__).'/inc/pages/responsive-layout.php'; ?>
 
     </div>
 
-    <a href="http://github.com/darklg/CSSNormalize" id="fork_me"><img src="images/fork_me.png" alt="Fork me on GitHub" /></a>
+    <a href="http://github.com/darklg/CSSCommon" id="fork_me"><img src="images/fork_me.png" alt="Fork me on GitHub" /></a>
     <script src="js/events.js"></script>
     </body>
 </html>

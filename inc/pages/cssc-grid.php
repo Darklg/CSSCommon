@@ -2,15 +2,15 @@
     <div class="bkc-header">
         <div class="bkch-aside">
             Module :
-            <code>normalize-grid.css</code>
+            <code>cssc-grid.css</code>
         </div>
-        <h2 id="normalize-grid">Grilles</h2>
+        <h2 id="cssc-grid">Grilles</h2>
     </div>
     <p>Un système simple de grilles.</p>
     <h3>Demo</h3>
-    <div class="cssn_grid gri-940-24-20">
+    <div class="cssc-grid gri-940-24-20">
         <div class="col-8">
-            <div class="cssn_grid gri-940-24-20">
+            <div class="cssc-grid gri-940-24-20">
                 <div class="col-4"><p>Gridception : Ou la possibilité d'insérer une grille dans une grille.</p></div>
                 <div class="col-4"><p>Ici aussi !</p></div>
             </div>
@@ -37,7 +37,7 @@
             </p>
         </div>
     </div>
-    <div class="cssn_grid gri-940-24-20">
+    <div class="cssc-grid gri-940-24-20">
         <div class="col-16">
             <p>
                 <strong>A.</strong>
@@ -45,7 +45,7 @@
                 <strong>Sed non risus</strong>
                 . Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.Maecenas ligula massa, varius a, semper congue, euismod non, mi. Cras elementum ultrices diam. Ut in risus volutpat libero pharetra tempor.
             </p>
-            <div class="cssn_grid ">
+            <div class="cssc-grid ">
                 <div class="col-8">
                     <p>
                         <strong>C.</strong>

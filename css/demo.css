@@ -2,8 +2,8 @@
 
 /*
 Name: Style de démo
-URL: http://github.com/Darklg/CSSNormalize
-Version: 1.1.6
+URL: http://github.com/Darklg/CSSCommon
+Version: 1.1.7
 License: MIT
 */
 
@@ -21,7 +21,7 @@ License: MIT
     padding-top: 10px;
 }
 
-.cssn-is-responsive #header {
+.cssc-is-responsive #header {
     padding: 20px 20px 10px 20px;
 }
 
@@ -37,7 +37,7 @@ License: MIT
     margin-top: 0;
 }
 
-.container-about .le-button {
+.container-about .cssc-button {
     text-transform: none;
 }
 
@@ -51,33 +51,33 @@ License: MIT
    Push
    ------------------------------------------------------- */
 
- #bc-grid .cssn_grid p {
+#bc-grid .cssc-grid p {
     margin-bottom: 20px;
 }
 
-.block-normalize-push .cssn_grid {
+.block-content-push .cssc-grid {
     margin-bottom: 20px;
 }
 
-.block-normalize-push pre {
+.block-content-push pre {
     margin-bottom: 8px;
 }
 
 /* Exemple de push */
 
-.push_double,
-.push_simple {
+.push-double,
+.push-simple {
     width: 300px;
     height: 100px;
 }
 
-.push_double .before,
-.push_simple {
+.push-double .before,
+.push-simple {
     background-image: url(../images/300x100-black.png);
 }
 
-.push_double .after,
-.push_simple .after {
+.push-double .after,
+.push-simple .after {
     background-image: url(../images/300x100-grey.png);
 }
 
@@ -85,7 +85,7 @@ License: MIT
    Formulaires
    ------------------------------------------------------- */
 
-.cssn-form {
+.cssc-form {
     max-width: 450px;
 }
 
@@ -131,7 +131,7 @@ body {
     margin: 0 auto;
 }
 
-.cssn-is-responsive .fixed-footer ul {
+.cssc-is-responsive .fixed-footer ul {
     width: auto;
     max-width: 960px;
 }
@@ -161,14 +161,14 @@ body {
 
 /* Couleurs pour le Debug */
 
-.cssn-lay {
+.cssc-lay {
     background-color: #d0d0d0;
 }
 
-.cssn-lay > .col-main {
+.cssc-lay > .col-main {
     background-color: #e0e0e0;
 }
 
-.cssn-lay > .col-side {
+.cssc-lay > .col-side {
     background-color: #f0f0f0;
 }

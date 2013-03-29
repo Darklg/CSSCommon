@@ -2,24 +2,24 @@
     <div class="bkc-header">
         <div class="bkch-aside">
             Module :
-            <code>normalize-forms.css</code>
+            <code>cssc-forms.css</code>
         </div>
-        <h2 id="normalize-forms">Formulaires</h2>
+        <h2 id="cssc-forms">Formulaires</h2>
     </div>
     <p>
         Un modèle de formulaire à labels flottants et un modèle simple en paramétrant directement le form. <br />
-        Cliquez sur les boutons ci-dessous pour découvrir les possibilités de CSSNormalize pour les formulaires.
+        Cliquez sur les boutons ci-dessous pour découvrir les possibilités de CSSCommon pour les formulaires.
     </p>
-<!-- <form id="form_demo" action="/" class="cssn-form float-form" method="post"> -->
-    <form id="form_demo" action="/" class="cssn-form block-form" method="post">
+<!-- <form id="form_demo" action="/" class="cssc-form float-form" method="post"> -->
+    <form id="form_demo" action="/" class="cssc-form block-form" method="post">
         <ul>
             <li class="box buttons-box">
-                <a href="#normalize-forms" class="le-button" id="set_form_block">Form Block</a>
-                <a href="#normalize-forms" class="le-button" id="set_form_float">Form Flottant</a>
+                <a href="#cssc-forms" class="cssc-button" id="set_form_block">Form Block</a>
+                <a href="#cssc-forms" class="cssc-button" id="set_form_float">Form Flottant</a>
             </li>
             <li class="box buttons-box">
-                <a href="#normalize-forms" class="le-button" id="set_form_wide">Form large</a>
-                <a href="#normalize-forms" class="le-button" id="set_form_normal">Form normal</a>
+                <a href="#cssc-forms" class="cssc-button" id="set_form_wide">Form large</a>
+                <a href="#cssc-forms" class="cssc-button" id="set_form_normal">Form normal</a>
             </li>
         </ul>
         <fieldset>
@@ -68,8 +68,8 @@
                     <input name="form_passwd" id="form_passwd" type="password" placeholder="Mot de passe" />
                 </li>
                 <li class="box buttons-box">
-                    <a href="#" class="le-button">Le button</a>
-                    <button class="le-button">Le button</button>
+                    <a href="#" class="cssc-button">Le button</a>
+                    <button class="cssc-button">Le button</button>
                 </li>
                 <li class="box checked-box">
                     <input type="checkbox" name="form_checkbox" id="form_checkbox" />
@@ -109,22 +109,22 @@
     <form action="#" method="post">
         <div class="form-append form-append-demo">
             <input class="inputbase" type="text" name="lorem" value="" />
-            <button type="submit" class="le-button">Envoyer</button>
+            <button type="submit" class="cssc-button">Envoyer</button>
         </div>
     </form>
     <p>Formulaire type "recherche rapide" ou "inscription à la newsletter"</p>
 
     <h3>Boutons</h3>
     <div>
-        <button class="le-button">.le-button</button>
-        <button class="le-button le-medium-button">.le-button .le-medium-button</button>
-        <button class="le-button le-big-button">.le-button .le-big-button</button>
+        <button class="cssc-button">.cssc-button</button>
+        <button class="cssc-button le-medium-button">.cssc-button .le-medium-button</button>
+        <button class="cssc-button le-big-button">.cssc-button .le-big-button</button>
     </div>
     <h4>Boutons avec icône</h4>
     <div>
-        <button class="le-button btn-phone">.le-button .btn-phone</button>
-        <button class="le-button btn-eject">.le-button .btn-eject</button>
-        <button class="le-button btn-img">.le-button .btn-img</button>
-        <button class="le-button btn-go">.le-button .btn-go</button>
+        <button class="cssc-button btn-phone">.cssc-button .btn-phone</button>
+        <button class="cssc-button btn-eject">.cssc-button .btn-eject</button>
+        <button class="cssc-button btn-img">.cssc-button .btn-img</button>
+        <button class="cssc-button btn-go">.cssc-button .btn-go</button>
     </div>
 </section>

@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="fr-FR">
     <head>
-        <title>CSS Normalize - Framework CSS</title>
+        <title>CSS Common - Framework CSS</title>
         <meta charset="UTF-8" />
 
         <!-- Magie des navigateurs -->
         <meta name="viewport" content="width=1020" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <!-- Feuilles Normalize -->
+        <!-- Feuilles CSS Common -->
         <link rel="stylesheet" href="css/main.css?v=<?php echo round(time()/10); ?>" type="text/css" />
 
         <!-- Scripts -->
@@ -25,21 +25,21 @@
     <div id="main-container">
 
         <header id="header">
-            <h1>CSS Normalize - Framework CSS</h1>
+            <h1>CSS Common - Framework CSS</h1>
         </header>
 
         <?php include dirname(__FILE__).'/inc/pages/about.php'; ?>
-        <?php include dirname(__FILE__).'/inc/pages/normalize-common.php'; ?>
-        <?php include dirname(__FILE__).'/inc/pages/normalize-forms.php'; ?>
-        <?php include dirname(__FILE__).'/inc/pages/normalize-tables.php'; ?>
-        <?php include dirname(__FILE__).'/inc/pages/normalize-grid.php'; ?>
-        <?php include dirname(__FILE__).'/inc/pages/normalize-messages.php'; ?>
-        <?php include dirname(__FILE__).'/inc/pages/normalize-code.php'; ?>
-        <?php include dirname(__FILE__).'/inc/pages/normalize-gallery.php'; ?>
-        <?php include dirname(__FILE__).'/inc/pages/normalize-push.php'; ?>
-        <?php include dirname(__FILE__).'/inc/pages/normalize-modeles.php'; ?>
-        <?php include dirname(__FILE__).'/inc/pages/normalize-layouts.php'; ?>
-        <?php include dirname(__FILE__).'/inc/pages/normalize-tabs.php'; ?>
+        <?php include dirname(__FILE__).'/inc/pages/cssc-common.php'; ?>
+        <?php include dirname(__FILE__).'/inc/pages/cssc-forms.php'; ?>
+        <?php include dirname(__FILE__).'/inc/pages/cssc-tables.php'; ?>
+        <?php include dirname(__FILE__).'/inc/pages/cssc-grid.php'; ?>
+        <?php include dirname(__FILE__).'/inc/pages/cssc-messages.php'; ?>
+        <?php include dirname(__FILE__).'/inc/pages/cssc-code.php'; ?>
+        <?php include dirname(__FILE__).'/inc/pages/cssc-gallery.php'; ?>
+        <?php include dirname(__FILE__).'/inc/pages/cssc-push.php'; ?>
+        <?php include dirname(__FILE__).'/inc/pages/cssc-modeles.php'; ?>
+        <?php include dirname(__FILE__).'/inc/pages/cssc-layouts.php'; ?>
+        <?php include dirname(__FILE__).'/inc/pages/cssc-tabs.php'; ?>
 
     </div>
 
@@ -47,22 +47,22 @@
     <nav>
         <ul>
             <li><a href="#le-content">Contenu</a></li>
-            <li><a href="#normalize-common">Récurrents</a></li>
-            <li><a href="#normalize-forms">Formulaires</a></li>
-            <li><a href="#normalize-tables">Tables</a></li>
-            <li><a href="#normalize-grid">Grilles</a></li>
-            <li><a href="#normalize-messages">Messages d'avertissement</a></li>
-            <li><a href="#normalize-code">Présentation de code</a></li>
-            <li><a href="#normalize-gallery">Galerie</a></li>
-            <li><a href="#normalize-push">Pushs</a></li>
-            <li><a href="#normalize-modeles">Mod&egrave;les</a></li>
-            <li><a href="#normalize-layouts">Layouts</a></li>
-            <li><a href="#normalize-tabs">Onglets</a></li>
+            <li><a href="#cssc-common">Récurrents</a></li>
+            <li><a href="#cssc-forms">Formulaires</a></li>
+            <li><a href="#cssc-tables">Tables</a></li>
+            <li><a href="#cssc-grid">Grilles</a></li>
+            <li><a href="#cssc-messages">Messages d'avertissement</a></li>
+            <li><a href="#cssc-code">Présentation de code</a></li>
+            <li><a href="#cssc-gallery">Galerie</a></li>
+            <li><a href="#cssc-push">Pushs</a></li>
+            <li><a href="#cssc-modeles">Mod&egrave;les</a></li>
+            <li><a href="#cssc-layouts">Layouts</a></li>
+            <li><a href="#cssc-tabs">Onglets</a></li>
         </ul>
     </nav>
     </footer>
 
-    <a href="http://github.com/darklg/CSSNormalize" id="fork_me"><img src="images/fork_me.png" alt="Fork me on GitHub" /></a>
+    <a href="http://github.com/darklg/CSSCommon" id="fork_me"><img src="images/fork_me.png" alt="Fork me on GitHub" /></a>
     <script src="js/events.js"></script>
     </body>
 </html>

@@ -1,4 +1,4 @@
-# CSSNormalize
+# CSSCommon
 
 A (simple) CSS Starter, like Twitter's Bootstrap or Normalize.css
 

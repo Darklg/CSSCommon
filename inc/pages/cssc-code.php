@@ -1,5 +1,5 @@
 <section class="block-content">
-    <h2 id="normalize-code">Présentation de code</h2>
+    <h2 id="cssc-code">Présentation de code</h2>
     <h3>Balise &lt;pre /&gt;</h3>
     <pre>&lt;script&gt;
 var i;

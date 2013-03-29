@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /*
 Name: Messages d'interaction
-URL: http://github.com/Darklg/CSSNormalize
-Version: 1.2
+URL: http://github.com/Darklg/CSSCommon
+Version: 1.2.1
 License: MIT
 */
 
-.cssn_messages a {
+.cssc-messages a {
     display: block;
     margin-bottom: 5px;
     padding: 7px;
@@ -19,25 +19,25 @@ License: MIT
     -webkit-background-clip: padding-box;
 }
 
-.cssn_messages .error {
+.cssc-messages .error {
     border-color: #C66;
     color: #800;
     background-color: #FEE;
 }
 
-.cssn_messages .notice {
+.cssc-messages .notice {
     border-color: #66C;
     color: #008;
     background-color: #EEF;
 }
 
-.cssn_messages .success {
+.cssc-messages .success {
     border-color: #6C6;
     color: #080;
     background-color: #EFE;
 }
 
-.cssn_messages .warning {
+.cssc-messages .warning {
     border-color: #CC6;
     color: #880;
     background-color: #FFE;

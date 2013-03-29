@@ -2,8 +2,8 @@
 
 /*
 Name: Push
-URL: http://github.com/Darklg/CSSNormalize
-Version: 1.0.6
+URL: http://github.com/Darklg/CSSCommon
+Version: 1.0.7
 License: MIT
 */
 
@@ -11,22 +11,22 @@ License: MIT
    Push
    ------------------------------------------------------- */
 
-.le_push {
+.cssc-push {
     display: inline-block;
     position: relative;
     *display: inline;
     *zoom: 1;
 }
 
-.le_push,
-.le_push .background {
+.cssc-push,
+.cssc-push .background {
     overflow: hidden;
     background: transparent no-repeat top left;
 }
 
-.le_push .before,
-.le_push .after,
-.le_push .background {
+.cssc-push .before,
+.cssc-push .after,
+.cssc-push .background {
     position: absolute;
     top: 0;
     right: 0;
@@ -37,28 +37,28 @@ License: MIT
     text-indent: -9999px;
 }
 
-.le_push .after,
-.le_push .background,
-.le_push .before {
+.cssc-push .after,
+.cssc-push .background,
+.cssc-push .before {
     -webkit-transition: opacity 0.2s ease-in;
     -moz-transition: opacity 0.2s ease-in;
     -o-transition: opacity 0.2s ease-in;
     transition: opacity 0.2s ease-in;
 }
 
-.le_push .background,
-.le_push .after,
-.le_push:focus .before,
-.le_push:hover .before {
+.cssc-push .background,
+.cssc-push .after,
+.cssc-push:focus .before,
+.cssc-push:hover .before {
     opacity: 0.0;
     filter: alpha(opacity=0);
 }
 
-.le_push .before,
-.le_push:focus .after,
-.le_push:focus .background,
-.le_push:hover .after,
-.le_push:hover .background {
+.cssc-push .before,
+.cssc-push:focus .after,
+.cssc-push:focus .background,
+.cssc-push:hover .after,
+.cssc-push:hover .background {
     opacity: 1;
     filter: alpha(opacity=100);
 }

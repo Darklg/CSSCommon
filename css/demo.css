@@ -3,7 +3,7 @@
 /*
 Name: Style de démo
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.1.8
+Version: 1.1.9
 License: MIT
 */
 
@@ -157,6 +157,10 @@ body {
 
 .liste-widgets {
     overflow: hidden;
+}
+
+.liste-widgets > li + li {
+    padding-top: 10px;
 }
 
 /* Couleurs pour le Debug */

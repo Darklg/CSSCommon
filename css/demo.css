@@ -3,7 +3,7 @@
 /*
 Name: Style de démo
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.1.7
+Version: 1.1.8
 License: MIT
 */
 
@@ -96,7 +96,7 @@ License: MIT
 .demo-ir {
     width: 300px;
     height: 60px;
-    background-image: url(http://placekitten.com/300/60);
+    background-image: url(../images/300x60-blue.gif);
 }
 
 /* ----------------------------------------------------------

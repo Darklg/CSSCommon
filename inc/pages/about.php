@@ -6,15 +6,14 @@
                 <strong>CSS Common</strong> est un framework, ou plutôt une base de départ en CSS, qui comprend :
             </p>
             <ul>
-                <li>Un <em>reset CSS</em> inspiré de celui de <a href="http://html5boilerplate.com/" target="_blank">HTML Boilerplate</a>.</li>
-                <li>Une feuille de style par défaut, stylisant les balises HTML les plus utilisées.</li>
-                <li>Une feuille d'objets CSS utilisés fréquemment.</li>
+                <li>Une feuille de style <strong>par défaut</strong>, réinitialisant et stylisant les balises HTML les plus utilisées.</li>
+                <li>Une feuille d'<strong>objets CSS utilisés fréquemment</strong>.</li>
                 <li>Une feuille de démarrage basique.</li>
                 <li>Des modules à rajouter pour chaque besoin.</li>
             </ul>
-            <h3>Sous-modules</h3>
+            <h3>Modules</h3>
             <p>
-                Ces sous-modules sont des feuilles de style indépendantes, à utiliser avec les feuilles de base de CSSCommon.
+                Ces modules sont des feuilles de style indépendantes, à utiliser avec les feuilles de base de CSSCommon.
             </p>
             <h3>Responsive web design</h3>
             <p>

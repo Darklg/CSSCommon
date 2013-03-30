@@ -18,7 +18,7 @@
             </div>
         </div>
         <aside class="col-side">
-            <ul>
+            <ul class="content-container">
                 <li><a href="#">lorem ipsum</a></li>
                 <li><a href="#">ipsum lorem</a></li>
                 <li><a href="#">lorem ipsum</a></li>
@@ -30,26 +30,26 @@
     <h3>Layout basique inversé</h3>
     <div class="cssc-lay">
         <aside class="col-side">
-            <ul>
+            <ul class="content-container">
                 <li><a href="#">lorem ipsum</a></li>
                 <li><a href="#">ipsum lorem</a></li>
             </ul>
         </aside>
         <div class="col-main">
-            <p>The world needs dreamers and the world needs doers. But above all, the world needs dreamers who do. </p>
+            <p class="content-container">The world needs dreamers and the world needs doers. But above all, the world needs dreamers who do. </p>
         </div>
     </div>
 
     <h3>Wide Layout</h3>
     <div class="cssc-lay clay-wide">
         <aside class="col-side">
-            <ul>
+            <ul class="content-container">
                 <li><a href="#">lorem ipsum</a></li>
                 <li><a href="#">ipsum lorem</a></li>
             </ul>
         </aside>
         <div class="col-main">
-            <p>The world needs dreamers and the world needs doers. But above all, the world needs dreamers who do. </p>
+            <p class="content-container">The world needs dreamers and the world needs doers. But above all, the world needs dreamers who do. </p>
         </div>
     </div>
 

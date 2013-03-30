@@ -3,7 +3,7 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.4.1
+Version: 1.5
 License: MIT
 */
 
@@ -13,6 +13,7 @@ License: MIT
 
 .cssc-lay {
     display: table;
+    clear: both;
     width: 940px;
     table-layout: fixed;
 }
@@ -33,12 +34,8 @@ License: MIT
 
 /* Base de style */
 
-.cssc-lay > * + * {
-    padding-left: 20px;
-}
-
 .cssc-lay > .col-side {
-    width: 200px;
+    width: 220px;
 }
 
 .cssc-lay > .col-main {
@@ -64,10 +61,6 @@ License: MIT
 
 .lt_ie9 .clay-resp {
     min-width: 800px;
-}
-
-.clay-resp > * + * {
-    padding-left: 0;
 }
 
 .clay-resp > .col-main {
@@ -108,10 +101,6 @@ License: MIT
 
     .cssc-is-responsive .clay-resp > .col-side .liste-widgets >:nth-child(even) {
         margin-left: 2%;
-    }
-
-    .cssc-is-responsive .cssc-lay > * + * {
-        padding-left: 0;
     }
 }
 

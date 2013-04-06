@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*
+Name: Print
+URL: http://github.com/Darklg/CSSCommon
+Version: 1.0
+License: MIT
+*/
+
+@media print {
+    body {
+        max-width: 100%;
+    }
+
+    /* Global
+       ----------------------- */
+
+    * {
+        float: none;
+        color: #000;
+    }
+
+    /* Links
+       ----------------------- */
+
+    a {
+        text-decoration: underline;
+    }
+
+    a:after {
+        content: " (" attr(href) ") ";
+        font-weight: normal;
+    }
+
+    /* CSSCommon
+       ----------------------- */
+
+    .cssc-mainnav,
+    .fixed-footer {
+        display: none;
+    }
+}

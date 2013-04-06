@@ -3,7 +3,7 @@
 /*
 Name: Grids
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.1.1
+Version: 2.2
 License: MIT
 */
 
@@ -31,6 +31,7 @@ License: MIT
 /* IE 7 */
 
 .clearfix {
+    display: block;
     margin: 0;
     padding: 0;
     border: 0;
@@ -75,3 +76,34 @@ License: MIT
 
 /* <3 http://grid.mindplay.dk/ <3 */
 
+/* ----------------------------------------------------------
+   Grille fluide
+   ------------------------------------------------------- */
+
+.cssc-grid.fluid-grid {
+    width: 100%;
+}
+
+.cssc-grid.fluid-grid > [class^="col-"] {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.cssc-grid.fluid-grid > [class^="col-"]:first-child {
+    padding-left: 0;
+}
+
+.cssc-grid.fluid-grid > [class^="col-"]:last-child {
+    padding-right: 0;
+}
+
+.fluid-grid .col-33p {
+    width: 33%;
+}
+
+.fluid-grid .col-50p {
+    width: 50%;
+}

@@ -102,4 +102,28 @@
         </div>
     </div>
     <span class="clearfix"></span>
+
+    <h3>Grille fluide</h3>
+
+    <div class="cssc-grid fluid-grid">
+        <div class="col-33p">
+            <p><strong>33%</strong> Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.</p>
+        </div>
+        <div class="col-33p">
+            <p><strong>33%</strong> Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.</p>
+        </div>
+        <div class="col-33p">
+            <p><strong>33%</strong> Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.</p>
+        </div>
+    </div>
+    <div class="cssc-grid fluid-grid">
+        <div class="col-50p">
+            <p><strong>50%</strong> Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.</p>
+        </div>
+        <div class="col-50p">
+            <p><strong>50%</strong> Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.</p>
+        </div>
+    </div>
+
+    <span class="clearfix"></span>
 </section>

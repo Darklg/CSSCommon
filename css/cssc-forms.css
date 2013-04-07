@@ -3,7 +3,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.6.2
+Version: 1.6.3
 License: MIT
 */
 
@@ -116,10 +116,6 @@ button {
     font-family: inherit;
     vertical-align: middle;
     outline: 0;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
 }
 
 .cssc-form .fake-input {

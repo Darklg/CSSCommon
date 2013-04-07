@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.0
+Version: 2.1
 License: MIT
 */
 
@@ -214,11 +214,21 @@ a img {
     transition: opacity 0.3s ease;
 }
 
-.cssc-button,
 .trans-all {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+}
+
+input,
+button,
+textarea,
+.cssc-button,
+.trans-button {
+    -webkit-transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
+    -moz-transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
+    -o-transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
+    transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
 }

@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.1
+Version: 2.2
 License: MIT
 */
 
@@ -47,6 +47,8 @@ video,img,object {max-width:100%;height:auto}
 iframe{border:0}
 /* Bug with Firefox and buttons */
 button::-moz-focus-inner {border:0;padding:0;margin:0}
+/* Bugfix for Google Maps */
+.gmnoprint img{max-width:none;}
 
 
 /* ----------------------------------------------------------
@@ -131,6 +133,24 @@ p,
 li {
     font-size: 12px;
     line-height: 16px;
+}
+
+abbr,
+acronym {
+    border-bottom: 1px dashed #ccc;
+    border-color: rgba(0,0,0,.2);
+    cursor: help;
+}
+
+blockquote {
+    padding: 5px 0 5px 10px;
+    border-left: 5px solid #DDD;
+    border-color: rgba(0,0,0,.1);
+    font-size: 12px;
+}
+
+blockquote p {
+    margin-bottom: 5px;
 }
 
 /* ----------------------------------------------------------

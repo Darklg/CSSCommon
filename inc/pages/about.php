@@ -6,8 +6,8 @@
                 <strong>CSS Common</strong> est un framework, ou plutôt une base de départ en CSS, qui comprend :
             </p>
             <ul>
-                <li>Une feuille de style <strong>par défaut</strong>, réinitialisant et stylisant les balises HTML les plus utilisées.</li>
-                <li>Une feuille d'<strong>objets CSS utilisés fréquemment</strong>.</li>
+                <li>Une feuille de style <strong>par défaut</strong>, réinitialisant et stylisant les balises <abbr title="Hypertext Markup Language">HTML</abbr> les plus utilisées.</li>
+                <li>Une feuille d'<strong>objets <abbr title="Cascading Style Sheets">CSS</abbr> utilisés fréquemment</strong>.</li>
                 <li>Une feuille de démarrage basique.</li>
                 <li>Des modules à rajouter pour chaque besoin.</li>
             </ul>
@@ -19,6 +19,11 @@
             <p>
                 Un exemple simplifié de <a href="responsive.php">layout Responsive</a> avec CSSCommon.
             </p>
+            <h3>Pourquoi ?</h3>
+            <blockquote lang="en">
+                <p>The miracle is this: the more we share the more we have.</p>
+                <em><cite>Leonard Nimoy</cite></em>
+            </blockquote>
             <h3>Pour démarrer</h3>
             <p>
                 <a target="_blank" href="https://github.com/Darklg/CSSCommon" class="cssc-button le-medium-button">Forkez le projet sur Github</a>

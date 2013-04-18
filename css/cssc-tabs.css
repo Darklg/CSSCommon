@@ -3,7 +3,7 @@
 /*
 Name: Onglets
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.0.2
+Version: 1.0.3
 License: MIT
 */
 
@@ -37,7 +37,6 @@ License: MIT
     opacity: 0;
     -webkit-transition: max-height 0.3s ease,opacity 0.3s ease;
     -moz-transition: max-height 0.3s ease,opacity 0.3s ease;
-    -ms-transition: max-height 0.3s ease,opacity 0.3s ease;
     -o-transition: max-height 0.3s ease,opacity 0.3s ease;
     transition: max-height 0.3s ease,opacity 0.3s ease;
 }
@@ -79,7 +78,6 @@ License: MIT
     background-clip: border;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }

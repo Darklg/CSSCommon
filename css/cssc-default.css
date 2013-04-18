@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.2
+Version: 2.3
 License: MIT
 */
 
@@ -79,6 +79,11 @@ sub{bottom:-0.25em;}
 img,input[type=image]{vertical-align:bottom;}
 /* Curseur adéquat pour les boutons */
 input[type="submit"],input[type="image"],button{cursor:pointer;}
+/* Address styling not present in IE 8/9. | necolas.github.io/normalize.css/ */
+[hidden] {
+    display: none;
+}
+
 
 /* ----------------------------------------------------------
    Typo
@@ -96,47 +101,35 @@ h4, .h4,
 h5, .h5 {
     font-weight: bold;
     display: block;
+    line-height: 1.3;
 }
 
 h1, .h1 {
     font-size: 25px;
-    line-height: 40px;
 }
 
 h2, .h2 {
-    margin: 10px 0 5px 0;
+    margin-bottom: 10px;
     font-size: 20px;
-    line-height: 30px;
 }
 
 h3, .h3 {
-    margin: 5px 0;
+    margin-bottom: 5px;
     font-size: 15px;
-    line-height: 20px;
 }
 
 h4, .h4 {
-    margin: 5px 0;
     font-size: 13px;
-    line-height: 18px;
-}
-
-h1:first-child, .h1:first-child,
-h2:first-child, .h2:first-child,
-h3:first-child, .h3:first-child,
-h4:first-child, .h4:first-child,
-h5:first-child, .h5:first-child {
-    margin-top: 0;
 }
 
 p,
 li {
     font-size: 12px;
-    line-height: 16px;
+    line-height: 1.3;
 }
 
-abbr,
-acronym {
+abbr[title],
+acronym[title] {
     border-bottom: 1px dashed #ccc;
     border-color: rgba(0,0,0,.2);
     cursor: help;
@@ -152,14 +145,13 @@ blockquote {
 blockquote p {
     margin-bottom: 5px;
 }
-
 /* ----------------------------------------------------------
    Structure
    ------------------------------------------------------- */
 
 .le-content ul,
 p {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .le-content ul ul {
@@ -178,6 +170,8 @@ p:last-child {
 
 table {
     width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* ----------------------------------------------------------
@@ -188,6 +182,7 @@ a {
     color: #69C;
 }
 
+a:focus,
 a:hover {
     color: #C96;
 }
@@ -214,22 +209,20 @@ a:hover img {
    Transitions
    ------------------------------------------------------- */
 
-.trans-col,
-a {
+a,
+.trans-col {
     -webkit-transition: color 0.3s ease;
     -moz-transition: color 0.3s ease;
-    -ms-transition: color 0.3s ease;
     -o-transition: color 0.3s ease;
     transition: color 0.3s ease;
 }
 
+a img,
 .aimg,
 .aimginv,
-.trans-opa,
-a img {
+.trans-opa {
     -webkit-transition: opacity 0.3s ease;
     -moz-transition: opacity 0.3s ease;
-    -ms-transition: opacity 0.3s ease;
     -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
 }
@@ -237,7 +230,6 @@ a img {
 .trans-all {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }

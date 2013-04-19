@@ -16,8 +16,7 @@
         <script src="js/functions.js"></script>
     </head>
 
-    <!--[if lt IE 7 ]><body class="is_ie6 lt_ie7 lt_ie8 lt_ie9 lt_ie10"><![endif]-->
-    <!--[if IE 7 ]><body class="is_ie7 lt_ie8 lt_ie9 lt_ie10"><![endif]-->
+    <!--[if lt IE 8 ]><body class="is_ie7 lt_ie8 lt_ie9 lt_ie10"><![endif]-->
     <!--[if IE 8 ]><body class="is_ie8 lt_ie9 lt_ie10"><![endif]-->
     <!--[if IE 9 ]><body class="is_ie9 lt_ie10"><![endif]-->
     <!--[if gt IE 9]><body class="is_ie10"><![endif]-->

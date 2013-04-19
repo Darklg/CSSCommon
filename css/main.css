@@ -6,7 +6,7 @@ Attention : Ne pas utiliser @import dans vos feuilles.
 
 /* Styles de base */
 @import 'cssc-default.css?v=2.3';
-@import 'cssc-common.css?v=1.6.6';
+@import 'cssc-common.css?v=1.7';
 @import 'cssc-base.css?v=1.2.3';
 
 /* Modules */

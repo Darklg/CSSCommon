@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.6.6
+Version: 1.7
 License: MIT
 */
 
@@ -11,7 +11,7 @@ License: MIT
    Images masquées (Pour push, etc)
    ------------------------------------------------------- */
 
-.le_btn,
+.cssc-btn,
 .ir {
     display: inline-block;
     position: relative;
@@ -35,7 +35,7 @@ License: MIT
 
 /* Reset */
 
-.le_btn {
+.cssc-btn {
     margin: 0;
     padding: 0;
     border: 0;
@@ -44,8 +44,8 @@ License: MIT
 
 /* :Hover */
 
-.le_btn:focus,
-.le_btn:hover {
+.cssc-btn:focus,
+.cssc-btn:hover {
     opacity: 0.50;
     filter: alpha(opacity=50);
 }
@@ -54,7 +54,7 @@ License: MIT
    "..." automatique à la fin d'une ligne
    ------------------------------------------------------- */
 
-.non_depassement {
+.non-depassement {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -64,7 +64,7 @@ License: MIT
    Suppression d'élément
    ------------------------------------------------------- */
 
-.suppression_element {
+.suppression-element {
     position: absolute;
     top: -9999px;
     left: -9999px;
@@ -123,7 +123,6 @@ License: MIT
     display: block;
     zoom: 1;
     overflow: hidden;
-    _overflow: visible;
 }
 
 .bmedia >:first-child {

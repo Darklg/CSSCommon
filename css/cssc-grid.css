@@ -3,7 +3,7 @@
 /*
 Name: Grids
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.2
+Version: 2.2.1
 License: MIT
 */
 
@@ -16,25 +16,6 @@ License: MIT
     float: left;
     zoom: 1;
     min-height: 1px;
-}
-
-.cssc-grid:before,
-.cssc-grid:after {
-    content: '';
-    display: block;
-    clear: both;
-    max-height: 0;
-    overflow: hidden;
-    line-height: 0;
-}
-
-/* IE 7 */
-
-.clearfix {
-    display: block;
-    margin: 0;
-    padding: 0;
-    border: 0;
 }
 
 /* ----------------------------------------------------------

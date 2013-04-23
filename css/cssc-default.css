@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.4
+Version: 2.4.1
 License: MIT
 */
 
@@ -271,23 +271,30 @@ blockquote p {
 /* Content
    ----------------------- */
 
-.le-content ul,
-p {
-    margin-bottom: 16px;
-}
-
 .le-content ul ul {
     margin-bottom: 0;
     padding-left: 12px;
 }
 
-.le-content ul:last-child,
-p:last-child {
-    margin-bottom: 0;
-}
-
 .le-content li {
     list-style: inside disc;
+}
+
+/* Content blocks
+   ----------------------- */
+
+.le-content ul,
+blockquote,
+p,
+.cssc-block {
+    margin-bottom: 16px;
+}
+
+.le-content ul:last-child,
+blockquote:last-child,
+p:last-child,
+.cssc-block:last-child {
+    margin-bottom: 0;
 }
 
 /* ----------------------------------------------------------
@@ -354,6 +361,7 @@ a img,
 input,
 button,
 textarea,
+.cssc-pagination a,
 .cssc-button,
 .trans-button {
     -webkit-transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;

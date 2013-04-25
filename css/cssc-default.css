@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.4.1
+Version: 2.4.2
 License: MIT
 */
 
@@ -101,6 +101,10 @@ input[type="checkbox"] {
 input[type="radio"],
 input[type="checkbox"] {
     margin: 0;
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
 }
 
 .lt_ie8 input[type="checkbox"] {
@@ -250,6 +254,9 @@ li {
     line-height: 1.3;
 }
 
+/* Elements
+   ----------------------- */
+
 abbr[title],
 acronym[title] {
     border-bottom: 1px dashed #ccc;
@@ -266,6 +273,12 @@ blockquote {
 
 blockquote p {
     margin-bottom: 5px;
+}
+
+hr {
+    clear: both;
+    border: 1px solid #333;
+    border-width: 1px 0 0;
 }
 
 /* Content
@@ -317,6 +330,7 @@ a:hover {
 
 /* .99 Opacity avoids a nasty effect on Webkit */
 
+a img,
 .aimginv:hover,
 .aimg {
     opacity: 0.99;

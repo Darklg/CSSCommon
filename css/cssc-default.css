@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.4.2
+Version: 2.4.3
 License: MIT
 */
 
@@ -86,25 +86,15 @@ nav ul {
    ----------------------- */
 
 input,
+button,
 select {
     vertical-align: middle;
-}
-
-input[type="radio"] {
-    vertical-align: text-bottom;
-}
-
-input[type="checkbox"] {
-    vertical-align: bottom;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
     margin: 0;
-}
-
-input[type=search] {
-    -webkit-appearance: textfield;
+    vertical-align: text-bottom;
 }
 
 .lt_ie8 input[type="checkbox"] {
@@ -117,6 +107,34 @@ input:focus {
 
 input:-webkit-autofill {
     background-color: #ccc!important;
+}
+
+/* Number & Search resets */
+
+input[type=number],
+input[type=search] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
 }
 
 /* Bug with Firefox and buttons */
@@ -308,6 +326,20 @@ blockquote:last-child,
 p:last-child,
 .cssc-block:last-child {
     margin-bottom: 0;
+}
+
+/* ----------------------------------------------------------
+  Selection style
+---------------------------------------------------------- */
+
+::-moz-selection {
+    color: #000;
+    background: rgba(51,102,153,.3);
+}
+
+::selection {
+    color: #000;
+    background: rgba(51,102,153,.3);
 }
 
 /* ----------------------------------------------------------

@@ -3,7 +3,7 @@
 /*
 Name: Modèles basiques
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.3.10
+Version: 1.4
 License: MIT
 */
 
@@ -208,4 +208,30 @@ License: MIT
     display: inline-block;
     zoom: 1;
     *display: inline;
+}
+
+/* ----------------------------------------------------------
+  Modèle : Liste en ligne
+---------------------------------------------------------- */
+
+.cssc-inline-list {
+    margin-bottom: 20px;
+}
+
+.cssc-inline-list a,
+.cssc-inline-list li,
+.cssc-inline-list {
+    height: 30px;
+    line-height: 30px;
+}
+
+.cssc-inline-list li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.cssc-inline-list a {
+    display: block;
+    padding: 0 5px;
 }

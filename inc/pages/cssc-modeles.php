@@ -8,6 +8,15 @@
     </div>
     <p>Mod&egrave;les d&#x27;objets r&eacute;currents dans les int&eacute;grations.</p>
 
+    <h3>Liste "inline"</h3>
+    <ul class="cssc-inline-list">
+        <li><a href="#">Element 1</a></li>
+        <li><a href="#">Element 2</a></li>
+        <li><a href="#">Element 3</a></li>
+        <li><a href="#">Element 4</a></li>
+        <li><a href="#">Element 5</a></li>
+    </ul>
+
     <h3>Pagination</h3>
     <ul class="cssc-pagination">
         <li><a href="#" class="prev">&lsaquo; Pr&eacute;c&eacute;dent</a></li>

@@ -3,7 +3,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.6.3
+Version: 1.6.4
 License: MIT
 */
 
@@ -300,8 +300,22 @@ button {
     color: #A0A0A0;
 }
 
-:-ms-placeholder {
+:-ms-input-placeholder {
     color: #A0A0A0;
+}
+
+/* Validation messages forms */
+
+::-webkit-validation-bubble-message,
+::-webkit-validation-bubble-arrow {
+    border-color: rgba(0,0,0,.2);
+    color: #333;
+    background: rgba(255,255,255,.95);
+    box-shadow: none;
+}
+
+::-webkit-validation-bubble-text-block {
+    font: 13px/1.4 sans-serif;
 }
 
 /* ----------------------------------------------------------

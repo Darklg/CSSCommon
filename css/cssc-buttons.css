@@ -3,7 +3,7 @@
 /*
 Name: Boutons par défaut
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.4.2
+Version: 1.4.3
 License: MIT
 */
 
@@ -13,12 +13,14 @@ License: MIT
 
 .cssc-button {
     display: inline-block;
+    -webkit-appearance: none;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
+    text-align: center;
     white-space: nowrap;
     vertical-align: middle;
     -webkit-background-clip: padding-box;
@@ -31,7 +33,6 @@ License: MIT
     user-drag: none;
     *zoom: 1;
     *display: inline;
-    -webkit-appearance: ;
 }
 
 .cssc-button:before,
@@ -64,7 +65,7 @@ License: MIT
     background: #d0d0d0 no-repeat 0 0;
     background-image: -moz-linear-gradient(top,#f0f0f0,#d0d0d0);
     background-image: -o-linear-gradient(top,#f0f0f0,#d0d0d0);
-    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#f0f0f0),color-stop(1,#d0d0d0));
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#f0f0f0), color-stop(1,#d0d0d0) );
     background-image: -webkit-linear-gradient(#f0f0f0,#d0d0d0);
     background-image: linear-gradient(#f0f0f0,#d0d0d0);
 }
@@ -79,6 +80,14 @@ License: MIT
 .cssc-button:active {
     border-color: #aaa;
     background-position: 0 -25px;
+}
+
+/* Mode de boutons
+   ----------------------- */
+
+.wide-button {
+    display: block;
+    width: 100%;
 }
 
 /* Tailles de boutons

@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
-/* 
+/*
 Attention : Ne pas utiliser @import dans vos feuilles.
 */
 
-/* Styles de base */
+/* Styles de base */
 @import 'cssc-default.css?v=2.4.3';
 @import 'cssc-common.css?v=1.7.1';
 @import 'cssc-base.css?v=1.2.3';
 
-/* Modules */
+/* Modules */
 @import 'cssc-buttons.css?v=1.4.3';
 @import 'cssc-forms.css?v=1.6.4';
 @import 'cssc-tables.css?v=1.1.1';
@@ -21,5 +21,5 @@ Attention : Ne pas utiliser @import dans vos feuilles.
 @import 'cssc-tabs.css?v=1.0.3';
 @import 'cssc-print.css?v=1.0';
 
-/* Style du site de démo */
-@import 'demo.css?v=1.1.9';
+/* Style du site de démo */
+@import 'demo.css?v=1.1.10';

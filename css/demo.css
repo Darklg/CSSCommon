@@ -3,7 +3,7 @@
 /*
 Name: Style de démo
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.1.9
+Version: 1.1.10
 License: MIT
 */
 
@@ -45,6 +45,10 @@ License: MIT
     margin-top: 50px;
     padding-top: 50px;
     border-top: 1px solid #f0f0f0;
+}
+
+.block-content:last-child {
+    padding-bottom: 50px;
 }
 
 /* ----------------------------------------------------------
@@ -129,6 +133,7 @@ body {
 .fixed-footer ul {
     width: 960px;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 .cssc-is-responsive .fixed-footer ul {

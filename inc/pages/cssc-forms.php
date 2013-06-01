@@ -111,8 +111,10 @@
             <input class="inputbase" type="text" name="lorem" value="" />
             <button type="submit" class="cssc-button">Envoyer</button>
         </div>
+        <div class="cssc-form">
+            <small>Formulaire type "recherche rapide" ou "inscription à la newsletter"</small>
+        </div>
     </form>
-    <p>Formulaire type "recherche rapide" ou "inscription à la newsletter"</p>
 
     <h3>Boutons</h3>
     <div>

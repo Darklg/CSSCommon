@@ -3,7 +3,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.6.4
+Version: 1.7
 License: MIT
 */
 
@@ -12,6 +12,7 @@ License: MIT
 }
 
 .cssc-form .box {
+    position: relative;
     vertical-align: baseline;
 }
 
@@ -27,51 +28,29 @@ License: MIT
 
 /* Labels */
 
-.float-form .box {
-    position: relative;
-    padding-left: 130px;
-}
-
 .cssc-form .fake-label,
 .cssc-form label {
     display: block;
-    padding-top: 4px;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 16px;
-    cursor: pointer;
+    line-height: inherit;
 }
 
-.float-form .box .fake-label,
-.float-form .box label {
+.float-form .fake-label,
+.float-form label {
     position: absolute;
     top: 0;
     left: 0;
-    width: 120px;
-    padding-right: 10px;
     text-align: right;
 }
 
-.float-form .box .long-label {
-    top: -4px;
-    padding-top: 0;
-}
-
-.block-form .box .fake-label,
-.block-form .box label {
-    padding-top: 0;
-}
-
-.block-form .radio-box label,
-.block-form .checked-box label,
-.float-form .radio-box label,
-.float-form .checked-box label {
+.cssc-form .radio-box label,
+.cssc-form .checked-box label {
     display: inline-block;
     position: static;
     width: auto;
-    padding: 5px 0 0 0;
+    padding: 0;
     font-weight: normal;
     line-height: inherit;
+    vertical-align: baseline;
 }
 
 /* Champs */
@@ -93,7 +72,7 @@ button {
     width: 12px;
     height: 12px;
     margin: 0;
-    vertical-align: middle;
+    vertical-align: baseline;
 }
 
 /* Reset des éléments */
@@ -141,28 +120,6 @@ button {
     width: 90%;
 }
 
-/* Champs multiples */
-
-.cssc-form .multibox-box input[type=text],
-.cssc-form .multibox-box input[type=url],
-.cssc-form .multibox-box input[type=email],
-.cssc-form .multibox-box input[type=password] {
-    width: 65px;
-}
-
-.cssc-form .multibox-box input.halfling {
-    width: 45px;
-}
-
-/* Aide */
-
-.cssc-form small {
-    display: block;
-    font-size: 11px;
-    line-height: 16px;
-    color: #676767;
-}
-
 /* Deux blocs */
 
 .cssc-form .twoboxes {
@@ -193,15 +150,32 @@ button {
     padding-left: 140px;
 }
 
-/* Style de la démo
+/* ----------------------------------------------------------
+  Structures particulières
+---------------------------------------------------------- */
+
+/* Formulaire collé
    ----------------------- */
+
+.form-append > * {
+    float: left;
+    width: auto;
+}
+
+.lt_ie8 .form-append > * {
+    max-width: 200px;
+}
+
+/* ----------------------------------------------------------
+  Thème du formulaire
+---------------------------------------------------------- */
 
 .cssc-form {
     padding: 10px 0;
     max-width: 100%;
 }
 
-/* Fieldset */
+/* Fieldset */
 
 .cssc-form fieldset {
     padding: 10px 0;
@@ -218,24 +192,64 @@ button {
     font-weight: bold;
 }
 
-/* Box */
+/* Box */
 
 .cssc-form .box {
     padding-bottom: 10px;
+    line-height: 25px;
 }
 
 .float-form .box {
     min-height: 25px;
 }
 
-/* Labels */
+/* Champs multiples */
 
-.block-form .box .fake-label,
-.block-form .box label {
-    line-height: 25px;
+.cssc-form .multibox-box input[type=text],
+.cssc-form .multibox-box input[type=url],
+.cssc-form .multibox-box input[type=email],
+.cssc-form .multibox-box input[type=password] {
+    width: 65px;
 }
 
-/* Champs */
+.cssc-form .multibox-box input.halfling {
+    width: 45px;
+}
+
+/* Labels */
+
+.float-form .box {
+    padding-left: 130px;
+}
+
+.float-form .fake-label,
+.float-form label {
+    width: 120px;
+    padding-right: 10px;
+}
+
+.cssc-form .fake-label,
+.cssc-form label {
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.float-form .box .long-label {
+    top: -1px;
+    line-height: 13px;
+}
+
+/* Aide */
+
+.cssc-form small {
+    display: block;
+    font-size: 11px;
+    line-height: 16px;
+    color: #676767;
+}
+
+/* Champs */
 
 .inputbase,
 .cssc-form textarea,
@@ -253,10 +267,6 @@ button {
     font-size: 12px;
     color: #333;
     background: #fafafa;
-    -webkit-background-clip: padding-box;
-    -webkit-box-shadow: inset 1px 1px 1px #ccc;
-    -moz-box-shadow: inset 1px 1px 1px #ccc;
-    box-shadow: inset 1px 1px 1px #ccc;
 }
 
 .cssc-form .fake-input,
@@ -280,16 +290,13 @@ button {
     border-color: #333;
     color: #000;
     background-color: #fff;
-    -webkit-box-shadow: inset 1px 1px 1px #dedede,0 0 2px rgba(0,0,0,0.3);
-    -moz-box-shadow: inset 1px 1px 1px #dedede,0 0 2px rgba(0,0,0,0.3);
-    box-shadow: inset 1px 1px 1px #dedede,0 0 2px rgba(0,0,0,0.3);
 }
 
 /* Couleurs de placeholder : ne pas fusionner les sélecteurs ! */
 
 .cssc-form [disabled],
 .cssc-form .fake-input {
-    color: #A0A0A0;
+    color: #B0B0B0;
 }
 
 ::-webkit-input-placeholder {
@@ -319,22 +326,8 @@ button {
 }
 
 /* ----------------------------------------------------------
-   Structures particulières
-   ------------------------------------------------------- */
-
-/* Formulaire collé
-   ----------------------- */
-
-.form-append > * {
-    float: left;
-    width: auto;
-}
-
-.lt_ie8 .form-append > * {
-    max-width: 200px;
-}
-
-/* Style de la démo*/
+  Style demo CSSLisible
+---------------------------------------------------------- */
 
 .form-append {
     min-height: 25px;

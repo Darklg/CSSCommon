@@ -19,6 +19,7 @@ Attention : Ne pas utiliser @import dans vos feuilles.
 @import 'cssc-modeles.css?v=1.4';
 @import 'cssc-layouts.css?v=1.5';
 @import 'cssc-tabs.css?v=1.0.3';
+@import 'cssc-images.css?v=1.0';
 @import 'cssc-print.css?v=1.0';
 
 /* Style du site de démo */

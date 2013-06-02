@@ -39,13 +39,13 @@
         <?php include dirname(__FILE__).'/inc/pages/cssc-modeles.php'; ?>
         <?php include dirname(__FILE__).'/inc/pages/cssc-layouts.php'; ?>
         <?php include dirname(__FILE__).'/inc/pages/cssc-tabs.php'; ?>
+        <?php include dirname(__FILE__).'/inc/pages/cssc-images.php'; ?>
 
     </div>
 
     <footer class="fixed-footer">
     <nav>
         <ul>
-            <li><a href="#le-content">Contenu</a></li>
             <li><a href="#cssc-common">Récurrents</a></li>
             <li><a href="#cssc-forms">Formulaires</a></li>
             <li><a href="#cssc-tables">Tables</a></li>
@@ -57,6 +57,7 @@
             <li><a href="#cssc-modeles">Mod&egrave;les</a></li>
             <li><a href="#cssc-layouts">Layouts</a></li>
             <li><a href="#cssc-tabs">Onglets</a></li>
+            <li><a href="#cssc-images">Images</a></li>
         </ul>
     </nav>
     </footer>

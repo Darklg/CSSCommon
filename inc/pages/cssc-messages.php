@@ -1,4 +1,4 @@
-<section class="block-content">
+<section class="block-content centered-container"><div>
     <div class="bkc-header">
         <div class="bkch-aside">
             Module :
@@ -12,4 +12,4 @@
         <li><a class="success" href="#">consectetur adipiscing elit</a></li>
         <li><a class="warning" href="#">consectetur adipiscing elit</a></li>
     </ul>
-</section>
+</div></section>

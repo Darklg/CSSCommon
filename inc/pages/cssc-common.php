@@ -1,4 +1,4 @@
-<section class="block-content" id="bc-common">
+<section class="block-content centered-container" id="bc-common"><div>
     <h2 id="cssc-common">&Eacute;léments récurrents</h2>
     <div>
         <div class="cssc-grid gri-940-24-20">
@@ -54,4 +54,4 @@
 
         </div>
     </div>
-</section>
+</div></section>

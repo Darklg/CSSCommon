@@ -1,4 +1,4 @@
-<section class="block-content">
+<section class="block-content centered-container"><div>
     <h2 id="cssc-code">Présentation de code</h2>
     <h3>Balise &lt;pre /&gt;</h3>
     <pre>&lt;script&gt;
@@ -9,4 +9,4 @@ for (i=0; i&lt;3; i++){
 &lt;/script&gt;</pre>
     <h3>Balise &lt;code /&gt;</h3>
     <code>1. Hello.</code>
-</section>
+</div></section>

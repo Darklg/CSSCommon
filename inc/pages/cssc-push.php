@@ -1,4 +1,4 @@
-<section class="block-content block-content-push">
+<section class="block-content block-content-push centered-container"><div>
     <div class="bkc-header">
         <div class="bkch-aside">
             Module :
@@ -44,4 +44,4 @@
             </p>
         </div>
     </div>
-</section>
+</div></section>

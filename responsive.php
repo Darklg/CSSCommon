@@ -24,7 +24,7 @@
 
     <div id="main-container" class="cssc-is-responsive">
 
-        <header id="header">
+        <header id="header" class="centered-container">
             <h1>CSS Common - Framework CSS</h1>
             <p>Demo utilisant le Responsive layout de CSSCommon.<br /> Work in progress. <a href="index.php">Retour au framework</a>.</p>
         </header>

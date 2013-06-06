@@ -1,4 +1,4 @@
-<section class="block-content">
+<section class="block-content centered-container"><div>
     <div class="cssc-lay clay-resp">
         <div class="col-main">
             <div class="content-container">
@@ -61,4 +61,4 @@
     <div class="hidden-on-full">
         <pre>.hidden-on-full {}</pre>
     </div>
-</section>
+</div></section>

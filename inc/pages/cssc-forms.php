@@ -1,4 +1,4 @@
-<section class="block-content">
+<section class="block-content centered-container"><div>
     <div class="bkc-header">
         <div class="bkch-aside">
             Module :
@@ -129,4 +129,4 @@
         <button class="cssc-button btn-img">.cssc-button .btn-img</button>
         <button class="cssc-button btn-go">.cssc-button .btn-go</button>
     </div>
-</section>
+</div></section>

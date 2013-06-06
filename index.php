@@ -23,7 +23,7 @@
     <!--[if !IE]><!--> <body class=""><!--<![endif]-->
     <div id="main-container">
 
-        <header id="header">
+        <header id="header" class="centered-container">
             <h1>CSS Common - Framework CSS</h1>
         </header>
 

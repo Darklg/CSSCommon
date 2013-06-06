@@ -1,4 +1,4 @@
-<section class="block-content" id="bc-grid">
+<section class="block-content centered-container" id="bc-grid"><div>
     <div class="bkc-header">
         <div class="bkch-aside">
             Module :
@@ -126,4 +126,4 @@
     </div>
 
     <span class="clearfix"></span>
-</section>
+</div></section>

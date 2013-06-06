@@ -1,4 +1,4 @@
-<section class="block-content">
+<section class="block-content centered-container"><div>
     <div class="bkc-header">
         <div class="bkch-aside">
             Module :
@@ -21,4 +21,4 @@
             <li><p>The world needs dreamers and the world needs doers. But above all, the world needs dreamers who do. </p></li>
         </ul>
     </div>
-</section>
+</div></section>

@@ -1,4 +1,4 @@
-<section class="block-content" id="bc-layouts">
+<section class="block-content centered-container" id="bc-layouts"><div>
     <div class="bkc-header">
         <div class="bkch-aside">
             Module :
@@ -52,6 +52,4 @@
             <p class="content-container">The world needs dreamers and the world needs doers. But above all, the world needs dreamers who do. </p>
         </div>
     </div>
-
-
-</section>
+</div></section>

@@ -8,7 +8,6 @@
             <ul>
                 <li>Une feuille de style <strong>par défaut</strong>, réinitialisant et stylisant les balises <abbr title="Hypertext Markup Language">HTML</abbr> les plus utilisées.</li>
                 <li>Une feuille d'<strong>objets <abbr title="Cascading Style Sheets">CSS</abbr> utilisés fréquemment</strong>.</li>
-                <li>Une feuille de démarrage basique.</li>
                 <li>Des modules à rajouter pour chaque besoin.</li>
             </ul>
             <h3>Modules</h3>

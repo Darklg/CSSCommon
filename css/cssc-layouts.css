@@ -3,13 +3,60 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.5
+Version: 1.6
 License: MIT
 */
 
 /* ----------------------------------------------------------
-   Base des layouts
-   ------------------------------------------------------- */
+  Containers
+---------------------------------------------------------- */
+
+/* Container centré */
+
+.centered-container {
+    clear: both;
+    text-align: center;
+}
+
+/* Contenu flottant */
+
+#header,
+#footer,
+.block-content,
+.centered-container > * {
+    width: 940px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.cssc-is-responsive #header,
+.cssc-is-responsive #footer,
+.cssc-is-responsive .centered-container > *,
+.cssc-is-responsive .block-content {
+    width: auto;
+    max-width: 940px;
+}
+
+/* ----------------------------------------------------------
+  Contenu
+---------------------------------------------------------- */
+
+.content-container {
+    position: relative;
+    padding: 20px;
+}
+
+/* Zone élargie */
+
+.large-content-area {
+    position: relative;
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+/* ----------------------------------------------------------
+  Base des layouts
+---------------------------------------------------------- */
 
 .cssc-lay {
     display: table;
@@ -52,7 +99,7 @@ License: MIT
     width: 620px;
 }
 
-/* Responsive Layout */
+/* Responsive Layout */
 
 .clay-resp {
     width: 100%;
@@ -113,6 +160,10 @@ License: MIT
         margin-left: 0;
     }
 }
+
+/* ----------------------------------------------------------
+  Visibilité selon le terminal utilisé
+---------------------------------------------------------- */
 
 @media(min-width:861px) {
     .visible-only-full {

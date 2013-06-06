@@ -3,7 +3,7 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.6.1
+Version: 1.6.2
 License: MIT
 */
 
@@ -15,7 +15,12 @@ License: MIT
 
 .centered-container {
     clear: both;
+    min-width: 980px;
     text-align: center;
+}
+
+.cssc-is-responsive .centered-container {
+    min-width: 0;
 }
 
 /* Contenu flottant */
@@ -23,7 +28,6 @@ License: MIT
 .centered-container > * {
     width: 940px;
     margin: 0 auto;
-    padding: 0 10px;
     text-align: left;
 }
 

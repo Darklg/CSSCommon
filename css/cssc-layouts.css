@@ -3,7 +3,7 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.6
+Version: 1.6.1
 License: MIT
 */
 
@@ -20,19 +20,14 @@ License: MIT
 
 /* Contenu flottant */
 
-#header,
-#footer,
-.block-content,
 .centered-container > * {
     width: 940px;
     margin: 0 auto;
+    padding: 0 10px;
     text-align: left;
 }
 
-.cssc-is-responsive #header,
-.cssc-is-responsive #footer,
-.cssc-is-responsive .centered-container > *,
-.cssc-is-responsive .block-content {
+.cssc-is-responsive .centered-container > * {
     width: auto;
     max-width: 940px;
 }

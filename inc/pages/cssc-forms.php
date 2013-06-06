@@ -119,6 +119,7 @@
     <h3>Boutons</h3>
     <div>
         <button class="cssc-button">.cssc-button</button>
+        <button disabled class="cssc-button">disabled</button>
         <button class="cssc-button le-medium-button">.cssc-button .le-medium-button</button>
         <button class="cssc-button le-big-button">.cssc-button .le-big-button</button>
     </div>

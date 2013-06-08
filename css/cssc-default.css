@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.4.3
+Version: 2.4.4
 License: MIT
 */
 
@@ -344,7 +344,7 @@ p:last-child,
 
 /* ----------------------------------------------------------
    Links
-   ------------------------------------------------------- */
+---------------------------------------------------------- */
 
 a {
     color: #69C;
@@ -352,7 +352,11 @@ a {
 
 a:focus,
 a:hover {
-    color: #C96;
+    color: #369;
+}
+
+a:active {
+    color: #000;
 }
 
 .aimginv {
@@ -360,7 +364,7 @@ a:hover {
     filter: alpha(opacity=70);
 }
 
-/* .99 Opacity avoids a nasty effect on Webkit */
+/* .99 Opacity avoids a nasty effect on Webkit */
 
 a img,
 .aimginv:hover,

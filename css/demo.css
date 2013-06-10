@@ -3,7 +3,7 @@
 /*
 Name: Style de démo
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.1.10
+Version: 1.1.11
 License: MIT
 */
 
@@ -12,6 +12,7 @@ License: MIT
    ------------------------------------------------------- */
 
 #fork_me {
+    z-index: 9;
     position: absolute;
     top: 0;
     right: 0;
@@ -39,6 +40,10 @@ License: MIT
 
 .container-about .cssc-button {
     text-transform: none;
+}
+
+.container-about .le-content {
+    padding-bottom: 20px;
 }
 
 .block-content + .block-content {

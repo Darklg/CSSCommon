@@ -3,13 +3,13 @@
 /*
 Name: Boutons par défaut
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.5
+Version: 1.6
 License: MIT
 */
 
-/* --------------------------
-    Base du bouton
-   ----------------------- */
+/* ----------------------------------------------------------
+  Base du bouton
+---------------------------------------------------------- */
 
 .buttonreset,
 .cssc-button {
@@ -27,7 +27,7 @@ License: MIT
     -webkit-background-clip: padding-box;
     cursor: pointer;
     -webkit-user-select: none;
-    -moz-user-select: -moz-none;
+    -moz-user-select: none;
     user-select: none;
     -webkit-user-drag: none;
     -moz-user-drag: -moz-none;
@@ -53,8 +53,11 @@ License: MIT
     margin-left: 5px;
 }
 
-/* --------------------------
-    Thème basique du bouton
+/* ----------------------------------------------------------
+  Thèmes du bouton
+---------------------------------------------------------- */
+
+/* Thème défault
    ----------------------- */
 
 .cssc-button {
@@ -141,4 +144,56 @@ License: MIT
 
 .btn-img:before {
     content: url(../images/12x10-blue.gif);
+}
+
+/* ----------------------------------------------------------
+  Utilitaires
+---------------------------------------------------------- */
+
+/* Container
+   ----------------------- */
+
+.cssc-button-container {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+
+.cssc-button-container:before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #ddd;
+}
+
+.cssc-button-container .cssc-button {
+    z-index: 2;
+    position: relative;
+}
+
+/* Button double
+   ----------------------- */
+
+.cssc-button-double {
+    height: auto;
+    padding: 10px 40px;
+}
+
+.cssc-button-double> * {
+    display: block;
+}
+
+.cssc-button-double > strong {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.cssc-button-double > span {
+    font-size: 12px;
+    line-height: 16px;
+    color: #676767;
 }

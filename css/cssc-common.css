@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.7.1
+Version: 1.7.2
 License: MIT
 */
 
@@ -11,6 +11,7 @@ License: MIT
    Images masquées (Pour push, etc)
    ------------------------------------------------------- */
 
+.ir-children a,
 .cssc-btn,
 .ir {
     display: inline-block;
@@ -30,7 +31,7 @@ License: MIT
 }
 
 /* ----------------------------------------------------------
-   Clearfix
+   Clearfix
    ------------------------------------------------------- */
 
 .cssc-grid:before,

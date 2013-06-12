@@ -3,7 +3,7 @@
 /*
 Name: Style de démo
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.1.11
+Version: 1.1.12
 License: MIT
 */
 
@@ -11,11 +11,20 @@ License: MIT
    Contenu
    ------------------------------------------------------- */
 
-#fork_me {
+.fork_me {
+    visibility: visible;
     z-index: 9;
     position: absolute;
     top: 0;
     right: 0;
+    opacity: 0.99;
+}
+
+@media(max-width:980px) {
+    .fork_me {
+        visibility: hidden;
+        opacity: 0;
+    }
 }
 
 #header {

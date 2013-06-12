@@ -3,7 +3,7 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.6.3
+Version: 1.7
 License: MIT
 */
 
@@ -14,11 +14,11 @@ License: MIT
 /* Container centré */
 
 .centered-container {
+    z-index: 1;
     clear: both;
+    position: relative;
     min-width: 980px;
     text-align: center;
-    z-index: 1;
-    position: relative;
 }
 
 .cssc-is-responsive .centered-container {
@@ -33,13 +33,33 @@ License: MIT
     text-align: left;
 }
 
+.cssc-is-responsive .centered-container > * {
+    width: auto;
+    max-width: 940px;
+}
+
 .centered-container .cc-full {
     width: auto;
 }
 
-.cssc-is-responsive .centered-container > * {
-    width: auto;
-    max-width: 940px;
+/* Full image is a separate background for animating or effects */
+
+.centered-container .cc-full-image {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.centered-container .cc-full-image + * {
+    z-index: 2;
+    position: relative;
 }
 
 /* ----------------------------------------------------------

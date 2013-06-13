@@ -179,4 +179,12 @@
         </li>
     </ul>
 
+    <h3>Pagination bullet</h3>
+    <ul class="cssc-bullet">
+        <li>&bull;</li>
+        <li class="current">&bull;</li>
+        <li>&bull;</li>
+        <li>&bull;</li>
+    </ul>
+
 </div></section>

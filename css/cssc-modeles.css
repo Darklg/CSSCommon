@@ -3,7 +3,7 @@
 /*
 Name: Modèles basiques
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.4
+Version: 1.5
 License: MIT
 */
 
@@ -234,4 +234,43 @@ License: MIT
 .cssc-inline-list a {
     display: block;
     padding: 0 5px;
+}
+
+/* ----------------------------------------------------------
+   Modèle : Pagination bullet
+---------------------------------------------------------- */
+
+.cssc-bullet {
+    text-align: center;
+}
+
+.cssc-bullet li {
+    display: inline-block;
+    line-height: inherit;
+    vertical-align: middle;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    *display: inline;
+    *zoom: 1;
+}
+
+/* Thème
+   ----------------------- */
+
+.cssc-bullet {
+    height: 10px;
+    line-height: 10px;
+}
+
+.cssc-bullet li {
+    font-size: 30px;
+    color: #333;
+}
+
+.cssc-bullet .current,
+.cssc-bullet li:hover {
+    color: #999;
 }

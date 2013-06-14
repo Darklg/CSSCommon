@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.7.2
+Version: 1.7.3
 License: MIT
 */
 
@@ -266,6 +266,8 @@ code {
 
 pre {
     margin-bottom: 12px;
+    max-width: 100%;
+    overflow: auto;
 }
 
 /* ----------------------------------------------------------

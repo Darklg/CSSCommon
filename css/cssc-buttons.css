@@ -3,7 +3,7 @@
 /*
 Name: Boutons par défaut
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.6
+Version: 1.7
 License: MIT
 */
 
@@ -196,4 +196,31 @@ License: MIT
     font-size: 12px;
     line-height: 16px;
     color: #676767;
+}
+
+/* Buttons group
+-------------------------- */
+
+.button-group .cssc-button {
+    -webkit-border-radius : 0px;
+    -moz-border-radius : 0px;
+    border-radius : 0px;
+    z-index: 1;
+    position: relative;
+}
+
+.button-group .cssc-button + .cssc-button {
+    margin-left: -1px;
+}
+
+.button-group .cssc-button:first-child {
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+
+.button-group .cssc-button:last-child {
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
 }

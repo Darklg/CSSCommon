@@ -117,17 +117,24 @@
     </form>
 
     <h3>Boutons</h3>
-    <div>
+    <h4>Tailles de boutons</h4>
+    <div class="cssc-block">
         <button class="cssc-button">.cssc-button</button>
         <button disabled class="cssc-button">disabled</button>
         <button class="cssc-button le-medium-button">.cssc-button .le-medium-button</button>
         <button class="cssc-button le-big-button">.cssc-button .le-big-button</button>
     </div>
     <h4>Boutons avec icône</h4>
-    <div>
+    <div class="cssc-block">
         <button class="cssc-button btn-phone">.cssc-button .btn-phone</button>
         <button class="cssc-button btn-eject">.cssc-button .btn-eject</button>
         <button class="cssc-button btn-img">.cssc-button .btn-img</button>
         <button class="cssc-button btn-go">.cssc-button .btn-go</button>
+    </div>
+    <h4>Groupe de boutons</h4>
+    <div class="button-group">
+        <button class="cssc-button le-medium-button">Action 1</button><!--
+        --><button class="cssc-button le-medium-button">Action 2</button><!--
+        --><button class="cssc-button le-medium-button">Action 3</button>
     </div>
 </div></section>

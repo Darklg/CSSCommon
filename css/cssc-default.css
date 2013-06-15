@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.4.4
+Version: 2.5
 License: MIT
 */
 
@@ -269,7 +269,7 @@ h4, .h4 {
 p,
 li {
     font-size: 12px;
-    line-height: 1.3;
+    line-height: 1.4;
 }
 
 /* Elements
@@ -297,35 +297,6 @@ hr {
     clear: both;
     border: 1px solid #333;
     border-width: 1px 0 0;
-}
-
-/* Content
-   ----------------------- */
-
-.le-content ul ul {
-    margin-bottom: 0;
-    padding-left: 12px;
-}
-
-.le-content li {
-    list-style: inside disc;
-}
-
-/* Content blocks
-   ----------------------- */
-
-.le-content ul,
-blockquote,
-p,
-.cssc-block {
-    margin-bottom: 16px;
-}
-
-.le-content ul:last-child,
-blockquote:last-child,
-p:last-child,
-.cssc-block:last-child {
-    margin-bottom: 0;
 }
 
 /* ----------------------------------------------------------
@@ -418,4 +389,50 @@ textarea,
     -moz-transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
     -o-transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
     transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
+}
+
+/* ----------------------------------------------------------
+  Content
+---------------------------------------------------------- */
+
+.cssc-content {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.cssc-content img {
+    vertical-align: baseline;
+}
+
+.cssc-content p,
+.cssc-content li {
+    font-size: inherit;
+    line-height: inherit;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+}
+
+.cssc-content ul ul {
+    margin-bottom: 0;
+    padding-left: 12px;
+}
+
+.cssc-content li {
+    list-style: inside disc;
+}
+
+.cssc-content ul,
+blockquote,
+p,
+.cssc-block {
+    margin-bottom: 16px;
+}
+
+.cssc-content ul:last-child,
+blockquote:last-child,
+p:last-child,
+.cssc-block:last-child {
+    margin-bottom: 0;
 }

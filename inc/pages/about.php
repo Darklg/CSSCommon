@@ -1,18 +1,16 @@
 <div class="centered-container container-about">
     <section>
-        <div class="le-content">
+        <div class="cssc-content">
             <div class="cssc-grid gri-940-24-20">
                 <div class="col-12">
-                    <h2 id="le-content">Qu'est-ce que c'est ?</h2>
+                    <h2>Qu'est-ce que c'est ?</h2>
                     <p>
                         <strong>CSS Common</strong>
-                        est un framework, ou plutôt une base de départ en CSS, qui comprend :
+                        est un thème de démarrage / librairie CSS, comprenant :
                     </p>
                     <ul>
                         <li>
-                            Une feuille
-                            <strong>par défaut</strong>
-                            , réinitialisant et stylisant des balises
+                            Une feuille <strong>réinitialisant</strong> et <strong>stylisant</strong> des balises
                             <abbr title="Hypertext Markup Language">HTML</abbr>
                             courantes.
                         </li>
@@ -24,7 +22,7 @@
                                 utilisés fréquemment.
                             </strong>
                         </li>
-                        <li>Des modules supplémentaires pour chaque besoin.</li>
+                        <li>Des <strong>modules</strong> supplémentaires pour chaque besoin.</li>
                     </ul>
                 </div>
                 <div class="col-12">

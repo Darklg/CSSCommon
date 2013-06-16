@@ -3,7 +3,7 @@
 /*
 Name: Boutons par défaut
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.7
+Version: 1.7.1
 License: MIT
 */
 
@@ -200,6 +200,13 @@ License: MIT
 
 /* Buttons group
 -------------------------- */
+
+.button-group {
+    display: inline-block;
+    vertical-align: middle;
+    *display: inline;
+    *zoom: 1;
+}
 
 .button-group .cssc-button {
     -webkit-border-radius : 0px;

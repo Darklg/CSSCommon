@@ -132,9 +132,12 @@
         <button class="cssc-button btn-go">.cssc-button .btn-go</button>
     </div>
     <h4>Groupe de boutons</h4>
-    <div class="button-group">
-        <button class="cssc-button le-medium-button">Action 1</button><!--
-        --><button class="cssc-button le-medium-button">Action 2</button><!--
-        --><button class="cssc-button le-medium-button">Action 3</button>
+    <div>
+        <div class="button-group">
+            <button class="cssc-button le-medium-button">Action 1</button><!--
+            --><button class="cssc-button le-medium-button">Action 2</button><!--
+            --><button class="cssc-button le-medium-button">Action 3</button>
+        </div>
+        <button class="cssc-button le-medium-button">Bouton après</button>
     </div>
 </div></section>

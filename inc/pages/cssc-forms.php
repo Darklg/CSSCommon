@@ -124,6 +124,11 @@
         <button class="cssc-button le-medium-button">.cssc-button .le-medium-button</button>
         <button class="cssc-button le-big-button">.cssc-button .le-big-button</button>
     </div>
+    <h4>Thèmes de boutons</h4>
+    <div class="cssc-block">
+        <button class="cssc-button error-button">.cssc-button .error-button</button>
+        <button class="cssc-button success-button">.cssc-button .success-button</button>
+    </div>
     <h4>Boutons avec icône</h4>
     <div class="cssc-block">
         <button class="cssc-button btn-phone">.cssc-button .btn-phone</button>

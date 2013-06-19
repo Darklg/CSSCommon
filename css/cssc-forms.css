@@ -3,7 +3,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.7
+Version: 1.8
 License: MIT
 */
 
@@ -118,6 +118,20 @@ button {
 .lt_ie8 .cssc-form input[type=email],
 .lt_ie8 .cssc-form input[type=password] {
     width: 90%;
+}
+
+/* Submit box */
+
+.cssc-form .submit-box {
+    z-index: 1;
+    position: relative;
+}
+
+.cssc-form .submit-box button {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 /* Deux blocs */

@@ -44,7 +44,7 @@
             </ul>
         </fieldset>
         <fieldset>
-            <legend>Test de legend pour fieldset</legend>
+            <legend>Exemple .twoboxes</legend>
             <ul class="twoboxes">
                 <li class="box">
                     <label for="form_text3">Un mini-input</label>
@@ -53,6 +53,16 @@
                 <li class="box">
                     <label for="form_text4">Un autre mini-input</label>
                     <input name="form_text4" id="form_text4" type="text" placeholder="Un placeholder classique" />
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Combo .submit-box et .checked-box</legend>
+            <ul>
+                <li class="box submit-box radio-box">
+                    <input type="checkbox" name="form_checkbox3" id="form_checkbox3" />
+                    <label for="form_checkbox3">J'accepte les conditions du site.</label>
+                    <button class="cssc-button le-medium-button">Envoyer</button>
                 </li>
             </ul>
         </fieldset>

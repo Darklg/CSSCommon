@@ -3,13 +3,13 @@
 /*
 Name: Navigation
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.5
+Version: 1.6
 License: MIT
 */
 
 /* ----------------------------------------------------------
-    Modèle : Pagination
-   ------------------------------------------------------- */
+  Pagination
+---------------------------------------------------------- */
 
 .cssc-pagination-center {
     text-align: center;
@@ -51,8 +51,8 @@ License: MIT
 }
 
 /* ----------------------------------------------------------
-    Modèle : Menu Principal
-   ------------------------------------------------------- */
+  Menu Principal
+---------------------------------------------------------- */
 
 .cssc-mainnav {
     z-index: 1;
@@ -195,8 +195,8 @@ License: MIT
 }
 
 /* ----------------------------------------------------------
-   Modèle : Fil d'ariane
-   ------------------------------------------------------- */
+  Fil d'ariane
+---------------------------------------------------------- */
 
 .cssc-ariane {
     height: 20px;
@@ -211,7 +211,7 @@ License: MIT
 }
 
 /* ----------------------------------------------------------
-  Modèle : Liste en ligne
+  Liste en ligne
 ---------------------------------------------------------- */
 
 .cssc-inline-list {
@@ -237,10 +237,41 @@ License: MIT
 }
 
 /* ----------------------------------------------------------
-   Modèle : Pagination bullet
+  Menu vertical
+---------------------------------------------------------- */
+
+.cssc-vertical-menu {
+    margin-bottom: 20px;
+    max-width: 300px;
+    border: 1px solid #ddd;
+}
+
+.cssc-vertical-menu li + li {
+    border-top: 1px solid #eee;
+}
+
+.cssc-vertical-menu a {
+    display: block;
+    padding: 0 10px;
+    line-height: 30px;
+}
+
+.cssc-vertical-menu a:focus,
+.cssc-vertical-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+.cssc-vertical-menu .current a {
+    padding-left: 7px;
+    border-left: 3px solid #369;
+}
+
+/* ----------------------------------------------------------
+  Pagination bullet
 ---------------------------------------------------------- */
 
 .cssc-bullet {
+    margin-bottom: 20px;
     text-align: center;
 }
 

@@ -35,10 +35,9 @@
         <nav class="cssc-mainnav centered-container">
             <ul class="cssc-mainmenu">
                 <li><a href="index.php">Accueil</a></li>
-                <li><a href="index.php?p=common">Récurrents</a></li>
                 <li><a href="index.php?p=cssc-forms">Formulaires</a></li>
                 <li><a href="index.php?p=cssc-grid">Grilles</a></li>
-                <li><a href="index.php?p=cssc-modeles">Mod&egrave;les</a></li>
+                <li><a href="index.php?p=cssc-navigation">Navigation</a></li>
                 <li><a href="index.php?p=cssc-layouts">Layouts</a></li>
             </ul>
         </nav>

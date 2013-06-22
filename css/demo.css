@@ -3,7 +3,7 @@
 /*
 Name: Style de démo
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.0.1
+Version: 2.0.2
 License: MIT
 */
 
@@ -139,20 +139,24 @@ License: MIT
     padding-top: 10px;
 }
 
-.cssc-lay {
+#bc-responsive .cssc-lay,
+#bc-layouts .cssc-lay {
     margin-bottom: 20px;
 }
 
 /* Couleurs pour le Debug */
 
-.cssc-lay {
+#bc-responsive .cssc-lay,
+#bc-layouts .cssc-lay {
     background-color: #d0d0d0;
 }
 
-.cssc-lay > .col-main {
+#bc-responsive .cssc-lay > .col-main,
+#bc-layouts .cssc-lay > .col-main {
     background-color: #e0e0e0;
 }
 
-.cssc-lay > .col-side {
+#bc-responsive .cssc-lay > .col-side,
+#bc-layouts .cssc-lay > .col-side {
     background-color: #f0f0f0;
 }

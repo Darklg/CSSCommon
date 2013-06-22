@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.5
+Version: 2.5.1
 License: MIT
 */
 
@@ -263,6 +263,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
+    margin-bottom: 3px;
     font-size: 13px;
 }
 
@@ -435,4 +436,8 @@ blockquote:last-child,
 p:last-child,
 .cssc-block:last-child {
     margin-bottom: 0;
+}
+
+.center {
+    text-align: center;
 }

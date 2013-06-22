@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.7.3
+Version: 1.8
 License: MIT
 */
 
@@ -338,4 +338,45 @@ pre {
     border-top: 5px solid #e0e0e0;
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
+}
+
+/* ----------------------------------------------------------
+  Messages
+---------------------------------------------------------- */
+
+.cssc-messages a {
+    display: block;
+    margin-bottom: 5px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #333;
+    background: #fff;
+    -webkit-background-clip: padding-box;
+}
+
+.cssc-messages .error {
+    border-color: #C66;
+    color: #800;
+    background-color: #FEE;
+}
+
+.cssc-messages .notice {
+    border-color: #66C;
+    color: #008;
+    background-color: #EEF;
+}
+
+.cssc-messages .success {
+    border-color: #6C6;
+    color: #080;
+    background-color: #EFE;
+}
+
+.cssc-messages .warning {
+    border-color: #CC6;
+    color: #880;
+    background-color: #FFE;
 }

@@ -1,29 +1,35 @@
 <section class="block-content centered-container"><div>
     <div class="bkc-header">
         <div class="bkch-aside">
-            Module :
+            Modules :
             <code>cssc-forms.css</code>
+            <code>cssc-buttons.css</code>
         </div>
-        <h2 id="cssc-forms">Formulaires</h2>
+        <h2 id="cssc-forms">Formulaires &amp; Buttons</h2>
     </div>
     <p>
         Un modèle de formulaire à labels flottants et un modèle simple en paramétrant directement le form. <br />
         Cliquez sur les boutons ci-dessous pour découvrir les possibilités de CSSCommon pour les formulaires.
     </p>
-<!-- <form id="form_demo" action="/" class="cssc-form float-form" method="post"> -->
-    <form id="form_demo" action="/" class="cssc-form block-form" method="post">
-        <ul>
-            <li class="box buttons-box">
-                <a href="#cssc-forms" class="cssc-button" id="set_form_block">Form Block</a>
-                <a href="#cssc-forms" class="cssc-button" id="set_form_float">Form Flottant</a>
-            </li>
-            <li class="box buttons-box">
-                <a href="#cssc-forms" class="cssc-button" id="set_form_wide">Form large</a>
-                <a href="#cssc-forms" class="cssc-button" id="set_form_normal">Form normal</a>
-            </li>
-        </ul>
-        <fieldset>
-            <legend>Actions sur INPUTs</legend>
+    <p>
+        <a href="#cssc-forms" class="cssc-button" id="set_form_block">Form Block</a>
+        <a href="#cssc-forms" class="cssc-button" id="set_form_float">Form Flottant</a>
+    </p>
+    <p>
+        <a href="#cssc-forms" class="cssc-button" id="set_form_wide">Form large</a>
+        <a href="#cssc-forms" class="cssc-button" id="set_form_normal">Form normal</a>
+    </p>
+</div></section>
+
+<section class="block-content centered-container"><div>
+
+    <div class="cssc-lay">
+        <div class="col-main">
+
+    <form id="form_demo" autocomplete="off" action="/" class="cssc-form block-form" method="post">
+
+        <fieldset id="cssc-forms-input">
+            <legend>Champs classiques</legend>
             <ul>
                 <li class="box">
                     <label for="form_text">Input normal</label>
@@ -43,8 +49,8 @@
                 </li>
             </ul>
         </fieldset>
-        <fieldset>
-            <legend>Exemple .twoboxes</legend>
+        <fieldset id="cssc-forms-twoboxes">
+            <legend>Présentation à deux box</legend>
             <ul class="twoboxes">
                 <li class="box">
                     <label for="form_text3">Un mini-input</label>
@@ -56,17 +62,8 @@
                 </li>
             </ul>
         </fieldset>
-        <fieldset>
-            <legend>Combo .submit-box et .checked-box</legend>
-            <ul>
-                <li class="box submit-box radio-box">
-                    <input type="checkbox" name="form_checkbox3" id="form_checkbox3" />
-                    <label for="form_checkbox3">J'accepte les conditions du site.</label>
-                    <button class="cssc-button le-medium-button">Envoyer</button>
-                </li>
-            </ul>
-        </fieldset>
-        <fieldset>
+        <fieldset id="cssc-forms-register">
+            <legend>Formulaire d'inscription</legend>
             <ul>
                 <li class="box email-box">
                     <label for="form_email">Email</label>
@@ -77,16 +74,33 @@
                     <label for="form_passwd">Password</label>
                     <input name="form_passwd" id="form_passwd" type="password" placeholder="Mot de passe" />
                 </li>
-                <li class="box buttons-box">
-                    <a href="#" class="cssc-button">Le button</a>
-                    <button class="cssc-button">Le button</button>
+                <li class="box multibox-box">
+                    <label>Date de Naissance</label>
+                    <input type="text" name="form_multi_1" value="" class="halfling" placeholder="JJ" maxlength="2" />
+                    <input type="text" name="form_multi_2" value="" class="halfling" placeholder="MM" maxlength="2" />
+                    <input type="text" name="form_multi_3" value="" placeholder="AAAA" maxlength="4" />
                 </li>
+                <li class="box textarea-box">
+                    <label for="form_textarea">Textarea</label>
+                    <textarea rows="5" cols="20" name="form_textarea" id="form_textarea"></textarea>
+                </li>
+                <li class="box submit-box radio-box">
+                    <input type="checkbox" name="form_checkbox3" id="form_checkbox3" />
+                    <label for="form_checkbox3">J'accepte les conditions du site.</label>
+                    <button class="cssc-button le-medium-button">Envoyer</button>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset id="cssc-forms-check">
+            <h3>Radio &amp; Check</h3>
+            <ul>
                 <li class="box checked-box">
+                    <span class="fake-label">Faux Label</span>
                     <input type="checkbox" name="form_checkbox" id="form_checkbox" />
-                    <label for="form_checkbox">Checkbox</label>
+                    <label for="form_checkbox">Checkbox 1</label>
                 </li>
                 <li class="box checked-box">
-                    <label for="form_checkbox2">Checkbox</label>
+                    <label for="form_checkbox2">Checkbox2</label>
                     <input type="checkbox" name="form_checkbox2" id="form_checkbox2" />
                 </li>
                 <li class="box checked-box">
@@ -98,24 +112,15 @@
                 </li>
                 <li class="box checked-box">
                     <input name="form_radiobox3" id="form_radiobox3" type="radio" />
-                    <label for="form_radiobox3">Radio 3</label>
+                    <label for="form_radiobox3">Radio trois</label>
                     <input name="form_radiobox3" id="form_radiobox4" type="radio" />
-                    <label for="form_radiobox4">Radio 4</label>
-                </li>
-                <li class="box multibox-box">
-                  <label>Date de Naissance</label>
-                  <input type="text" name="form_multi_1" value="" class="halfling" placeholder="JJ" maxlength="2" />
-                  <input type="text" name="form_multi_2" value="" class="halfling" placeholder="MM" maxlength="2" />
-                  <input type="text" name="form_multi_3" value="" placeholder="AAAA" maxlength="4" />
-                </li>
-                <li class="box textarea-box">
-                    <label for="form_textarea">Textarea</label>
-                    <textarea rows="5" cols="20" name="form_textarea" id="form_textarea"></textarea>
+                    <label for="form_radiobox4">Radio quatre</label>
                 </li>
             </ul>
         </fieldset>
     </form>
-    <h3>Formulaire collé</h3>
+
+    <h3 id="cssc-forms-append">Formulaire collé</h3>
     <form action="#" method="post">
         <div class="form-append form-append-demo">
             <input class="inputbase" type="text" name="lorem" value="" />
@@ -126,7 +131,15 @@
         </div>
     </form>
 
-    <h3>Boutons</h3>
+    <h3 id="cssc-forms-buttons">Boutons</h3>
+
+    <h4>Markup</h4>
+    <div class="cssc-block">
+        <a href="#" class="cssc-button">a.cssc-button</a>
+        <button class="cssc-button">button.cssc-button</button>
+        <input type="submit" class="cssc-button" value="input[type=submit].cssc-button"/>
+    </div>
+
     <h4>Tailles de boutons</h4>
     <div class="cssc-block">
         <button class="cssc-button">.cssc-button</button>
@@ -155,4 +168,18 @@
         </div>
         <button class="cssc-button le-medium-button">Bouton après</button>
     </div>
+
+    </div>
+        <div class="col-side">
+            <ul class="cssc-vertical-menu">
+                <li><a href="#cssc-forms-input">Champs classiques</a></li>
+                <li><a href="#cssc-forms-twoboxes">Présentation à deux box</a></li>
+                <li><a href="#cssc-forms-register">Formulaire d'inscription</a></li>
+                <li><a href="#cssc-forms-check">Radio &amp; Check</a></li>
+                <li><a href="#cssc-forms-append">Formulaire collé</a></li>
+                <li><a href="#cssc-forms-buttons">Boutons</a></li>
+            </ul>
+        </div>
+    </div>
+
 </div></section>

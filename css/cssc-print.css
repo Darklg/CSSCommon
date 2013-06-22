@@ -3,7 +3,7 @@
 /*
 Name: Print
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.0
+Version: 1.0.1
 License: MIT
 */
 
@@ -35,8 +35,7 @@ License: MIT
     /* CSSCommon
        ----------------------- */
 
-    .cssc-mainnav,
-    .fixed-footer {
+    .cssc-mainnav {
         display: none;
     }
 }

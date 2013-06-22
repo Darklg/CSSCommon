@@ -32,21 +32,14 @@
         <header id="header" class="centered-container">
             <h1>CSS Common - Framework CSS</h1>
         </header>
-<nav class="cssc-mainnav centered-container">
-    <ul class="cssc-mainmenu">
-        <li><a href="index.php">Accueil</a></li>
-        <li><a href="index.php?p=common">Récurrents</a></li>
-        <li><a href="index.php?p=cssc-forms">Formulaires</a></li>
-        <li><a href="index.php?p=cssc-tables">Tables</a></li>
-        <li><a href="index.php?p=cssc-grid">Grilles</a></li>
-        <li><a href="index.php?p=cssc-messages">Messages d'avertissement</a></li>
-        <li><a href="index.php?p=cssc-code">Présentation de code</a></li>
-        <li><a href="index.php?p=cssc-gallery">Galerie</a></li>
-        <li><a href="index.php?p=cssc-push">Pushs</a></li>
-        <li><a href="index.php?p=cssc-modeles">Mod&egrave;les</a></li>
-        <li><a href="index.php?p=cssc-layouts">Layouts</a></li>
-        <li><a href="index.php?p=cssc-tabs">Onglets</a></li>
-        <li><a href="index.php?p=cssc-images">Images</a></li>
-    </ul>
-</nav>
+        <nav class="cssc-mainnav centered-container">
+            <ul class="cssc-mainmenu">
+                <li><a href="index.php">Accueil</a></li>
+                <li><a href="index.php?p=common">Récurrents</a></li>
+                <li><a href="index.php?p=cssc-forms">Formulaires</a></li>
+                <li><a href="index.php?p=cssc-grid">Grilles</a></li>
+                <li><a href="index.php?p=cssc-modeles">Mod&egrave;les</a></li>
+                <li><a href="index.php?p=cssc-layouts">Layouts</a></li>
+            </ul>
+        </nav>
         <?php } ?>

@@ -2,9 +2,9 @@
     <div class="bkc-header">
         <div class="bkch-aside">
             Module :
-            <code>cssc-modeles.css</code>
+            <code>cssc-navigation.css</code>
         </div>
-        <h2 id="cssc-modeles">Mod&egrave;les</h2>
+        <h2 id="cssc-navigation">Mod&egrave;les</h2>
     </div>
     <p>Mod&egrave;les d&#x27;objets r&eacute;currents dans les int&eacute;grations.</p>
 

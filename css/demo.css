@@ -3,7 +3,7 @@
 /*
 Name: Style de démo
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.0
+Version: 2.0.1
 License: MIT
 */
 
@@ -28,6 +28,7 @@ License: MIT
 }
 
 #header {
+    margin-bottom: 15px;
     padding-top: 10px;
 }
 
@@ -136,6 +137,10 @@ License: MIT
 
 .liste-widgets > li + li {
     padding-top: 10px;
+}
+
+.cssc-lay {
+    margin-bottom: 20px;
 }
 
 /* Couleurs pour le Debug */

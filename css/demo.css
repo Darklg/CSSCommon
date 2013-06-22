@@ -3,7 +3,7 @@
 /*
 Name: Style de démo
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.1.13
+Version: 2.0
 License: MIT
 */
 
@@ -124,50 +124,6 @@ License: MIT
 .bkch-aside {
     float: right;
     font-size: 12px;
-}
-
-/* ----------------------------------------------------------
-   Fixed footer // Technique inspirée de @Nalao
-   ------------------------------------------------------- */
-
-body {
-    padding-bottom: 30px;
-}
-
-.fixed-footer {
-    z-index: 10;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #000;
-    background: rgba(0,0,0,0.8);
-}
-
-.fixed-footer ul {
-    width: 960px;
-    margin: 0 auto;
-    max-width: 100%;
-}
-
-.cssc-is-responsive .fixed-footer ul {
-    width: auto;
-    max-width: 960px;
-}
-
-.fixed-footer li {
-    display: inline-block;
-    margin: 0 8px;
-    *display: inline;
-    *zoom: 1;
-}
-
-.fixed-footer li a {
-    display: inline-block;
-    zoom: 1;
-    line-height: 30px;
-    color: #fff;
-    *display: inline;
 }
 
 /* ----------------------------------------------------------

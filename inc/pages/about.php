@@ -15,9 +15,8 @@
                             courantes.
                         </li>
                         <li>
-                            Une feuille d'
-                            <strong>
-                                objets
+                            Une feuille
+                            d'<strong>objets
                                 <abbr title="Cascading Style Sheets">CSS</abbr>
                                 utilisés fréquemment.
                             </strong>

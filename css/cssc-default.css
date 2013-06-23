@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.5.1
+Version: 2.5.2
 License: MIT
 */
 
@@ -249,11 +249,12 @@ h5, .h5 {
 }
 
 h1, .h1 {
+    margin-bottom: 10px;
     font-size: 25px;
 }
 
 h2, .h2 {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     font-size: 20px;
 }
 
@@ -422,6 +423,10 @@ textarea,
 
 .cssc-content li {
     list-style: inside disc;
+}
+
+.cssc-content ol li {
+    list-style: inside decimal;
 }
 
 .cssc-content ul,

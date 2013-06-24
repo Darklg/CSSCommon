@@ -3,7 +3,7 @@
 /*
 Name: Style de démo
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.0.3
+Version: 2.0.4
 License: MIT
 */
 
@@ -44,10 +44,6 @@ License: MIT
     background-color: #f5f5f5;
 }
 
-.container-about h2 {
-    margin-top: 0;
-}
-
 .container-about .cssc-button {
     text-transform: none;
 }
@@ -64,6 +60,36 @@ License: MIT
 
 .block-content:last-child {
     padding-bottom: 50px;
+}
+
+/* ----------------------------------------------------------
+  Grilles
+---------------------------------------------------------- */
+
+.grid-label {
+    display: block;
+    height: 30px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 30px;
+    background-color: #d0d0d0;
+    -webkit-background-clip: border-box;
+    -moz-background-clip: border-box;
+    background-clip: border-box;
+}
+
+.double-grid-label {
+    height: 80px;
+    line-height: 80px;
+}
+
+.cssc-grid .cssc-grid .grid-label {
+    background-color: #e0e0e0;
 }
 
 /* ----------------------------------------------------------

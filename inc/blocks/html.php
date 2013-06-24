@@ -41,7 +41,6 @@
                     <a href="#">a <strong>strong</strong> link</a>,
                     enim est <del>del</del> <ins>ins</ins>, non <small>small</small> diam nisl sit amet erat.
                 </p>
-                <hr />
             </div>
         </div>
         <div class="col-8">

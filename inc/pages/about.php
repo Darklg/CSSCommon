@@ -110,12 +110,12 @@ include dirname(__FILE__).'/../blocks/common.php';
     <div class="cssc-grid gri-940-24-20">
         <div class="col-8">
             <a href="#" class="cssc-push push-simple">
-                <span class="after"></span>
+                <span class="after">Texte alternatif</span>
             </a>
         </div>
         <div class="col-16">
             <pre contenteditable>&lt;a href=&quot;#&quot; class=&quot;cssc-push push-simple&quot;&gt;
-    &lt;span class=&quot;after&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;after&quot;&gt;Texte alternatif&lt;/span&gt;
 &lt;/a&gt;</pre>
             <p>
                 Pas de pseudo-classes, &eacute;tant donn&eacute; que certains navigateurs ne supportent pas les transitions.
@@ -128,13 +128,13 @@ include dirname(__FILE__).'/../blocks/common.php';
     <div class="cssc-grid gri-940-24-20">
         <div class="col-8 example_right">
             <a href="#" class="cssc-push push-double">
-                <span class="before"></span>
+                <span class="before">Texte alternatif</span>
                 <span class="after"></span>
             </a>
         </div>
         <div class="col-16">
             <pre contenteditable>&lt;a href=&quot;#&quot; class=&quot;cssc-push push-double&quot;&gt;
-    &lt;span class=&quot;before&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;before&quot;&gt;Texte alternatif&lt;/span&gt;
     &lt;span class=&quot;after&quot;&gt;&lt;/span&gt;
 &lt;/a&gt;</pre>
             <p>

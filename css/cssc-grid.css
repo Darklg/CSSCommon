@@ -3,7 +3,7 @@
 /*
 Name: Grids
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.2.1
+Version: 2.2.2
 License: MIT
 */
 
@@ -12,15 +12,15 @@ License: MIT
     max-width: 100%;
 }
 
-.cssc-grid > * {
+.cssc-grid > [class^="col-"] {
     float: left;
     zoom: 1;
     min-height: 1px;
 }
 
 /* ----------------------------------------------------------
-   Grille 940-24-20 : 940px / 24 cols / Gout. 20px
-   ------------------------------------------------------- */
+  Grille 940-24-20 : 940px / 24 cols / Gout. 20px
+---------------------------------------------------------- */
 
 .cssc-grid.gri-940-24-20 {
     width: 940px;
@@ -55,18 +55,17 @@ License: MIT
 .gri-940-24-20 .col-23 {width: 900px}
 .gri-940-24-20 .col-24 {width: 940px}
 
-/* <3 http://grid.mindplay.dk/ <3 */
+/* <3 http://grid.mindplay.dk/ <3 */
 
 /* ----------------------------------------------------------
-   Grille fluide
-   ------------------------------------------------------- */
+  Grille fluide
+---------------------------------------------------------- */
 
 .cssc-grid.fluid-grid {
     width: 100%;
 }
 
 .cssc-grid.fluid-grid > [class^="col-"] {
-    float: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -81,8 +80,19 @@ License: MIT
     padding-right: 0;
 }
 
+/* Colonnes
+-------------------------- */
+
+.fluid-grid .col-20p {
+    width: 20%;
+}
+
+.fluid-grid .col-25p {
+    width: 25%;
+}
+
 .fluid-grid .col-33p {
-    width: 33%;
+    width: 33.333%;
 }
 
 .fluid-grid .col-50p {

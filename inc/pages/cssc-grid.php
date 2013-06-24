@@ -25,6 +25,15 @@
         </div>
     </div>
     <div class="cssc-grid gri-940-24-20">
+        <div class="col-8">
+            <div class="grid-label">col-8</div>
+        </div>
+        <div class="col-8"></div>
+        <div class="col-8">
+            <div class="grid-label">col-8</div>
+        </div>
+    </div>
+    <div class="cssc-grid gri-940-24-20">
         <div class="col-16">
             <div class="grid-label">col-16</div>
             <div class="cssc-grid ">

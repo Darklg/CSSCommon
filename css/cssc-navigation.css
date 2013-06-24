@@ -3,7 +3,7 @@
 /*
 Name: Navigation
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.6
+Version: 1.6.1
 License: MIT
 */
 
@@ -244,6 +244,7 @@ License: MIT
     margin-bottom: 20px;
     max-width: 300px;
     border: 1px solid #ddd;
+    background-color: #fff;
 }
 
 .cssc-vertical-menu li + li {

@@ -3,12 +3,13 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.5.2
+Version: 2.6
 License: MIT
 */
 
-/* Reset
-   ----------------------- */
+/* ----------------------------------------------------------
+  Reset
+---------------------------------------------------------- */
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
 a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,
@@ -48,26 +49,43 @@ ins {
     text-decoration: none;
 }
 
-/* Normalize
-   ----------------------- */
+/* ----------------------------------------------------------
+  Normalize
+---------------------------------------------------------- */
 
-/* HTML5 Default behavior */
+/* HTML5 Default behavior
+-------------------------- */
 
-article,aside,audio,canvas,datagrid,datalist,details,dialog,figure,
-figcaption,footer,header,hgroup,menu,nav,section,video {display:block;}
-
-abbr,eventsource,mark,meter,time,progress,output,bb {display:inline;}
-
-del {
-    text-decoration: line-through;
+article,
+aside,
+audio,
+canvas,
+datagrid,
+datalist,
+details,
+dialog,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+main,
+nav,
+section,
+video {
+    display: block;
 }
 
-strong {
-    font-weight: bold;
-}
-
-em {
-    font-style: italic;
+abbr,
+eventsource,
+mark,
+meter,
+time,
+progress,
+output,
+bb {
+    display: inline;
 }
 
 /* tables still need 'cellspacing="0"' in the markup */
@@ -83,7 +101,7 @@ nav ul {
 }
 
 /* Forms
-   ----------------------- */
+-------------------------- */
 
 input,
 button,
@@ -95,6 +113,10 @@ input[type="radio"],
 input[type="checkbox"] {
     margin: 0;
     vertical-align: text-bottom;
+}
+
+textarea {
+    resize: vertical;
 }
 
 .lt_ie8 input[type="checkbox"] {
@@ -156,7 +178,7 @@ button {
 }
 
 /* Medias
-   ----------------------- */
+-------------------------- */
 
 video,
 img,
@@ -188,9 +210,21 @@ input[type=image] {
     vertical-align: bottom;
 }
 
-/* ----------------------------------------------------------
-   Base config
-   ------------------------------------------------------- */
+p img {
+    vertical-align: baseline;
+}
+
+/* Various elements
+-------------------------- */
+
+/* Address styling not present in IE 8/9. | necolas.github.io/normalize.css/ */
+
+[hidden] {
+    display: none;
+}
+
+/* Common elements
+-------------------------- */
 
 html {
     height: 100%;
@@ -199,43 +233,12 @@ html {
 body {
     position: relative;
     min-height: 100%;
+    font: 62.5%/1 sans-serif;
+    color: #212121;
 }
 
 .lt_ie8 body {
     height: 100%;
-}
-
-/* Prevents sub and sup affecting line-height in all browsers | gist.github.com/413930 */
-
-sub,
-sup {
-    position: relative;
-    font-size: 75%;
-    line-height: 0;
-    vertical-align: baseline;
-}
-
-sup {
-    top: -0.5em;
-}
-
-sub {
-    bottom: -0.25em;
-}
-
-/* Address styling not present in IE 8/9. | necolas.github.io/normalize.css/ */
-
-[hidden] {
-    display: none;
-}
-
-/* ----------------------------------------------------------
-   Typo
-   ------------------------------------------------------- */
-
-body {
-    font: 62.5%/1 sans-serif;
-    color: #212121;
 }
 
 h1, .h1,
@@ -268,14 +271,55 @@ h4, .h4 {
     font-size: 13px;
 }
 
+h5, .h5 {
+    margin-bottom: 1px;
+    font-size: 12px;
+}
+
 p,
 li {
     font-size: 12px;
     line-height: 1.4;
 }
 
-/* Elements
-   ----------------------- */
+del {
+    text-decoration: line-through;
+}
+
+ins {
+    border-bottom: 1px dotted #DDD;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Prevents sub and sup affecting line-height in all browsers | gist.github.com/413930 */
+
+sub,
+sup {
+    position: relative;
+    margin: 0 1px;
+    font-size: 80%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+small {
+    font-size: 80%;
+}
 
 abbr[title],
 acronym[title] {
@@ -285,6 +329,7 @@ acronym[title] {
 }
 
 blockquote {
+    display: block;
     padding: 5px 0 5px 10px;
     border-left: 5px solid #DDD;
     border-color: rgba(0,0,0,.1);
@@ -297,8 +342,9 @@ blockquote p {
 
 hr {
     clear: both;
-    border: 1px solid #333;
-    border-width: 1px 0 0;
+    border: 0;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 /* ----------------------------------------------------------
@@ -342,7 +388,7 @@ a:active {
 a img,
 .aimginv:hover,
 .aimg {
-    opacity: 0.99;
+    opacity: 0.999;
     filter: alpha(opacity=99);
 }
 
@@ -353,8 +399,8 @@ a:hover img {
 }
 
 /* ----------------------------------------------------------
-   Transitions
-   ------------------------------------------------------- */
+  Transitions
+---------------------------------------------------------- */
 
 a,
 .trans-col {
@@ -397,41 +443,41 @@ textarea,
   Content
 ---------------------------------------------------------- */
 
+p,
+li,
 .cssc-content {
     font-size: 13px;
     line-height: 1.4;
 }
 
-.cssc-content img {
-    vertical-align: baseline;
-}
-
-.cssc-content p,
+p,
 .cssc-content li {
-    font-size: inherit;
-    line-height: inherit;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto;
     word-wrap: break-word;
 }
 
-.cssc-content ul ul {
-    margin-bottom: 0;
-    padding-left: 12px;
-}
-
-.cssc-content li {
+.cssc-content ul {
     list-style: inside disc;
 }
 
-.cssc-content ol li {
+.cssc-content ul ul {
+    margin-bottom: 0;
+    padding-left: 12px;
+    list-style-type: circle;
+}
+
+.cssc-content ol {
     list-style: inside decimal;
 }
 
-.cssc-content ul,
-blockquote,
 p,
+blockquote,
+.cssc-content > iframe,
+.cssc-content > video,
+.cssc-content ol,
+.cssc-content ul,
 .cssc-block {
     margin-bottom: 16px;
 }
@@ -442,6 +488,33 @@ p:last-child,
 .cssc-block:last-child {
     margin-bottom: 0;
 }
+
+/* Medias
+-------------------------- */
+
+.cssc-content > video,
+.cssc-content > iframe {
+    width: 100%;
+}
+
+.cssc-content .alignleft {
+    float: left;
+    margin: 0 5px 3px 0;
+}
+
+.cssc-content .aligncenter {
+    display: block;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.cssc-content .alignright {
+    float: right;
+    margin: 0 0 3px 5px;
+}
+
+/* Quickhacks
+-------------------------- */
 
 .center {
     text-align: center;

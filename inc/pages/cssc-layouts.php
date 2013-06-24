@@ -18,12 +18,16 @@
             </div>
         </div>
         <aside class="col-side">
-            <ul class="content-container">
-                <li><a href="#">lorem ipsum</a></li>
-                <li><a href="#">ipsum lorem</a></li>
-                <li><a href="#">lorem ipsum</a></li>
-                <li><a href="#">ipsum lorem</a></li>
+            <div class="content-container">
+            <ul class="cssc-vertical-menu">
+                <li><a href="#">Champs classiques</a></li>
+                <li class="current"><a href="#">Présentation à deux box</a></li>
+                <li><a href="#">Formulaire d'inscription</a></li>
+                <li><a href="#">Radio &amp; Check</a></li>
+                <li><a href="#">Formulaire collé</a></li>
+                <li><a href="#">Boutons</a></li>
             </ul>
+            </div>
         </aside>
     </div>
 

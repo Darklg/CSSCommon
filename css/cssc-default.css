@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.6
+Version: 2.7
 License: MIT
 */
 
@@ -437,85 +437,4 @@ textarea,
     -moz-transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
     -o-transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
     transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
-}
-
-/* ----------------------------------------------------------
-  Content
----------------------------------------------------------- */
-
-p,
-li,
-.cssc-content {
-    font-size: 13px;
-    line-height: 1.4;
-}
-
-p,
-.cssc-content li {
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
-    word-wrap: break-word;
-}
-
-.cssc-content ul {
-    list-style: inside disc;
-}
-
-.cssc-content ul ul {
-    margin-bottom: 0;
-    padding-left: 12px;
-    list-style-type: circle;
-}
-
-.cssc-content ol {
-    list-style: inside decimal;
-}
-
-p,
-blockquote,
-.cssc-content > iframe,
-.cssc-content > video,
-.cssc-content ol,
-.cssc-content ul,
-.cssc-block {
-    margin-bottom: 16px;
-}
-
-.cssc-content ul:last-child,
-blockquote:last-child,
-p:last-child,
-.cssc-block:last-child {
-    margin-bottom: 0;
-}
-
-/* Medias
--------------------------- */
-
-.cssc-content > video,
-.cssc-content > iframe {
-    width: 100%;
-}
-
-.cssc-content .alignleft {
-    float: left;
-    margin: 0 5px 3px 0;
-}
-
-.cssc-content .aligncenter {
-    display: block;
-    margin-right: 0;
-    margin-left: 0;
-}
-
-.cssc-content .alignright {
-    float: right;
-    margin: 0 0 3px 5px;
-}
-
-/* Quickhacks
--------------------------- */
-
-.center {
-    text-align: center;
 }

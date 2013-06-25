@@ -3,7 +3,7 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.8
+Version: 1.8.1
 License: MIT
 */
 
@@ -71,23 +71,6 @@ License: MIT
 .centered-container .cc-content {
     z-index: 2;
     position: relative;
-}
-
-/* ----------------------------------------------------------
-  Contenu
----------------------------------------------------------- */
-
-.content-container {
-    position: relative;
-    padding: 20px;
-}
-
-/* Zone élargie */
-
-.large-content-area {
-    position: relative;
-    margin-right: -20px;
-    margin-left: -20px;
 }
 
 /* ----------------------------------------------------------

@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+/*
+Name: Content
+URL: http://github.com/Darklg/CSSCommon
+Version: 1.0
+License: MIT
+*/
+
+/* ----------------------------------------------------------
+  Content organization
+---------------------------------------------------------- */
+
+.content-container {
+    position: relative;
+    padding: 20px;
+}
+
+/* Large Area */
+
+.large-content-area {
+    position: relative;
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+/* Content module
+-------------------------- */
+
+.cssc-content-module {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+    -webkit-background-clip: border-box;
+    -moz-background-clip: border-box;
+    background-clip: border-box;
+}
+
+.cssc-content-module:last-child {
+    margin-bottom: 0;
+}
+
+.cssc-content-module .cssc-cm-title {
+    margin: 0;
+    padding: 0 15px;
+    border-bottom: 1px solid #ddd;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    font-weight: bold;
+    line-height: 30px;
+    background-color: #F0F0F0;
+    -webkit-background-clip: border-box;
+    -moz-background-clip: border-box;
+    background-clip: border-box;
+}
+
+.cssc-content-module .cssc-cm-main {
+    padding: 15px;
+}
+
+.cssc-content-module .cssc-cm-title + .cssc-cm-main {
+    border-top:1px solid #eee;
+}
+
+/* ----------------------------------------------------------
+  Content text
+---------------------------------------------------------- */
+
+p,
+li,
+.cssc-content {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+p,
+.cssc-content li {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+}
+
+.cssc-content ul {
+    list-style: inside disc;
+}
+
+.cssc-content ul ul {
+    margin-bottom: 0;
+    padding-left: 12px;
+    list-style-type: circle;
+}
+
+.cssc-content ol {
+    list-style: inside decimal;
+}
+
+p,
+blockquote,
+.cssc-content > iframe,
+.cssc-content > video,
+.cssc-content ol,
+.cssc-content ul,
+.cssc-block {
+    margin-bottom: 16px;
+}
+
+.cssc-content ul:last-child,
+blockquote:last-child,
+p:last-child,
+.cssc-block:last-child {
+    margin-bottom: 0;
+}
+
+/* Medias
+-------------------------- */
+
+.cssc-content > video,
+.cssc-content > iframe {
+    width: 100%;
+}
+
+.cssc-content .alignleft {
+    float: left;
+    margin: 0 5px 3px 0;
+}
+
+.cssc-content .aligncenter {
+    display: block;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.cssc-content .alignright {
+    float: right;
+    margin: 0 0 3px 5px;
+}
+
+/* Quickhacks
+-------------------------- */
+
+.center {
+    text-align: center;
+}

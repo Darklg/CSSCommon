@@ -14,6 +14,7 @@
                             <abbr title="Hypertext Markup Language">HTML</abbr>
                             courantes.
                         </li>
+                        <li>Une feuille de gestion du <strong>contenu</strong>.</li>
                         <li>
                             Une feuille
                             d'<strong>objets

@@ -20,8 +20,8 @@
         <aside class="col-side">
             <div class="content-container">
             <ul class="cssc-vertical-menu">
-                <li><a href="#">Champs classiques</a></li>
-                <li class="current"><a href="#">Présentation à deux box</a></li>
+                <li><a href="#">Menu extrait de</a></li>
+                <li class="current"><a href="#">cssc-navigation.css</a></li>
                 <li><a href="#">Formulaire d'inscription</a></li>
                 <li><a href="#">Radio &amp; Check</a></li>
                 <li><a href="#">Formulaire collé</a></li>
@@ -34,13 +34,29 @@
     <h3>Layout basique inversé</h3>
     <div class="cssc-lay">
         <aside class="col-side">
-            <ul class="content-container">
-                <li><a href="#">lorem ipsum</a></li>
-                <li><a href="#">ipsum lorem</a></li>
+            <div class="content-container">
+            <ul class="cssc-vertical-menu">
+                <li><a href="#">Menu extrait de</a></li>
+                <li class="current"><a href="#">cssc-navigation.css</a></li>
+                <li><a href="#">Boutons</a></li>
             </ul>
+            </div>
         </aside>
         <div class="col-main">
-            <p class="content-container">The world needs dreamers and the world needs doers. But above all, the world needs dreamers who do. </p>
+            <div class="content-container">
+                <div class="cssc-content-module">
+                    <h3 class="cssc-cm-title">Module title extrait de <em>cssc-content.css</em></h3>
+                    <div class="cssc-cm-main">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.</p>
+                    </div>
+                </div>
+                <div class="cssc-content-module">
+                    <h3 class="cssc-cm-title">Another module</h3>
+                    <div class="cssc-cm-main">
+                        <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle. As with all matters of the heart, you’ll know when you find it. And, like any great relationship, it just gets better and better as the years roll on. So keep looking until you find it. Don’t settle.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

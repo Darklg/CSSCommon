@@ -34,6 +34,7 @@
                 <li class="box">
                     <label for="form_text">Input normal</label>
                     <input name="form_text" id="form_text" type="text" placeholder="Du texte" />
+                    <small class="side-small">Texte d’aide</small>
                 </li>
                 <li class="box">
                     <label for="form_textl" class="long-label">Label beaucoup trop long</label>

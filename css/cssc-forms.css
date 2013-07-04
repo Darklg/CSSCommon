@@ -3,7 +3,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.8
+Version: 1.8.1
 License: MIT
 */
 
@@ -164,6 +164,20 @@ button {
     padding-left: 140px;
 }
 
+/* Aide
+-------------------------- */
+
+.cssc-form small {
+    display: block;
+}
+
+.cssc-form.block-form .side-small {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 /* ----------------------------------------------------------
   Structures particulières
 ---------------------------------------------------------- */
@@ -257,10 +271,13 @@ button {
 /* Aide */
 
 .cssc-form small {
-    display: block;
     font-size: 11px;
     line-height: 16px;
     color: #676767;
+}
+
+.cssc-form.block-form .side-small {
+    line-height: 25px;
 }
 
 /* Champs */

@@ -38,6 +38,7 @@
                 <li><a href="index.php?p=cssc-forms">Formulaires</a></li>
                 <li><a href="index.php?p=cssc-grid">Grilles</a></li>
                 <li><a href="index.php?p=cssc-navigation">Navigation</a></li>
+                <li><a href="index.php?p=cssc-tables">Tableaux</a></li>
                 <li><a href="index.php?p=cssc-layouts">Layouts</a></li>
             </ul>
         </nav>

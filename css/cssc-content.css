@@ -3,7 +3,7 @@
 /*
 Name: Content
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.0
+Version: 1.1
 License: MIT
 */
 
@@ -63,7 +63,7 @@ License: MIT
 }
 
 .cssc-content-module .cssc-cm-title + .cssc-cm-main {
-    border-top:1px solid #eee;
+    border-top: 1px solid #eee;
 }
 
 /* ----------------------------------------------------------
@@ -72,6 +72,7 @@ License: MIT
 
 p,
 li,
+dl,
 .cssc-content {
     font-size: 13px;
     line-height: 1.4;
@@ -103,17 +104,30 @@ p,
 blockquote,
 .cssc-content > iframe,
 .cssc-content > video,
+.cssc-content dl,
 .cssc-content ol,
 .cssc-content ul,
 .cssc-block {
     margin-bottom: 16px;
 }
 
+.cssc-content dl:last-child,
 .cssc-content ul:last-child,
 blockquote:last-child,
 p:last-child,
 .cssc-block:last-child {
     margin-bottom: 0;
+}
+
+/* Definition lists
+-------------------------- */
+
+.cssc-content dd + dt {
+    margin-top: 8px;
+}
+
+.cssc-content dt {
+    font-weight: bold;
 }
 
 /* Medias

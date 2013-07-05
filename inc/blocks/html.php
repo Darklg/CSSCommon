@@ -12,16 +12,26 @@
                 <h4>Unordered list</h4>
                 <ul>
                     <li>List element</li>
+                    <li>List element</li>
+                    <li>List element</li>
                     <li>
                         List element
                         <ul>
                             <li>Sub-List element</li>
                             <li>Sub-List element</li>
+                            <li>Sub-List element</li>
+                            <li>Sub-List element</li>
                         </ul>
                     </li>
+                    <li>List element</li>
+                    <li>List element</li>
                 </ul>
                 <h4>Ordered list</h4>
                 <ol>
+                    <li>List element</li>
+                    <li>List element</li>
+                    <li>List element</li>
+                    <li>List element</li>
                     <li>List element</li>
                     <li>List element</li>
                 </ol>
@@ -36,12 +46,18 @@
                     <img src="images/12x10-blue.gif" alt="img" /> Suspendisse lectus tortor, <a href="#">link</a> sit amet, adipiscing nec, ultricies sed, dolor.
                     Cras <em>em</em>ementum ultrices diam.
                 </p>
+                <dl>
+                    <dt>Geyser</dt>
+                    <dd><a target="_blank" href="http://fr.wikipedia.org/wiki/Geyser">Un geyser</a> est un type particulier de source d'eau chaude qui jaillit par intermittence en projetant à haute température et à haute pression de l'eau et de la vapeur.</dd>
+                    <dt>Fjord</dt>
+                    <dd><a target="_blank" href="http://fr.wikipedia.org/wiki/Fjord">Un fjord</a> est une vallée érodée par un glacier avançant de la montagne à la mer, qui a été envahie par la mer depuis la retraite de la glace.</dd>
+                </dl>
                 <p>
                     Maecenas ligula<sup>sup</sup>, varius a, semper congue, euismod non, mi. Proin porttitor<sub>sub</sub>,
                     <a href="#">a <strong>strong</strong> link</a>,
                     enim est <del>del</del> <ins>ins</ins>, non <small>small</small> diam nisl sit amet erat.
                 </p>
-            </div>
+                </div>
         </div>
         <div class="col-8">
             <div class="cssc-block">

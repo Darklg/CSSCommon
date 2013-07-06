@@ -140,6 +140,27 @@
         </div>
     </div>
 
-
+    <h3>Thème "bordered"</h3>
+    <table class="cssc-table cssc-table-bordered">
+        <thead>
+            <tr>
+                <th>Entête</th>
+                <th>Entête</th>
+                <th>Entête</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><div class="content">lorem</div></td>
+                <td><div class="content">lorem</div></td>
+                <td><div class="content">lorem</div></td>
+            </tr>
+            <tr>
+                <td><div class="content">lorem</div></td>
+                <td><div class="content">lorem</div></td>
+                <td><div class="content">lorem</div></td>
+            </tr>
+        </tbody>
+    </table>
 
 </div></section>

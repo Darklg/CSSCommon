@@ -3,7 +3,7 @@
 /*
 Name: Tables
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.2
+Version: 1.3
 License: MIT
 */
 
@@ -88,4 +88,28 @@ License: MIT
 
 .cssc-table-basic th {
     background: #f0f0f0;
+}
+
+/* ----------------------------------------------------------
+  Utilities
+---------------------------------------------------------- */
+
+.cssc-table-bordered td + td {
+    border-left: 1px solid #e9e9e9;
+}
+
+.cssc-table-bordered .content {
+    z-index: 1;
+    position: relative;
+}
+
+.cssc-table-bordered tr + tr td + td .content:before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
 }

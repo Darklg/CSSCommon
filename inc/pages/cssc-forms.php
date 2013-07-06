@@ -150,6 +150,7 @@
     </div>
     <h4>Thèmes de boutons</h4>
     <div class="cssc-block">
+        <button class="cssc-button round-button">.cssc-button .round-button</button>
         <button class="cssc-button error-button">.cssc-button .error-button</button>
         <button class="cssc-button success-button">.cssc-button .success-button</button>
     </div>

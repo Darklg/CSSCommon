@@ -3,21 +3,19 @@
 /*
 Name: Onglets
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.0.3
+Version: 1.0.4
 License: MIT
 */
 
-/*
-@TODO : polyfill :target.
-*/
-
 /* ----------------------------------------------------------
-   Base des onglets
-   ------------------------------------------------------- */
+  Base des onglets
+---------------------------------------------------------- */
+
+/* top:1px = superposition sur le contenu */
 
 .cssc-tabs-clic {
     position: relative;
-    top: 1px; /* superposition sur le contenu */
+    top: 1px;
     overflow: hidden;
 }
 
@@ -35,28 +33,28 @@ License: MIT
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    -webkit-transition: max-height 0.3s ease,opacity 0.3s ease;
-    -moz-transition: max-height 0.3s ease,opacity 0.3s ease;
-    -o-transition: max-height 0.3s ease,opacity 0.3s ease;
-    transition: max-height 0.3s ease,opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .lt_ie8 .cssc-tabs-target > * {
     position: absolute;
 }
 
-.cssc-tabs-target > .current {
+.cssc-tabs-target > .is-current {
     visibility: visible;
     max-height: 10000px;
     opacity: 1;
 }
 
-.lt_ie8 .cssc-tabs-target > .current {
+.lt_ie8 .cssc-tabs-target > .is-current {
     position: static;
 }
 
-/* Style par défaut
-   ----------------------- */
+/* Default theme
+-------------------------- */
 
 .cssc-tabs-clic li {
     margin-right: 3px;
@@ -82,8 +80,8 @@ License: MIT
     transition: all 0.3s ease;
 }
 
-.cssc-tabs-clic a.current,
-.cssc-tabs-clic .current a,
+.cssc-tabs-clic a.is-current,
+.cssc-tabs-clic .is-current a,
 .cssc-tabs-clic a:hover,
 .cssc-tabs-clic a:focus {
     border-bottom: 1px solid #fff;

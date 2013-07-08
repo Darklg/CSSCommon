@@ -11,19 +11,23 @@ include dirname(__FILE__).'/../blocks/common.php';
         </div>
         <h2 id="cssc-tabs">Onglets</h2>
     </div>
-    <p>Des onglets simples, avec juste un peu de JS à rajouter.</p>
+    <p>Des onglets simples, compatibles avec le <a href="http://darklg.github.io/JavaScriptUtilities/jquery.html#jq-tabs" target="_blank">plugin jQuery "Tabs"</a> ou la <a href="http://darklg.github.io/JavaScriptUtilities/mootools.html#moo-tabs" target="_blank">classe MooTools "Tabs"</a>.</p>
     <div class="cssc-tabs">
         <ul class="cssc-tabs-clic">
-            <li class="current"><a href="#">Onglet</a></li>
+            <li class="is-current"><a href="#">Onglet</a></li>
             <li><a href="#">Onglet 2</a></li>
             <li><a href="#">Onglet 3</a></li>
         </ul>
         <ul class="cssc-tabs-target">
-            <li class="current">
-                <p>The world needs dreamers and the world needs doers. But above all, the world needs dreamers who do. </p>
+            <li class="is-current">
+                <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle. As with all matters of the heart, you’ll know when you find it. And, like any great relationship, it just gets better and better as the years roll on. So keep looking until you find it. Don’t settle.</p>
             </li>
-            <li><p>The world needs dreamers and the world needs doers. But above all, the world needs dreamers who do. </p></li>
-            <li><p>The world needs dreamers and the world needs doers. But above all, the world needs dreamers who do. </p></li>
+            <li>
+                <p>Being the richest man in the cemetery doesn’t matter to me … Going to bed at night saying we’ve done something wonderful… that’s what matters to me.</p>
+            </li>
+            <li>
+                <p>A lot of people in our industry haven't had very diverse experiences. So they don't have enough dots to connect, and they end up with very linear solutions without a broad perspective on the problem.<br /> The broader one's understanding of the human experience, the better design we will have.</p>
+            </li>
         </ul>
     </div>
 </div></section>

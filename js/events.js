@@ -1,6 +1,11 @@
 window.addEvent('domready', function() {
     set_forms_actions();
+    set_demo_tabs();
 });
+
+/* ----------------------------------------------------------
+  Buttons for demo form
+---------------------------------------------------------- */
 
 var set_forms_actions = function() {
     if (!$('form_demo')) {
@@ -31,4 +36,15 @@ var set_forms_actions = function() {
             });
         });
     }
+};
+
+/* ----------------------------------------------------------
+  Demo tabs
+---------------------------------------------------------- */
+
+var set_demo_tabs = function() {
+    new dkJSUTabs({
+        triggers: $$('.cssc-tabs-clic > li'),
+        targets: $$('.cssc-tabs-target > li')
+    });
 };

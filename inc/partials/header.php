@@ -22,7 +22,7 @@
 
         <!-- Scripts -->
         <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
-        <script src="js/functions.js"></script>
+        <script src="js/mootools-1.4.5.min.js"></script>
     </head>
 
     <body>

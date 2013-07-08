@@ -1,15 +1,34 @@
+window.addEvent('domready', function() {
+    set_forms_actions();
+});
 
-if(window.addEventListener && $('set_form_float') && $('set_form_block') && $('set_form_wide') && $('set_form_block') && $('form_demo')){
-    $('set_form_float').addEventListener('click',function(){
-        $('form_demo').className = 'cssc-form float-form';
-    });
-    $('set_form_block').addEventListener('click',function(){
-        $('form_demo').className = 'cssc-form block-form';
-    });
-    $('set_form_wide').addEventListener('click',function(){
-        $('form_demo').style.maxWidth = '100%';
-    });
-    $('set_form_normal').addEventListener('click',function(){
-        $('form_demo').style.maxWidth = '450px';
-    });
-}
+var set_forms_actions = function() {
+    if (!$('form_demo')) {
+        return;
+    }
+
+    if ($('set_form_float')) {
+        $('set_form_float').addEvent('click', function() {
+            $('form_demo').className = 'cssc-form float-form';
+        });
+    }
+    if ($('set_form_block')) {
+        $('set_form_block').addEvent('click', function() {
+            $('form_demo').className = 'cssc-form block-form';
+        });
+    }
+    if ($('set_form_wide')) {
+        $('set_form_wide').addEvent('click', function() {
+            $('form_demo').setStyles({
+                'max-width': '100%'
+            });
+        });
+    }
+    if ($('set_form_normal')) {
+        $('set_form_normal').addEvent('click', function() {
+            $('form_demo').setStyles({
+                'max-width': '450px'
+            });
+        });
+    }
+};

@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.8
+Version: 1.8.1
 License: MIT
 */
 
@@ -235,36 +235,46 @@ hr.clearfix {
 }
 
 /* ----------------------------------------------------------
-   Style du code
-   ------------------------------------------------------- */
+  Style du code
+---------------------------------------------------------- */
 
 pre,
 code,
 kbd,
-samp {
-    padding: 2px;
-    border: 1px solid #ccc;
-    font: 11px/16px 'Lucida Console',Monospace;
-    color: #676767;
-    background: #f0f0f0;
-}
-
-pre:hover,
-code:hover,
-kbd:hover,
-samp:hover {
-    border: 1px solid #d0d0d0;
-    color: #000;
-    background-color: #fff;
-}
-
-code {
+samp,
+.cssc-label {
     display: inline-block;
+    padding: 3px;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    text-shadow: 1px 1px 0 rgb(255,255,255);
+    font: 11px/1.2 'Lucida Console',Monospace;
+    vertical-align: middle;
+    color: #333;
+    background: #f5f5f5;
     *display: inline;
     *zoom: 1;
 }
 
+pre:hover,
+pre:focus,
+code:hover,
+code:focus,
+kbd:hover,
+kbd:focus,
+samp:hover,
+samp:focus,
+.cssc-label:hover,
+.cssc-label:focus {
+    border: 1px solid #aaa;
+    color: #000;
+    background-color: #fff;
+}
+
 pre {
+    display: block;
     margin-bottom: 12px;
     max-width: 100%;
     overflow: auto;

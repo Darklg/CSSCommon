@@ -3,7 +3,7 @@
 /*
 Name: Navigation
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.6.1
+Version: 1.6.2
 License: MIT
 */
 
@@ -298,6 +298,7 @@ License: MIT
 }
 
 .cssc-bullet li {
+    padding: 0 2px;
     font-size: 30px;
     color: #333;
 }

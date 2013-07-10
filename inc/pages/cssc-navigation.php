@@ -202,10 +202,10 @@
         <div class="col-8">
             <h4 class="center">Pagination bullet</h4>
             <ul class="cssc-bullet">
-                <li>&bull;</li>
-                <li class="current">&bull;</li>
-                <li>&bull;</li>
-                <li>&bull;</li>
+                <li>&bull;</li><!--
+                --><li class="current">&bull;</li><!--
+                --><li>&bull;</li><!--
+                --><li>&bull;</li>
             </ul>
         </div>
     </div>

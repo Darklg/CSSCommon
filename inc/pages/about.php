@@ -12,7 +12,7 @@ include dirname(__FILE__).'/../blocks/common.php';
         <h2 id="cssc-tabs">Onglets</h2>
     </div>
     <p>Des onglets simples, compatibles avec le <a href="http://darklg.github.io/JavaScriptUtilities/jquery.html#jq-tabs" target="_blank">plugin jQuery "Tabs"</a> ou la <a href="http://darklg.github.io/JavaScriptUtilities/mootools.html#moo-tabs" target="_blank">classe MooTools "Tabs"</a>.</p>
-    <div class="cssc-tabs">
+    <div class="cssc-tabs cssc-block">
         <ul class="cssc-tabs-clic">
             <li class="is-current"><a href="#">Onglet</a></li>
             <li><a href="#">Onglet 2</a></li>
@@ -30,6 +30,33 @@ include dirname(__FILE__).'/../blocks/common.php';
             </li>
         </ul>
     </div>
+    <p>
+        <a href="#demo-code-tabs" class="cssc-button show-html-button">Afficher HTML</a>
+    </p>
+    <pre contenteditable id="demo-code-tabs">&lt;div class=&quot;cssc-tabs&quot;&gt;
+    &lt;ul class=&quot;cssc-tabs-clic&quot;&gt;
+        &lt;li class=&quot;is-current&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;Onglet&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href=&quot;#&quot;&gt;Onglet 2&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href=&quot;#&quot;&gt;Onglet 3&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class=&quot;cssc-tabs-target&quot;&gt;
+        &lt;li class=&quot;is-current&quot;&gt;
+            &lt;p&gt;Contenu 1.&lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;p&gt;Contenu 2.&lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;p&gt;Contenu 3.&lt;/p&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</pre>
 </div></section>
 
 
@@ -77,14 +104,16 @@ include dirname(__FILE__).'/../blocks/common.php';
             </a>
         </div>
         <div class="col-16">
-            <pre contenteditable>&lt;a href=&quot;#&quot; class=&quot;cssc-push push-simple&quot;&gt;
-    &lt;span class=&quot;after&quot;&gt;Texte alternatif&lt;/span&gt;
-&lt;/a&gt;</pre>
             <p>
                 Pas de pseudo-classes, &eacute;tant donn&eacute; que certains navigateurs ne supportent pas les transitions.
                 <br />
                 Au :hover, .after est progressivement affich&eacute;.
+                <br />
+                <a href="#demo-code-push-simple" class="cssc-button show-html-button">Afficher HTML</a>
             </p>
+            <pre id="demo-code-push-simple" contenteditable>&lt;a href=&quot;#&quot; class=&quot;cssc-push push-simple&quot;&gt;
+    &lt;span class=&quot;after&quot;&gt;Texte alternatif&lt;/span&gt;
+&lt;/a&gt;</pre>
         </div>
     </div>
     <h3>Push avec double fondu</h3>
@@ -96,15 +125,17 @@ include dirname(__FILE__).'/../blocks/common.php';
             </a>
         </div>
         <div class="col-16">
-            <pre contenteditable>&lt;a href=&quot;#&quot; class=&quot;cssc-push push-double&quot;&gt;
-    &lt;span class=&quot;before&quot;&gt;Texte alternatif&lt;/span&gt;
-    &lt;span class=&quot;after&quot;&gt;&lt;/span&gt;
-&lt;/a&gt;</pre>
             <p>
                 Moins de soucis en cas de sprite avec deux images semi-transparentes.
                 <br />
                 Au :hover, .after est progressivement affich&eacute; pendant que .before est progressivement masqu&eacute;.
+                <br />
+                <a href="#demo-code-push-double" class="cssc-button show-html-button">Afficher HTML</a>
             </p>
+            <pre id="demo-code-push-double" contenteditable>&lt;a href=&quot;#&quot; class=&quot;cssc-push push-double&quot;&gt;
+    &lt;span class=&quot;before&quot;&gt;Texte alternatif&lt;/span&gt;
+    &lt;span class=&quot;after&quot;&gt;&lt;/span&gt;
+&lt;/a&gt;</pre>
         </div>
     </div>
 </div></section>

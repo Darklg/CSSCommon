@@ -1,7 +1,31 @@
 window.addEvent('domready', function() {
+    set_show_html_buttons();
     set_forms_actions();
     set_demo_tabs();
 });
+
+/* ----------------------------------------------------------
+  Show HTML
+---------------------------------------------------------- */
+
+var set_show_html_buttons = function() {
+    $$('.show-html-button').each(function(el) {
+        var target = $$(el.get('href'));
+        if (!target) {
+            return;
+        }
+        target.setStyles({
+            'display': 'none'
+        });
+        el.addEvent('click', function(e) {
+            e.preventDefault();
+            $$($(this).get('href')).setStyles({
+                'display': 'block'
+            });
+            $(this).remove();
+        });
+    });
+};
 
 /* ----------------------------------------------------------
   Buttons for demo form

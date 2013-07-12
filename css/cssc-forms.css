@@ -3,7 +3,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.8.1
+Version: 1.8.2
 License: MIT
 */
 
@@ -12,6 +12,7 @@ License: MIT
 }
 
 .cssc-form .box {
+    z-index: 1;
     position: relative;
     vertical-align: baseline;
 }
@@ -185,6 +186,10 @@ button {
 /* Formulaire collé
    ----------------------- */
 
+.form-append {
+    overflow: auto;
+}
+
 .form-append > * {
     float: left;
     width: auto;
@@ -309,8 +314,8 @@ button {
 }
 
 .cssc-form textarea {
-    height: 80px;
     padding: 5px;
+    min-height: 80px;
 }
 
 .cssc-form textarea:focus,

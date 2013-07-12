@@ -54,6 +54,13 @@
     </div>
     <span class="clearfix"></span>
 
+    <p><a href="#demo-940-grid" class="cssc-button show-html-button">Afficher HTML</a></p>
+    <pre contenteditable id="demo-940-grid">&lt;div class=&quot;cssc-grid gri-940-24-20&quot;&gt;
+    &lt;div class=&quot;col-16&quot;&gt;16 cols&lt;/div&gt;
+    &lt;div class=&quot;col-8&quot;&gt;8 cols&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+
     <h3>Grille fluide</h3>
     <div class="cssc-grid fluid-grid">
         <div class="col-20p">
@@ -107,4 +114,12 @@
     </div>
 
     <span class="clearfix"></span>
+
+    <p><a href="#demo-fluid-grid" class="cssc-button show-html-button">Afficher HTML</a></p>
+    <pre contenteditable id="demo-fluid-grid">&lt;div class=&quot;cssc-grid fluid-grid&quot;&gt;
+    &lt;div class=&quot;col-33p&quot;&gt;33%&lt;/div&gt;
+    &lt;div class=&quot;col-33p&quot;&gt;33%&lt;/div&gt;
+    &lt;div class=&quot;col-33p&quot;&gt;33%&lt;/div&gt;
+&lt;/div&gt;</pre>
+
 </div></section>

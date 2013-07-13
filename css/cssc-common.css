@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.8.1
+Version: 1.9
 License: MIT
 */
 
@@ -389,4 +389,46 @@ pre {
     border-color: #CC6;
     color: #880;
     background-color: #FFE;
+}
+
+/* ----------------------------------------------------------
+  Tags
+---------------------------------------------------------- */
+
+.cssc-tags a,
+.cssc-tag {
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: middle;
+    *display: inline;
+    *zoom: 1;
+}
+
+.cssc-tags a:before,
+.cssc-tag:before {
+    margin-right: 3px;
+    vertical-align: baseline;
+}
+
+/* Theme
+-------------------------- */
+
+.cssc-tags a,
+.cssc-tag {
+    margin-right: 1px;
+    margin-bottom: 5px;
+    padding: 1px 4px;
+    border: 1px solid #e0e0e0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #333;
+}
+
+.cssc-tags a:before,
+.cssc-tag:before {
+    content: '✔';
+    color: #676767;
 }

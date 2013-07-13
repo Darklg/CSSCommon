@@ -73,6 +73,25 @@
                     <cite>Auteur</cite>
                 </em>
             </blockquote>
+            <div class="cssc-block">
+                <h3>Tags</h3>
+                <p>
+                    <a href="#" class="cssc-tag">Renard polaire</a>
+                    <a href="#" class="cssc-tag">Macareux</a>
+                    <a href="#" class="cssc-tag">Sterne</a>
+                    <a href="#" class="cssc-tag">Grande baleine bleue</a>
+                    <a href="#" class="cssc-tag">Mouton</a>
+                </p>
+                <h3>Tags Enfants</h3>
+                <p class="cssc-tags">
+                    <a href="#">Geyser</a>
+                    <a href="#">Fjord</a>
+                    <a href="#">Cascade</a>
+                    <a href="#">Volcan</a>
+                    <a href="#">Glacier</a>
+                    <a href="#">Canyon</a>
+                </p>
+            </div>
         </div>
     </div>
 </div></section>

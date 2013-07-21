@@ -47,7 +47,7 @@
         </div>
     </div>
 
-    <h3>Responsive Grids</h3>
+    <h3 id="responsive-grids">Responsive Grids</h3>
     <div class="cssc-grid fluid-grid gri-two-col">
         <div>
             <div class="grid-label">
@@ -75,7 +75,6 @@
                 33%
                 <span class="visible-only-tablet">(élargi à 50%)</span>
                 <span class="visible-only-phone">(élargi à 100%)</span>
-
             </div>
         </div>
         <div>
@@ -151,6 +150,25 @@
                 <span class="visible-only-tablet">(élargi à 50%)</span>
                 <span class="visible-only-phone">(élargi à 100%)</span>
             </div>
+        </div>
+    </div>
+
+    <div class="cssc-grid fluid-grid gri-two-col">
+        <div>
+            <p><a href="#demo-fluid-grid-50p" class="cssc-button show-html-button">Afficher HTML (50%)</a></p>
+            <pre contenteditable id="demo-fluid-grid-50p">&lt;div class=&quot;cssc-grid fluid-grid gri-two-col&quot;&gt;
+    &lt;div&gt;50%&lt;/div&gt;
+    &lt;div&gt;50%&lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+        <div>
+            <p><a href="#demo-fluid-grid-25p" class="cssc-button show-html-button">Afficher HTML (25%)</a></p>
+            <pre contenteditable id="demo-fluid-grid-25p">&lt;div class=&quot;cssc-grid fluid-grid gri-four-col&quot;&gt;
+    &lt;div&gt;25%&lt;/div&gt;
+    &lt;div&gt;25%&lt;/div&gt;
+    &lt;div&gt;25%&lt;/div&gt;
+    &lt;div&gt;25%&lt;/div&gt;
+&lt;/div&gt;</pre>
         </div>
     </div>
 

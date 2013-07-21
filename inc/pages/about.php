@@ -174,4 +174,5 @@ include dirname(__FILE__).'/../blocks/common.php';
             </div>
         </a>
     </div>
+    <hr class="clearfix" />
 </div></section>

@@ -72,4 +72,5 @@
             <p class="content-container">The world needs dreamers and the world needs doers. But above all, the world needs dreamers who do. </p>
         </div>
     </div>
+    <hr class="clearfix" />
 </div></section>

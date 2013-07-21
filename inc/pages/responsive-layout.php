@@ -1,6 +1,6 @@
 <header id="header" class="centered-container">
     <h1>CSS Common - Framework CSS</h1>
-    <p>Demo utilisant le Responsive layout de CSSCommon.<br /> Work in progress. <a href="index.php">Retour au framework</a>.</p>
+    <p>Demo utilisant le Responsive layout de CSSCommon, activé avec la classe <code>.cssc-is-responsive</code> sur html ou body.<br /> Work in progress. <a href="index.php">Retour au framework</a>.</p>
 </header>
 <section class="block-content centered-container" id="bc-responsive"><div>
     <div class="cssc-lay clay-resp">
@@ -46,6 +46,114 @@
             </ul>
         </div>
     </div>
+
+    <h3>Responsive Grids</h3>
+    <div class="cssc-grid fluid-grid gri-two-col">
+        <div>
+            <div class="grid-label">
+                50%
+                <span class="hidden-on-full">(élargi à 100%)</span>
+            </div>
+        </div>
+        <div>
+            <div class="grid-label">
+                50%
+                <span class="hidden-on-full">(élargi à 100%)</span>
+            </div>
+        </div>
+    </div>
+    <div class="cssc-grid fluid-grid gri-three-col">
+        <div>
+            <div class="grid-label grid-label-even">
+                33%
+                <span class="visible-only-tablet">(élargi à 50%)</span>
+                <span class="visible-only-phone">(élargi à 100%)</span>
+            </div>
+        </div>
+        <div>
+            <div class="grid-label grid-label-even">
+                33%
+                <span class="visible-only-tablet">(élargi à 50%)</span>
+                <span class="visible-only-phone">(élargi à 100%)</span>
+
+            </div>
+        </div>
+        <div>
+            <div class="grid-label grid-label-even">
+                33%
+                <span class="visible-only-tablet">(élargi à 50%)</span>
+                <span class="visible-only-phone">(élargi à 100%)</span>
+            </div>
+        </div>
+    </div>
+    <div class="cssc-grid fluid-grid gri-four-col">
+        <div>
+            <div class="grid-label">
+                25%
+                <span class="visible-only-tablet">(élargi à 50%)</span>
+                <span class="visible-only-phone">(élargi à 100%)</span>
+            </div>
+        </div>
+        <div>
+            <div class="grid-label">
+                25%
+                <span class="visible-only-tablet">(élargi à 50%)</span>
+                <span class="visible-only-phone">(élargi à 100%)</span>
+            </div>
+        </div>
+        <div>
+            <div class="grid-label">
+                25%
+                <span class="visible-only-tablet">(élargi à 50%)</span>
+                <span class="visible-only-phone">(élargi à 100%)</span>
+            </div>
+        </div>
+        <div>
+            <div class="grid-label">
+                25%
+                <span class="visible-only-tablet">(élargi à 50%)</span>
+                <span class="visible-only-phone">(élargi à 100%)</span>
+            </div>
+        </div>
+    </div>
+    <div class="cssc-grid fluid-grid gri-five-col">
+        <div>
+            <div class="grid-label grid-label-even">
+                20%
+                <span class="visible-only-tablet">(élargi à 50%)</span>
+                <span class="visible-only-phone">(élargi à 100%)</span>
+            </div>
+        </div>
+        <div>
+            <div class="grid-label grid-label-even">
+                20%
+                <span class="visible-only-tablet">(élargi à 50%)</span>
+                <span class="visible-only-phone">(élargi à 100%)</span>
+            </div>
+        </div>
+        <div>
+            <div class="grid-label grid-label-even">
+                20%
+                <span class="visible-only-tablet">(élargi à 50%)</span>
+                <span class="visible-only-phone">(élargi à 100%)</span>
+            </div>
+        </div>
+        <div>
+            <div class="grid-label grid-label-even">
+                20%
+                <span class="visible-only-tablet">(élargi à 50%)</span>
+                <span class="visible-only-phone">(élargi à 100%)</span>
+            </div>
+        </div>
+        <div>
+            <div class="grid-label grid-label-even">
+                20%
+                <span class="visible-only-tablet">(élargi à 50%)</span>
+                <span class="visible-only-phone">(élargi à 100%)</span>
+            </div>
+        </div>
+    </div>
+
     <h3>Classes de visibilité</h3>
     <div class="visible-only-phone">
         <pre>.visible-only-phone {}</pre>

@@ -3,7 +3,7 @@
 /*
 Name: Grids
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.2.2
+Version: 3.0
 License: MIT
 */
 
@@ -12,7 +12,7 @@ License: MIT
     max-width: 100%;
 }
 
-.cssc-grid > [class^="col-"] {
+.cssc-grid > * {
     float: left;
     zoom: 1;
     min-height: 1px;
@@ -26,7 +26,7 @@ License: MIT
     width: 940px;
 }
 
-.gri-940-24-20 [class^="col-"] + [class^="col-"] {
+.gri-940-24-20 > * + * {
     margin-left: 20px;
 }
 
@@ -65,36 +65,85 @@ License: MIT
     width: 100%;
 }
 
-.cssc-grid.fluid-grid > [class^="col-"] {
+.cssc-grid.fluid-grid > * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 10px;
 }
 
-.cssc-grid.fluid-grid > [class^="col-"]:first-child {
+.cssc-grid.fluid-grid > :first-child {
     padding-left: 0;
 }
 
-.cssc-grid.fluid-grid > [class^="col-"]:last-child {
+.cssc-grid.fluid-grid > :last-child {
     padding-right: 0;
 }
 
 /* Colonnes
 -------------------------- */
 
+.fluid-grid.gri-five-col > *,
 .fluid-grid .col-20p {
     width: 20%;
 }
 
+.fluid-grid.gri-four-col > *,
 .fluid-grid .col-25p {
     width: 25%;
 }
 
+.fluid-grid.gri-three-col > *,
 .fluid-grid .col-33p {
     width: 33.333%;
 }
 
+.fluid-grid.gri-two-col > *,
 .fluid-grid .col-50p {
     width: 50%;
+}
+
+/* Responsive
+-------------------------- */
+
+@media(max-width:860px) {
+    .cssc-is-responsive .fluid-grid.gri-two-col > * {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media(max-width:860px) and (min-width:521px) {
+    .cssc-is-responsive .fluid-grid.gri-five-col > *,
+    .cssc-is-responsive .fluid-grid.gri-four-col > *,
+    .cssc-is-responsive .fluid-grid.gri-three-col > * {
+        width: 50%;
+    }
+
+    .cssc-is-responsive .fluid-grid.gri-five-col >:nth-child(5) ,
+    .cssc-is-responsive .fluid-grid.gri-five-col >:nth-child(3) ,
+    .cssc-is-responsive .fluid-grid.gri-four-col >:nth-child(3) ,
+    .cssc-is-responsive .fluid-grid.gri-three-col >:nth-child(3) {
+        padding-right: 10px;
+        padding-left: 0;
+    }
+
+    .cssc-is-responsive .fluid-grid.gri-five-col >:nth-child(4) ,
+    .cssc-is-responsive .fluid-grid.gri-five-col >:nth-child(2) ,
+    .cssc-is-responsive .fluid-grid.gri-four-col >:nth-child(2) ,
+    .cssc-is-responsive .fluid-grid.gri-three-col >:nth-child(2) {
+        padding-right: 0;
+        padding-left: 10px;
+    }
+}
+
+@media(max-width:520px) {
+    .cssc-is-responsive .fluid-grid.gri-five-col > *,
+    .cssc-is-responsive .fluid-grid.gri-four-col > *,
+    .cssc-is-responsive .fluid-grid.gri-three-col > * {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
 }

@@ -3,7 +3,7 @@
 /*
 Name: Grids
 URL: http://github.com/Darklg/CSSCommon
-Version: 3.0
+Version: 3.0.1
 License: MIT
 */
 
@@ -78,6 +78,16 @@ License: MIT
 
 .cssc-grid.fluid-grid > :last-child {
     padding-right: 0;
+}
+
+/* IE < 8 Fixes */
+
+.lt_ie8 .cssc-grid.fluid-grid {
+    width: 100%;
+}
+
+.lt_ie8 .cssc-grid.fluid-grid > * {
+    padding: 0;
 }
 
 /* Colonnes

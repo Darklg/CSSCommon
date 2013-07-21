@@ -3,7 +3,7 @@
 /*
 Name: Style de démo
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.0.4
+Version: 2.0.5
 License: MIT
 */
 
@@ -88,6 +88,7 @@ License: MIT
     line-height: 80px;
 }
 
+.grid-label-even,
 .cssc-grid .cssc-grid .grid-label {
     background-color: #e0e0e0;
 }

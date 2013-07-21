@@ -22,4 +22,4 @@ Attention : Ne pas utiliser @import dans vos feuilles.
 @import 'cssc-print.css?v=1.0.1';
 
 /* Style du site de démo */
-@import 'demo.css?v=2.0.4';
+@import 'demo.css?v=2.0.5';

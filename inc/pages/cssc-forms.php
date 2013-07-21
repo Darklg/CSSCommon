@@ -88,7 +88,7 @@
                 <li class="box submit-box radio-box">
                     <input type="checkbox" name="form_checkbox3" id="form_checkbox3" />
                     <label for="form_checkbox3">J'accepte les conditions du site.</label>
-                    <button class="cssc-button le-medium-button">Envoyer</button>
+                    <button class="cssc-button cssc-button-medium">Envoyer</button>
                 </li>
             </ul>
         </fieldset>
@@ -143,32 +143,38 @@
 
     <h4>Tailles de boutons</h4>
     <div class="cssc-block">
-        <button class="cssc-button">.cssc-button</button>
-        <button disabled class="cssc-button">disabled</button>
-        <button class="cssc-button le-medium-button">.cssc-button .le-medium-button</button>
-        <button class="cssc-button le-big-button">.cssc-button .le-big-button</button>
+        <button class="cssc-button cssc-button-small" title=".cssc-button .cssc-button-small">Small button</button>
+        <button class="cssc-button" disabled title="[disabled]">Disabled</button>
+        <button class="cssc-button" title=".cssc-button">Default button</button>
+        <button class="cssc-button cssc-button-medium" title=".cssc-button .cssc-button-medium">Medium button</button>
+        <button class="cssc-button cssc-button-big" title=".cssc-button .cssc-button-big">Big button</button>
     </div>
+
     <h4>Thèmes de boutons</h4>
     <div class="cssc-block">
-        <button class="cssc-button round-button">.cssc-button .round-button</button>
-        <button class="cssc-button error-button">.cssc-button .error-button</button>
-        <button class="cssc-button success-button">.cssc-button .success-button</button>
+        <button class="cssc-button round-button" title=".cssc-button .round-button">Round button</button>
+        <button class="cssc-button error-button" title=".cssc-button .error-button">Error button</button>
+        <button class="cssc-button success-button" title=".cssc-button .success-button">Success button</button>
     </div>
+
     <h4>Boutons avec icône</h4>
     <div class="cssc-block">
-        <button class="cssc-button btn-phone">.cssc-button .btn-phone</button>
-        <button class="cssc-button btn-eject">.cssc-button .btn-eject</button>
-        <button class="cssc-button btn-img">.cssc-button .btn-img</button>
-        <button class="cssc-button btn-go">.cssc-button .btn-go</button>
+        <button class="cssc-button btn-phone" title=".cssc-button .btn-phone">Phone Number</button>
+        <button class="cssc-button btn-eject" title=".cssc-button .btn-eject">Eject</button>
+        <button class="cssc-button cssc-button-icn-large btn-download" title=".cssc-button .cssc-button-icn-large .btn-download">Download</button>
+        <button class="cssc-button btn-play" title=".cssc-button .btn-play">Play</button>
+        <button class="cssc-button btn-go" title=".cssc-button .btn-go">Go</button>
+        <button class="cssc-button btn-img" title=".cssc-button .btn-img">Image</button>
     </div>
+
     <h4>Groupe de boutons</h4>
     <div>
         <div class="button-group">
-            <button class="cssc-button le-medium-button">Action 1</button><!--
-            --><button class="cssc-button le-medium-button">Action 2</button><!--
-            --><button class="cssc-button le-medium-button">Action 3</button>
+            <button class="cssc-button cssc-button-medium">Action 1</button><!--
+            --><button class="cssc-button cssc-button-medium">Action 2</button><!--
+            --><button class="cssc-button cssc-button-medium">Action 3</button>
         </div>
-        <button class="cssc-button le-medium-button">Bouton après</button>
+        <button class="cssc-button cssc-button-medium">Bouton après</button>
     </div>
 
     </div>

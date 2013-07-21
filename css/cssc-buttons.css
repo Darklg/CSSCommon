@@ -3,7 +3,7 @@
 /*
 Name: Boutons par défaut
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.8.1
+Version: 1.8.2
 License: MIT
 */
 
@@ -36,6 +36,9 @@ License: MIT
     *display: inline;
 }
 
+/* Icones
+-------------------------- */
+
 .buttonreset:before,
 .buttonreset:after,
 .cssc-button:before,
@@ -45,12 +48,17 @@ License: MIT
 
 .buttonreset:before,
 .cssc-button:before {
-    margin-right: 5px;
+    margin-right: 4px;
 }
 
 .buttonreset:after,
 .cssc-button:after {
-    margin-left: 5px;
+    margin-left: 4px;
+}
+
+.cssc-button-icn-large:before,
+.cssc-button-icn-large:after {
+    font-size: 115%;
 }
 
 /* ----------------------------------------------------------
@@ -71,12 +79,12 @@ License: MIT
     font: 12px/25px sans-serif;
     color: #333;
     background: #e0e0e0 no-repeat 0 0;
-    background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.10) 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.10)));
-    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.10) 100%);
-    background-image: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.10) 100%);
-    background-image: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.10) 100%);
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.10) 100%);
+    background-image: -moz-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.10) 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(0,0,0,0) ), color-stop(100%,rgba(0,0,0,0.10) ) );
+    background-image: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.10) 100%);
+    background-image: -o-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.10) 100%);
+    background-image: -ms-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.10) 100%);
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0.10) 100%);
 }
 
 .cssc-button:focus,
@@ -115,14 +123,21 @@ License: MIT
 /* Tailles de boutons
    ----------------------- */
 
-.le-medium-button {
+.cssc-button-small {
+    height: 20px;
+    padding: 0 5px;
+    font-size: 11px;
+    line-height: 20px;
+}
+
+.cssc-button-medium {
     height: 30px;
     padding: 0 10px;
     font-size: 13px;
     line-height: 30px;
 }
 
-.le-big-button {
+.cssc-button-big {
     height: 35px;
     padding: 0 15px;
     font-size: 14px;
@@ -156,9 +171,9 @@ License: MIT
 }
 
 .round-button {
-    -webkit-border-radius : 99px;
-    -moz-border-radius : 99px;
-    border-radius : 99px;
+    -webkit-border-radius: 99px;
+    -moz-border-radius: 99px;
+    border-radius: 99px;
 }
 
 /* Bouton icône avant
@@ -170,6 +185,14 @@ License: MIT
 
 .btn-eject:before {
     content: '⏏';
+}
+
+.btn-download:before {
+    content: '⬇';
+}
+
+.btn-play:before {
+    content: '▶';
 }
 
 .btn-go:after {

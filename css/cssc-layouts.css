@@ -3,7 +3,7 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.8.2
+Version: 1.9
 License: MIT
 */
 
@@ -11,33 +11,43 @@ License: MIT
   Containers
 ---------------------------------------------------------- */
 
+/* Dimensions
+-------------------------- */
+
+.centered-container {
+    padding: 0 10px;
+    min-width: 960px;
+}
+
+.centered-container > * {
+    max-width: 940px;
+}
+
+/* Core
+-------------------------- */
+
 /* Container centré */
 
 .centered-container {
     z-index: 1;
     clear: both;
     position: relative;
-    min-width: 980px;
     text-align: center;
 }
 
 .cssc-is-responsive .centered-container {
-    padding-right: 10px;
-    padding-left: 10px;
     min-width: 0;
 }
 
 /* Contenu flottant */
 
 .centered-container > * {
-    width: 940px;
     margin: 0 auto;
     text-align: left;
 }
 
 .cssc-is-responsive .centered-container > * {
     width: auto;
-    max-width: 940px;
 }
 
 .centered-container .cc-full {
@@ -80,7 +90,7 @@ License: MIT
 .cssc-lay {
     display: table;
     clear: both;
-    width: 940px;
+    width: 100%;
     table-layout: fixed;
 }
 
@@ -98,13 +108,17 @@ License: MIT
     float: left;
 }
 
+.cssc-lay > .col-main {
+    width: auto;
+}
+
 /* Base de style */
 
 .cssc-lay > .col-side {
     width: 220px;
 }
 
-.cssc-lay > .col-main {
+.lt_ie8 .cssc-lay > .col-main {
     width: 720px;
 }
 
@@ -114,14 +128,13 @@ License: MIT
     width: 300px;
 }
 
-.clay-wide > .col-main {
-    width: 620px;
+.lt_ie8 .clay-wide > .col-main {
+    width: 640px;
 }
 
 /* Responsive Layout */
 
 .clay-resp {
-    width: 100%;
     max-width: 940px;
 }
 
@@ -129,26 +142,11 @@ License: MIT
     min-width: 800px;
 }
 
-.clay-resp > .col-main {
-    width: 720px;
-}
-
-@media(min-width:1px) {
-    .clay-resp > .col-main {
-        width: auto;
-    }
-}
-
 .clay-resp > .col-side {
     width: 220px;
 }
 
 @media all and (max-width:600px) {
-    #bc-layouts {
-        width: auto;
-        padding: 10px;
-    }
-
     .cssc-is-responsive .clay-resp {
         display: block;
         width: auto;
@@ -183,6 +181,12 @@ License: MIT
 /* ----------------------------------------------------------
   Visibilité selon le terminal utilisé
 ---------------------------------------------------------- */
+
+.lt_ie9 .hidden-on-full,
+.lt_ie9 .visible-only-tablet,
+.lt_ie9 .visible-only-phone {
+    display: none;
+}
 
 @media(min-width:861px) {
     .hidden-on-full,

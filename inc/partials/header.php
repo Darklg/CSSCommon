@@ -40,6 +40,7 @@
                 <li><a href="index.php?p=cssc-navigation">Navigation</a></li>
                 <li><a href="index.php?p=cssc-tables">Tableaux</a></li>
                 <li><a href="index.php?p=cssc-layouts">Layouts</a></li>
+                <li><a href="responsive.php">Responsive</a></li>
             </ul>
         </nav>
         <?php } ?>

@@ -28,7 +28,7 @@
                 <div class="col-12">
                     <h3>Responsive web design</h3>
                     <p>
-                        Un exemple simplifié de
+                        Un exemple de
                         <a href="responsive.php">layout Responsive</a>
                         avec CSSCommon.
                     </p>

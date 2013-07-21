@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.9
+Version: 1.9.1
 License: MIT
 */
 
@@ -88,6 +88,7 @@ hr.clearfix {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    word-wrap: normal;
 }
 
 /* ----------------------------------------------------------

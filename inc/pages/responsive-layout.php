@@ -3,6 +3,13 @@
     <p>Demo utilisant le Responsive layout de CSSCommon, activé avec la classe <code>.cssc-is-responsive</code> sur html ou body.<br /> Work in progress. <a href="index.php">Retour au framework</a>.</p>
 </header>
 <section class="block-content centered-container" id="bc-responsive"><div>
+    <div class="bkc-header">
+        <div class="bkch-aside">
+            Module&nbsp;:
+            <code>cssc-layouts.css</code>
+        </div>
+        <h2 id="cssc-layouts">Layouts</h2>
+    </div>
     <div class="cssc-lay clay-resp">
         <div class="col-main">
             <div class="content-container">
@@ -46,8 +53,13 @@
             </ul>
         </div>
     </div>
-
-    <h3 id="responsive-grids">Responsive Grids</h3>
+    <div class="bkc-header">
+        <div class="bkch-aside">
+            Module&nbsp;:
+            <code>cssc-grid.css</code>
+        </div>
+        <h2 id="cssc-layouts">Grilles responsives</h2>
+    </div>
     <div class="cssc-grid fluid-grid gri-two-col">
         <div>
             <div class="grid-label">
@@ -172,7 +184,14 @@
         </div>
     </div>
 
-    <h3>Classes de visibilité</h3>
+
+    <div class="bkc-header">
+        <div class="bkch-aside">
+            Module&nbsp;:
+            <code>cssc-layouts.css</code>
+        </div>
+        <h2 id="cssc-layouts">Classes de visibilité</h2>
+    </div>
     <div class="visible-only-phone">
         <pre>.visible-only-phone {}</pre>
     </div>

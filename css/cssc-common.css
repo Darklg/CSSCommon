@@ -3,18 +3,19 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.9.2
+Version: 1.9.3
 License: MIT
 */
 
 /* ----------------------------------------------------------
-   Images masquées (Pour push, etc)
-   ------------------------------------------------------- */
+  Images masquées (Pour push, etc)
+---------------------------------------------------------- */
 
 .ir-children a,
 .cssc-btn,
 .ir {
     display: inline-block;
+    z-index: 1;
     position: relative;
     overflow: hidden;
     direction: ltr;
@@ -31,9 +32,10 @@ License: MIT
 }
 
 /* ----------------------------------------------------------
-   Clearfix
-   ------------------------------------------------------- */
+  Clearfix
+---------------------------------------------------------- */
 
+.clearfix,
 .cssc-grid:before,
 .cssc-grid:after,
 .clearfix:after,
@@ -44,24 +46,18 @@ License: MIT
     clear: both;
     max-height: 0;
     overflow: hidden;
-    line-height: 0;
-}
-
-.lt_ie8 .clearfix {
-    display: block;
-    clear: both;
 }
 
 hr.clearfix {
     height: 0;
     border: 0;
-    line-height: 0;
+    outline: 0;
     background: transparent;
 }
 
 /* ----------------------------------------------------------
-   Bouton image
-   ------------------------------------------------------- */
+  Bouton image
+---------------------------------------------------------- */
 
 /* Reset */
 
@@ -81,8 +77,8 @@ hr.clearfix {
 }
 
 /* ----------------------------------------------------------
-   "..." automatique à la fin d'une ligne
-   ------------------------------------------------------- */
+  "..." automatique à la fin d'une ligne
+---------------------------------------------------------- */
 
 .non-depassement {
     overflow: hidden;
@@ -92,20 +88,23 @@ hr.clearfix {
 }
 
 /* ----------------------------------------------------------
-   Suppression d'élément
-   ------------------------------------------------------- */
+  Suppression d'élément
+---------------------------------------------------------- */
 
+.suppression-element-enfant > *,
 .suppression-element {
+    z-index: 0;
     position: absolute;
     top: -9999px;
     left: -9999px;
     font-size: 1px;
     color: transparent;
+    opacity: 0.001;
 }
 
 /* ----------------------------------------------------------
-   Objet Tiroir
-   ------------------------------------------------------- */
+  Objet Tiroir
+---------------------------------------------------------- */
 
 .wdrw {
     position: relative;
@@ -144,14 +143,16 @@ hr.clearfix {
 }
 
 /* ----------------------------------------------------------
-   Block Media : Bloc avec flottant
-   From @Stubbornella : http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
-   ------------------------------------------------------- */
+  Block Media : Bloc avec flottant
+  From @Stubbornella : http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+---------------------------------------------------------- */
 
 .bmedia,
 .bmedia-right,
 .bm-cont {
     display: block;
+    z-index: 1;
+    position: relative;
     zoom: 1;
     overflow: hidden;
 }
@@ -167,8 +168,8 @@ hr.clearfix {
 }
 
 /* ----------------------------------------------------------
-   Barre d'avancement
-   ------------------------------------------------------- */
+  Barre d'avancement
+---------------------------------------------------------- */
 
 .lvl-barre {
     display: inline-block;
@@ -209,7 +210,7 @@ hr.clearfix {
     background: rgba(0,0,0,0) no-repeat 0 0;
     background-image: -moz-linear-gradient(top,rgba(0,0,0,0), rgba(0,0,0,0.2) );
     background-image: -o-linear-gradient(top,rgba(0,0,0,0), rgba(0,0,0,0.2) );
-    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(0,0,0,0) ),color-stop(1,rgba(0,0,0,0.2) ));
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(0,0,0,0) ), color-stop(1,rgba(0,0,0,0.2) ) );
     background-image: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2) );
     background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2) );
     -webkit-background-clip: border;
@@ -282,8 +283,8 @@ pre {
 }
 
 /* ----------------------------------------------------------
-   Gallery
-   ------------------------------------------------------- */
+  Gallery
+---------------------------------------------------------- */
 
 .subfloat {
     position: relative;
@@ -305,8 +306,8 @@ pre {
 }
 
 /* ----------------------------------------------------------
-   Tooltips
-   ------------------------------------------------------- */
+  Tooltips
+---------------------------------------------------------- */
 
 .tooltip {
     z-index: 1;

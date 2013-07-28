@@ -3,7 +3,7 @@
 /*
 Name: Content
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.1
+Version: 1.1.1
 License: MIT
 */
 
@@ -91,8 +91,6 @@ p,
 }
 
 .cssc-content ul ul {
-    margin-bottom: 0;
-    padding-left: 12px;
     list-style-type: circle;
 }
 
@@ -100,8 +98,16 @@ p,
     list-style: inside decimal;
 }
 
+.cssc-content ul ul,
+.cssc-content ol ol {
+    margin-bottom: 0;
+    padding-left: 12px;
+}
+
 p,
 blockquote,
+table,
+address,
 .cssc-content > iframe,
 .cssc-content > video,
 .cssc-content dl,
@@ -112,6 +118,7 @@ blockquote,
 }
 
 .cssc-content dl:last-child,
+.cssc-content ol:last-child,
 .cssc-content ul:last-child,
 blockquote:last-child,
 p:last-child,
@@ -140,7 +147,7 @@ p:last-child,
 
 .cssc-content .alignleft {
     float: left;
-    margin: 0 5px 3px 0;
+    margin: 0 10px 3px 0;
 }
 
 .cssc-content .aligncenter {
@@ -151,7 +158,7 @@ p:last-child,
 
 .cssc-content .alignright {
     float: right;
-    margin: 0 0 3px 5px;
+    margin: 0 0 3px 10px;
 }
 
 /* Quickhacks

@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.9.3
+Version: 1.9.4
 License: MIT
 */
 
@@ -240,6 +240,7 @@ hr.clearfix {
   Style du code
 ---------------------------------------------------------- */
 
+tt,
 pre,
 code,
 kbd,
@@ -260,6 +261,8 @@ samp,
     *zoom: 1;
 }
 
+tt:hover,
+tt:focus,
 pre:hover,
 pre:focus,
 code:hover,

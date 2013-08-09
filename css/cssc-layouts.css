@@ -3,7 +3,7 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.9
+Version: 1.9.1
 License: MIT
 */
 
@@ -63,6 +63,7 @@ License: MIT
     left: 0;
     width: 100%;
     height: 100%;
+    max-width: none;
     background: transparent repeat top center;
 }
 

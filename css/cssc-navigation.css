@@ -3,7 +3,7 @@
 /*
 Name: Navigation
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.6.2
+Version: 1.6.3
 License: MIT
 */
 
@@ -273,7 +273,11 @@ License: MIT
 
 .cssc-bullet {
     margin-bottom: 20px;
+    overflow: hidden;
     text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 .cssc-bullet li {
@@ -290,20 +294,20 @@ License: MIT
 }
 
 /* Thème
-   ----------------------- */
+-------------------------- */
 
 .cssc-bullet {
-    height: 10px;
-    line-height: 10px;
+    height: 15px;
+    line-height: 15px;
 }
 
 .cssc-bullet li {
     padding: 0 2px;
-    font-size: 30px;
-    color: #333;
+    font-size: 35px;
+    color: #999;
 }
 
 .cssc-bullet .current,
 .cssc-bullet li:hover {
-    color: #999;
+    color: #333;
 }

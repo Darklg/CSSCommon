@@ -3,7 +3,7 @@
 /*
 Name: Content
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.1.1
+Version: 1.1.2
 License: MIT
 */
 
@@ -70,9 +70,6 @@ License: MIT
   Content text
 ---------------------------------------------------------- */
 
-p,
-li,
-dl,
 .cssc-content {
     font-size: 13px;
     line-height: 1.4;
@@ -113,6 +110,7 @@ address,
 .cssc-content dl,
 .cssc-content ol,
 .cssc-content ul,
+.cssc-content,
 .cssc-block {
     margin-bottom: 16px;
 }

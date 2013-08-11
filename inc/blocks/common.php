@@ -1,7 +1,7 @@
 <section class="block-content centered-container" id="bc-common"><div>
     <h2 id="cssc-common">&Eacute;léments récurrents</h2>
     <div>
-        <div class="cssc-grid gri-940-24-20">
+        <div class="cssc-grid gri-940-24-20 cssc-block">
             <div class="col-8">
                 <h3>Barre d’avancement :</h3>
                 <span class="lvl-barre">

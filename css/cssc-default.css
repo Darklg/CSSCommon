@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.7.1
+Version: 2.7.2
 License: MIT
 */
 
@@ -281,8 +281,9 @@ h6, .h6 {
 }
 
 p,
+dl,
 li {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.4;
 }
 

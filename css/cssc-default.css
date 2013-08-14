@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.7.2
+Version: 2.7.3
 License: MIT
 */
 
@@ -248,7 +248,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
     display: block;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
     font-weight: bold;
     line-height: 1.3;
 }
@@ -264,7 +264,6 @@ h2, .h2 {
 }
 
 h3, .h3 {
-    margin-bottom: 5px;
     font-size: 15px;
 }
 
@@ -277,7 +276,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-    font-size: 10px;
+    font-size: 11px;
 }
 
 p,
@@ -418,6 +417,7 @@ a,
 a img,
 .aimg,
 .aimginv,
+.cssc-btn,
 .trans-opa {
     -webkit-transition: opacity 0.3s ease;
     -moz-transition: opacity 0.3s ease;

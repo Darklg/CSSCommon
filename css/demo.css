@@ -13,13 +13,13 @@ License: MIT
 .fork_me {
     visibility: visible;
     z-index: 9;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     opacity: 0.99;
 }
 
-@media(max-width:980px) {
+@media(max-width:1180px) {
     .fork_me {
         visibility: hidden;
         opacity: 0;

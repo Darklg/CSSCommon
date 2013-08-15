@@ -12,7 +12,18 @@
                 <h3>Coupure du texte en CSS</h3>
                 <p class="non-depassement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.</p>
             </div>
-            <div class="col-8">
+            <div class="col-4">
+                <h3>Effet Tiroir</h3>
+                <div class="wdrw">
+                    <p>
+                        <a href="#">Survolez-moi !</a>
+                    </p>
+                    <div class="submenu trans-opa">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
                 <h3>Infobulle</h3>
                 <p>
                     <a href="#" class="tooltip">
@@ -46,13 +57,13 @@
                 <span class="ir demo-ir"></span>
             </div>
             <div class="col-8">
-                <h3>Effet Tiroir</h3>
-                <div class="wdrw">
-                    <p>
-                        <a href="#">Survolez-moi !</a>
-                    </p>
-                    <div class="submenu trans-opa">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+                <h3>Notes</h3>
+                <div class="cssc-stars">
+                    <div class="cssc-stars-list">
+                        <?php for ($i = 5; $i>= 1; $i--) { ?>
+                        <input id="star-<?php echo $i; ?>" type="radio" name="star" value="<?php echo $i; ?>" />
+                        <label for="star-<?php echo $i; ?>">&hearts;</label>
+                        <?php } ?>
                     </div>
                 </div>
             </div>

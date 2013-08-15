@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.9.4
+Version: 1.10
 License: MIT
 */
 
@@ -107,6 +107,7 @@ hr.clearfix {
 ---------------------------------------------------------- */
 
 .wdrw {
+    z-index: 2;
     position: relative;
 }
 
@@ -118,6 +119,7 @@ hr.clearfix {
 
 .wdrw .submenu {
     visibility: hidden;
+    z-index: 1;
     position: absolute;
     top: 100%;
     left: 0;
@@ -313,7 +315,7 @@ pre {
 ---------------------------------------------------------- */
 
 .tooltip {
-    z-index: 1;
+    z-index: 2;
     position: relative;
 }
 
@@ -461,4 +463,49 @@ pre {
 .cssc-tag:before {
     content: '✔';
     color: #676767;
+}
+
+/* ----------------------------------------------------------
+  Stars
+---------------------------------------------------------- */
+
+.cssc-stars {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.cssc-stars-list {
+    float: left;
+}
+
+.cssc-stars label {
+    float: right;
+    cursor: pointer;
+}
+
+.cssc-stars input {
+    z-index: 1;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+}
+
+/* Theme
+-------------------------- */
+
+.cssc-stars label {
+    padding: 2px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cssc-stars input:checked ~ label {
+    color: #F99;
+}
+
+.cssc-stars label:hover,
+.cssc-stars input:checked ~ label:hover,
+.cssc-stars label:hover ~ label {
+    color: #F33;
 }

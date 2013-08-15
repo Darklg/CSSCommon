@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="css/main.css?v=<?php echo round(time()/10); ?>" type="text/css" />
 
         <!-- Scripts -->
+        <!--[if lt IE 9]><script src="js/selectivizr-min.js"></script><![endif]-->
         <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
         <script src="js/mootools-1.4.5.min.js"></script>
     </head>

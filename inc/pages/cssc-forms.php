@@ -81,6 +81,24 @@
                     <input type="text" name="form_multi_2" value="" class="halfling" placeholder="MM" maxlength="2" />
                     <input type="text" name="form_multi_3" value="" placeholder="AAAA" maxlength="4" />
                 </li>
+                <li class="box multibox-box">
+                    <label>Date de départ</label>
+                    <select name="form_multi_jj" id="form_multi_jj">
+                        <?php for ($i = 1; $i < 31; $i++) { ?>
+                        <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                        <?php } ?>
+                    </select>
+                    <select name="form_multi_mm" id="form_multi_mm">
+                        <?php for ($i = 1; $i < 12; $i++) { ?>
+                        <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                        <?php } ?>
+                    </select>
+                    <select name="form_multi_yyyy" id="form_multi_yyyy">
+                        <?php for ($i = date('Y'); $i < 2020; $i++) { ?>
+                            <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                        <?php } ?>
+                    </select>
+                </li>
                 <li class="box textarea-box">
                     <label for="form_textarea">Textarea</label>
                     <textarea rows="5" cols="20" name="form_textarea" id="form_textarea"></textarea>
@@ -93,7 +111,7 @@
             </ul>
         </fieldset>
         <fieldset id="cssc-forms-check">
-            <h3>Radio &amp; Check</h3>
+            <legend>Radio &amp; Check</legend>
             <ul>
                 <li class="box checked-box">
                     <span class="fake-label">Faux Label</span>

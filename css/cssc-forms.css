@@ -3,7 +3,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.8.2
+Version: 1.9
 License: MIT
 */
 
@@ -204,22 +204,24 @@ button {
 ---------------------------------------------------------- */
 
 .cssc-form {
-    padding: 10px 0;
+    margin-bottom: 20px;
     max-width: 100%;
 }
 
 /* Fieldset */
 
 .cssc-form fieldset {
-    padding: 10px 0;
-    border-top: 1px solid #CCC;
+    margin-bottom: 15px;
+    border-top: 1px solid #e0e0e0;
 }
 
 .cssc-form fieldset:last-child {
-    border-bottom: 1px solid #CCC;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .cssc-form legend {
+    display: block;
+    margin-bottom: 10px;
     padding-right: 5px;
     font-size: 14px;
     font-weight: bold;
@@ -228,7 +230,7 @@ button {
 /* Box */
 
 .cssc-form .box {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     line-height: 25px;
 }
 
@@ -326,6 +328,13 @@ button {
     border-color: #333;
     color: #000;
     background-color: #fff;
+}
+
+/* Errors */
+
+.cssc-form input[type=url]:invalid,
+.cssc-form input[type=email]:invalid {
+    border-color: #C33;
 }
 
 /* Couleurs de placeholder : ne pas fusionner les sélecteurs ! */

@@ -11,7 +11,7 @@ Attention : Ne pas utiliser @import dans vos feuilles.
 
 /* Modules */
 @import 'cssc-buttons.css?v=1.8.2';
-@import 'cssc-forms.css?v=1.8.2';
+@import 'cssc-forms.css?v=1.9';
 @import 'cssc-tables.css?v=1.3';
 @import 'cssc-grid.css?v=3.0.1';
 @import 'cssc-push.css?v=1.0.7';

@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.10
+Version: 1.11
 License: MIT
 */
 
@@ -167,6 +167,13 @@ hr.clearfix {
 .bmedia-right >:first-child {
     float: right;
     margin-left: 10px;
+}
+
+.bmedia-right > .bm-cont:first-child,
+.bmedia > .bm-cont:first-child {
+    float: none;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 /* ----------------------------------------------------------
@@ -380,6 +387,16 @@ pre {
     bottom: 100%;
     border-top: 0;
     border-bottom: 5px solid #e0e0e0;
+}
+
+/* ----------------------------------------------------------
+  Panneau
+---------------------------------------------------------- */
+
+.cssc-panel {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    background-color: #f0f0f0;
 }
 
 /* ----------------------------------------------------------

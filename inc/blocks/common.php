@@ -3,10 +3,10 @@
     <div>
         <div class="cssc-grid gri-940-24-20 cssc-block">
             <div class="col-8">
-                <h3>Barre d’avancement :</h3>
-                <span class="lvl-barre">
-                    <span class="bar" style="width:30%;"></span>
-                </span>
+                <div class="cssc-panel">
+                    <h3>Panneau</h3>
+                    <p>Mise en avant de texte.</p>
+                </div>
             </div>
             <div class="col-8">
                 <h3>Coupure du texte en CSS</h3>
@@ -56,7 +56,13 @@
                 <h3>Remplacement d'image</h3>
                 <span class="ir demo-ir"></span>
             </div>
-            <div class="col-8">
+            <div class="col-4">
+                <h3>Barre d’avancement</h3>
+                <span class="lvl-barre">
+                    <span class="bar" style="width:30%;"></span>
+                </span>
+            </div>
+            <div class="col-4">
                 <h3>Notes</h3>
                 <div class="cssc-stars">
                     <div class="cssc-stars-list">

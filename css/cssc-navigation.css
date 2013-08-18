@@ -3,7 +3,7 @@
 /*
 Name: Navigation
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.6.3
+Version: 1.6.4
 License: MIT
 */
 
@@ -214,26 +214,38 @@ License: MIT
   Liste en ligne
 ---------------------------------------------------------- */
 
+.cssc-inline-list_label,
+.cssc-inline-list li,
+.cssc-inline-list a,
 .cssc-inline-list {
-    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    *display: inline;
+    *zoom: 1;
 }
 
-.cssc-inline-list a,
+.cssc-inline-list_label {
+    margin-right: 5px;
+    font-size: 13px;
+}
+
 .cssc-inline-list li,
 .cssc-inline-list {
     height: 30px;
     line-height: 30px;
 }
 
-.cssc-inline-list li {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
+.cssc-inline-list a {
+    padding: 0 5px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    line-height: 23px;
 }
 
-.cssc-inline-list a {
-    display: block;
-    padding: 0 5px;
+.cssc-inline-list .current a {
+    color: #fff;
+    background-color: #369;
 }
 
 /* ----------------------------------------------------------

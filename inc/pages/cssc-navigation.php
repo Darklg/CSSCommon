@@ -154,13 +154,16 @@
     </ul>
 
     <h3>Liste "inline"</h3>
+    <div class="cssc-block">
+        <strong class="cssc-inline-list_label">Choix :</strong>
     <ul class="cssc-inline-list">
-        <li><a href="#">Element 1</a></li>
+        <li class="current"><a href="#">Element 1</a></li>
         <li><a href="#">Element 2</a></li>
         <li><a href="#">Element 3</a></li>
         <li><a href="#">Element 4</a></li>
         <li><a href="#">Element 5</a></li>
     </ul>
+    </div>
 
     <h3>Menu vertical</h3>
     <ul class="cssc-vertical-menu">

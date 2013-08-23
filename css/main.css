@@ -15,11 +15,11 @@ Attention : Ne pas utiliser @import dans vos feuilles.
 @import 'cssc-tables.css?v=1.3';
 @import 'cssc-grid.css?v=3.0.1';
 @import 'cssc-push.css?v=1.0.7';
-@import 'cssc-navigation.css?v=1.6.4';
+@import 'cssc-navigation.css?v=1.7';
 @import 'cssc-layouts.css?v=1.9.1';
 @import 'cssc-tabs.css?v=1.0.4';
 @import 'cssc-images.css?v=1.0';
 @import 'cssc-print.css?v=1.0.1';
 
 /* Style du site de démo */
-@import 'demo.css?v=201308150006';
+@import 'demo.css?v=201308232224';

@@ -189,3 +189,12 @@ License: MIT
 #bc-layouts .cssc-lay > .col-side {
     background-color: #f0f0f0;
 }
+
+/* ----------------------------------------------------------
+  Navigation
+---------------------------------------------------------- */
+
+.icn-settings {
+    width: 16px;
+    background: transparent url(../images/icn-settings.png) no-repeat center center;
+}

@@ -7,9 +7,33 @@
         <h2 id="cssc-navigation">Navigation</h2>
     </div>
     <p>Objets utilisés pour la navigation.</p>
+    </div>
+</section>
+<section class="block-content centered-container"><div>
 
-    </div></section>
-    <section class="block-content centered-container"><div>
+    <h3>Navigation Bar</h3>
+
+    <div class="cssc-navbar">
+        <div class="cssc-navbar--left">
+            <ul class="cssc-navbar--links">
+                <li><a href="#">Mon compte</a></li>
+                <li><a href="#">Déconnexion</a></li>
+            </ul>
+        </div>
+        <div class="cssc-navbar--right">
+            <div class="cssc-navbar--search">
+                <form action="#" method="post" onsubmit="return false;">
+                    <div>
+                        <input class="inputbase" type="text" name="az" value="" />
+                        <button class="cssc-button">search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="cssc-navbar-link">
+                <a href="#" class="icn-settings ir">Settings</a>
+            </div>
+        </div>
+    </div>
 
 
     <h3>Menu Principal</h3>

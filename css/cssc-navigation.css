@@ -3,9 +3,101 @@
 /*
 Name: Navigation
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.6.4
+Version: 1.7
 License: MIT
 */
+
+/* ----------------------------------------------------------
+  Navigation bar
+---------------------------------------------------------- */
+
+.cssc-navbar {
+    text-align: center;
+}
+
+/* Positions */
+
+.cssc-navbar--left {
+    float: left;
+}
+
+.cssc-navbar--right {
+    float: right;
+}
+
+.cssc-navbar--right > *,
+.cssc-navbar--left > * {
+    float: left;
+}
+
+/* Elements */
+
+.cssc-navbar-link,
+.cssc-navbar-link > a,
+.cssc-navbar--links,
+.cssc-navbar--links > li,
+.cssc-navbar--links > li > a {
+    height: 100%;
+    line-height: inherit;
+}
+
+.cssc-navbar--links > li {
+    float: left;
+}
+
+/* Theme
+-------------------------- */
+
+.cssc-navbar {
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.cssc-navbar,
+.cssc-navbar > * {
+    height: 45px;
+    line-height: 45px;
+    background-color: #f0f0f0;
+}
+
+/* Search */
+
+.cssc-navbar--search {
+    padding: 0 10px;
+}
+
+.cssc-navbar--search .inputbase {
+    display: inline-block;
+    width: auto;
+    margin-right: 4px;
+    border-color: #ccc;
+    vertical-align: middle;
+    *display: inline;
+    *zoom: 1;
+}
+
+/* Links */
+
+.cssc-navbar-link a,
+.cssc-navbar--links > li > a {
+    display: block;
+    padding: 0 6px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+.cssc-navbar--links {
+    padding: 0 10px;
+}
+
+.cssc-navbar--links:first-child {
+    padding-left: 0;
+}
+
+.cssc-navbar--links:last-child {
+    padding-right: 0;
+}
 
 /* ----------------------------------------------------------
   Pagination

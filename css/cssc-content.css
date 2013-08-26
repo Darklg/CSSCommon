@@ -3,7 +3,7 @@
 /*
 Name: Content
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.1.3
+Version: 1.1.4
 License: MIT
 */
 
@@ -116,10 +116,15 @@ License: MIT
     margin-bottom: 16px;
 }
 
+.cssc-content blockquote p {
+    margin-bottom: 4px;
+}
+
 .cssc-content dl:last-child,
 .cssc-content ol:last-child,
 .cssc-content ul:last-child,
 .cssc-content blockquote:last-child,
+.cssc-content blockquote p:last-child,
 .cssc-content p:last-child,
 .cssc-block:last-child {
     margin-bottom: 0;

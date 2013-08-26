@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+$_v = round(time()/10);
+?><!DOCTYPE html>
 <!--[if lt IE 8 ]><html dir="ltr" lang="fr-FR" class="is_ie7 lt_ie8 lt_ie9 lt_ie10"><![endif]-->
 <!--[if IE 8 ]><html dir="ltr" lang="fr-FR" class="is_ie8 lt_ie9 lt_ie10"><![endif]-->
 <!--[if IE 9 ]><html dir="ltr" lang="fr-FR" class="is_ie9 lt_ie10"><![endif]-->
@@ -18,8 +20,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
         <!-- Feuilles CSS Common -->
-        <link rel="stylesheet" href="css/main.css?v=<?php echo round(time()/10); ?>" type="text/css" />
-
+        <link rel="stylesheet" href="css/main.css?v=<?php echo $_v; ?>" type="text/css" />
+        <!--
+        <link rel="stylesheet" href="css/debug.css?v=<?php echo $_v; ?>" type="text/css" />
+        -->
         <!-- Scripts -->
         <!--[if lt IE 9]><script src="js/selectivizr-min.js"></script><![endif]-->
         <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->

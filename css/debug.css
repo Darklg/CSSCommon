@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/*
+Name: Debug
+URL: http://github.com/Darklg/CSSCommon
+Version: 0.1
+License: MIT
+*/
+
+/* ----------------------------------------------------------
+  Missing or bad properties
+---------------------------------------------------------- */
+
+/* Missing or invalid href
+-------------------------- */
+
+a[href=""],
+a[href^="javascript"],
+a:not([href]) {
+    padding: 2px!important;
+    outline: 3px dashed red!important;
+}
+
+/* Inside form button lacking type
+-------------------------- */
+
+form button:not([type]) {
+    font-size: 200%!important;
+    outline: 3px dashed red!important;
+}
+
+/* Images
+-------------------------- */
+
+img:not([alt]) {
+    outline: 3px dashed red!important;
+}
+
+/* ----------------------------------------------------------
+  Invalid HTML
+---------------------------------------------------------- */
+
+/* Invalid child
+-------------------------- */
+
+form > input,
+tbody >:not(tr) ,
+ul >:not(li) {
+    border: 3px dashed red!important;
+}
+
+/* ----------------------------------------------------------
+  Empty elements
+---------------------------------------------------------- */
+
+section:empty,
+form:empty,
+span:empty,
+div:empty {
+    display: block!important;
+    position: static!important;
+    padding: 10px!important;
+    background-color: yellow!important;
+}
+
+/*
+Thanks to :
+* http://www.smashingmagazine.com/2013/08/20/semantic-css-with-intelligent-selectors/
+* http://meyerweb.com/eric/tools/css/diagnostics/
+*/
+

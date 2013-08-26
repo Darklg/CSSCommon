@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.7.3
+Version: 2.7.4
 License: MIT
 */
 
@@ -286,6 +286,10 @@ li {
     line-height: 1.4;
 }
 
+p {
+    margin-bottom: 18px;
+}
+
 del {
     text-decoration: line-through;
 }
@@ -341,7 +345,7 @@ blockquote {
 }
 
 blockquote p {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 hr {

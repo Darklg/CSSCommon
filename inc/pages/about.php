@@ -11,7 +11,9 @@ include dirname(__FILE__).'/../blocks/common.php';
         </div>
         <h2 id="cssc-tabs">Onglets</h2>
     </div>
-    <p>Des onglets simples, compatibles avec le <a href="http://darklg.github.io/JavaScriptUtilities/jquery.html#jq-tabs" target="_blank">plugin jQuery "Tabs"</a> ou la <a href="http://darklg.github.io/JavaScriptUtilities/mootools.html#moo-tabs" target="_blank">classe MooTools "Tabs"</a>.</p>
+    <div class="cssc-block">
+        <p>Des onglets simples, compatibles avec le <a href="http://darklg.github.io/JavaScriptUtilities/jquery.html#jq-tabs" target="_blank">plugin jQuery "Tabs"</a> ou la <a href="http://darklg.github.io/JavaScriptUtilities/mootools.html#moo-tabs" target="_blank">classe MooTools "Tabs"</a>.</p>
+    </div>
     <div class="cssc-tabs cssc-block">
         <ul class="cssc-tabs-clic">
             <li class="is-current"><a href="#">Onglet</a></li>
@@ -62,8 +64,10 @@ include dirname(__FILE__).'/../blocks/common.php';
 
 
 <section class="block-content centered-container"><div>
-    <h2 id="cssc-gallery">Galerie</h2>
-    <p>Une marge se crée automatiquement entre les éléments, mais le dernier élément d'une ligne est tout de même calé à droite, quel que soit le nombre d'éléments par ligne.</p>
+    <div class="cssc-block">
+        <h2 id="cssc-gallery">Galerie</h2>
+        <p>Une marge se crée automatiquement entre les éléments, mais le dernier élément d'une ligne est tout de même calé à droite, quel que soit le nombre d'éléments par ligne.</p>
+    </div>
     <ul class="subfloat sf_100_20">
         <li><a href="#"><img src="images/100x100-black.png" alt="" /></a></li>
         <li><a href="#"><img src="images/100x100-black.png" alt="" /></a></li>
@@ -95,7 +99,9 @@ include dirname(__FILE__).'/../blocks/common.php';
         </div>
         <h2 id="cssc-push">Pushs</h2>
     </div>
-    <p>Cet objet permet de créer une transition entre deux images. Par exemple, un push avec <abbr title="Call to action">CTA</abbr>.</p>
+    <div class="cssc-block">
+        <p>Cet objet permet de créer une transition entre deux images. Par exemple, un push avec <abbr title="Call to action">CTA</abbr>.</p>
+    </div>
     <h3>Push avec simple fondu</h3>
     <div class="cssc-grid gri-940-24-20">
         <div class="col-8">
@@ -150,7 +156,9 @@ include dirname(__FILE__).'/../blocks/common.php';
         </div>
         <h2 id="cssc-images">Images</h2>
     </div>
-    <p>Images avec légende / titre à utiliser, par exemple, dans une liste d'articles.</p>
+    <div class="cssc-block">
+        <p>Images avec légende / titre à utiliser, par exemple, dans une liste d'articles.</p>
+    </div>
     <div>
         <a href="#" class="cssc-image cssc-img-theme-default">
             <img src="http://placehold.it/310x150" alt="" />

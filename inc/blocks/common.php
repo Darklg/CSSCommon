@@ -54,12 +54,12 @@
             </div>
             <div class="col-8">
                 <h3>Remplacement d'image</h3>
-                <span class="ir demo-ir"></span>
+                <span class="ir demo-ir">Texte alternatif</span>
             </div>
             <div class="col-4">
                 <h3>Barre d’avancement</h3>
                 <span class="lvl-barre">
-                    <span class="bar" style="width:30%;"></span>
+                    <span class="bar" style="width:30%;">30%</span>
                 </span>
             </div>
             <div class="col-4">
@@ -90,7 +90,7 @@
                 <li><a class="warning" href="#">consectetur adipiscing elit</a></li>
             </ul>
         </div>
-        <div class="col-2"></div>
+        <div class="col-2">&nbsp;</div>
         <div class="col-11">
             <h2 id="cssc-code">Présentation de code</h2>
             <h3>Balise &lt;pre /&gt;</h3>

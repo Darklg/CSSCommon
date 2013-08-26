@@ -106,7 +106,7 @@
                 <li class="box submit-box radio-box">
                     <input type="checkbox" name="form_checkbox3" id="form_checkbox3" />
                     <label for="form_checkbox3">J'accepte les conditions du site.</label>
-                    <button class="cssc-button cssc-button-medium">Envoyer</button>
+                    <button type="submit" class="cssc-button cssc-button-medium">Envoyer</button>
                 </li>
             </ul>
         </fieldset>

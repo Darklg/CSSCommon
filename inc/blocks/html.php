@@ -1,10 +1,12 @@
 <section class="block-content centered-container"><div>
-    <h2>Style HTML</h2>
-    <p>
-        Le container <code>.cssc-content</code> permet de styliser des listes, d'activer une taille de typo de base, de faire flotter des images. <br />
-        Il est utilisé par exemple dans le contenu d'un article, dans une description de fiche produit, ...<br />
-        Les autres styles HTML sont disponibles à tous les niveaux du DOM.
-    </p>
+    <div class="cssc-block">
+        <h2>Style HTML</h2>
+        <p>
+            Le container <code>.cssc-content</code> permet de styliser des listes, d'activer une taille de typo de base, de faire flotter des images. <br />
+            Il est utilisé par exemple dans le contenu d'un article, dans une description de fiche produit, ...<br />
+            Les autres styles HTML sont disponibles à tous les niveaux du DOM.
+        </p>
+    </div>
     <div class="cssc-grid gri-940-24-20">
         <div class="col-8">
             <h3>Lists</h3>
@@ -60,20 +62,18 @@
                 </div>
         </div>
         <div class="col-8">
-            <div class="cssc-block">
+            <div class="cssc-content">
                 <h1>Title lvl. 1</h1>
                 <h2>Title lvl. 2</h2>
                 <h3>Title lvl. 3</h3>
                 <h4>Title lvl. 4</h4>
                 <h5>Title lvl. 5</h5>
-            </div>
-            <blockquote>
-                <p>Contenu d'une citation</p>
-                <em>
-                    <cite>Auteur</cite>
-                </em>
-            </blockquote>
-            <div class="cssc-block">
+                <blockquote>
+                    <p>Contenu d'une citation</p>
+                    <em>
+                        <cite>Auteur</cite>
+                    </em>
+                </blockquote>
                 <h3>Tags</h3>
                 <p>
                     <a href="#" class="cssc-tag">Renard polaire</a>

@@ -8,6 +8,7 @@
     </div>
     <p>Un système de grilles simple et imbricable.</p>
 
+    <div class="cssc-block">
     <h3>Demo</h3>
     <div class="cssc-grid gri-940-24-20">
         <div class="col-8">
@@ -28,7 +29,7 @@
         <div class="col-8">
             <div class="grid-label">col-8</div>
         </div>
-        <div class="col-8"></div>
+        <div class="col-8">&nbsp;</div>
         <div class="col-8">
             <div class="grid-label">col-8</div>
         </div>
@@ -59,7 +60,7 @@
     &lt;div class=&quot;col-16&quot;&gt;16 cols&lt;/div&gt;
     &lt;div class=&quot;col-8&quot;&gt;8 cols&lt;/div&gt;
 &lt;/div&gt;</pre>
-
+    </div>
 
     <h3>Grille fluide</h3>
     <div class="cssc-grid fluid-grid">

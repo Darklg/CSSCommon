@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.11
+Version: 1.11.1
 License: MIT
 */
 
@@ -216,6 +216,8 @@ hr.clearfix {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+    overflow: hidden;
+    text-indent: -999px;
     background: rgba(0,0,0,0) no-repeat 0 0;
     background-image: -moz-linear-gradient(top,rgba(0,0,0,0), rgba(0,0,0,0.2) );
     background-image: -o-linear-gradient(top,rgba(0,0,0,0), rgba(0,0,0,0.2) );

@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.7.4
+Version: 2.7.5
 License: MIT
 */
 
@@ -288,6 +288,11 @@ li {
 
 p {
     margin-bottom: 18px;
+}
+
+blockquote p:last-child,
+p:last-child {
+    margin-bottom: 0;
 }
 
 del {

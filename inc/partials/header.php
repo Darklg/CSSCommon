@@ -43,6 +43,7 @@ $_v = round(time()/10);
                 <li><a href="index.php?p=cssc-navigation">Navigation</a></li>
                 <li><a href="index.php?p=cssc-tables">Tableaux</a></li>
                 <li><a href="index.php?p=cssc-layouts">Layouts</a></li>
+                <li><a href="index.php?p=debug">Debug</a></li>
                 <li><a href="responsive.php">Responsive</a></li>
             </ul>
         </nav>

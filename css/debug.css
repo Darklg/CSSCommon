@@ -3,9 +3,21 @@
 /*
 Name: Debug
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.1
+Version: 0.2
 License: MIT
 */
+
+/* ----------------------------------------------------------
+  Design
+---------------------------------------------------------- */
+
+/* Check alignement
+ * Via @Sutterlity
+-------------------------- */
+
+body * {
+    background-color: rgba(0,0,0,.02);
+}
 
 /* ----------------------------------------------------------
   Missing or bad properties
@@ -17,15 +29,19 @@ License: MIT
 a[href=""],
 a[href^="javascript"],
 a:not([href]) {
-    padding: 2px!important;
     outline: 3px dashed red!important;
 }
 
-/* Inside form button lacking type
+/* Forms
 -------------------------- */
 
+input:not([type]),
+form:not([action]),
+form:not([method]),
+form[method=""],
+textarea:not([cols]),
+textarea:not([rows]),
 form button:not([type]) {
-    font-size: 200%!important;
     outline: 3px dashed red!important;
 }
 
@@ -44,7 +60,10 @@ img:not([alt]) {
 -------------------------- */
 
 form > input,
+form > textarea,
+form > button,
 tbody >:not(tr) ,
+ol >:not(li) ,
 ul >:not(li) {
     border: 3px dashed red!important;
 }

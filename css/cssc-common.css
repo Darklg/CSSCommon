@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.11.1
+Version: 1.12
 License: MIT
 */
 
@@ -12,6 +12,7 @@ License: MIT
 ---------------------------------------------------------- */
 
 .ir-children a,
+.cssc-btn-px,
 .cssc-btn,
 .ir {
     display: inline-block;
@@ -29,6 +30,12 @@ License: MIT
     *line-height: 0;
     *display: inline;
     *zoom: 1;
+}
+
+.cssc-btn-px {
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
 }
 
 /* ----------------------------------------------------------
@@ -181,70 +188,70 @@ hr.clearfix {
 ---------------------------------------------------------- */
 
 .lvl-barre {
-    display: inline-block;
+    display: block;
+    z-index: 1;
     position: relative;
-    margin: 3px;
-    vertical-align: middle;
-    *display: inline;
-    *zoom: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .lvl-barre .bar,
 .lvl-barre:before {
+    z-index: 1;
     position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .lvl-barre:before {
     content: '';
     z-index: 9;
-    top: -3px;
-    right: -3px;
-    bottom: -3px;
-    left: -3px;
-    border: 3px solid #ccc;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
 }
 
 .lvl-barre .bar {
-    top: 0;
-    bottom: 0;
-    left: 0;
     width: 0;
     max-width: 100%;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
     overflow: hidden;
-    text-indent: -999px;
+    text-align: left;
+    text-indent: -9999px;
     background: rgba(0,0,0,0) no-repeat 0 0;
     background-image: -moz-linear-gradient(top,rgba(0,0,0,0), rgba(0,0,0,0.2) );
     background-image: -o-linear-gradient(top,rgba(0,0,0,0), rgba(0,0,0,0.2) );
     background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(0,0,0,0) ), color-stop(1,rgba(0,0,0,0.2) ) );
     background-image: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2) );
     background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2) );
-    -webkit-background-clip: border;
-    -moz-background-clip: border;
-    background-clip: border;
-    -webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
-    -moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
-    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
 }
 
-/* Style démo */
+/* Base thème */
 
 .lvl-barre {
-    width: 100px;
     height: 15px;
+    margin: 3px;
 }
 
 .lvl-barre:before {
-    border-color: #F0F0F0;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    border: 3px solid #333;
+}
+
+.lvl-barre:before,
+.lvl-barre .bar {
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
 }
 
 .lvl-barre .bar {
-    background-color: red;
+    background-color: #369;
+    -webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
 }
 
 /* ----------------------------------------------------------

@@ -3,12 +3,12 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.12
+Version: 2.0
 License: MIT
 */
 
 /* ----------------------------------------------------------
-  Images masquées (Pour push, etc)
+  Image replacement
 ---------------------------------------------------------- */
 
 .ir-children a,
@@ -39,6 +39,27 @@ License: MIT
 }
 
 /* ----------------------------------------------------------
+  Image button
+---------------------------------------------------------- */
+
+/* Reset */
+
+.cssc-btn {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+/* :Hover */
+
+.cssc-btn:focus,
+.cssc-btn:hover {
+    opacity: 0.50;
+    filter: alpha(opacity=50);
+}
+
+/* ----------------------------------------------------------
   Clearfix
 ---------------------------------------------------------- */
 
@@ -63,28 +84,7 @@ hr.clearfix {
 }
 
 /* ----------------------------------------------------------
-  Bouton image
----------------------------------------------------------- */
-
-/* Reset */
-
-.cssc-btn {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-}
-
-/* :Hover */
-
-.cssc-btn:focus,
-.cssc-btn:hover {
-    opacity: 0.50;
-    filter: alpha(opacity=50);
-}
-
-/* ----------------------------------------------------------
-  "..." automatique à la fin d'une ligne
+  Automatic ellipsis "..." if content is more than one line
 ---------------------------------------------------------- */
 
 .non-depassement {
@@ -95,7 +95,7 @@ hr.clearfix {
 }
 
 /* ----------------------------------------------------------
-  Suppression d'élément
+  Removing an element
 ---------------------------------------------------------- */
 
 .suppression-element-enfant > *,
@@ -110,7 +110,7 @@ hr.clearfix {
 }
 
 /* ----------------------------------------------------------
-  Objet Tiroir
+  Drawer : Submenu, etc
 ---------------------------------------------------------- */
 
 .wdrw {
@@ -152,8 +152,8 @@ hr.clearfix {
 }
 
 /* ----------------------------------------------------------
-  Block Media : Bloc avec flottant
-  From @Stubbornella : http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+  Block Media : Floating block
+  By @Stubbornella : http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
 ---------------------------------------------------------- */
 
 .bmedia,
@@ -184,7 +184,7 @@ hr.clearfix {
 }
 
 /* ----------------------------------------------------------
-  Barre d'avancement
+  Progress bar
 ---------------------------------------------------------- */
 
 .lvl-barre {
@@ -225,7 +225,8 @@ hr.clearfix {
     background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2) );
 }
 
-/* Base thème */
+/* Theme
+-------------------------- */
 
 .lvl-barre {
     height: 15px;
@@ -233,11 +234,11 @@ hr.clearfix {
 }
 
 .lvl-barre:before {
-    top: -2px;
-    right: -2px;
-    bottom: -2px;
-    left: -2px;
-    border: 3px solid #333;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    border: 2px solid #333;
 }
 
 .lvl-barre:before,
@@ -255,7 +256,7 @@ hr.clearfix {
 }
 
 /* ----------------------------------------------------------
-  Style du code
+  Code presentation
 ---------------------------------------------------------- */
 
 tt,
@@ -399,7 +400,7 @@ pre {
 }
 
 /* ----------------------------------------------------------
-  Panneau
+  Panel
 ---------------------------------------------------------- */
 
 .cssc-panel {
@@ -534,4 +535,61 @@ pre {
 .cssc-stars input:checked ~ label:hover,
 .cssc-stars label:hover ~ label {
     color: #F33;
+}
+
+/* ----------------------------------------------------------
+  Vertical center
+---------------------------------------------------------- */
+
+.vertical-center {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.vertical-center__wrapper {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+}
+
+.vertical-center__centered {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    *display: inline;
+    *zoom: 1;
+}
+
+/* Personalization
+-------------------------- */
+
+/* This block can be of any height, but bigger than the centered element */
+
+.vertical-center {
+    height: 100px;
+}
+
+/*
+ * Arbitrary height (way bigger than the parent if possible)
+ * margin-top should be 0-(height/2)
+ * line-height should be equal to height
+ */
+
+.vertical-center__wrapper {
+    height: 400px;
+    margin-top: -200px;
+    line-height: 400px;
+}
+
+/* Theme
+-------------------------- */
+
+.vertical-center {
+    background-color: #f0f0f0;
+}
+
+.vertical-center p {
+    padding: 0 10px;
+    font-size: 12px;
 }

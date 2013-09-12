@@ -3,7 +3,7 @@
 /*
 Name: Effects
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.1
+Version: 0.2
 License: MIT
 */
 
@@ -30,6 +30,7 @@ License: MIT
 /* Appear on load
 -------------------------- */
 
+.cssc-effects-appear-me,
 .cssc-effects-appear .animate-me {
     opacity: 0;
     -webkit-animation: cssc-effects-appear forwards 0.75s 1 ease;
@@ -55,6 +56,8 @@ License: MIT
     animation-delay: 0.75s;
 }
 
+/* Animation */
+
 @-webkit-keyframes cssc-effects-appear {
     from {
         opacity: 0;
@@ -75,12 +78,84 @@ License: MIT
     }
 }
 
-@-o-keyframes cssc-effects-appear {
+@keyframes cssc-effects-appear {
     from {
         opacity: 0;
     }
 
     to {
         opacity: 1;
+    }
+}
+
+/* Slide on load
+-------------------------- */
+
+.cssc-effects-slide {
+    overflow: hidden;
+}
+
+.cssc-effects-slide-me,
+.cssc-effects-slide .animate-me {
+    opacity: 0;
+    -webkit-animation: cssc-effects-slide forwards 0.75s 1 cubic-bezier(0.680,-0.550,0.265,1.550);
+    -moz-animation: cssc-effects-slide forwards 0.75s 1 cubic-bezier(0.680,-0.550,0.265,1.550);
+    -o-animation: cssc-effects-slide forwards 0.75s 1 cubic-bezier(0.680,-0.550,0.265,1.550);
+    -webkit-transform: translateX(-1000px);
+}
+
+.cssc-effects-slide .animate-me:nth-child(2n) {
+    -webkit-animation-delay: 0.05s;
+    -moz-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+}
+
+.cssc-effects-slide .animate-me:nth-child(3n) {
+    -webkit-animation-delay: 0.10s;
+    -moz-animation-delay: 0.10s;
+    animation-delay: 0.10s;
+}
+
+.cssc-effects-slide .animate-me:nth-child(4n) {
+    -webkit-animation-delay: 0.15s;
+    -moz-animation-delay: 0.15s;
+    animation-delay: 0.15s;
+}
+
+/* Animation */
+
+@-webkit-keyframes cssc-effects-slide {
+    from {
+        opacity: 0;
+        -webkit-transform: translateX(-1000px);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@-moz-keyframes cssc-effects-slide {
+    from {
+        opacity: 0;
+        -moz-transform: translateX(-1000px);
+    }
+
+    to {
+        opacity: 1;
+        -moz-transform: translateX(0);
+    }
+}
+
+@keyframes cssc-effects-slide {
+    from {
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }

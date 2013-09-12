@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/*
+Name: Effects
+URL: http://github.com/Darklg/CSSCommon
+Version: 0.1
+License: MIT
+*/
+
+/* ----------------------------------------------------------
+  Hover effects
+---------------------------------------------------------- */
+
+/* Inverted hover
+-------------------------- */
+
+.cssc-inverted-hover:hover a:hover,
+.cssc-inverted-hover a {
+    color: #369;
+}
+
+.cssc-inverted-hover:hover a {
+    color: #999;
+}
+
+/* ----------------------------------------------------------
+  Load effects
+---------------------------------------------------------- */
+
+/* Appear on load
+-------------------------- */
+
+.cssc-effects-appear .animate-me {
+    opacity: 0;
+    -webkit-animation: cssc-effects-appear forwards 0.75s 1 ease;
+    -moz-animation: cssc-effects-appear forwards 0.75s 1 ease;
+    -o-animation: cssc-effects-appear forwards 0.75s 1 ease;
+}
+
+.cssc-effects-appear .animate-me:nth-child(2n) {
+    -webkit-animation-delay: 0.25s;
+    -moz-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+}
+
+.cssc-effects-appear .animate-me:nth-child(3n) {
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.cssc-effects-appear .animate-me:nth-child(4n) {
+    -webkit-animation-delay: 0.75s;
+    -moz-animation-delay: 0.75s;
+    animation-delay: 0.75s;
+}
+
+@-webkit-keyframes cssc-effects-appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes cssc-effects-appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes cssc-effects-appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

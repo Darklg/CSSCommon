@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="css/debug.css?v=
-<?php echo time(); ?>" type="text/css" />
+<link rel="stylesheet" href="css/debug.css?v=<?php echo time(); ?>" type="text/css" />
 <section class="block-content centered-container">
     <div>
         <h2>Missing or bad properties</h2>

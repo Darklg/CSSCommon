@@ -3,7 +3,7 @@
 /*
 Name: Effects
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.2
+Version: 0.3
 License: MIT
 */
 
@@ -21,6 +21,38 @@ License: MIT
 
 .cssc-inverted-hover:hover a {
     color: #999;
+}
+
+/* ----------------------------------------------------------
+  General effects
+---------------------------------------------------------- */
+
+/* Parallax
+-------------------------- */
+
+.cssc-parallax {
+    text-align: center;
+    background: transparent no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+/* Theme */
+
+.cssc-parallax {
+    height: 100px;
+    background-image: url(../images/wide-image.jpg);
+}
+
+/* Demo */
+
+.cssc-parallax {
+    margin: 50px 0;
+    text-shadow: -2px -2px 0 rgba(0,0,0,0.3);
+    font-size: 30px;
+    line-height: 100px;
+    color: #fff;
+    opacity: 0.999;
 }
 
 /* ----------------------------------------------------------

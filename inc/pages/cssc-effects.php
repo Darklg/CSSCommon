@@ -25,6 +25,7 @@
 &lt;/ul&gt;</pre>
     </div>
 </section>
+<div class="cssc-parallax">Parallax effect</div>
 <section class="block-content centered-container">
     <div>
         <h2>Load effects</h2>

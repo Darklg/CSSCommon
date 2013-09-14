@@ -23,6 +23,20 @@
     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;dolor sit amet&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;consectetur adipiscing elit&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</pre>
+        <h3>Inverted :hover on images</h3>
+        <p class="cssc-inverted-hover--images">
+            <a href="#"><img src="images/___x100/1.jpg" alt="" /></a>
+            <a href="#"><img src="images/___x100/2.jpg" alt="" /></a>
+            <a href="#"><img src="images/___x100/3.jpg" alt="" /></a>
+            <a href="#"><img src="images/___x100/4.jpg" alt="" /></a>
+        </p>
+        <p><a href="#demo-cssc-inverted-hover--images" class="cssc-button show-html-button">Afficher HTML</a></p>
+        <pre contenteditable id="demo-cssc-inverted-hover--images">&lt;p class=&quot;cssc-inverted-hover--images&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;</pre>
     </div>
 </section>
 <div class="cssc-parallax">Parallax effect</div>
@@ -31,10 +45,10 @@
         <h2>Load effects</h2>
         <h3>Appear on load</h3>
         <p class="cssc-effects-appear">
-            <img class="animate-me" src="http://placehold.it/100x100" alt="" />
-            <img class="animate-me" src="http://placehold.it/100x100" alt="" />
-            <img class="animate-me" src="http://placehold.it/100x100" alt="" />
-            <img class="animate-me" src="http://placehold.it/100x100" alt="" />
+            <img class="animate-me" src="images/___x100/1.jpg" alt="" />
+            <img class="animate-me" src="images/___x100/2.jpg" alt="" />
+            <img class="animate-me" src="images/___x100/3.jpg" alt="" />
+            <img class="animate-me" src="images/___x100/4.jpg" alt="" />
         </p>
         <p><a href="#demo-appear-load" class="cssc-button show-html-button">Afficher HTML</a></p>
         <pre contenteditable id="demo-appear-load">&lt;p class=&quot;cssc-effects-appear&quot;&gt;
@@ -45,10 +59,10 @@
 &lt;/p&gt;</pre>
         <h3>Slide on load</h3>
         <p class="cssc-effects-slide">
-            <img class="animate-me" src="http://placehold.it/100x100/000" alt="" />
-            <img class="animate-me" src="http://placehold.it/100x100/000" alt="" />
-            <img class="animate-me" src="http://placehold.it/100x100/000" alt="" />
-            <img class="animate-me" src="http://placehold.it/100x100/000" alt="" />
+            <img class="animate-me" src="images/___x100/4.jpg" alt="" />
+            <img class="animate-me" src="images/___x100/1.jpg" alt="" />
+            <img class="animate-me" src="images/___x100/3.jpg" alt="" />
+            <img class="animate-me" src="images/___x100/2.jpg" alt="" />
         </p>
         <p><a href="#demo-slide-load" class="cssc-button show-html-button">Afficher HTML</a></p>
         <pre contenteditable id="demo-slide-load">&lt;p class=&quot;cssc-effects-slide&quot;&gt;

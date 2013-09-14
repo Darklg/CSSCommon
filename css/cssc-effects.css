@@ -3,7 +3,7 @@
 /*
 Name: Effects
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.3
+Version: 0.4
 License: MIT
 */
 
@@ -21,6 +21,20 @@ License: MIT
 
 .cssc-inverted-hover:hover a {
     color: #999;
+}
+
+/* Inverted hover on images
+-------------------------- */
+
+.cssc-inverted-hover--images:hover a:hover img,
+.cssc-inverted-hover--images a img {
+    opacity: 0.999;
+    filter: alpha(opacity=99);
+}
+
+.cssc-inverted-hover--images:hover a img {
+    opacity: 0.30;
+    filter: alpha(opacity=30);
 }
 
 /* ----------------------------------------------------------

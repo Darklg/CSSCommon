@@ -3,39 +3,9 @@
 /*
 Name: Effects
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.4
+Version: 0.5
 License: MIT
 */
-
-/* ----------------------------------------------------------
-  Hover effects
----------------------------------------------------------- */
-
-/* Inverted hover
--------------------------- */
-
-.cssc-inverted-hover:hover a:hover,
-.cssc-inverted-hover a {
-    color: #369;
-}
-
-.cssc-inverted-hover:hover a {
-    color: #999;
-}
-
-/* Inverted hover on images
--------------------------- */
-
-.cssc-inverted-hover--images:hover a:hover img,
-.cssc-inverted-hover--images a img {
-    opacity: 0.999;
-    filter: alpha(opacity=99);
-}
-
-.cssc-inverted-hover--images:hover a img {
-    opacity: 0.30;
-    filter: alpha(opacity=30);
-}
 
 /* ----------------------------------------------------------
   General effects
@@ -204,4 +174,73 @@ License: MIT
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+/* ----------------------------------------------------------
+  Hover effects
+---------------------------------------------------------- */
+
+/* Inverted hover
+-------------------------- */
+
+.cssc-inverted-hover:hover a:hover,
+.cssc-inverted-hover a {
+    color: #369;
+}
+
+.cssc-inverted-hover:hover a {
+    color: #999;
+}
+
+/* Inverted hover on images
+-------------------------- */
+
+.cssc-inverted-hover--images:hover a:hover img,
+.cssc-inverted-hover--images a img {
+    opacity: 0.999;
+    filter: alpha(opacity=99);
+}
+
+.cssc-inverted-hover--images:hover a img {
+    opacity: 0.30;
+    filter: alpha(opacity=30);
+}
+
+/* Colorized hover
+-------------------------- */
+
+.cssc-colorized-hover .animate-me {
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    line-height: 1;
+    vertical-align: middle;
+    *zoom: 1;
+    *display: inline;
+}
+
+.cssc-colorized-hover .animate-me img,
+.cssc-colorized-hover .animate-me img {
+    opacity: 0.999;
+    filter: alpha(opacity=999);
+}
+
+.cssc-colorized-hover .animate-me .color {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.0;
+    filter: alpha(opacity=0);
+}
+
+.cssc-colorized-hover .animate-me .gray {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogPGZpbHRlciBpZD0iZ3JheXNjYWxlIj4KICA8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMC4zMzMzIDAuMzMzMyAwLjMzMzMgMCAwIDAuMzMzMyAwLjMzMzMgMC4zMzMzIDAgMCAwLjMzMzMgMC4zMzMzIDAuMzMzMyAwIDAgMCAwIDAgMSAwIi8+CiA8L2ZpbHRlcj4KPC9zdmc+#grayscale);
+}
+
+.cssc-colorized-hover .animate-me:hover .color {
+    opacity: 0.999;
+    filter: alpha(opacity=99);
 }

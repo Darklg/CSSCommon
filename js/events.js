@@ -1,5 +1,6 @@
 window.addEvent('domready', function() {
     set_show_html_buttons();
+    relaunch_effect();
     set_forms_actions();
     set_demo_tabs();
 });
@@ -24,6 +25,29 @@ var set_show_html_buttons = function() {
             });
             $(this).remove();
         });
+    });
+};
+
+/* ----------------------------------------------------------
+  Relaunch effects
+---------------------------------------------------------- */
+
+var relaunch_effect = function() {
+    $$('.relaunch-effect').each(function(el) {
+        var target = $$(el.get('href'));
+        if (!target[0]) {
+            return;
+        }
+        el.addEvent('click', function(e) {
+            e.preventDefault();
+            var target = $$(el.get('href'))[0];
+            var targetClasses = target.className;
+            target.removeClass(targetClasses);
+            setTimeout(function() {
+                target.addClass(targetClasses);
+            }, 100);
+        });
+
     });
 };
 

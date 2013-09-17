@@ -117,7 +117,6 @@
         &lt;img class=&quot;gray&quot; src=&quot;images/___x100/4.jpg&quot; alt=&quot;&quot; /&gt;
     &lt;/a&gt;
 &lt;/p&gt;;</pre>
-
         <h3>Rotating cards</h3>
         <p>
             <a href="#" class="cssc-card">

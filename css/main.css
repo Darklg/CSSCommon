@@ -20,7 +20,7 @@ Attention : Ne pas utiliser @import dans vos feuilles.
 @import 'cssc-tabs.css?v=1.0.4';
 @import 'cssc-images.css?v=1.0';
 @import 'cssc-print.css?v=1.0.1';
-@import 'cssc-effects.css?v=0.5';
+@import 'cssc-effects.css?v=0.6';
 
 /* Style du site de démo */
 @import 'demo.css?v=201308232224';

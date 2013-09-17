@@ -3,7 +3,7 @@
 /*
 Name: Effects
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.5
+Version: 0.6
 License: MIT
 */
 
@@ -243,4 +243,75 @@ License: MIT
 .cssc-colorized-hover .animate-me:hover .color {
     opacity: 0.999;
     filter: alpha(opacity=99);
+}
+
+/* Rotating cards
+-------------------------- */
+
+.cssc-card {
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    vertical-align: middle;
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    transform: translatez(0);
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    *display: inline;
+    *zoom: 1;
+}
+
+.cssc-card .front,
+.cssc-card .back {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    -moz-transition: -moz-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
+.cssc-card .back {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.cssc-card .front,
+.cssc-card:hover .back {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+.cssc-card:hover .front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+/* Theme */
+
+.cssc-card {
+    width: 100px;
+    height: 100px;
+}
+
+.cssc-card .front {
+    background-color: #ccc;
+}
+
+.cssc-card .back {
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #000;
+    background-color: #f0f0f0;
 }

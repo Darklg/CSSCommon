@@ -118,5 +118,29 @@
     &lt;/a&gt;
 &lt;/p&gt;;</pre>
 
+        <h3>Rotating cards</h3>
+        <p>
+            <a href="#" class="cssc-card">
+                <span class="front"><img src="http://placehold.it/100x100" alt="" /></span>
+                <span class="back">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum.</span>
+            </a>
+            <a href="#" class="cssc-card">
+                <span class="front"><img src="http://placehold.it/100x100/369" alt="" /></span>
+                <span class="back">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum.</span>
+            </a>
+            <a href="#" class="cssc-card">
+                <span class="front"><img src="http://placehold.it/100x100/963" alt="" /></span>
+                <span class="back">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum.</span>
+            </a>
+            <a href="#" class="cssc-card">
+                <span class="front"><img src="http://placehold.it/100x100/345" alt="" /></span>
+                <span class="back">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum.</span>
+            </a>
+        </p>
+        <p><a href="#demo-cssc-cards" class="cssc-button show-html-button">Afficher HTML</a></p>
+        <pre contenteditable id="demo-cssc-cards">&lt;a href=&quot;#&quot; class=&quot;cssc-card&quot;&gt;
+    &lt;span class=&quot;front&quot;&gt;&lt;img src=&quot;http://placehold.it/100x100&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
+    &lt;span class=&quot;back&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum.&lt;/span&gt;
+&lt;/a&gt;</pre>
     </div>
 </section>

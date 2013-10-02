@@ -103,6 +103,14 @@
                     <label for="form_textarea">Textarea</label>
                     <textarea rows="5" cols="20" name="form_textarea" id="form_textarea"></textarea>
                 </li>
+                <li class="box">
+                    <label for="form_select">Select</label>
+                    <select name="form_select" class="cssc-select" id="form_select">
+                        <option value="" disabled selected style="display:none;">Sélectionner</option>
+                        <option value="0">Value</option>
+                        <option value="1">Other value</option>
+                    </select>
+                </li>
                 <li class="box submit-box radio-box">
                     <input type="checkbox" name="form_checkbox3" id="form_checkbox3" />
                     <label for="form_checkbox3">J'accepte les conditions du site.</label>

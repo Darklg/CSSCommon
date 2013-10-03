@@ -3,7 +3,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.10
+Version: 1.10.1
 License: MIT
 */
 
@@ -134,9 +134,11 @@ button {
     box-sizing: border-box;
     width: 100%;
     overflow: hidden;
+    text-align: left;
     text-indent: 0.01px;
-    text-overflow: '';
+    text-overflow: ellipsis;
     line-height: 1;
+    white-space: nowrap;
     cursor: pointer;
 }
 
@@ -339,7 +341,7 @@ button {
 }
 
 .cssc-select {
-    padding: 3px 5px 23px 5px;
+    padding: 3px 23px 3px 5px;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAQAAADvCgS4AAAAGklEQVR4AWNg+I8BcQGCyhAAXRlhpcQAQsoAMGIY6KADYAUAAAAASUVORK5CYII=);
 }
 

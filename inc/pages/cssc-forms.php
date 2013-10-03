@@ -107,7 +107,7 @@
                     <label for="form_select">Select</label>
                     <select name="form_select" class="cssc-select" id="form_select">
                         <option value="" disabled selected style="display:none;">Sélectionner</option>
-                        <option value="0">Value</option>
+                        <option value="0">A lot of people in our industry haven't had very diverse experiences. So they don't have enough dots to connect, and they end up with very linear solutions without a broad perspective on the problem. The broader one's understanding of the human experience, the better design we will have.</option>
                         <option value="1">Other value</option>
                     </select>
                 </li>

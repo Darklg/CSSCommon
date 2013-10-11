@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.7.5
+Version: 2.7.6
 License: MIT
 */
 
@@ -228,6 +228,7 @@ p img {
 
 html {
     height: 100%;
+    background: #fff;
 }
 
 body {

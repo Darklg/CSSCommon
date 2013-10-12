@@ -4,7 +4,7 @@
 Name: Debug
 URL: http://github.com/Darklg/CSSCommon
 Description: A stylesheet which will highlight HTML errors.
-Version: 0.4
+Version: 0.4.1
 License: MIT
 */
 
@@ -98,7 +98,7 @@ ol > li,
 ul > li,
 dl > dd,
 dl > dt {
-    outline: 0;
+    outline: 0!important;
 }
 
 /* Invalid order

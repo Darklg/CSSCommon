@@ -37,7 +37,7 @@
     <div class="cssc-grid gri-940-24-20">
         <div class="col-16">
             <div class="grid-label">col-16</div>
-            <div class="cssc-grid ">
+            <div class="cssc-grid gri-940-24-20">
                 <div class="col-2">
                     <div class="grid-label">col-2</div>
                 </div>

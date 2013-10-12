@@ -1,4 +1,10 @@
 <link rel="stylesheet" href="css/debug.css?v=<?php echo time(); ?>" type="text/css" />
+<section class="block-content centered-container cc-debug-main">
+    <div class="debug-main">
+        <h1>Debug</h1>
+        <p>A stylesheet which will highlight HTML errors.</p>
+    </div>
+</section>
 <section class="block-content centered-container">
     <div>
         <h2>Missing or bad properties</h2>

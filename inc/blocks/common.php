@@ -10,7 +10,7 @@
             </div>
             <div class="col-8">
                 <h3>Coupure du texte en CSS</h3>
-                <p class="non-depassement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.</p>
+                <p class="cssc-oneline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.</p>
             </div>
             <div class="col-8">
                 <h3>Effet Tiroir</h3>
@@ -50,7 +50,7 @@
                         <span class="tooltip-bubble trans-opa">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. </span>
                     </a>
                     •
-                    <a href="#" class="tooltip tooltip-bottom">
+                    <a href="#" class="tooltip tooltip--bottom">
                         Dessous
                         <span class="tooltip-bubble trans-opa">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. </span>
                     </a>
@@ -70,7 +70,7 @@
             </div>
             <div class="col-8">
                 <h3>Barre d’avancement</h3>
-                <span class="lvl-barre">
+                <span class="progress-bar">
                     <span class="bar" style="width:30%;">30%</span>
                 </span>
             </div>
@@ -79,7 +79,7 @@
                 <div class="cssc-stars">
                     <div class="cssc-stars-list">
                         <?php for ($i = 5; $i>= 1; $i--) { ?>
-                        <input id="star-<?php echo $i; ?>" type="radio" name="star" value="<?php echo $i; ?>" />
+                        <input id="star-<?php echo $i; ?>" type="radio" name="star" value="<?php echo $i; ?>" <?php echo $i == 2 ? 'class="current"':''; ?> />
                         <label for="star-<?php echo $i; ?>">&hearts;</label>
                         <?php } ?>
                     </div>

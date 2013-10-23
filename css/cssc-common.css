@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.0
+Version: 2.1
 License: MIT
 */
 
@@ -87,7 +87,8 @@ hr.clearfix {
   Automatic ellipsis "..." if content is more than one line
 ---------------------------------------------------------- */
 
-.non-depassement {
+.cssc-oneline {
+    max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -98,8 +99,8 @@ hr.clearfix {
   Removing an element
 ---------------------------------------------------------- */
 
-.suppression-element-enfant > *,
-.suppression-element {
+.cssc-remove-element-children > *,
+.cssc-remove-element {
     z-index: 0;
     position: absolute;
     top: -9999px;
@@ -187,7 +188,7 @@ hr.clearfix {
   Progress bar
 ---------------------------------------------------------- */
 
-.lvl-barre {
+.progress-bar {
     display: block;
     z-index: 1;
     position: relative;
@@ -196,8 +197,8 @@ hr.clearfix {
     box-sizing: border-box;
 }
 
-.lvl-barre .bar,
-.lvl-barre:before {
+.progress-bar .bar,
+.progress-bar:before {
     z-index: 1;
     position: absolute;
     top: 0;
@@ -206,12 +207,12 @@ hr.clearfix {
     left: 0;
 }
 
-.lvl-barre:before {
+.progress-bar:before {
     content: '';
     z-index: 9;
 }
 
-.lvl-barre .bar {
+.progress-bar .bar {
     width: 0;
     max-width: 100%;
     overflow: hidden;
@@ -228,12 +229,12 @@ hr.clearfix {
 /* Theme
 -------------------------- */
 
-.lvl-barre {
+.progress-bar {
     height: 15px;
     margin: 3px;
 }
 
-.lvl-barre:before {
+.progress-bar:before {
     top: -1px;
     right: -1px;
     bottom: -1px;
@@ -241,14 +242,14 @@ hr.clearfix {
     border: 2px solid #333;
 }
 
-.lvl-barre:before,
-.lvl-barre .bar {
+.progress-bar:before,
+.progress-bar .bar {
     -webkit-border-radius: 999px;
     -moz-border-radius: 999px;
     border-radius: 999px;
 }
 
-.lvl-barre .bar {
+.progress-bar .bar {
     background-color: #369;
     -webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
     -moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
@@ -353,7 +354,7 @@ pre {
 /* Directions
 -------------------------- */
 
-.tooltip-bottom .tooltip-bubble {
+.tooltip--bottom .tooltip-bubble {
     top: 100%;
     bottom: auto;
 }
@@ -387,12 +388,12 @@ pre {
 /* Theme direction
 -------------------------- */
 
-.tooltip-bottom .tooltip-bubble {
+.tooltip--bottom .tooltip-bubble {
     margin-top: 5px;
     margin-bottom: 0;
 }
 
-.tooltip-bottom .tooltip-bubble:after {
+.tooltip--bottom .tooltip-bubble:after {
     top: auto;
     bottom: 100%;
     border-top: 0;
@@ -527,6 +528,7 @@ pre {
     cursor: pointer;
 }
 
+.cssc-stars .current ~ label,
 .cssc-stars input:checked ~ label {
     color: #F99;
 }

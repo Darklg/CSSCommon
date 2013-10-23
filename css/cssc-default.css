@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.7.6
+Version: 2.7.7
 License: MIT
 */
 
@@ -217,7 +217,7 @@ p img {
 /* Various elements
 -------------------------- */
 
-/* Address styling not present in IE 8/9. | necolas.github.io/normalize.css/ */
+/* Address styling not present in IE 8/9. | necolas.github.io/normalize.css/ */
 
 [hidden] {
     display: none;
@@ -236,6 +236,7 @@ body {
     min-height: 100%;
     font: 62.5%/1 sans-serif;
     color: #212121;
+    -webkit-text-size-adjust: none;
 }
 
 .lt_ie8 body {

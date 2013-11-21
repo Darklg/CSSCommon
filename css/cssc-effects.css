@@ -3,7 +3,7 @@
 /*
 Name: Effects
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.7
+Version: 0.8
 License: MIT
 */
 
@@ -277,11 +277,8 @@ License: MIT
     position: relative;
     line-height: 1;
     vertical-align: middle;
-    *zoom: 1;
-    *display: inline;
 }
 
-.cssc-colorized-hover .animate-me img,
 .cssc-colorized-hover .animate-me img {
     opacity: 0.999;
     filter: alpha(opacity=999);
@@ -292,7 +289,7 @@ License: MIT
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.0;
+    opacity: 0;
     filter: alpha(opacity=0);
 }
 
@@ -303,6 +300,46 @@ License: MIT
 }
 
 .cssc-colorized-hover .animate-me:hover .color {
+    opacity: 0.999;
+    filter: alpha(opacity=99);
+}
+
+/* Unblur hover
+-------------------------- */
+
+.cssc-unblur-hover .animate-me {
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    line-height: 1;
+    vertical-align: middle;
+    outline: 1px solid rgba(0,0,0,0.01);
+}
+
+.cssc-unblur-hover .animate-me img {
+    opacity: 0.999;
+    filter: alpha(opacity=999);
+}
+
+.cssc-unblur-hover .animate-me .clean {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: alpha(opacity=0);
+    opacity:0.0;
+}
+
+.cssc-unblur-hover .animate-me .blur {
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+    filter: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxmaWx0ZXIgaWQ9ImJsdXIiPgo8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxIiAvPgo8L2ZpbHRlcj4KPC9zdmc+#blur);
+}
+
+.cssc-unblur-hover .animate-me:hover .clean {
     opacity: 0.999;
     filter: alpha(opacity=99);
 }

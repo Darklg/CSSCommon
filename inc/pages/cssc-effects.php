@@ -117,6 +117,46 @@
         &lt;img class=&quot;gray&quot; src=&quot;images/___x100/4.jpg&quot; alt=&quot;&quot; /&gt;
     &lt;/a&gt;
 &lt;/p&gt;;</pre>
+
+        <h3>Unblur hover</h3>
+        <p class="cssc-unblur-hover">
+            <a href="#" class="animate-me">
+                <img class="clean" src="images/___x100/4.jpg" alt="" />
+                <img class="blur" src="images/___x100/4.jpg" alt="" />
+            </a>
+            <a href="#" class="animate-me">
+                <img class="clean" src="images/___x100/3.jpg" alt="" />
+                <img class="blur" src="images/___x100/3.jpg" alt="" />
+            </a>
+            <a href="#" class="animate-me">
+                <img class="clean" src="images/___x100/1.jpg" alt="" />
+                <img class="blur" src="images/___x100/1.jpg" alt="" />
+            </a>
+            <a href="#" class="animate-me">
+                <img class="clean" src="images/___x100/2.jpg" alt="" />
+                <img class="blur" src="images/___x100/2.jpg" alt="" />
+            </a>
+        </p>
+        <p><a href="#demo-cssc-unblur-hover" class="cssc-button show-html-button">Afficher HTML</a></p>
+        <pre contenteditable id="demo-cssc-unblur-hover">&lt;p class=&quot;cssc-unblur-hover&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;animate-me&quot;&gt;
+        &lt;img class=&quot;clean&quot; src=&quot;images/___x100/1.jpg&quot; alt=&quot;&quot; /&gt;
+        &lt;img class=&quot;blur&quot; src=&quot;images/___x100/1.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;animate-me&quot;&gt;
+        &lt;img class=&quot;clean&quot; src=&quot;images/___x100/2.jpg&quot; alt=&quot;&quot; /&gt;
+        &lt;img class=&quot;blur&quot; src=&quot;images/___x100/2.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;animate-me&quot;&gt;
+        &lt;img class=&quot;clean&quot; src=&quot;images/___x100/3.jpg&quot; alt=&quot;&quot; /&gt;
+        &lt;img class=&quot;blur&quot; src=&quot;images/___x100/3.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;animate-me&quot;&gt;
+        &lt;img class=&quot;clean&quot; src=&quot;images/___x100/4.jpg&quot; alt=&quot;&quot; /&gt;
+        &lt;img class=&quot;blur&quot; src=&quot;images/___x100/4.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;/a&gt;
+&lt;/p&gt;;</pre>
+
         <h3>Rotating cards</h3>
         <p>
             <a href="#" class="cssc-card">

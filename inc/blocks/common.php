@@ -70,11 +70,11 @@
             </div>
             <div class="col-8">
                 <h3>Barre d’avancement</h3>
-                <span class="progress-bar">
-                    <span class="bar" style="width:30%;">30%</span>
-                </span>
-            </div>
-            <div class="col-8">
+                <p>
+                    <span class="progress-bar">
+                        <span class="bar" style="width:30%;">30%</span>
+                    </span>
+                </p>
                 <h3>Notes</h3>
                 <div class="cssc-stars">
                     <div class="cssc-stars-list">
@@ -83,6 +83,12 @@
                         <label for="star-<?php echo $i; ?>">&hearts;</label>
                         <?php } ?>
                     </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="cssc-sep cssc-sep-before cssc-sep-after">
+                    <h3>Séparateurs</h3>
+                    <p>The world needs dreamers and the world needs doers. But above all, the world needs dreamers who do — Sarah Ban Breathnach.</p>
                 </div>
             </div>
         </div>

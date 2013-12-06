@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.1
+Version: 2.2
 License: MIT
 */
 
@@ -594,4 +594,57 @@ pre {
 .vertical-center p {
     padding: 0 10px;
     font-size: 12px;
+}
+
+/* ----------------------------------------------------------
+  Separators
+---------------------------------------------------------- */
+
+.cssc-sep {
+    z-index: 1;
+    position: relative;
+}
+
+.cssc-sep-before:before,
+.cssc-sep-after:after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+}
+
+.cssc-sep-before:before {
+    top: 0;
+}
+
+.cssc-sep-after:after {
+    bottom: 0;
+}
+
+/* Theme
+-------------------------- */
+
+.cssc-sep {
+    text-align: center;
+}
+
+.cssc-sep:before,
+.cssc-sep:after {
+    border-radius: 10px;
+    width: 20px;
+    height: 5px;
+    margin-left: -10px;
+    background-color: #BDF;
+}
+
+/* Before */
+
+.cssc-sep-before {
+    padding-top: 15px;
+}
+
+/* After */
+
+.cssc-sep-after {
+    padding-bottom: 15px;
 }

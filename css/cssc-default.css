@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.7.7
+Version: 2.7.8
 License: MIT
 */
 
@@ -193,6 +193,7 @@ iframe {
 
 /* Bugfix for Google Maps */
 
+.gm-style img,
 .gmnoprint img {
     max-width: none;
 }

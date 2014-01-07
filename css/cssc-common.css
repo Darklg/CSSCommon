@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.2
+Version: 2.2.1
 License: MIT
 */
 
@@ -45,10 +45,14 @@ License: MIT
 /* Reset */
 
 .cssc-btn {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
+    cursor: pointer;
 }
 
 /* :Hover */

@@ -3,7 +3,7 @@
 /*
 Name: Navigation
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.7
+Version: 1.7.1
 License: MIT
 */
 
@@ -70,8 +70,6 @@ License: MIT
     display: inline-block;
     width: auto;
     margin-right: 4px;
-    border-color: #ccc;
-    vertical-align: middle;
     *display: inline;
     *zoom: 1;
 }

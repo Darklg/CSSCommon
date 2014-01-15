@@ -3,7 +3,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.10.1
+Version: 1.10.2
 License: MIT
 */
 
@@ -346,6 +346,7 @@ button {
 }
 
 .cssc-form .fake-input,
+.lt_ie9 .inputbase,
 .lt_ie9 .cssc-form input[type=text],
 .lt_ie9 .cssc-form input[type=url],
 .lt_ie9 .cssc-form input[type=email],
@@ -358,6 +359,7 @@ button {
     min-height: 80px;
 }
 
+.inputbase:focus,
 .cssc-select:focus,
 .cssc-form textarea:focus,
 .cssc-form input[type=text]:focus,

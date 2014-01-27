@@ -3,7 +3,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.10.2
+Version: 1.10.3
 License: MIT
 */
 
@@ -256,11 +256,12 @@ button {
 
 .cssc-form .box {
     margin-bottom: 10px;
+    min-height: 25px;
     line-height: 25px;
 }
 
-.float-form .box {
-    min-height: 25px;
+.cssc-form .box:last-child {
+    margin-bottom: 0;
 }
 
 /* Champs multiples */

@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.7.9
+Version: 2.7.10
 License: MIT
 */
 
@@ -312,6 +312,10 @@ del {
 
 ins {
     border-bottom: 1px dotted #DDD;
+}
+
+mark {
+    background-color: #FF9;
 }
 
 em {

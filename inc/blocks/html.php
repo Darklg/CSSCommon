@@ -55,7 +55,7 @@
                     <dd><a target="_blank" href="http://fr.wikipedia.org/wiki/Fjord">Un fjord</a> est une vallée érodée par un glacier avançant de la montagne à la mer, qui a été envahie par la mer depuis la retraite de la glace.</dd>
                 </dl>
                 <p>
-                    Maecenas ligula<sup>sup</sup>, varius a, semper congue, euismod non, mi. Proin porttitor<sub>sub</sub>,
+                    Maecenas ligula<sup>sup</sup>, varius a, semper <mark>mark</mark>, euismod non, mi. Proin porttitor<sub>sub</sub>,
                     <a href="#">a <strong>strong</strong> link</a>,
                     enim est <del>del</del> <ins>ins</ins>, non <small>small</small> diam nisl sit amet erat.
                 </p>

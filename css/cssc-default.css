@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.7.10
+Version: 2.7.11
 License: MIT
 */
 
@@ -236,7 +236,7 @@ p img {
 -------------------------- */
 
 html {
-    height: 100%;
+    min-height: 100%;
     background: #fff;
 }
 

@@ -1,0 +1,20 @@
+{
+  "name": "CSSCommon",
+  "version": "0.0.0",
+  "description": "A (simple) CSS Starter, like Twitter's Bootstrap or Normalize.css",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Darklg/CSSCommon.git"
+  },
+  "author": "Darklg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Darklg/CSSCommon/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-cssmin": "~0.8.0",
+    "grunt-shell": "~0.6.4"
+  }
+}

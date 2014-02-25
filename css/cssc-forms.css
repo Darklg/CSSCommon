@@ -3,7 +3,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.10.3
+Version: 1.10.4
 License: MIT
 */
 
@@ -374,8 +374,8 @@ button {
 
 /* Errors */
 
-.cssc-form input[type=url]:invalid,
-.cssc-form input[type=email]:invalid {
+.cssc-form input[type=url]:not(:focus):invalid,
+.cssc-form input[type=email]:not(:focus):invalid {
     border-color: #C33;
 }
 

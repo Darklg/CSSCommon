@@ -3,7 +3,7 @@
 /*
 Name: Boutons par défaut
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.8.2
+Version: 1.8.3
 License: MIT
 */
 
@@ -34,6 +34,13 @@ License: MIT
     user-drag: none;
     *zoom: 1;
     *display: inline;
+}
+
+.buttonreset:hover,
+.buttonreset:focus,
+.cssc-button:hover,
+.cssc-button:focus {
+    outline: 0;
 }
 
 /* Icones

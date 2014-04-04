@@ -26,7 +26,7 @@
     <div class="cssc-lay">
         <div class="col-main">
 
-    <form id="form_demo" autocomplete="off" action="/" class="cssc-form block-form" method="post">
+    <form id="form_demo" autocomplete="off" action="/" class="cssc-form cssc-form--default block-form" method="post">
 
         <fieldset id="cssc-forms-input">
             <legend>Champs classiques</legend>
@@ -153,7 +153,7 @@
             <input class="inputbase" type="text" name="lorem" value="" />
             <button type="submit" class="cssc-button cssc-button--default">Envoyer</button>
         </div>
-        <div class="cssc-form">
+        <div class="cssc-form cssc-form--default">
             <small>Formulaire type "recherche rapide" ou "inscription à la newsletter"</small>
         </div>
     </form>

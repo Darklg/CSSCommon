@@ -3,18 +3,12 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.10.4
+Version: 2.0
 License: MIT
 */
 
 .cssc-form {
     clear: both;
-}
-
-.cssc-form .box {
-    z-index: 1;
-    position: relative;
-    vertical-align: baseline;
 }
 
 .cssc-form:after,
@@ -27,7 +21,49 @@ License: MIT
     height: 0;
 }
 
-/* Labels */
+/* Boxes
+-------------------------- */
+
+.cssc-form .box {
+    z-index: 1;
+    position: relative;
+    vertical-align: baseline;
+}
+
+/* Submit box */
+
+.cssc-form .submit-box {
+    z-index: 1;
+    position: relative;
+}
+
+.cssc-form .submit-box button {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Two boxes side to side */
+
+.cssc-form .twoboxes {
+    overflow: hidden;
+}
+
+.cssc-form .twoboxes li.box {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.lt_ie8 .cssc-form .twoboxes li.box {
+    width: 43%;
+}
+
+/* Labels
+-------------------------- */
 
 .cssc-form .fake-label,
 .cssc-form label {
@@ -44,7 +80,11 @@ License: MIT
 }
 
 .cssc-form .radio-box label,
-.cssc-form .checked-box label {
+.cssc-form.block-form .radio-box label,
+.cssc-form.float-form .radio-box label,
+.cssc-form .checked-box label,
+.cssc-form.block-form .checked-box label,
+.cssc-form.float-form .checked-box label {
     display: inline-block;
     position: static;
     width: auto;
@@ -54,7 +94,8 @@ License: MIT
     vertical-align: baseline;
 }
 
-/* Champs */
+/* Fields
+-------------------------- */
 
 textarea {
     max-width: 100%;
@@ -70,13 +111,11 @@ button {
 
 .cssc-form input[type=radio],
 .cssc-form input[type=checkbox] {
-    width: 12px;
-    height: 12px;
     margin: 0;
     vertical-align: baseline;
 }
 
-/* Reset des éléments */
+/* Reset */
 
 .inputreset,
 .inputbase,
@@ -110,7 +149,7 @@ button {
     cursor: not-allowed;
 }
 
-/* Fix pour IE<8 */
+/* IE<8 fix */
 
 .lt_ie8 .inputbase,
 .lt_ie8 .inputreset,
@@ -146,51 +185,7 @@ button {
     outline: none;
 }
 
-/* Submit box */
-
-.cssc-form .submit-box {
-    z-index: 1;
-    position: relative;
-}
-
-.cssc-form .submit-box button {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-/* Deux blocs */
-
-.cssc-form .twoboxes {
-    overflow: hidden;
-}
-
-.cssc-form .twoboxes li.box {
-    float: left;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 50%;
-}
-
-.lt_ie8 .cssc-form .twoboxes li.box {
-    width: 43%;
-}
-
-.cssc-form .twoboxes li.box:first-child {
-    padding-right: 10px;
-}
-
-.cssc-form .twoboxes li.box + li.box {
-    padding-left: 10px;
-}
-
-.float-form .twoboxes li.box + li.box {
-    padding-left: 140px;
-}
-
-/* Aide
+/* Help
 -------------------------- */
 
 .cssc-form small {
@@ -204,182 +199,15 @@ button {
     right: 0;
 }
 
-/* ----------------------------------------------------------
-  Structures particulières
----------------------------------------------------------- */
-
-/* Formulaire collé
-   ----------------------- */
-
-.form-append {
-    overflow: auto;
-}
-
-.form-append > * {
-    float: left;
-    width: auto;
-}
-
-.lt_ie8 .form-append > * {
-    max-width: 200px;
-}
-
-/* ----------------------------------------------------------
-  Thème du formulaire
----------------------------------------------------------- */
-
-.cssc-form {
-    margin-bottom: 20px;
-    max-width: 100%;
-}
-
-/* Fieldset */
-
-.cssc-form fieldset {
-    margin-bottom: 15px;
-    border-top: 1px solid #e0e0e0;
-}
-
-.cssc-form fieldset:last-child {
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.cssc-form legend {
-    display: block;
-    margin-bottom: 10px;
-    padding-right: 5px;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-/* Box */
-
-.cssc-form .box {
-    margin-bottom: 10px;
-    min-height: 25px;
-    line-height: 25px;
-}
-
-.cssc-form .box:last-child {
-    margin-bottom: 0;
-}
-
-/* Champs multiples */
-
-.cssc-form .multibox-box input[type=text],
-.cssc-form .multibox-box input[type=url],
-.cssc-form .multibox-box input[type=email],
-.cssc-form .multibox-box input[type=password] {
-    width: 65px;
-}
-
-.cssc-form .multibox-box input.halfling {
-    width: 45px;
-}
-
-/* Labels */
-
-.float-form .box {
-    padding-left: 130px;
-}
-
-.float-form .fake-label,
-.float-form label {
-    width: 120px;
-    padding-right: 10px;
-}
-
-.cssc-form .fake-label,
-.cssc-form label {
-    font-size: 12px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.float-form .box .long-label {
-    top: -1px;
-    line-height: 13px;
-}
-
-.cssc-form .fake-label em,
-.cssc-form label em {
-    font-style: normal;
-    font-weight: bold;
-    color: #369;
-}
-
-/* Aide */
-
-.cssc-form small {
-    font-size: 11px;
-    line-height: 16px;
-    color: #676767;
-}
-
-.cssc-form.block-form .side-small {
-    line-height: 25px;
-}
-
-/* Champs */
-
-.inputbase,
-.cssc-select,
-.cssc-form textarea,
-.cssc-form .fake-input,
-.cssc-form input[type=text],
-.cssc-form input[type=url],
-.cssc-form input[type=email],
-.cssc-form input[type=password] {
-    height: 25px;
-    padding: 0 5px;
-    border: 1px solid #999;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    font-size: 12px;
-    color: #333;
-    background: #fafafa no-repeat center right;
-}
-
-.cssc-select {
-    padding: 3px 23px 3px 5px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAQAAADvCgS4AAAAGklEQVR4AWNg+I8BcQGCyhAAXRlhpcQAQsoAMGIY6KADYAUAAAAASUVORK5CYII=);
-}
-
-.cssc-form .fake-input,
-.lt_ie9 .inputbase,
-.lt_ie9 .cssc-form input[type=text],
-.lt_ie9 .cssc-form input[type=url],
-.lt_ie9 .cssc-form input[type=email],
-.lt_ie9 .cssc-form input[type=password] {
-    line-height: 25px;
-}
-
-.cssc-form textarea {
-    padding: 5px;
-    min-height: 80px;
-}
-
-.inputbase:focus,
-.cssc-select:focus,
-.cssc-form textarea:focus,
-.cssc-form input[type=text]:focus,
-.cssc-form input[type=url]:focus,
-.cssc-form input[type=email]:focus,
-.cssc-form input[type=password]:focus {
-    border-color: #333;
-    color: #000;
-    background-color: #fff;
-}
-
-/* Errors */
+/* Errors
+-------------------------- */
 
 .cssc-form input[type=url]:not(:focus):invalid,
 .cssc-form input[type=email]:not(:focus):invalid {
     border-color: #C33;
 }
 
-/* Couleurs de placeholder : ne pas fusionner les sélecteurs ! */
+/* Placeholder colors : dont merge selectors ! */
 
 .cssc-form [disabled],
 .cssc-form .fake-input {
@@ -412,8 +240,195 @@ button {
     font: 13px/1.4 sans-serif;
 }
 
+/* Append form
+   ----------------------- */
+
+.form-append {
+    overflow: auto;
+}
+
+.form-append > * {
+    float: left;
+    width: auto;
+}
+
+.lt_ie8 .form-append > * {
+    max-width: 200px;
+}
+
 /* ----------------------------------------------------------
-  Style demo CSSLisible
+  Form theme
+---------------------------------------------------------- */
+
+.cssc-form--default {
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+/* Fieldsets */
+
+.cssc-form--default fieldset {
+    margin-bottom: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.cssc-form--default fieldset:last-child {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cssc-form--default legend {
+    display: block;
+    margin-bottom: 10px;
+    padding-right: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Boxes
+-------------------------- */
+
+.cssc-form--default .box {
+    margin-bottom: 10px;
+    min-height: 25px;
+    line-height: 25px;
+}
+
+.cssc-form--default .box:last-child {
+    margin-bottom: 0;
+}
+
+.cssc-form--default .twoboxes li.box:first-child {
+    padding-right: 10px;
+}
+
+.cssc-form--default .twoboxes li.box + li.box {
+    padding-left: 10px;
+}
+
+.cssc-form--default.float-form .twoboxes li.box + li.box {
+    padding-left: 140px;
+}
+
+/* Boxes with multiple fields */
+
+.cssc-form.cssc-form--default .multibox-box input[type=text],
+.cssc-form.cssc-form--default .multibox-box input[type=url],
+.cssc-form.cssc-form--default .multibox-box input[type=email],
+.cssc-form.cssc-form--default .multibox-box input[type=password] {
+    width: 65px;
+}
+
+.cssc-form.cssc-form--default .multibox-box input.halfling {
+    width: 45px;
+}
+
+/* Labels
+-------------------------- */
+
+.cssc-form--default.float-form .box {
+    padding-left: 130px;
+}
+
+.cssc-form--default.float-form .fake-label,
+.cssc-form--default.float-form label {
+    width: 120px;
+    padding-right: 10px;
+}
+
+.cssc-form--default .fake-label,
+.cssc-form--default label {
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cssc-form--default.float-form .box .long-label {
+    top: -1px;
+    line-height: 13px;
+}
+
+.cssc-form--default .fake-label em,
+.cssc-form--default label em {
+    font-style: normal;
+    font-weight: bold;
+    color: #369;
+}
+
+/* Fields
+-------------------------- */
+
+.inputbase,
+.cssc-select,
+.cssc-form--default textarea,
+.cssc-form--default .fake-input,
+.cssc-form--default input[type=text],
+.cssc-form--default input[type=url],
+.cssc-form--default input[type=email],
+.cssc-form--default input[type=password] {
+    height: 25px;
+    padding: 0 5px;
+    border: 1px solid #999;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #333;
+    background: #fafafa no-repeat center right;
+}
+
+.cssc-select {
+    padding: 3px 23px 3px 5px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAQAAADvCgS4AAAAGklEQVR4AWNg+I8BcQGCyhAAXRlhpcQAQsoAMGIY6KADYAUAAAAASUVORK5CYII=);
+}
+
+.cssc-form--default .fake-input,
+.lt_ie9 .inputbase,
+.lt_ie9 .cssc-form--default input[type=text],
+.lt_ie9 .cssc-form--default input[type=url],
+.lt_ie9 .cssc-form--default input[type=email],
+.lt_ie9 .cssc-form--default input[type=password] {
+    line-height: 25px;
+}
+
+.cssc-form--default textarea {
+    padding: 5px;
+    min-height: 80px;
+}
+
+.inputbase:focus,
+.cssc-select:focus,
+.cssc-form--default textarea:focus,
+.cssc-form--default input[type=text]:focus,
+.cssc-form--default input[type=url]:focus,
+.cssc-form--default input[type=email]:focus,
+.cssc-form--default input[type=password]:focus {
+    border-color: #333;
+    color: #000;
+    background-color: #fff;
+}
+
+.cssc-form--default input[type=radio],
+.cssc-form--default input[type=checkbox] {
+    width: 12px;
+    height: 12px;
+}
+
+/* Help
+-------------------------- */
+
+.cssc-form--default small {
+    font-size: 11px;
+    line-height: 16px;
+    color: #676767;
+}
+
+.cssc-form--default.block-form .side-small {
+    line-height: 25px;
+}
+
+/* ----------------------------------------------------------
+  Demo style
 ---------------------------------------------------------- */
 
 .form-append {

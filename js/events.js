@@ -62,12 +62,12 @@ var set_forms_actions = function() {
 
     if ($('set_form_float')) {
         $('set_form_float').addEvent('click', function() {
-            $('form_demo').className = 'cssc-form float-form';
+            $('form_demo').className = 'cssc-form cssc-form--default float-form';
         });
     }
     if ($('set_form_block')) {
         $('set_form_block').addEvent('click', function() {
-            $('form_demo').className = 'cssc-form block-form';
+            $('form_demo').className = 'cssc-form cssc-form--default block-form';
         });
     }
     if ($('set_form_wide')) {

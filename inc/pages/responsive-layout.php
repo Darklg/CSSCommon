@@ -167,14 +167,14 @@
 
     <div class="cssc-grid fluid-grid gri-two-col">
         <div>
-            <p><a href="#demo-fluid-grid-50p" class="cssc-button show-html-button">Afficher HTML (50%)</a></p>
+            <p><a href="#demo-fluid-grid-50p" class="cssc-button cssc-button--default show-html-button">Afficher HTML (50%)</a></p>
             <pre contenteditable id="demo-fluid-grid-50p">&lt;div class=&quot;cssc-grid fluid-grid gri-two-col&quot;&gt;
     &lt;div&gt;50%&lt;/div&gt;
     &lt;div&gt;50%&lt;/div&gt;
 &lt;/div&gt;</pre>
         </div>
         <div>
-            <p><a href="#demo-fluid-grid-25p" class="cssc-button show-html-button">Afficher HTML (25%)</a></p>
+            <p><a href="#demo-fluid-grid-25p" class="cssc-button cssc-button--default show-html-button">Afficher HTML (25%)</a></p>
             <pre contenteditable id="demo-fluid-grid-25p">&lt;div class=&quot;cssc-grid fluid-grid gri-four-col&quot;&gt;
     &lt;div&gt;25%&lt;/div&gt;
     &lt;div&gt;25%&lt;/div&gt;

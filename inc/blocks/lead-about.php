@@ -43,7 +43,7 @@
             </div>
         </div>
         <div class="cssc-button-container">
-            <a target="_blank" href="https://github.com/Darklg/CSSCommon" class="cssc-button cssc-button-double">
+            <a target="_blank" href="https://github.com/Darklg/CSSCommon" class="cssc-button cssc-button--default cssc-button-double">
                 <strong>Parcourez le projet sur Github</strong>
                 <span>Star it, Clone it, Fork it, Download it !</span>
             </a>

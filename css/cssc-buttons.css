@@ -1,17 +1,16 @@
 @charset "UTF-8";
 
 /*
-Name: Boutons par défaut
+Name: Default Buttons
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.8.3
+Version: 2.0
 License: MIT
 */
 
 /* ----------------------------------------------------------
-  Base du bouton
+  Button core
 ---------------------------------------------------------- */
 
-.buttonreset,
 .cssc-button {
     display: inline-block;
     -webkit-appearance: none;
@@ -36,29 +35,24 @@ License: MIT
     *display: inline;
 }
 
-.buttonreset:hover,
-.buttonreset:focus,
 .cssc-button:hover,
 .cssc-button:focus {
+    text-decoration: none;
     outline: 0;
 }
 
-/* Icones
+/* Icons
 -------------------------- */
 
-.buttonreset:before,
-.buttonreset:after,
 .cssc-button:before,
 .cssc-button:after {
     vertical-align: 0;
 }
 
-.buttonreset:before,
 .cssc-button:before {
     margin-right: 4px;
 }
 
-.buttonreset:after,
 .cssc-button:after {
     margin-left: 4px;
 }
@@ -69,13 +63,13 @@ License: MIT
 }
 
 /* ----------------------------------------------------------
-  Thèmes du bouton
+  Button Theme
 ---------------------------------------------------------- */
 
-/* Thème défault
+/* Default themes
    ----------------------- */
 
-.cssc-button {
+.cssc-button--default {
     height: 25px;
     padding: 0 8px;
     border: 1px solid #ccc;
@@ -94,23 +88,22 @@ License: MIT
     background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0.10) 100%);
 }
 
-.cssc-button:focus,
-.cssc-button:hover {
+.cssc-button--default:focus,
+.cssc-button--default:hover {
     border-color: #bbb;
-    text-decoration: none;
     color: #000;
     background-position: 0 12px;
 }
 
-.cssc-button:active {
+.cssc-button--default:active {
     border-color: #888;
     background-position: 0 25px;
 }
 
-.cssc-button[disabled],
-.cssc-button[disabled]:focus,
-.cssc-button[disabled]:hover,
-.cssc-button[disabled]:active {
+.cssc-button--default[disabled],
+.cssc-button--default[disabled]:focus,
+.cssc-button--default[disabled]:hover,
+.cssc-button--default[disabled]:active {
     border: 1px solid #ccc;
     color: #333;
     opacity: 0.66;
@@ -119,7 +112,7 @@ License: MIT
     filter: alpha(opacity=66);
 }
 
-/* Mode de boutons
+/* Buttons' modes
    ----------------------- */
 
 .wide-button {
@@ -127,7 +120,7 @@ License: MIT
     width: 100%;
 }
 
-/* Tailles de boutons
+/* Buttons' sizes
    ----------------------- */
 
 .cssc-button-small {
@@ -151,7 +144,7 @@ License: MIT
     line-height: 35px;
 }
 
-/* Thèmes de button
+/* Buttons' themes
 -------------------------- */
 
 .error-button,
@@ -183,7 +176,7 @@ License: MIT
     border-radius: 99px;
 }
 
-/* Bouton icône avant
+/* Buttons with an icon
    ----------------------- */
 
 .btn-phone:before {
@@ -211,7 +204,7 @@ License: MIT
 }
 
 /* ----------------------------------------------------------
-  Utilitaires
+  Utilities
 ---------------------------------------------------------- */
 
 /* Container
@@ -239,7 +232,7 @@ License: MIT
     position: relative;
 }
 
-/* Button double
+/* Double button
    ----------------------- */
 
 .cssc-button-double {

@@ -25,7 +25,7 @@
                 <form action="#" method="post" onsubmit="return false;">
                     <div>
                         <input class="inputbase" type="text" name="az" value="" />
-                        <button type="submit" class="cssc-button">search</button>
+                        <button type="submit" class="cssc-button cssc-button--default">search</button>
                     </div>
                 </form>
             </div>

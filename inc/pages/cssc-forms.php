@@ -12,12 +12,12 @@
         Cliquez sur les boutons ci-dessous pour découvrir les possibilités de CSSCommon pour les formulaires.
     </p>
     <p>
-        <a href="#cssc-forms" class="cssc-button" id="set_form_block">Form Block</a>
-        <a href="#cssc-forms" class="cssc-button" id="set_form_float">Form Flottant</a>
+        <a href="#cssc-forms" class="cssc-button cssc-button--default" id="set_form_block">Form Block</a>
+        <a href="#cssc-forms" class="cssc-button cssc-button--default" id="set_form_float">Form Flottant</a>
     </p>
     <p>
-        <a href="#cssc-forms" class="cssc-button" id="set_form_wide">Form large</a>
-        <a href="#cssc-forms" class="cssc-button" id="set_form_normal">Form normal</a>
+        <a href="#cssc-forms" class="cssc-button cssc-button--default" id="set_form_wide">Form large</a>
+        <a href="#cssc-forms" class="cssc-button cssc-button--default" id="set_form_normal">Form normal</a>
     </p>
 </div></section>
 
@@ -114,7 +114,7 @@
                 <li class="box submit-box radio-box">
                     <input type="checkbox" name="form_checkbox3" id="form_checkbox3" />
                     <label for="form_checkbox3">J'accepte les conditions du site.</label>
-                    <button type="submit" class="cssc-button cssc-button-medium">Envoyer</button>
+                    <button type="submit" class="cssc-button cssc-button--default cssc-button-medium">Envoyer</button>
                 </li>
             </ul>
         </fieldset>
@@ -151,7 +151,7 @@
     <form action="#" method="post">
         <div class="form-append form-append-demo">
             <input class="inputbase" type="text" name="lorem" value="" />
-            <button type="submit" class="cssc-button">Envoyer</button>
+            <button type="submit" class="cssc-button cssc-button--default">Envoyer</button>
         </div>
         <div class="cssc-form">
             <small>Formulaire type "recherche rapide" ou "inscription à la newsletter"</small>
@@ -162,45 +162,45 @@
 
     <h4>Markup</h4>
     <div class="cssc-block">
-        <a href="#" class="cssc-button">a.cssc-button</a>
-        <button class="cssc-button">button.cssc-button</button>
-        <input type="submit" class="cssc-button" value="input[type=submit].cssc-button"/>
+        <a href="#" class="cssc-button cssc-button--default">a.cssc-button</a>
+        <button class="cssc-button cssc-button--default">button.cssc-button</button>
+        <input type="submit" class="cssc-button cssc-button--default" value="input[type=submit].cssc-button"/>
     </div>
 
     <h4>Tailles de boutons</h4>
     <div class="cssc-block">
-        <button class="cssc-button cssc-button-small" title=".cssc-button .cssc-button-small">Small button</button>
-        <button class="cssc-button" disabled title="[disabled]">Disabled</button>
-        <button class="cssc-button" title=".cssc-button">Default button</button>
-        <button class="cssc-button cssc-button-medium" title=".cssc-button .cssc-button-medium">Medium button</button>
-        <button class="cssc-button cssc-button-big" title=".cssc-button .cssc-button-big">Big button</button>
+        <button class="cssc-button cssc-button--default cssc-button-small" title=".cssc-button .cssc-button-small">Small button</button>
+        <button class="cssc-button cssc-button--default" disabled title="[disabled]">Disabled</button>
+        <button class="cssc-button cssc-button--default" title=".cssc-button">Default button</button>
+        <button class="cssc-button cssc-button--default cssc-button-medium" title=".cssc-button .cssc-button-medium">Medium button</button>
+        <button class="cssc-button cssc-button--default cssc-button-big" title=".cssc-button .cssc-button-big">Big button</button>
     </div>
 
     <h4>Thèmes de boutons</h4>
     <div class="cssc-block">
-        <button class="cssc-button round-button" title=".cssc-button .round-button">Round button</button>
-        <button class="cssc-button error-button" title=".cssc-button .error-button">Error button</button>
-        <button class="cssc-button success-button" title=".cssc-button .success-button">Success button</button>
+        <button class="cssc-button cssc-button--default round-button" title=".cssc-button .round-button">Round button</button>
+        <button class="cssc-button cssc-button--default error-button" title=".cssc-button .error-button">Error button</button>
+        <button class="cssc-button cssc-button--default success-button" title=".cssc-button .success-button">Success button</button>
     </div>
 
     <h4>Boutons avec icône</h4>
     <div class="cssc-block">
-        <button class="cssc-button btn-phone" title=".cssc-button .btn-phone">Phone Number</button>
-        <button class="cssc-button btn-eject" title=".cssc-button .btn-eject">Eject</button>
-        <button class="cssc-button cssc-button-icn-large btn-download" title=".cssc-button .cssc-button-icn-large .btn-download">Download</button>
-        <button class="cssc-button btn-play" title=".cssc-button .btn-play">Play</button>
-        <button class="cssc-button btn-go" title=".cssc-button .btn-go">Go</button>
-        <button class="cssc-button btn-img" title=".cssc-button .btn-img">Image</button>
+        <button class="cssc-button cssc-button--default btn-phone" title=".cssc-button .btn-phone">Phone Number</button>
+        <button class="cssc-button cssc-button--default btn-eject" title=".cssc-button .btn-eject">Eject</button>
+        <button class="cssc-button cssc-button--default cssc-button-icn-large btn-download" title=".cssc-button .cssc-button-icn-large .btn-download">Download</button>
+        <button class="cssc-button cssc-button--default btn-play" title=".cssc-button .btn-play">Play</button>
+        <button class="cssc-button cssc-button--default btn-go" title=".cssc-button .btn-go">Go</button>
+        <button class="cssc-button cssc-button--default btn-img" title=".cssc-button .btn-img">Image</button>
     </div>
 
     <h4>Groupe de boutons</h4>
     <div>
         <div class="button-group">
-            <button class="cssc-button cssc-button-medium">Action 1</button><!--
-            --><button class="cssc-button cssc-button-medium">Action 2</button><!--
-            --><button class="cssc-button cssc-button-medium">Action 3</button>
+            <button class="cssc-button cssc-button--default cssc-button-medium">Action 1</button><!--
+            --><button class="cssc-button cssc-button--default cssc-button-medium">Action 2</button><!--
+            --><button class="cssc-button cssc-button--default cssc-button-medium">Action 3</button>
         </div>
-        <button class="cssc-button cssc-button-medium">Bouton après</button>
+        <button class="cssc-button cssc-button--default cssc-button-medium">Bouton après</button>
     </div>
 
     </div>

@@ -33,7 +33,7 @@ include dirname(__FILE__).'/../blocks/common.php';
         </ul>
     </div>
     <p>
-        <a href="#demo-code-tabs" class="cssc-button show-html-button">Afficher HTML</a>
+        <a href="#demo-code-tabs" class="cssc-button cssc-button--default show-html-button">Afficher HTML</a>
     </p>
     <pre contenteditable id="demo-code-tabs">&lt;div class=&quot;cssc-tabs&quot;&gt;
     &lt;ul class=&quot;cssc-tabs-clic&quot;&gt;
@@ -115,7 +115,7 @@ include dirname(__FILE__).'/../blocks/common.php';
                 <br />
                 Au :hover, .after est progressivement affich&eacute;.
                 <br />
-                <a href="#demo-code-push-simple" class="cssc-button show-html-button">Afficher HTML</a>
+                <a href="#demo-code-push-simple" class="cssc-button cssc-button--default show-html-button">Afficher HTML</a>
             </p>
             <pre id="demo-code-push-simple" contenteditable>&lt;a href=&quot;#&quot; class=&quot;cssc-push push-simple&quot;&gt;
     &lt;span class=&quot;after&quot;&gt;Texte alternatif&lt;/span&gt;
@@ -136,7 +136,7 @@ include dirname(__FILE__).'/../blocks/common.php';
                 <br />
                 Au :hover, .after est progressivement affich&eacute; pendant que .before est progressivement masqu&eacute;.
                 <br />
-                <a href="#demo-code-push-double" class="cssc-button show-html-button">Afficher HTML</a>
+                <a href="#demo-code-push-double" class="cssc-button cssc-button--default show-html-button">Afficher HTML</a>
             </p>
             <pre id="demo-code-push-double" contenteditable>&lt;a href=&quot;#&quot; class=&quot;cssc-push push-double&quot;&gt;
     &lt;span class=&quot;before&quot;&gt;Texte alternatif&lt;/span&gt;

@@ -3,7 +3,7 @@
 /*
 Name: Navigation
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.7.1
+Version: 1.8
 License: MIT
 */
 
@@ -288,16 +288,101 @@ License: MIT
   Fil d'ariane
 ---------------------------------------------------------- */
 
+/* Core
+-------------------------- */
+
 .cssc-ariane {
-    height: 20px;
-    margin-bottom: 30px;
-    line-height: 20px;
+    font-size: 0;
 }
 
 .cssc-ariane > li {
     display: inline-block;
     zoom: 1;
+    height: inherit;
+    font: inherit;
     *display: inline;
+}
+
+.cssc-ariane a,
+.cssc-ariane strong {
+    font-size: 13px;
+}
+
+/* Default theme
+-------------------------- */
+
+.cssc-ariane--default {
+    height: 20px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.cssc-ariane--default li:after {
+    content: '›';
+    margin: 0 5px;
+    font-size: 12px;
+}
+
+.cssc-ariane--default li:last-child:after {
+    display: none;
+}
+
+/* Wizard theme
+-------------------------- */
+
+.cssc-ariane--wizard {
+    height: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #999;
+    line-height: 30px;
+}
+
+.cssc-ariane--wizard li {
+    position: relative;
+    border-color: inherit;
+    text-align: center;
+    background-color: #BDF;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.cssc-ariane--wizard li:hover {
+    background-color: #DEF;
+}
+
+.cssc-ariane--wizard li:before,
+.cssc-ariane--wizard li:after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 50%;
+    border-right: 1px solid #FFF;
+    border-color: inherit;
+    background: inherit;
+    -webkit-transform: skewX(30deg);
+    transform: skewX(30deg);
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+}
+
+.cssc-ariane--wizard li:after {
+    top: auto;
+    bottom: 0;
+    -webkit-transform: skewX(-30deg);
+    transform: skewX(-30deg);
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right;
+}
+
+.cssc-ariane--wizard a,
+.cssc-ariane--wizard strong {
+    display: inline-block;
+    padding: 0 15px 0 25px;
+    font-size: 13px;
+    vertical-align: middle;
 }
 
 /* ----------------------------------------------------------

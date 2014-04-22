@@ -161,16 +161,32 @@
 
 
     <h3>Fil d'ariane</h3>
-    <ul class="cssc-ariane">
+    <ul class="cssc-ariane cssc-ariane--default">
         <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
             <a href="#" itemprop="url" rel="home">
                 <span itemprop="title">Accueil</span>
-            </a> &rsaquo;&nbsp;
+            </a>
         </li>
         <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
             <a href="#" itemprop="url" rel="home">
                 <span itemprop="title">Mod&egrave;les</span>
-            </a> &rsaquo;&nbsp;
+            </a>
+        </li>
+        <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <strong itemprop="title">Fil d'ariane</strong>
+        </li>
+    </ul>
+
+    <ul class="cssc-ariane cssc-ariane--wizard">
+        <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="#" itemprop="url" rel="home">
+                <span itemprop="title">Accueil</span>
+            </a>
+        </li>
+        <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="#" itemprop="url" rel="home">
+                <span itemprop="title">Mod&egrave;les</span>
+            </a>
         </li>
         <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
             <strong itemprop="title">Fil d'ariane</strong>

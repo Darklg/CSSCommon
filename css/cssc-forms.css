@@ -3,7 +3,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.0
+Version: 2.1
 License: MIT
 */
 
@@ -197,6 +197,23 @@ button {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+/* Autocomplete
+-------------------------- */
+
+.cssc-form .box.has-autocomplete {
+    z-index: 2;
+}
+
+.cssc-form .box-autocomplete {
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    margin-top: 1px;
+    background-color: #fff;
 }
 
 /* Errors
@@ -425,6 +442,44 @@ button {
 
 .cssc-form--default.block-form .side-small {
     line-height: 25px;
+}
+
+/* Autocomplete
+-------------------------- */
+
+.cssc-form .box-autocomplete,
+.cssc-form .box-autocomplete .result {
+    -webkit-transition: background 0.3s ease,color 0.3s ease;
+    transition: background 0.3s ease,color 0.3s ease;
+}
+
+.cssc-form .box-autocomplete {
+    border: 1px solid #f0f0f0;
+    border-top: 0;
+    background: #FFF;
+    background-color: rgba(255,255,255,.9);
+}
+
+.cssc-form--default.float-form .box-autocomplete {
+    top: 25px;
+    left: 130px;
+}
+
+.cssc-form .box:hover .box-autocomplete {
+    background-color: #fff;
+}
+
+.cssc-form .box-autocomplete .result {
+    padding: 0 10px;
+    font-size: 13px;
+    line-height: 25px;
+    color: #999;
+    cursor: pointer;
+}
+
+.cssc-form .box-autocomplete .result:hover {
+    color: #333;
+    background-color: #EEE;
 }
 
 /* ----------------------------------------------------------

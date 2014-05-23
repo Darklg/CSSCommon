@@ -3,7 +3,7 @@
     <div>
         <div class="cssc-grid gri-940-24-20 cssc-block">
             <div class="col-8">
-                <div class="cssc-panel">
+                <div class="cssc-panel cssc-panel--default">
                     <h3>Panneau</h3>
                     <p>Mise en avant de texte.</p>
                 </div>
@@ -71,12 +71,12 @@
             <div class="col-8">
                 <h3>Barre d’avancement</h3>
                 <p>
-                    <span class="progress-bar">
+                    <span class="progress-bar progress-bar--default">
                         <span class="bar" style="width:30%;">30%</span>
                     </span>
                 </p>
                 <h3>Notes</h3>
-                <div class="cssc-stars">
+                <div class="cssc-stars cssc-stars--default">
                     <div class="cssc-stars-list">
                         <?php for ($i = 5; $i>= 1; $i--) { ?>
                         <input id="star-<?php echo $i; ?>" type="radio" name="star" value="<?php echo $i; ?>" <?php echo $i == 2 ? 'class="current"':''; ?> />
@@ -86,7 +86,7 @@
                 </div>
             </div>
             <div class="col-8">
-                <div class="cssc-sep cssc-sep-before cssc-sep-after">
+                <div class="cssc-sep cssc-sep--default cssc-sep-before cssc-sep-after">
                     <h3>Séparateurs</h3>
                     <p>The world needs dreamers and the world needs doers. But above all, the world needs dreamers who do — Sarah Ban Breathnach.</p>
                 </div>

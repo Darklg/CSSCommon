@@ -76,14 +76,14 @@
                 </blockquote>
                 <h3>Tags</h3>
                 <p>
-                    <a href="#" class="cssc-tag">Renard polaire</a>
-                    <a href="#" class="cssc-tag">Macareux</a>
-                    <a href="#" class="cssc-tag">Sterne</a>
-                    <a href="#" class="cssc-tag">Grande baleine bleue</a>
-                    <a href="#" class="cssc-tag">Mouton</a>
+                    <a href="#" class="cssc-tag cssc-tag--default">Renard polaire</a>
+                    <a href="#" class="cssc-tag cssc-tag--default">Macareux</a>
+                    <a href="#" class="cssc-tag cssc-tag--default">Sterne</a>
+                    <a href="#" class="cssc-tag cssc-tag--default">Grande baleine bleue</a>
+                    <a href="#" class="cssc-tag cssc-tag--default">Mouton</a>
                 </p>
                 <h3>Tags Enfants</h3>
-                <p class="cssc-tags">
+                <p class="cssc-tags cssc-tags--default">
                     <a href="#">Geyser</a>
                     <a href="#">Fjord</a>
                     <a href="#">Cascade</a>

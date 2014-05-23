@@ -3,7 +3,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.7.11
+Version: 2.7.12
 License: MIT
 */
 
@@ -373,6 +373,30 @@ hr {
     border: 0;
     border-top: 1px solid #aaa;
     border-bottom: 1px solid #f0f0f0;
+}
+
+/* ----------------------------------------------------------
+  Clearfix
+---------------------------------------------------------- */
+
+.clearfix,
+.cssc-grid:before,
+.cssc-grid:after,
+.clearfix:after,
+.subfloat:after {
+    content: " ";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    max-height: 0;
+    overflow: hidden;
+}
+
+hr.clearfix {
+    height: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
 }
 
 /* ----------------------------------------------------------

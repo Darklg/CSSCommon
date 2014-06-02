@@ -3,7 +3,7 @@
 /*
 Name: Effects
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.8
+Version: 0.9
 License: MIT
 */
 
@@ -239,6 +239,84 @@ License: MIT
 }
 
 /* ----------------------------------------------------------
+  Underline effect
+---------------------------------------------------------- */
+
+/* Center
+-------------------------- */
+
+.cssc-effects-underline {
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    line-height: 1;
+    vertical-align: 0;
+}
+
+.cssc-effects-underline,
+.cssc-effects-underline:hover,
+.cssc-effects-underline:focus {
+    color: #333;
+}
+
+.cssc-effects-underline:after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* Theme
+-------------------------- */
+
+/* Default */
+
+.cssc-effects-underline--default:after {
+    right: 0;
+    left: 0;
+}
+
+.cssc-effects-underline--default:hover:after {
+    border-color: #333;
+}
+
+/* From left */
+
+.cssc-effects-underline--left:after {
+    right: 100%;
+    left: 0;
+    border-color: #333;
+    opacity: 0;
+    filter: alpha(opacity=00);
+}
+
+.cssc-effects-underline--left:hover:after {
+    right: 0;
+    opacity: 0.99;
+    filter: alpha(opacity=99);
+}
+
+/* From center */
+
+.cssc-effects-underline--center:after {
+    right: 50%;
+    left: 50%;
+    border-color: #333;
+    opacity: 0;
+    filter: alpha(opacity=00);
+}
+
+.cssc-effects-underline--center:hover:after {
+    right: 0;
+    left: 0;
+    opacity: 0.99;
+    filter: alpha(opacity=99);
+}
+
+/* ----------------------------------------------------------
   Hover effects
 ---------------------------------------------------------- */
 
@@ -329,8 +407,8 @@ License: MIT
     right: 0;
     bottom: 0;
     left: 0;
+    opacity: 0;
     filter: alpha(opacity=0);
-    opacity:0.0;
 }
 
 .cssc-unblur-hover .animate-me .blur {

@@ -47,6 +47,16 @@
 &lt;/p&gt;</pre>
     </div>
 </section>
+<section class="block-content centered-container">
+    <div>
+        <h2>Underline effects</h2>
+        <p>
+            <a href="#" class="cssc-effects-underline cssc-effects-underline--default">Default underline</a> •
+            <a href="#" class="cssc-effects-underline cssc-effects-underline--left">Underline from left</a> •
+            <a href="#" class="cssc-effects-underline cssc-effects-underline--center">Underline from center</a>
+        </p>
+    </div>
+</section>
 <div class="cssc-parallax">Parallax effect</div>
 <section class="block-content centered-container">
     <div>

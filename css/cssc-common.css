@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.3
+Version: 2.3.1
 License: MIT
 */
 
@@ -344,7 +344,7 @@ pre {
 /* Base tooltip theme
 -------------------------- */
 
-.tooltip-bubble {
+.tooltip--default .tooltip-bubble {
     width: 150px;
     margin-bottom: 5px;
     padding: 10px;
@@ -354,7 +354,7 @@ pre {
 
 /* Triangle bubble */
 
-.tooltip-bubble:after {
+.tooltip--default .tooltip-bubble:after {
     content: '';
     position: absolute;
     top: 100%;
@@ -370,12 +370,12 @@ pre {
 /* Theme direction
 -------------------------- */
 
-.tooltip--bottom .tooltip-bubble {
+.tooltip--default.tooltip--bottom .tooltip-bubble {
     margin-top: 5px;
     margin-bottom: 0;
 }
 
-.tooltip--bottom .tooltip-bubble:after {
+.tooltip--default.tooltip--bottom .tooltip-bubble:after {
     top: auto;
     bottom: 100%;
     border-top: 0;

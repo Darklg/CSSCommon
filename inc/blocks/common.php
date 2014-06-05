@@ -45,12 +45,12 @@
             <div class="col-8">
                 <h3>Infobulle</h3>
                 <p>
-                    <a href="#" class="tooltip">
+                    <a href="#" class="tooltip tooltip--default">
                         Infobulle
                         <span class="tooltip-bubble trans-opa">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. </span>
                     </a>
                     •
-                    <a href="#" class="tooltip tooltip--bottom">
+                    <a href="#" class="tooltip tooltip--default tooltip--bottom">
                         Dessous
                         <span class="tooltip-bubble trans-opa">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. </span>
                     </a>

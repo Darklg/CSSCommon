@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.3.1
+Version: 2.3.2
 License: MIT
 */
 
@@ -33,9 +33,8 @@ License: MIT
 }
 
 .cssc-btn-px {
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    background-size: 100% 100%;
+    -webkit-background-size: contain;
+    background-size: contain;
 }
 
 /* Icon button
@@ -133,8 +132,9 @@ License: MIT
 
 /* ----------------------------------------------------------
   Block Media : Floating block
-  By @Stubbornella : http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
 ---------------------------------------------------------- */
+
+/* By @Stubbornella : http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/ */
 
 .bmedia,
 .bmedia-right,
@@ -317,6 +317,10 @@ pre {
 .tooltip {
     z-index: 2;
     position: relative;
+}
+
+.tooltip:hover {
+    z-index: 3;
 }
 
 .tooltip-bubble {

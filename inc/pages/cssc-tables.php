@@ -10,7 +10,7 @@
     <div class="cssc-grid gri-940-24-20">
         <div class="col-12">
             <h3>Thème par défaut</h3>
-            <table class="cssc-table">
+            <table class="cssc-table cssc-table--default">
                 <thead>
                     <tr>
                         <th>Entete</th>
@@ -43,7 +43,7 @@
         </div>
         <div class="col-12">
             <h3>Thème "basic"</h3>
-            <table class="cssc-table cssc-table-basic">
+            <table class="cssc-table cssc-table--default cssc-table--basic">
                 <thead>
                     <tr>
                         <th>lorem</th>
@@ -71,7 +71,7 @@
     <div class="cssc-grid gri-940-24-20">
         <div class="col-12">
             <h3>Thème "tight"</h3>
-            <table class="cssc-table cssc-table-tight">
+            <table class="cssc-table cssc-table--default cssc-table--tight">
                 <thead>
                     <tr>
                         <th>Entete</th>
@@ -106,7 +106,7 @@
         <div class="col-12">
             <h3>Thème "tight" + "basic"</h3>
 
-            <table class="cssc-table cssc-table-tight cssc-table-basic">
+            <table class="cssc-table cssc-table--default cssc-table--tight cssc-table--basic">
                 <thead>
                     <tr>
                         <th>Entete</th>
@@ -141,7 +141,7 @@
     </div>
 
     <h3>Thème "bordered"</h3>
-    <table class="cssc-table cssc-table-bordered">
+    <table class="cssc-table cssc-table--default cssc-table--bordered">
         <thead>
             <tr>
                 <th>Entête</th>
@@ -163,4 +163,65 @@
         </tbody>
     </table>
 
+    <h3>Thème "Rounded"</h3>
+    <div class="cssc-grid gri-940-24-20">
+        <div class="col-12">
+            <table class="cssc-table cssc-table--default cssc-table--rounded">
+                <thead>
+                    <tr>
+                        <th>lorem</th>
+                        <th>ipsum</th>
+                        <th>facto</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>lorem</th>
+                        <th>ipsum</th>
+                        <th>facto</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>it just gets better and better as the years roll on. So keep looking until you find it. Don’t settle.</td>
+                        <td>lorem</td>
+                        <td>1 €</td>
+                    </tr>
+                    <tr>
+                        <td>The broader one's understanding of the human experience, the better design we will have.</td>
+                        <td>ipsum</td>
+                        <td>10 €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-12">
+            <table class="cssc-table cssc-table--default cssc-table--rounded">
+                <thead>
+                    <tr>
+                        <th>lorem</th>
+                        <th>ipsum</th>
+                        <th>facto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>it just gets better and better as the years roll on. So keep looking until you find it. Don’t settle.</td>
+                        <td>lorem</td>
+                        <td>1 €</td>
+                    </tr>
+                    <tr>
+                        <td>The broader one's understanding of the human experience, the better design we will have.</td>
+                        <td>ipsum</td>
+                        <td>10 €</td>
+                    </tr>
+                    <tr>
+                        <td>it just gets better and better as the years roll on. So keep looking until you find it. Don’t settle.</td>
+                        <td>lorem</td>
+                        <td>1 €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div></section>

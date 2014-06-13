@@ -3,7 +3,7 @@
 /*
 Name: Tables
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.3
+Version: 1.4
 License: MIT
 */
 
@@ -23,87 +23,86 @@ License: MIT
 /* Default Theme
 -------------------------- */
 
-.cssc-table td,
-.cssc-table th {
+.cssc-table--default td,
+.cssc-table--default th {
     padding: 10px;
     font-size: 12px;
     line-height: 1.3;
 }
 
-.cssc-table td {
+.cssc-table--default td {
     text-align: left;
 }
 
-.cssc-table th {
+.cssc-table--default th {
     text-align: left;
     font-weight: bold;
 }
 
-.cssc-table tr {
+.cssc-table--default tr {
     border-bottom: 1px solid #e9e9e9;
 }
 
-.cssc-table thead tr {
+.cssc-table--default thead tr {
     border-bottom: 1px solid #d0d0d0;
 }
 
-.cssc-table tbody tr:last-child {
+.cssc-table--default tbody tr:last-child {
     border-bottom: 0;
 }
 
 /* "Tight" Theme
 -------------------------- */
 
-.cssc-table-tight th,
-.cssc-table-tight td {
+.cssc-table--tight th,
+.cssc-table--tight td {
     padding: 3px;
     line-height: 1.2;
 }
 
-/* Basic Theme
+/* "Basic" Theme
 -------------------------- */
 
-.cssc-table-basic {
+.cssc-table--basic {
     color: #333;
     background: #fff;
 }
 
-.cssc-table-basic,
-.cssc-table-basic tr,
-.cssc-table-basic td,
-.cssc-table-basic th {
+.cssc-table--basic,
+.cssc-table--basic tr,
+.cssc-table--basic td,
+.cssc-table--basic th {
     border: 1px solid #d0d0d0;
 }
 
-.cssc-table-basic tbody tr,
-.cssc-table-basic tbody td,
-.cssc-table-basic tbody th {
+.cssc-table--basic tbody tr,
+.cssc-table--basic tbody td,
+.cssc-table--basic tbody th {
     border: 1px solid #e0e0e0;
 }
 
-.cssc-table-basic tr:hover {
+.cssc-table--basic tr:hover {
     color: #000;
     background: #fafafa;
 }
 
-.cssc-table-basic th {
+.cssc-table--basic th {
     background: #f0f0f0;
 }
 
-/* ----------------------------------------------------------
-  Utilities
----------------------------------------------------------- */
+/* "Bordered" Theme
+-------------------------- */
 
-.cssc-table-bordered td + td {
+.cssc-table--bordered td + td {
     border-left: 1px solid #e9e9e9;
 }
 
-.cssc-table-bordered .content {
+.cssc-table--bordered .content {
     z-index: 1;
     position: relative;
 }
 
-.cssc-table-bordered tr + tr td + td .content:before {
+.cssc-table--bordered tr + tr td + td .content:before {
     content: '';
     z-index: 1;
     position: absolute;
@@ -112,4 +111,66 @@ License: MIT
     width: 20px;
     height: 20px;
     background-color: #fff;
+}
+
+/* Rounded corners
+-------------------------- */
+
+.cssc-table--rounded {
+    border: 1px solid #ccc;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+}
+
+/* Debug colors */
+
+.cssc-table--rounded tbody {
+    background-color: #F5F5F5;
+}
+
+.cssc-table--rounded tfoot th {
+    background-color: #E0E0E0;
+}
+
+.cssc-table--rounded thead th {
+    background-color: #E0E0E0;
+}
+
+/* Borders top */
+
+.cssc-table--rounded thead:first-child,
+.cssc-table--rounded thead:first-child tr:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.cssc-table--rounded thead:first-child tr:first-child th:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+.cssc-table--rounded thead:first-child tr:first-child th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+/* Borders bottom */
+
+.cssc-table--rounded thead + tbody ~ tbody:last-child,
+.cssc-table--rounded thead + tbody ~ tbody:last-child tr:last-child,
+.cssc-table--rounded thead + tbody:last-child,
+.cssc-table--rounded thead + tbody:last-child tr:last-child,
+.cssc-table--rounded tfoot,
+.cssc-table--rounded tfoot tr:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.cssc-table--rounded thead + tbody ~ tbody:last-child tr:last-child td:first-child,
+.cssc-table--rounded thead + tbody:last-child tr:last-child td:first-child,
+.cssc-table--rounded tfoot tr:last-child th:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+.cssc-table--rounded thead + tbody ~ tbody:last-child tr:last-child td:last-child,
+.cssc-table--rounded thead + tbody:last-child tr:last-child td:last-child,
+.cssc-table--rounded tfoot tr:last-child th:last-child {
+    border-radius: 0 0 10px 0;
 }

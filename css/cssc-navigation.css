@@ -3,7 +3,7 @@
 /*
 Name: Navigation
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.8
+Version: 1.9
 License: MIT
 */
 
@@ -497,4 +497,113 @@ License: MIT
 .cssc-bullet .current,
 .cssc-bullet li:hover {
     color: #333;
+}
+
+/* ----------------------------------------------------------
+  Responsive menu
+---------------------------------------------------------- */
+
+.cssc-responsive-menu {
+    z-index: 1;
+    position: relative;
+}
+
+.cssc-responsive-menu__button,
+.cssc-responsive-menu__links {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cssc-responsive-menu__title {
+    margin: 0;
+    line-height: inherit;
+}
+
+.cssc-responsive-menu__links a,
+.cssc-responsive-menu__links li,
+.cssc-responsive-menu__links {
+    display: block;
+    line-height: inherit;
+}
+
+.cssc-responsive-menu__links li {
+    float: left;
+}
+
+.cssc-responsive-menu__button {
+    display: none;
+}
+
+@media(max-width:720px) {
+    .cssc-responsive-menu__button {
+        display: block;
+    }
+
+    .cssc-responsive-menu__links {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .is-open .cssc-responsive-menu__links {
+        visibility: visible;
+        opacity: 0.99;
+    }
+}
+
+/* Default theme
+-------------------------- */
+
+.cssc-responsive-menu--default {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    line-height: 40px;
+}
+
+.cssc-responsive-menu__title {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.cssc-responsive-menu__button {
+    top: 50%;
+    right: 5px;
+    height: 30px;
+    margin-top: -15px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    line-height: 20px;
+    background-color: #fff;
+}
+
+.cssc-responsive-menu__button .icon {
+    display: inline-block;
+    font-size: 25px;
+    vertical-align: -1px;
+}
+
+.cssc-responsive-menu__links li {
+    margin-right: 10px;
+}
+
+@media(max-width:720px) {
+    .cssc-responsive-menu__links {
+        top: 100%;
+        right: -1px;
+        left: -1px;
+        margin: 0;
+        border: 1px solid #ccc;
+        background-color: #fff;
+    }
+
+    .cssc-responsive-menu__links li + li {
+        border-top: 1px solid #ccc;
+    }
+
+    .cssc-responsive-menu__links li {
+        float: none;
+        margin-right: 0;
+        padding: 0 10px;
+    }
 }

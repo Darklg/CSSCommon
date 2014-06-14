@@ -10,6 +10,17 @@
         </div>
         <h2 id="cssc-layouts">Layouts</h2>
     </div>
+
+    <div class="cssc-responsive-menu cssc-responsive-menu--default">
+        <h1 class="cssc-responsive-menu__title">Title</h1>
+        <button class="cssc-responsive-menu__button" type="button" onclick="this.parentNode.classList.toggle('is-open');"><span class="icon">&equiv;</span> Menu</button>
+        <ul class="cssc-responsive-menu__links">
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
+        </ul>
+    </div>
+
     <div class="cssc-lay clay-resp">
         <div class="col-main">
             <div class="content-container">

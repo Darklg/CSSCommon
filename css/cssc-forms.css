@@ -3,7 +3,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.1
+Version: 2.2
 License: MIT
 */
 
@@ -261,6 +261,7 @@ button {
    ----------------------- */
 
 .form-append {
+    min-height: 1;
     overflow: auto;
 }
 
@@ -271,6 +272,42 @@ button {
 
 .lt_ie8 .form-append > * {
     max-width: 200px;
+}
+
+/* Responsive float form
+-------------------------- */
+
+/* fix float form */
+
+@media(max-width:720px) {
+    .float-form.cssc-form--responsive .box {
+        padding-left: 0!important;
+    }
+
+    .float-form.cssc-form--responsive .fake-label,
+    .float-form.cssc-form--responsive .box:not(.checked-box):not(.radio-box) label {
+        display: block;
+        position: static;
+        width: auto!important;
+        padding-right: 0!important;
+        text-align: left;
+    }
+
+    .float-form.cssc-form--responsive .box .long-label {
+        line-height: inherit!important;
+    }
+}
+
+/* fix twoboxes */
+
+@media(max-width:720px) {
+    .cssc-form.cssc-form--responsive .twoboxes .box {
+        display: block;
+        float: none;
+        width: auto;
+        padding-right: 0!important;
+        padding-left: 0!important;
+    }
 }
 
 /* ----------------------------------------------------------
@@ -486,7 +523,7 @@ button {
   Demo style
 ---------------------------------------------------------- */
 
-.form-append {
+.form-append-demo {
     min-height: 25px;
 }
 

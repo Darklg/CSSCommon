@@ -3,7 +3,7 @@
 /*
 Name: Navigation
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.9
+Version: 1.10
 License: MIT
 */
 
@@ -147,6 +147,7 @@ License: MIT
 .cssc-mainnav {
     z-index: 1;
     position: relative;
+    min-height: 10px;
     vertical-align: middle;
 }
 
@@ -232,55 +233,55 @@ License: MIT
 
 /* Style d'exemple */
 
-.cssc-mainnav {
+.cssc-mainnav--default {
     height: 30px;
     margin-bottom: 30px;
     border: 1px solid #eee;
 }
 
-.cssc-mainmenuplus > li > a,
-.cssc-mainmenuplus > li,
-.cssc-mainmenu > li > a,
-.cssc-mainmenu > li {
+.cssc-mainnav--default .cssc-mainmenuplus > li > a,
+.cssc-mainnav--default .cssc-mainmenuplus > li,
+.cssc-mainnav--default .cssc-mainmenu > li > a,
+.cssc-mainnav--default .cssc-mainmenu > li {
     line-height: 30px;
 }
 
-.cssc-mainmenuplus {
+.cssc-mainnav--default .cssc-mainmenuplus {
     border-left: 1px solid #eee;
 }
 
-.cssc-mainmenuplus > li > a,
-.cssc-mainmenu > li > a {
+.cssc-mainnav--default .cssc-mainmenuplus > li > a,
+.cssc-mainnav--default .cssc-mainmenu > li > a {
     padding: 0 10px;
 }
 
-.cssc-mainmenu > li:hover > a,
-.cssc-mainmenu > li > a:focus,
-.cssc-mainmenu > .current > a {
+.cssc-mainnav--default .cssc-mainmenu > li:hover > a,
+.cssc-mainnav--default .cssc-mainmenu > li > a:focus,
+.cssc-mainnav--default .cssc-mainmenu > .current > a {
     color: #000;
 }
 
-.cssc-mainmenu > li > a {
+.cssc-mainnav--default .cssc-mainmenu > li > a {
     border-right: 1px solid #eee;
 }
 
-.cssc-mainmenu .submenu {
+.cssc-mainnav--default .cssc-mainmenu .submenu {
     padding: 10px;
     border: 1px solid #eee;
     border-width: 0 0 1px 1px;
     background: #f9f9f9;
 }
 
-.cssc-mainmenu .subcol {
+.cssc-mainnav--default .cssc-mainmenu .subcol {
     min-width: 200px;
 }
 
-.cssc-mainmenu .subcol > ul {
+.cssc-mainnav--default .cssc-mainmenu .subcol > ul {
     min-width: 150px;
 }
 
-.cssc-mainmenu .subcol + .subcol,
-.cssc-mainmenu .subcol > ul + ul {
+.cssc-mainnav--default .cssc-mainmenu .subcol + .subcol,
+.cssc-mainnav--default .cssc-mainmenu .subcol > ul + ul {
     margin-left: 15px;
 }
 

@@ -35,7 +35,7 @@ $_v = round(time()/10);
         <header id="header" class="centered-container">
             <h1>CSS Common - Framework CSS</h1>
         </header>
-        <nav class="cssc-mainnav centered-container">
+        <nav class="cssc-mainnav cssc-mainnav--default centered-container">
             <ul class="cssc-mainmenu">
                 <li><a href="index.php">Accueil</a></li>
                 <li><a href="index.php?p=cssc-forms">Formulaires</a></li>

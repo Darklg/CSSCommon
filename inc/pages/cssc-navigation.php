@@ -39,7 +39,7 @@
     <h3>Menu Principal</h3>
 
     <h4>Avec sous-menu</h4>
-    <nav class="cssc-mainnav">
+    <nav class="cssc-mainnav cssc-mainnav--default">
         <ul class="cssc-mainmenu">
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Lien normal</a></li>
@@ -61,7 +61,7 @@
 
 
     <h4>Avec sous-menu &quot;riche&quot; de largeur fixe</h4>
-    <nav class="cssc-mainnav">
+    <nav class="cssc-mainnav cssc-mainnav--default">
         <ul class="cssc-mainmenu">
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Lien normal</a></li>
@@ -102,7 +102,7 @@
     </nav>
 
     <h4>Avec sous-menu &quot;riche&quot; 100%</h4>
-    <nav class="cssc-mainnav">
+    <nav class="cssc-mainnav cssc-mainnav--default">
         <ul class="cssc-mainmenu">
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Lien normal</a></li>
@@ -143,7 +143,7 @@
     </nav>
 
     <h4>Avec Social links</h4>
-    <nav class="cssc-mainnav">
+    <nav class="cssc-mainnav cssc-mainnav--default">
         <ul class="cssc-mainmenuplus">
             <li><a href="#">Twitter</a></li>
             <li><a href="#">Facebook</a></li>

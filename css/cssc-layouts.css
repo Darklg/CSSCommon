@@ -3,7 +3,7 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.9.1
+Version: 1.10
 License: MIT
 */
 
@@ -180,7 +180,7 @@ License: MIT
 }
 
 /* ----------------------------------------------------------
-  Visibilité selon le terminal utilisé
+  Elements visibility depending on used device
 ---------------------------------------------------------- */
 
 .lt_ie9 .hidden-on-full,
@@ -211,4 +211,75 @@ License: MIT
     .visible-only-tablet {
         display: none;
     }
+}
+
+/* ----------------------------------------------------------
+  Fullscreen
+---------------------------------------------------------- */
+
+/* Layouts
+-------------------------- */
+
+.cssc-is-fullscreen #main-container,
+.cssc-is-fullscreen body,
+.cssc-is-fullscreen {
+    height: 100%;
+}
+
+.cssc-fullscreen {
+    z-index: 1;
+    position: relative;
+    height: 100%;
+    text-align: center;
+}
+
+/* Centered block
+-------------------------- */
+
+.cssc-fullscreen__centered {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.cssc-fullscreen__centered > * {
+    display: inline-block;
+    line-height: 1.3;
+    vertical-align: middle;
+}
+
+@media(max-height:400px) {
+    .cssc-fullscreen__centered {
+        position: static;
+        height: auto;
+        line-height: inherit;
+    }
+}
+
+/* Default theme */
+
+.cssc-fullscreen--default .cssc-fullscreen__centered {
+    height: 400px;
+    line-height: 400px;
+}
+
+@media(max-height:400px) {
+    .cssc-fullscreen--default .cssc-fullscreen__centered {
+        position: static;
+        height: auto;
+        line-height: inherit;
+    }
+}
+
+/* Block options
+-------------------------- */
+
+.cssc-fullscreen--parallax {
+    background: fixed no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
 }

@@ -1,11 +1,20 @@
 <?php
 $_v = round(time()/10);
+if(!isset($is_fullscreen)){
+    $is_fullscreen = false;
+}
+
+$html_classes = '';
+if($is_fullscreen){
+    $html_classes .= 'cssc-is-fullscreen';
+}
+
 ?><!DOCTYPE html>
-<!--[if lt IE 8 ]><html dir="ltr" lang="fr-FR" class="is_ie7 lt_ie8 lt_ie9 lt_ie10"><![endif]-->
-<!--[if IE 8 ]><html dir="ltr" lang="fr-FR" class="is_ie8 lt_ie9 lt_ie10"><![endif]-->
-<!--[if IE 9 ]><html dir="ltr" lang="fr-FR" class="is_ie9 lt_ie10"><![endif]-->
-<!--[if gt IE 9]><html dir="ltr" lang="fr-FR" class="is_ie10"><![endif]-->
-<!--[if !IE]><!--><html dir="ltr" lang="fr-FR"><!--<![endif]-->
+<!--[if lt IE 8 ]><html dir="ltr" lang="fr-FR" class="<?php echo $html_classes; ?> is_ie7 lt_ie8 lt_ie9 lt_ie10"><![endif]-->
+<!--[if IE 8 ]><html dir="ltr" lang="fr-FR" class="<?php echo $html_classes; ?> is_ie8 lt_ie9 lt_ie10"><![endif]-->
+<!--[if IE 9 ]><html dir="ltr" lang="fr-FR" class="<?php echo $html_classes; ?> is_ie9 lt_ie10"><![endif]-->
+<!--[if gt IE 9]><html dir="ltr" lang="fr-FR" class="<?php echo $html_classes; ?> is_ie10"><![endif]-->
+<!--[if !IE]><!--><html dir="ltr" lang="fr-FR" class="<?php echo $html_classes; ?>"><!--<![endif]-->
     <head>
         <title>CSS Common - Framework CSS</title>
         <meta charset="UTF-8" />
@@ -30,7 +39,7 @@ $_v = round(time()/10);
 
     <body>
 
-    <div id="main-container" <?php echo $is_responsive ? 'class="cssc-is-responsive"' : ''; ?>>
+    <div id="main-container" class="<?php echo $is_responsive ? 'cssc-is-responsive' : ''; ?>">
         <?php if(!$is_responsive){ ?>
         <header id="header" class="centered-container">
             <h1>CSS Common - Framework CSS</h1>

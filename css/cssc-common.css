@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.3.2
+Version: 2.3.3
 License: MIT
 */
 
@@ -23,6 +23,7 @@ License: MIT
     text-align: left;
     text-indent: -9999px;
     white-space: nowrap;
+    vertical-align: 0;
     background: transparent no-repeat top left;
     *text-indent: 0;
     *color: transparent;

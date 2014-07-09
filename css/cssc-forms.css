@@ -3,7 +3,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.2
+Version: 2.2.1
 License: MIT
 */
 
@@ -76,7 +76,6 @@ License: MIT
     position: absolute;
     top: 0;
     left: 0;
-    text-align: right;
 }
 
 .cssc-form .radio-box label,
@@ -388,6 +387,7 @@ button {
 .cssc-form--default.float-form label {
     width: 120px;
     padding-right: 10px;
+    text-align: right;
 }
 
 .cssc-form--default .fake-label,
@@ -502,11 +502,11 @@ button {
     left: 130px;
 }
 
-.cssc-form .box:hover .box-autocomplete {
+.cssc-form--default .box:hover .box-autocomplete {
     background-color: #fff;
 }
 
-.cssc-form .box-autocomplete .result {
+.cssc-form--default .box-autocomplete .result {
     padding: 0 10px;
     font-size: 13px;
     line-height: 25px;
@@ -514,20 +514,19 @@ button {
     cursor: pointer;
 }
 
-.cssc-form .box-autocomplete .result:hover {
+.cssc-form--default .box-autocomplete .result:hover {
     color: #333;
     background-color: #EEE;
 }
 
-/* ----------------------------------------------------------
-  Demo style
----------------------------------------------------------- */
+/* Form append
+-------------------------- */
 
-.form-append-demo {
+.form-append--default {
     min-height: 25px;
 }
 
-.form-append-demo input {
+.form-append--default input {
     -webkit-border-top-right-radius: 0;
     -webkit-border-bottom-right-radius: 0;
     -moz-border-radius-topright: 0;
@@ -536,7 +535,7 @@ button {
     border-bottom-right-radius: 0;
 }
 
-.form-append-demo button {
+.form-append--default button {
     border-left: 0;
     -webkit-border-top-left-radius: 0;
     -webkit-border-bottom-left-radius: 0;

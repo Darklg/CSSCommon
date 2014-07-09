@@ -149,7 +149,7 @@
 
     <h3 id="cssc-forms-append">Formulaire collé</h3>
     <form action="#" method="post">
-        <div class="form-append form-append-demo">
+        <div class="form-append form-append--default">
             <input class="inputbase" type="text" name="lorem" value="" />
             <button type="submit" class="cssc-button cssc-button--default">Envoyer</button>
         </div>

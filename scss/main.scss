@@ -11,24 +11,25 @@ $font-main: sans-serif;
 
 /* Sprites */
 
-$sprites: sprite-map("sprite-interface/*.png");       /* :) */
-$sprites2x: sprite-map("sprite-interface-2x/*.png");  /* :) */
+$sprites: sprite-map("css-sprite/*.png");       /* :) */
+$sprites2x: sprite-map("css-sprite-2x/*.png");  /* :) */
 
 /* ----------------------------------------------------------
   Utilities
 ---------------------------------------------------------- */
 
-@include "utilities/_retina-sprites.scss";
-@include "utilities/_plugins.scss";
+@import "utilities/_retina-sprites.scss";
+@import "utilities/_plugins.scss";
+@import "utilities/_mixins.scss";
 
 /* ----------------------------------------------------------
   Framework
 ---------------------------------------------------------- */
 
-// @include "csscommon/_cssc-default.scss";
+// @import "csscommon/_cssc-default.scss";
 
 /* ----------------------------------------------------------
   Project
 ---------------------------------------------------------- */
 
-@include "project/_base.scss";
+@import "project/_base.scss";

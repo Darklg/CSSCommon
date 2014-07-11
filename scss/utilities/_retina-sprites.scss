@@ -4,15 +4,24 @@
   Retina sprites
 ---------------------------------------------------------- */
 
+.compassbugfix {
+    background: $sprites;
+    background: $sprites2x;
+}
+
 /* Src : https://github.com/AdamBrodzinski/Retina-Sprites-for-Compass */
 
-// Include compass sprite helpers
 @import "compass/utilities/sprites";
-// Include helper to calc background size
-@import "compass/css3/background-size";
+
+// Include compass sprite helpers
 
 @mixin retina-sprite($name, $hover: false, $active: false) {
-    @include _retina-sprite($name, $sprites, $sprites2x, $hover, $active);
+    @include _retina-sprite($name, $sprites, $sprites2x, $hover, $active, false);
+}
+
+// Change only background-position. A lot less generated code.
+@mixin retina-sprite-lite($name, $hover: false, $active: false) {
+    @include _retina-sprite($name, $sprites, $sprites2x, $hover, $active, true);
 }
 
 // The general purpose retina sprite mixin.
@@ -25,13 +34,16 @@
 //    if `pad` is non-zero, then that's how much padding the element will have (requires
 //    $spacing on the sprite maps). Great for iPhone interfaces to make hit areas bigger.
 //
-@mixin _retina-sprite($name, $sprites, $sprites2x, $hover, $active, $dimensions: true, $pad: 0) {
+@mixin _retina-sprite($name, $sprites, $sprites2x, $hover, $active, $onlypos, $dimensions: true, $pad: 0) {
     @if $dimensions == true {
         @include sprite-dimensions($sprites, $name);
     }
-    background-image: sprite-url($sprites);
-    background-position: sprite-position($sprites, $name, -$pad, -$pad);
-    background-repeat: no-repeat;
+    @if $onlypos == true {
+        background-position: sprite-position($sprites, $name, -$pad, -$pad);
+    }
+    @else {
+        background: sprite-url($sprites) no-repeat sprite-position($sprites, $name, -$pad, -$pad);
+    }
     @if $hover == true {
         $name_hover: $name + _hover;
         &:hover {
@@ -48,11 +60,17 @@
         padding: $pad;
     }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+        $bg-size: ceil(image-width(sprite-path($sprites2x)) / 2);
         & {
             $pos: sprite-position($sprites2x, $name, -$pad * 2, -$pad * 2);
-            background-image: sprite-url($sprites2x);
-            background-position: nth($pos, 1) / 2 nth($pos, 2) / 2;
-            @include background-size(ceil(image-width(sprite-path($sprites2x)) / 2) auto);
+            @if $onlypos == true {
+                background-position: nth($pos, 1) / 2 nth($pos, 2) / 2;
+            }
+            @else {
+                background: sprite-url($sprites2x) no-repeat (nth($pos, 1) / 2 nth($pos, 2) / 2);
+                -webkit-background-size: $bg-size auto;
+                background-size: $bg-size auto;
+            }
             //  sprite-path() returns the path of the generated sprite sheet, which
             //  image-width() calculates the width of. the ceil() is in place in case
             //  you have sprites that have an odd-number of pixels in width

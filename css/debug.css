@@ -4,7 +4,7 @@
 Name: Debug
 URL: http://github.com/Darklg/CSSCommon
 Description: A stylesheet which will highlight HTML errors.
-Version: 0.4.1
+Version: 0.4.2
 License: MIT
 */
 
@@ -87,6 +87,13 @@ form > form,
 form > input,
 form > textarea,
 form > button,
+p div,
+pre > img,
+pre > object,
+pre > big,
+pre > small,
+pre > sub,
+pre > sup,
 tbody > *,
 ol > *,
 ul > * {
@@ -120,6 +127,7 @@ applet, acronym, center, dir, font, strike, big, tt, marquee, hgroup, plaintext,
   Deprecated attributes
 ---------------------------------------------------------- */
 
+a[name], form[name], frame[name], iframe[name], img[name], map[name],
 [background], [bgcolor], [onblur], [onchange], [onclick], [onclick],
 [ondblclick], [onfocus], [onkeydown], [onkeypress], [onkeyup],
 [onload], [onmousedown], [onmousemove], [onmouseout], [onmouseover],

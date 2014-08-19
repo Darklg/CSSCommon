@@ -3,7 +3,7 @@
 /*
 Name: Default Buttons
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.0
+Version: 2.1
 License: MIT
 */
 
@@ -21,6 +21,7 @@ License: MIT
     padding: 0;
     border: 0;
     text-align: center;
+    text-decoration: none;
     white-space: nowrap;
     vertical-align: middle;
     -webkit-background-clip: padding-box;
@@ -74,7 +75,6 @@ License: MIT
     padding: 0 8px;
     border: 1px solid #ccc;
     -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
     text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
     font: 12px/25px sans-serif;
@@ -115,7 +115,7 @@ License: MIT
 /* Buttons' modes
    ----------------------- */
 
-.wide-button {
+.cssc-button--wide {
     display: block;
     width: 100%;
 }
@@ -123,21 +123,21 @@ License: MIT
 /* Buttons' sizes
    ----------------------- */
 
-.cssc-button-small {
+.cssc-button--small {
     height: 20px;
     padding: 0 5px;
     font-size: 11px;
     line-height: 20px;
 }
 
-.cssc-button-medium {
+.cssc-button--medium {
     height: 30px;
     padding: 0 10px;
     font-size: 13px;
     line-height: 30px;
 }
 
-.cssc-button-big {
+.cssc-button--big {
     height: 35px;
     padding: 0 15px;
     font-size: 14px;
@@ -172,7 +172,6 @@ License: MIT
 
 .round-button {
     -webkit-border-radius: 99px;
-    -moz-border-radius: 99px;
     border-radius: 99px;
 }
 
@@ -269,7 +268,6 @@ License: MIT
     z-index: 1;
     position: relative;
     -webkit-border-radius: 0;
-    -moz-border-radius: 0;
     border-radius: 0;
 }
 
@@ -279,12 +277,10 @@ License: MIT
 
 .button-group .cssc-button:first-child {
     -webkit-border-radius: 3px 0 0 3px;
-    -moz-border-radius: 3px 0 0 3px;
     border-radius: 3px 0 0 3px;
 }
 
 .button-group .cssc-button:last-child {
     -webkit-border-radius: 0 3px 3px 0;
-    -moz-border-radius: 0 3px 3px 0;
     border-radius: 0 3px 3px 0;
 }

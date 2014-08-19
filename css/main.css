@@ -10,7 +10,7 @@ Attention : Ne pas utiliser @ import dans vos feuilles.
 @import 'cssc-content.css?v=1.1.4';
 
 /* Modules */
-@import 'cssc-buttons.css?v=2.0';
+@import 'cssc-buttons.css?v=2.1';
 @import 'cssc-forms.css?v=2.2.1';
 @import 'cssc-tables.css?v=1.4';
 @import 'cssc-grid.css?v=3.1';

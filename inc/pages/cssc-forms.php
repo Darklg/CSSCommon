@@ -169,11 +169,11 @@
 
     <h4>Tailles de boutons</h4>
     <div class="cssc-block">
-        <button class="cssc-button cssc-button--default cssc-button-small" title=".cssc-button .cssc-button-small">Small button</button>
+        <button class="cssc-button cssc-button--default cssc-button--small" title=".cssc-button .cssc-button--small">Small button</button>
         <button class="cssc-button cssc-button--default" disabled title="[disabled]">Disabled</button>
         <button class="cssc-button cssc-button--default" title=".cssc-button">Default button</button>
-        <button class="cssc-button cssc-button--default cssc-button-medium" title=".cssc-button .cssc-button-medium">Medium button</button>
-        <button class="cssc-button cssc-button--default cssc-button-big" title=".cssc-button .cssc-button-big">Big button</button>
+        <button class="cssc-button cssc-button--default cssc-button--medium" title=".cssc-button .cssc-button--medium">Medium button</button>
+        <button class="cssc-button cssc-button--default cssc-button--big" title=".cssc-button .cssc-button--big">Big button</button>
     </div>
 
     <h4>Thèmes de boutons</h4>

@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.3.3
+Version: 2.3.4
 License: MIT
 */
 
@@ -113,6 +113,10 @@ License: MIT
     line-height: 1;
     opacity: 0;
     background-color: #fff;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .wdrw .submenu-r {

@@ -22,7 +22,8 @@ module.exports = function(grunt) {
                     'css/cssc-tabs.css',
                     'css/cssc-images.css',
                     'css/cssc-print.css',
-                    'css/cssc-effects.css'
+                    'css/cssc-effects.css',
+                    'css/cssc-triggers.css'
                 ],
                 dest: 'csslisible.css'
             },

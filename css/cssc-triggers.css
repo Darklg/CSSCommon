@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/*
+Name: Triggers
+URL: http://github.com/Darklg/CSSCommon
+Version: 0.1
+License: MIT
+*/
+
+/* ----------------------------------------------------------
+  Core
+---------------------------------------------------------- */
+
+.cssc-trigger {
+    z-index: 1;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    perspective: 100px;
+}
+
+.cssc-trigger,
+.cssc-trigger .cssc-trig {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* ----------------------------------------------------------
+  Effects
+---------------------------------------------------------- */
+
+/* Appear
+-------------------------- */
+
+.cssc-trigger .cssc-trig--appear {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.cssc-trigger:hover .cssc-trig--appear {
+    visibility: visible;
+    opacity: 0.999;
+}
+
+/* Slide
+-------------------------- */
+
+.cssc-trigger .cssc-trig--slide {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+}
+
+.cssc-trigger:hover .cssc-trig--slide {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+/* ----------------------------------------------------------
+  Demo theme
+---------------------------------------------------------- */
+
+.cssc-trigger--example {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0;
+    border: 10px solid #FFF;
+    vertical-align: middle;
+    outline: 1px solid #CCC;
+}
+
+.cssc-trigger--example .cssc-trig--slide {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 5px;
+    color: #fff;
+    background: rgba(0,0,0,0);
+    background: -moz-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.5) 100%);
+    background: -webkit-gradient(left top,left bottom,color-stop(0%,rgba(0,0,0,0) ), color-stop(100%,rgba(0,0,0,.5) ) );
+    background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.5) 100%);
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.5) 100%);
+}

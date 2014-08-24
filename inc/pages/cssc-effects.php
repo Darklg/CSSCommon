@@ -2,6 +2,20 @@
     <div>
         <div class="bkch-aside">
             Module :
+            <code>cssc-triggers.css</code>
+        </div>
+        <h2>Triggered animations</h2>
+        <p>Animate any element by acting on a chosen parent element.</p>
+        <div class="cssc-trigger cssc-trigger--example">
+            <img src="images/___x100/1.jpg" alt="" />
+            <p class="cssc-trig cssc-trig--appear cssc-trig--slide">Lorem ipsum</p>
+        </div>
+    </div>
+</section>
+<section class="block-content centered-container">
+    <div>
+        <div class="bkch-aside">
+            Module :
             <code>cssc-effects.css</code>
         </div>
         <h2>Effects</h2>

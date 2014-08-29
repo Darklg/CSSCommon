@@ -3,16 +3,27 @@
 /*
 Name: Grids
 URL: http://github.com/Darklg/CSSCommon
-Version: 3.1
+Version: 3.2
 License: MIT
 */
 
 .cssc-grid {
     clear: both;
+    display: block;
     max-width: 100%;
 }
 
+.cssc-grid:after {
+    content: " ";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    max-height: 0;
+    overflow: hidden;
+}
+
 .cssc-grid > * {
+    display: block;
     float: left;
     zoom: 1;
     min-height: 1px;
@@ -89,66 +100,36 @@ License: MIT
 /* Colonnes
 -------------------------- */
 
-.fluid-grid .col-20p {
-    width: 20%;
-}
-
-.fluid-grid .col-25p {
-    width: 25%;
-}
-
-.fluid-grid .col-33p {
-    width: 33.333%;
-}
-
-.fluid-grid .col-40p {
-    width: 40%;
-}
-
-.fluid-grid .col-50p {
-    width: 50%;
-}
-
-.fluid-grid .col-60p {
-    width: 60%;
-}
-
-.fluid-grid .col-66p {
-    width: 66.666%;
-}
-
-.fluid-grid .col-75p {
-    width: 75%;
-}
-
-.fluid-grid .col-80p {
-    width: 75%;
-}
+.fluid-grid .col-20p {width: 20%;}
+.fluid-grid .col-25p {width: 25%;}
+.fluid-grid .col-33p {width: 33.333%;}
+.fluid-grid .col-40p {width: 40%;}
+.fluid-grid .col-50p {width: 50%;}
+.fluid-grid .col-60p {width: 60%;}
+.fluid-grid .col-66p {width: 66.666%;}
+.fluid-grid .col-75p {width: 75%;}
+.fluid-grid .col-80p {width: 80%;}
 
 /* Responsive
 -------------------------- */
 
 @media(max-width:860px) {
-    .cssc-is-responsive .fluid-grid--responsive > .col-80p,
-    .cssc-is-responsive .fluid-grid--responsive > .col-75p,
-    .cssc-is-responsive .fluid-grid--responsive > .col-66p,
-    .cssc-is-responsive .fluid-grid--responsive > .col-60p,
-    .cssc-is-responsive .fluid-grid--responsive > .col-50p {
-        display: block;
+    .fluid-grid.fluid-grid--responsive > .col-80p,
+    .fluid-grid.fluid-grid--responsive > .col-75p,
+    .fluid-grid.fluid-grid--responsive > .col-66p,
+    .fluid-grid.fluid-grid--responsive > .col-60p,
+    .fluid-grid.fluid-grid--responsive > .col-50p {
         float: none!important;
         width: 100%!important;
     }
-}
 
-@media(max-width:860px) and (min-width:521px) {
-    .cssc-is-responsive .fluid-grid--responsive > * {
+    .fluid-grid.fluid-grid--responsive > * {
         width: 50%;
     }
 }
 
 @media(max-width:520px) {
-    .cssc-is-responsive .fluid-grid--responsive > * {
-        display: block;
+    .fluid-grid.fluid-grid--responsive > * {
         float: none!important;
         width: 100%!important;
     }

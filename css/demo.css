@@ -69,8 +69,8 @@ License: MIT
 
 .grid-label {
     display: block;
-    height: 30px;
     margin-bottom: 20px;
+    min-height: 30px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;

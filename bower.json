@@ -1,0 +1,36 @@
+{
+    "name": "CSSCommon",
+    "version": "1.0.0",
+    "homepage": "http://www.csscommon.com/",
+    "authors": [
+        "Kévin Rocher / Darklg"
+    ],
+    "description": "CSSCommon is a minimalist & modular CSS Framework",
+    "main": "csslisible.min.css",
+    "keywords": [
+        "css",
+        "framework",
+        "boilerplate",
+        "reset",
+        "responsive"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "css",
+        "images",
+        "inc",
+        "js",
+        "node_modules",
+        "scss",
+        ".gitignore",
+        "config.rb",
+        "README.md",
+        "Grunfile.js",
+        "bower.json",
+        "package.json",
+        "full-screen.php",
+        "index.php",
+        "responsive.php"
+    ]
+}

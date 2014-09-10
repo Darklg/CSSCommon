@@ -17,7 +17,9 @@
     "license": "MIT",
     "ignore": [
         "**/.*",
-        "css",
+        "css/debug.css",
+        "css/demo.css",
+        "css/main.css",
         "images",
         "inc",
         "js",

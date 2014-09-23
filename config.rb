@@ -1,4 +1,5 @@
 # Require any additional compass plugins here.
+require File.join(File.dirname(__FILE__), '/scss/utilities/list-files.rb')
 
 # Set this to the root of your project when deployed:
 http_path = "/"

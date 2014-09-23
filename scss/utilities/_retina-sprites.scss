@@ -4,10 +4,18 @@
   Retina sprites
 ---------------------------------------------------------- */
 
+$create-class-for-sprite-img: false;
+
+/* Load sprites
+-------------------------- */
+
 .compassbugfix {
     background: $sprites;
     background: $sprites2x;
 }
+
+/* Mixin
+-------------------------- */
 
 /* Src : https://github.com/AdamBrodzinski/Retina-Sprites-for-Compass */
 
@@ -89,6 +97,17 @@
                     background-position: nth($pos, 1) / 2 nth($pos, 2) / 2;
                 }
             }
+        }
+    }
+}
+
+/* Icons
+-------------------------- */
+
+@if($create-class-for-sprite-img) {
+    @each $clazz in listFiles("images/css-sprite/*") {
+        .#{$clazz} {
+            @include retina-sprite(#{$clazz});
         }
     }
 }

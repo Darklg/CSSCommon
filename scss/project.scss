@@ -11,8 +11,8 @@ $font-main: sans-serif;
 
 /* Sprites */
 
-$sprites: sprite-map("css-sprite/*.png");       /* :) */
-$sprites2x: sprite-map("css-sprite-2x/*.png");  /* :) */
+$sprites: sprite-map("css-sprite/*.png", $spacing: 10px);       /* :) */
+$sprites2x: sprite-map("css-sprite-2x/*.png", $spacing: 10px);  /* :) */
 
 /* ----------------------------------------------------------
   Utilities

@@ -25,18 +25,18 @@ module.exports = function(grunt) {
                     'css/cssc-effects.css',
                     'css/cssc-triggers.css'
                 ],
-                dest: 'csslisible.css'
+                dest: 'csscommon.css'
             },
         },
         cssmin: {
             css: {
-                src: 'csslisible.css',
-                dest: 'csslisible.min.css'
+                src: 'csscommon.css',
+                dest: 'csscommon.min.css'
             }
         },
         shell: {
             postuglify: {
-                command: 'rm csslisible.css;',
+                command: 'rm csscommon.css;',
                 stdout: true
             }
         }

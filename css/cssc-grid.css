@@ -3,7 +3,7 @@
 /*
 Name: Grids
 URL: http://github.com/Darklg/CSSCommon
-Version: 3.2
+Version: 3.2.1
 License: MIT
 */
 
@@ -100,8 +100,10 @@ License: MIT
 /* Colonnes
 -------------------------- */
 
+.fluid-grid .col-10p {width: 10%;}
 .fluid-grid .col-20p {width: 20%;}
 .fluid-grid .col-25p {width: 25%;}
+.fluid-grid .col-30p {width: 30%;}
 .fluid-grid .col-33p {width: 33.333%;}
 .fluid-grid .col-40p {width: 40%;}
 .fluid-grid .col-50p {width: 50%;}

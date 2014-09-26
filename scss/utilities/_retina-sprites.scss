@@ -114,7 +114,7 @@ $create-class-for-sprite-img: true;
 
 @if($create-class-for-sprite-img) {
     @each $clazz in listFiles("images/css-sprite/*") {
-        .#{$clazz} {
+        .icn.#{$clazz} {
             @extend .spritesbgfix;
             @include _retina-sprite-1x(#{$clazz}, $sprites, $sprites2x, 0 ,0, true);
         }
@@ -126,7 +126,7 @@ $create-class-for-sprite-img: true;
             background-size: $bg-size auto;
         }
         @each $clazz in listFiles("images/css-sprite-2x/*") {
-            .#{$clazz} {
+            .icn.#{$clazz} {
                 @extend .spritesimg2x;
             }
         }

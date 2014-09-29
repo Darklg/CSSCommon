@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.3.4
+Version: 2.4
 License: MIT
 */
 
@@ -60,6 +60,38 @@ License: MIT
 .cssc-btn:hover {
     opacity: 0.50;
     filter: alpha(opacity=50);
+}
+
+/* ----------------------------------------------------------
+  IR Switch
+---------------------------------------------------------- */
+
+.ir-switch {
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    vertical-align: middle;
+    background: none!important;
+}
+
+.ir-switch > * {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    vertical-align: 0;
+    opacity: 0.999;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+
+.ir-switch * + *,
+.ir-switch:hover > * {
+    opacity: 0;
+}
+
+.ir-switch:hover * + * {
+    opacity: 0.999;
 }
 
 /* ----------------------------------------------------------

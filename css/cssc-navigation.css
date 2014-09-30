@@ -3,7 +3,7 @@
 /*
 Name: Navigation
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.10
+Version: 1.11
 License: MIT
 */
 
@@ -101,36 +101,37 @@ License: MIT
   Pagination
 ---------------------------------------------------------- */
 
-.cssc-pagination-center {
-    text-align: center;
+/* Core
+-------------------------- */
+
+.cssc-pagination li,
+.cssc-pagination {
+    font-size: 0;
 }
 
 .cssc-pagination * {
     display: inline-block;
-    vertical-align: middle;
-    *zoom: 1;
-    *display: inline;
+    vertical-align: 0;
 }
 
-/* Style d'exemple */
+/* Theme
+-------------------------- */
 
-.cssc-pagination span,
-.cssc-pagination strong,
-.cssc-pagination a {
-    padding: 0 7px;
-    border: 1px solid #eee;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    -webkit-background-clip: border;
+.cssc-pagination--default {
+    margin-bottom: 30px;
 }
 
-.cssc-pagination * {
+.cssc-pagination--default * {
     line-height: 30px;
 }
 
-.cssc-pagination {
-    margin-bottom: 30px;
+.cssc-pagination--default strong,
+.cssc-pagination--default a {
+    margin: 0 2px;
+    padding: 0 7px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    font-size: 12px;
 }
 
 .cssc-pagination strong,
@@ -139,6 +140,12 @@ License: MIT
 .cssc-pagination a:hover {
     border-color: #ccc;
 }
+
+.cssc-pagination--center {
+    text-align: center;
+}
+
+/* Style d'exemple */
 
 /* ----------------------------------------------------------
   Menu Principal
@@ -360,8 +367,8 @@ License: MIT
     right: 0;
     width: 10px;
     height: 50%;
-    border-right: 1px solid #FFF;
     border-color: inherit;
+    border-right: 1px solid #FFF;
     background: inherit;
     -webkit-transform: skewX(30deg);
     transform: skewX(30deg);

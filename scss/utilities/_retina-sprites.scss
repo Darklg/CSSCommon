@@ -1,8 +1,10 @@
-@charset "UTF-8";
-
-/* ----------------------------------------------------------
-  Retina sprites
----------------------------------------------------------- */
+/*
+Name: Retina Sprites
+URL: http://github.com/Darklg/CSSCommon
+Version: 0.9
+License: MIT
+Forked from : @AdamBrodzinski | https://github.com/AdamBrodzinski/Retina-Sprites-for-Compass
+*/
 
 $create-class-for-sprite-img: true;
 
@@ -16,8 +18,6 @@ $create-class-for-sprite-img: true;
 
 /* Mixin
 -------------------------- */
-
-/* Src : https://github.com/AdamBrodzinski/Retina-Sprites-for-Compass */
 
 @import "compass/utilities/sprites";
 
@@ -109,7 +109,7 @@ $create-class-for-sprite-img: true;
     }
 }
 
-/* Icons
+/* Generate icon list
 -------------------------- */
 
 @if($create-class-for-sprite-img) {

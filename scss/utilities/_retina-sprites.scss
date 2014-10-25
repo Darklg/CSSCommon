@@ -1,7 +1,7 @@
 /*
 Name: Retina Sprites
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.9
+Version: 0.9.1
 License: MIT
 Forked from : @AdamBrodzinski | https://github.com/AdamBrodzinski/Retina-Sprites-for-Compass
 */
@@ -128,6 +128,7 @@ $create-class-for-sprite-img: true;
         @each $clazz in listFiles("images/css-sprite-2x/*") {
             .icn.#{$clazz} {
                 @extend .spritesimg2x;
+                @include _retina-sprite-2x(#{$clazz}, $sprites, $sprites2x, 0 ,0, true);
             }
         }
     }

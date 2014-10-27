@@ -1,19 +1,26 @@
 /*
 Name: Retina Sprites
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.9.1
+Version: 0.9.2
 License: MIT
 Forked from : @AdamBrodzinski | https://github.com/AdamBrodzinski/Retina-Sprites-for-Compass
 */
 
 $create-class-for-sprite-img: true;
 
+/* Cache values
+-------------------------- */
+
+$spriteUrl: sprite-url($sprites);
+$sprite2xUrl: sprite-url($sprites2x);
+$bgSize2x: ceil(image-width(sprite-path($sprites2x)) / 2);
+
 /* Load sprites
 -------------------------- */
 
-.spritesbgfix {
-    background: $sprites2x;
-    background: $sprites;
+.compassbugfix {
+    background: $spriteUrl;
+    background: $sprite2xUrl;
 }
 
 /* Mixin
@@ -57,7 +64,7 @@ $create-class-for-sprite-img: true;
         background-position: sprite-position($sprites, $name, -$pad, -$pad);
     }
     @else {
-        background: sprite-url($sprites) no-repeat sprite-position($sprites, $name, -$pad, -$pad);
+        background: $spriteUrl no-repeat sprite-position($sprites, $name, -$pad, -$pad);
     }
     @if $hover == true {
         $name_hover: $name + _hover;
@@ -77,15 +84,14 @@ $create-class-for-sprite-img: true;
 }
 
 @mixin _retina-sprite-2x($name, $sprites, $sprites2x, $hover, $active, $onlypos, $dimensions: true, $pad: 0) {
-    $bg-size: ceil(image-width(sprite-path($sprites2x)) / 2);
     & {
         $pos: sprite-position($sprites2x, $name, -$pad * 2, -$pad * 2);
         @if $onlypos == true {
             background-position: nth($pos, 1) / 2 nth($pos, 2) / 2;
         }
         @else {
-            background: sprite-url($sprites2x) no-repeat (nth($pos, 1) / 2 nth($pos, 2) / 2);
-            background-size: $bg-size auto;
+            background: $sprite2xUrl no-repeat (nth($pos, 1) / 2 nth($pos, 2) / 2);
+            background-size: $bgSize2x auto;
         }
         //  sprite-path() returns the path of the generated sprite sheet, which
         //  image-width() calculates the width of. the ceil() is in place in case
@@ -115,15 +121,14 @@ $create-class-for-sprite-img: true;
 @if($create-class-for-sprite-img) {
     @each $clazz in listFiles("images/css-sprite/*") {
         .icn.#{$clazz} {
-            @extend .spritesbgfix;
+            @extend .compassbugfix;
             @include _retina-sprite-1x(#{$clazz}, $sprites, $sprites2x, 0 ,0, true);
         }
     }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
         .spritesimg2x {
-            $bg-size: ceil(image-width(sprite-path($sprites2x)) / 2);
             background: $sprites2x;
-            background-size: $bg-size auto;
+            background-size: $bgSize2x auto;
         }
         @each $clazz in listFiles("images/css-sprite-2x/*") {
             .icn.#{$clazz} {

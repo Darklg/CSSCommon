@@ -1,7 +1,7 @@
 /*
 Name: Retina Sprites
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.9.2
+Version: 0.9.3
 License: MIT
 Forked from : @AdamBrodzinski | https://github.com/AdamBrodzinski/Retina-Sprites-for-Compass
 */
@@ -19,8 +19,8 @@ $bgSize2x: ceil(image-width(sprite-path($sprites2x)) / 2);
 -------------------------- */
 
 .compassbugfix {
-    background: $spriteUrl;
     background: $sprite2xUrl;
+    background: $spriteUrl;
 }
 
 /* Mixin

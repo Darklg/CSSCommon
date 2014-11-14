@@ -3,7 +3,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.2.1
+Version: 2.2.2
 License: MIT
 */
 
@@ -13,6 +13,7 @@ License: MIT
 
 .cssc-form:after,
 .form-append:after,
+.cssc-form .twoboxes:after,
 .cssc-form .box:after {
     content: " ";
     display: block;
@@ -46,20 +47,12 @@ License: MIT
 
 /* Two boxes side to side */
 
-.cssc-form .twoboxes {
-    overflow: hidden;
-}
-
 .cssc-form .twoboxes li.box {
     float: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 50%;
-}
-
-.lt_ie8 .cssc-form .twoboxes li.box {
-    width: 43%;
 }
 
 /* Labels
@@ -110,8 +103,7 @@ button {
 
 .cssc-form input[type=radio],
 .cssc-form input[type=checkbox] {
-    margin: 0;
-    vertical-align: baseline;
+    vertical-align: 0;
 }
 
 /* Reset */
@@ -146,18 +138,6 @@ button {
 .cssc-form .fake-input,
 .cssc-form [disabled] {
     cursor: not-allowed;
-}
-
-/* IE<8 fix */
-
-.lt_ie8 .inputbase,
-.lt_ie8 .inputreset,
-.lt_ie8 .cssc-form textarea,
-.lt_ie8 .cssc-form .fake-input,
-.lt_ie8 .cssc-form input[type=text],
-.lt_ie8 .cssc-form input[type=email],
-.lt_ie8 .cssc-form input[type=password] {
-    width: 90%;
 }
 
 /* Select */
@@ -215,47 +195,6 @@ button {
     background-color: #fff;
 }
 
-/* Errors
--------------------------- */
-
-.cssc-form input[type=url]:not(:focus):invalid,
-.cssc-form input[type=email]:not(:focus):invalid {
-    border-color: #C33;
-}
-
-/* Placeholder colors : dont merge selectors ! */
-
-.cssc-form [disabled],
-.cssc-form .fake-input {
-    color: #B0B0B0;
-}
-
-::-webkit-input-placeholder {
-    color: #A0A0A0;
-}
-
-:-moz-placeholder {
-    color: #A0A0A0;
-}
-
-:-ms-input-placeholder {
-    color: #A0A0A0;
-}
-
-/* Validation messages forms */
-
-::-webkit-validation-bubble-message,
-::-webkit-validation-bubble-arrow {
-    border-color: rgba(0,0,0,.2);
-    color: #333;
-    background: rgba(255,255,255,.95);
-    box-shadow: none;
-}
-
-::-webkit-validation-bubble-text-block {
-    font: 13px/1.4 sans-serif;
-}
-
 /* Append form
    ----------------------- */
 
@@ -267,10 +206,6 @@ button {
 .form-append > * {
     float: left;
     width: auto;
-}
-
-.lt_ie8 .form-append > * {
-    max-width: 200px;
 }
 
 /* Responsive float form
@@ -479,6 +414,47 @@ button {
 
 .cssc-form--default.block-form .side-small {
     line-height: 25px;
+}
+
+/* Errors
+-------------------------- */
+
+.cssc-form input[type=url]:not(:focus):not(:default):invalid,
+.cssc-form input[type=email]:not(:focus):not(:default):invalid {
+    border-color: #C33;
+}
+
+/* Placeholder colors : dont merge selectors ! */
+
+.cssc-form [disabled],
+.cssc-form .fake-input {
+    color: #B0B0B0;
+}
+
+::-webkit-input-placeholder {
+    color: #A0A0A0;
+}
+
+:-moz-placeholder {
+    color: #A0A0A0;
+}
+
+:-ms-input-placeholder {
+    color: #A0A0A0;
+}
+
+/* Validation messages forms */
+
+::-webkit-validation-bubble-message,
+::-webkit-validation-bubble-arrow {
+    border-color: rgba(0,0,0,.2);
+    color: #333;
+    background: rgba(255,255,255,.95);
+    box-shadow: none;
+}
+
+::-webkit-validation-bubble-text-block {
+    font: 13px/1.4 sans-serif;
 }
 
 /* Autocomplete

@@ -13,6 +13,8 @@ License: MIT
 
 .cssc-button {
     display: inline-block;
+    z-index: 1;
+    position: relative;
     -webkit-appearance: none;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -32,8 +34,6 @@ License: MIT
     -webkit-user-drag: none;
     -moz-user-drag: -moz-none;
     user-drag: none;
-    *zoom: 1;
-    *display: inline;
 }
 
 .cssc-button:hover,
@@ -68,13 +68,12 @@ License: MIT
 ---------------------------------------------------------- */
 
 /* Default themes
-   ----------------------- */
+-------------------------- */
 
 .cssc-button--default {
     height: 25px;
     padding: 0 8px;
     border: 1px solid #ccc;
-    -webkit-border-radius: 3px;
     border-radius: 3px;
     text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
     font: 12px/25px sans-serif;
@@ -113,7 +112,7 @@ License: MIT
 }
 
 /* Buttons' modes
-   ----------------------- */
+-------------------------- */
 
 .cssc-button--wide {
     display: block;
@@ -121,7 +120,7 @@ License: MIT
 }
 
 /* Buttons' sizes
-   ----------------------- */
+-------------------------- */
 
 .cssc-button--small {
     height: 20px;
@@ -171,12 +170,11 @@ License: MIT
 }
 
 .round-button {
-    -webkit-border-radius: 99px;
     border-radius: 99px;
 }
 
 /* Buttons with an icon
-   ----------------------- */
+-------------------------- */
 
 .btn-phone:before {
     content: '☎';
@@ -207,7 +205,7 @@ License: MIT
 ---------------------------------------------------------- */
 
 /* Container
-   ----------------------- */
+-------------------------- */
 
 .cssc-button-container {
     z-index: 1;
@@ -232,7 +230,7 @@ License: MIT
 }
 
 /* Double button
-   ----------------------- */
+-------------------------- */
 
 .cssc-button-double {
     height: auto;
@@ -260,27 +258,15 @@ License: MIT
 .button-group {
     display: inline-block;
     vertical-align: middle;
-    *display: inline;
-    *zoom: 1;
 }
 
-.button-group .cssc-button {
-    z-index: 1;
-    position: relative;
-    -webkit-border-radius: 0;
-    border-radius: 0;
+.button-group .cssc-button:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .button-group .cssc-button + .cssc-button {
     margin-left: -1px;
-}
-
-.button-group .cssc-button:first-child {
-    -webkit-border-radius: 3px 0 0 3px;
-    border-radius: 3px 0 0 3px;
-}
-
-.button-group .cssc-button:last-child {
-    -webkit-border-radius: 0 3px 3px 0;
-    border-radius: 0 3px 3px 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }

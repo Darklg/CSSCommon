@@ -3,7 +3,7 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.10
+Version: 1.10.1
 License: MIT
 */
 
@@ -189,7 +189,7 @@ License: MIT
     display: none;
 }
 
-@media(min-width:861px) {
+@media(min-width:1024px) {
     .hidden-on-full,
     .visible-only-tablet,
     .visible-only-phone {
@@ -197,7 +197,7 @@ License: MIT
     }
 }
 
-@media(max-width:860px) and (min-width:521px) {
+@media(max-width:1023px) and (min-width:501px) {
     .hidden-on-tablet,
     .visible-only-full,
     .visible-only-phone {
@@ -205,7 +205,7 @@ License: MIT
     }
 }
 
-@media(max-width:520px) {
+@media(max-width:500px) {
     .hidden-on-phone,
     .visible-only-full,
     .visible-only-tablet {

@@ -3,16 +3,17 @@
 /*
 Name: Grids
 URL: http://github.com/Darklg/CSSCommon
-Version: 3.2.1
+Version: 4.0
 License: MIT
 */
 
 .cssc-grid {
-    clear: both;
     display: block;
+    clear: both;
     max-width: 100%;
 }
 
+.cssc-grid:before,
 .cssc-grid:after {
     content: " ";
     display: block;
@@ -23,56 +24,15 @@ License: MIT
 }
 
 .cssc-grid > * {
-    display: block;
     float: left;
-    zoom: 1;
     min-height: 1px;
 }
-
-/* ----------------------------------------------------------
-  Grille 940-24-20 : 940px / 24 cols / Gout. 20px
----------------------------------------------------------- */
-
-.cssc-grid.gri-940-24-20 {
-    width: 940px;
-}
-
-.gri-940-24-20 > * + * {
-    margin-left: 20px;
-}
-
-.gri-940-24-20 .col-1 {width: 20px}
-.gri-940-24-20 .col-2 {width: 60px}
-.gri-940-24-20 .col-3 {width: 100px}
-.gri-940-24-20 .col-4 {width: 140px}
-.gri-940-24-20 .col-5 {width: 180px}
-.gri-940-24-20 .col-6 {width: 220px}
-.gri-940-24-20 .col-7 {width: 260px}
-.gri-940-24-20 .col-8 {width: 300px}
-.gri-940-24-20 .col-9 {width: 340px}
-.gri-940-24-20 .col-10 {width: 380px}
-.gri-940-24-20 .col-11 {width: 420px}
-.gri-940-24-20 .col-12 {width: 460px}
-.gri-940-24-20 .col-13 {width: 500px}
-.gri-940-24-20 .col-14 {width: 540px}
-.gri-940-24-20 .col-15 {width: 580px}
-.gri-940-24-20 .col-16 {width: 620px}
-.gri-940-24-20 .col-17 {width: 660px}
-.gri-940-24-20 .col-18 {width: 700px}
-.gri-940-24-20 .col-19 {width: 740px}
-.gri-940-24-20 .col-20 {width: 780px}
-.gri-940-24-20 .col-21 {width: 820px}
-.gri-940-24-20 .col-22 {width: 860px}
-.gri-940-24-20 .col-23 {width: 900px}
-.gri-940-24-20 .col-24 {width: 940px}
-
-/* <3 http://grid.mindplay.dk/ <3 */
 
 /* ----------------------------------------------------------
   Grille fluide
 ---------------------------------------------------------- */
 
-.cssc-grid.fluid-grid {
+.fluid-grid {
     z-index: 1;
     position: relative;
     width: auto;
@@ -80,59 +40,114 @@ License: MIT
     max-width: none;
 }
 
-.cssc-grid.fluid-grid > * {
+.fluid-grid > * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 10px;
 }
 
-/* IE < 8 Fixes */
-
-.lt_ie8 .cssc-grid.fluid-grid {
-    width: 100%;
-}
-
-.lt_ie8 .cssc-grid.fluid-grid > * {
-    padding: 0;
-}
-
-/* Colonnes
+/* Margin
 -------------------------- */
 
-.fluid-grid .col-10p {width: 10%;}
-.fluid-grid .col-20p {width: 20%;}
-.fluid-grid .col-25p {width: 25%;}
-.fluid-grid .col-30p {width: 30%;}
-.fluid-grid .col-33p {width: 33.333%;}
-.fluid-grid .col-40p {width: 40%;}
-.fluid-grid .col-50p {width: 50%;}
-.fluid-grid .col-60p {width: 60%;}
-.fluid-grid .col-66p {width: 66.666%;}
-.fluid-grid .col-75p {width: 75%;}
-.fluid-grid .col-80p {width: 80%;}
+.fluid-grid--20 {margin: 0 -20px}
+.fluid-grid--20 > * {padding: 0 20px}
+.fluid-grid--10 {margin: 0 -10px}
+.fluid-grid--10 > * {padding: 0 10px}
+
+/* Columns
+-------------------------- */
+
+.col-10p {width: 10%}
+.col-20p {width: 20%}
+.col-25p {width: 25%}
+.col-30p {width: 30%}
+.col-33p {width: 33.333%}
+.col-40p {width: 40%}
+.col-45p {width: 45%}
+.col-50p {width: 50%}
+.col-55p {width: 55%}
+.col-60p {width: 60%}
+.col-66p {width: 66.667%}
+.col-75p {width: 75%}
+.col-80p {width: 80%}
+.col-90p {width: 90%}
+.col-100p {width: 100%}
 
 /* Responsive
 -------------------------- */
 
-@media(max-width:860px) {
-    .fluid-grid.fluid-grid--responsive > .col-80p,
-    .fluid-grid.fluid-grid--responsive > .col-75p,
-    .fluid-grid.fluid-grid--responsive > .col-66p,
-    .fluid-grid.fluid-grid--responsive > .col-60p,
-    .fluid-grid.fluid-grid--responsive > .col-50p {
-        float: none!important;
-        width: 100%!important;
-    }
+@media(max-width:1023px) {
+    /* Margin */
+    .tab--fluid-grid--20 {margin: 0 -20px}
+    .tab--fluid-grid--20 > * {padding: 0 20px}
+    .tab--fluid-grid--10 {margin: 0 -10px}
+    .tab--fluid-grid--10 > * {padding: 0 10px}
 
-    .fluid-grid.fluid-grid--responsive > * {
-        width: 50%;
-    }
+    /* Columns */
+    .tab--col-10p {width: 10%}
+    .tab--col-20p {width: 20%}
+    .tab--col-25p {width: 25%}
+    .tab--col-30p {width: 30%}
+    .tab--col-33p {width: 33.333%}
+    .tab--col-40p {width: 40%}
+    .tab--col-45p {width: 45%}
+    .tab--col-50p {width: 50%}
+    .tab--col-55p {width: 55%}
+    .tab--col-60p {width: 60%}
+    .tab--col-66p {width: 66.667%}
+    .tab--col-75p {width: 75%}
+    .tab--col-80p {width: 80%}
+    .tab--col-90p {width: 90%}
+    .tab--col-100p {width: 100%}
 }
 
-@media(max-width:520px) {
-    .fluid-grid.fluid-grid--responsive > * {
-        float: none!important;
-        width: 100%!important;
-    }
+@media(max-width:767px) {
+    /* Margin */
+    .tabv--fluid-grid--20 {margin: 0 -20px}
+    .tabv--fluid-grid--20 > * {padding: 0 20px}
+    .tabv--fluid-grid--10 {margin: 0 -10px}
+    .tabv--fluid-grid--10 > * {padding: 0 10px}
+
+    /* Columns */
+    .tabv--col-10p {width: 10%}
+    .tabv--col-20p {width: 20%}
+    .tabv--col-25p {width: 25%}
+    .tabv--col-30p {width: 30%}
+    .tabv--col-33p {width: 33.333%}
+    .tabv--col-40p {width: 40%}
+    .tabv--col-45p {width: 45%}
+    .tabv--col-50p {width: 50%}
+    .tabv--col-55p {width: 55%}
+    .tabv--col-60p {width: 60%}
+    .tabv--col-66p {width: 66.667%}
+    .tabv--col-75p {width: 75%}
+    .tabv--col-80p {width: 80%}
+    .tabv--col-90p {width: 90%}
+    .tabv--col-100p {width: 100%}
+}
+
+@media(max-width:500px) {
+    /* Margin */
+    .mob--fluid-grid--20 {margin: 0 -20px}
+    .mob--fluid-grid--20 > * {padding: 0 20px}
+    .mob--fluid-grid--10 {margin: 0 -10px}
+    .mob--fluid-grid--10 > * {padding: 0 10px}
+
+    /* Columns */
+    .mob--col-10p {width: 10%}
+    .mob--col-20p {width: 20%}
+    .mob--col-25p {width: 25%}
+    .mob--col-30p {width: 30%}
+    .mob--col-33p {width: 33.333%}
+    .mob--col-40p {width: 40%}
+    .mob--col-45p {width: 45%}
+    .mob--col-50p {width: 50%}
+    .mob--col-55p {width: 55%}
+    .mob--col-60p {width: 60%}
+    .mob--col-66p {width: 66.667%}
+    .mob--col-75p {width: 75%}
+    .mob--col-80p {width: 80%}
+    .mob--col-90p {width: 90%}
+    .mob--col-100p {width: 100%}
 }

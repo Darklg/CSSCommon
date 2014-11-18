@@ -1,18 +1,18 @@
 <section class="block-content centered-container" id="bc-common"><div>
     <h2 id="cssc-common">&Eacute;léments récurrents</h2>
     <div>
-        <div class="cssc-grid gri-940-24-20 cssc-block">
-            <div class="col-8">
+        <div class="cssc-grid fluid-grid cssc-block">
+            <div class="col-33p">
                 <div class="cssc-panel cssc-panel--default">
                     <h3>Panneau</h3>
                     <p>Mise en avant de texte.</p>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-33p">
                 <h3>Coupure du texte en CSS</h3>
                 <p class="cssc-oneline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.</p>
             </div>
-            <div class="col-8">
+            <div class="col-33p">
                 <h3>Effet Tiroir</h3>
                 <div class="wdrw">
                     <p>
@@ -24,8 +24,8 @@
                 </div>
             </div>
         </div>
-        <div class="cssc-grid gri-940-24-20 cssc-block">
-            <div class="col-8">
+        <div class="cssc-grid fluid-grid cssc-block">
+            <div class="col-33p">
                 <h3>
                     Block media
                 </h3>
@@ -38,11 +38,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-33p">
                 <h3>Remplacement d'image</h3>
                 <span class="ir demo-ir">Texte alternatif</span>
             </div>
-            <div class="col-8">
+            <div class="col-33p">
                 <h3>Infobulle</h3>
                 <p>
                     <a href="#" class="tooltip tooltip--default">
@@ -57,8 +57,8 @@
                 </p>
             </div>
         </div>
-        <div class="cssc-grid gri-940-24-20 cssc-block">
-            <div class="col-8">
+        <div class="cssc-grid fluid-grid cssc-block">
+            <div class="col-33p">
                 <h3>Centrage vertical</h3>
                 <div class="vertical-center">
                     <div class="vertical-center__wrapper">
@@ -68,7 +68,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-33p">
                 <h3>Barre d’avancement</h3>
                 <p>
                     <span class="progress-bar progress-bar--default">
@@ -85,7 +85,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-33p">
                 <div class="cssc-sep cssc-sep--default cssc-sep-before cssc-sep-after">
                     <h3>Séparateurs</h3>
                     <p>The world needs dreamers and the world needs doers. But above all, the world needs dreamers who do — Sarah Ban Breathnach.</p>
@@ -99,8 +99,8 @@
 
 
 <section class="block-content centered-container"><div>
-    <div class="cssc-grid gri-940-24-20">
-        <div class="col-11">
+    <div class="cssc-grid fluid-grid">
+        <div class="col-50p">
             <h2 id="cssc-messages">Messages d'avertissement</h2>
             <ul class="cssc-messages">
                 <li><a class="error" href="#">lorem ipsum</a></li>
@@ -109,8 +109,7 @@
                 <li><a class="warning" href="#">consectetur adipiscing elit</a></li>
             </ul>
         </div>
-        <div class="col-2">&nbsp;</div>
-        <div class="col-11">
+        <div class="col-50p">
             <h2 id="cssc-code">Présentation de code</h2>
             <h3>Balise &lt;pre /&gt;</h3>
             <pre>&lt;script&gt;

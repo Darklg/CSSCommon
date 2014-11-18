@@ -7,8 +7,8 @@
             Les autres styles HTML sont disponibles à tous les niveaux du DOM.
         </p>
     </div>
-    <div class="cssc-grid gri-940-24-20">
-        <div class="col-8">
+    <div class="cssc-grid fluid-grid">
+        <div class="col-33p">
             <h3>Lists</h3>
             <div class="cssc-content">
                 <h4>Unordered list</h4>
@@ -39,7 +39,7 @@
                 </ol>
             </div>
         </div>
-        <div class="col-8">
+        <div class="col-33p">
             <h3>Content</h3>
             <div class="cssc-content">
                 <p>
@@ -61,7 +61,7 @@
                 </p>
                 </div>
         </div>
-        <div class="col-8">
+        <div class="col-33p">
             <div class="cssc-content">
                 <h1>Title lvl. 1</h1>
                 <h2>Title lvl. 2</h2>

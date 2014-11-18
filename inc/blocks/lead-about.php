@@ -1,8 +1,8 @@
 <div class="centered-container container-about">
     <section>
         <div class="cssc-content">
-            <div class="cssc-grid gri-940-24-20">
-                <div class="col-12">
+            <div class="cssc-grid fluid-grid">
+                <div class="col-50p">
                     <h2>Qu'est-ce que c'est ?</h2>
                     <p>
                         <strong>CSS Common</strong>
@@ -25,7 +25,7 @@
                         <li>Des <strong>modules</strong> supplémentaires pour chaque besoin.</li>
                     </ul>
                 </div>
-                <div class="col-12">
+                <div class="col-50p">
                     <h3>Responsive web design</h3>
                     <p>
                         Un exemple de

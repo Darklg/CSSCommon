@@ -103,13 +103,13 @@ include dirname(__FILE__).'/../blocks/common.php';
         <p>Cet objet permet de créer une transition entre deux images. Par exemple, un push avec <abbr title="Call to action">CTA</abbr>.</p>
     </div>
     <h3>Push avec simple fondu</h3>
-    <div class="cssc-grid gri-940-24-20">
-        <div class="col-8">
+    <div class="cssc-grid fluid-grid">
+        <div class="col-33p">
             <a href="#" class="cssc-push push-simple">
                 <span class="after">Texte alternatif</span>
             </a>
         </div>
-        <div class="col-16">
+        <div class="col-66p">
             <p>
                 Pas de pseudo-classes, &eacute;tant donn&eacute; que certains navigateurs ne supportent pas les transitions.
                 <br />
@@ -123,14 +123,14 @@ include dirname(__FILE__).'/../blocks/common.php';
         </div>
     </div>
     <h3>Push avec double fondu</h3>
-    <div class="cssc-grid gri-940-24-20">
-        <div class="col-8 example_right">
+    <div class="cssc-grid fluid-grid">
+        <div class="col-33p">
             <a href="#" class="cssc-push push-double">
                 <span class="before">Texte alternatif</span>
                 <span class="after"></span>
             </a>
         </div>
-        <div class="col-16">
+        <div class="col-66p">
             <p>
                 Moins de soucis en cas de sprite avec deux images semi-transparentes.
                 <br />

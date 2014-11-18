@@ -7,8 +7,8 @@
         <h2 id="cssc-tables">Tableaux</h2>
     </div>
 
-    <div class="cssc-grid gri-940-24-20">
-        <div class="col-12">
+    <div class="cssc-grid fluid-grid">
+        <div class="col-50p">
             <h3>Thème par défaut</h3>
             <table class="cssc-table cssc-table--default">
                 <thead>
@@ -41,7 +41,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="col-12">
+        <div class="col-50p">
             <h3>Thème "basic"</h3>
             <table class="cssc-table cssc-table--default cssc-table--basic">
                 <thead>
@@ -68,8 +68,8 @@
         </div>
     </div>
 
-    <div class="cssc-grid gri-940-24-20">
-        <div class="col-12">
+    <div class="cssc-grid fluid-grid">
+        <div class="col-50p">
             <h3>Thème "tight"</h3>
             <table class="cssc-table cssc-table--default cssc-table--tight">
                 <thead>
@@ -103,7 +103,7 @@
             </table>
 
         </div>
-        <div class="col-12">
+        <div class="col-50p">
             <h3>Thème "tight" + "basic"</h3>
 
             <table class="cssc-table cssc-table--default cssc-table--tight cssc-table--basic">
@@ -164,8 +164,8 @@
     </table>
 
     <h3>Thème "Rounded"</h3>
-    <div class="cssc-grid gri-940-24-20">
-        <div class="col-12">
+    <div class="cssc-grid fluid-grid">
+        <div class="col-50p">
             <table class="cssc-table cssc-table--default cssc-table--rounded">
                 <thead>
                     <tr>
@@ -195,7 +195,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="col-12">
+        <div class="col-50p">
             <table class="cssc-table cssc-table--default cssc-table--rounded">
                 <thead>
                     <tr>

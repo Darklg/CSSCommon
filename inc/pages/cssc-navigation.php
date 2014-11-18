@@ -213,8 +213,8 @@
     </ul>
 
     <h3>Pagination</h3>
-    <div class="cssc-grid gri-940-24-20">
-        <div class="col-8">
+    <div class="cssc-grid fluid-grid">
+        <div class="col-33p">
             <h4>Classique</h4>
             <ul class="cssc-pagination cssc-pagination--default">
                 <li><a href="#" class="prev">&lsaquo; Pr&eacute;c&eacute;dent</a></li>
@@ -228,7 +228,7 @@
                 <li><a href="#" class="next">Suivant &rsaquo;</a></li>
             </ul>
         </div>
-        <div class="col-8">
+        <div class="col-33p">
             <h4 class="center">Centrée</h4>
             <ul class="cssc-pagination cssc-pagination--default cssc-pagination--center">
                 <li><a href="#" class="prev">&lsaquo; Pr&eacute;c&eacute;dent</a></li>
@@ -242,7 +242,7 @@
                 <li><a href="#" class="next">Suivant &rsaquo;</a></li>
             </ul>
         </div>
-        <div class="col-8">
+        <div class="col-33p">
             <h4 class="center">Pagination bullet</h4>
             <ul class="cssc-bullet">
                 <li>&bull;</li><!--

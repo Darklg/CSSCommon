@@ -72,13 +72,13 @@
         <h2 id="cssc-layouts">Grilles responsives</h2>
     </div>
     <div class="cssc-grid fluid-grid fluid-grid--responsive">
-        <div class="col-50p">
+        <div class="col-50p tab--col-100p">
             <div class="grid-label">
                 50%
                 <span class="hidden-on-full">(élargi à 100%)</span>
             </div>
         </div>
-        <div class="col-50p">
+        <div class="col-50p tab--col-100p">
             <div class="grid-label">
                 50%
                 <span class="hidden-on-full">(élargi à 100%)</span>
@@ -86,110 +86,109 @@
         </div>
     </div>
     <div class="cssc-grid fluid-grid fluid-grid--responsive">
-        <div class="col-33p">
+        <div class="col-33p tab--col-50p mob--col-100p">
             <div class="grid-label grid-label-even">
                 33%
                 <span class="visible-only-tablet">(élargi à 50%)</span>
                 <span class="visible-only-phone">(élargi à 100%)</span>
             </div>
         </div>
-        <div class="col-33p">
+        <div class="col-33p tab--col-50p mob--col-100p">
             <div class="grid-label grid-label-even">
                 33%
                 <span class="visible-only-tablet">(élargi à 50%)</span>
                 <span class="visible-only-phone">(élargi à 100%)</span>
             </div>
         </div>
-        <div class="col-33p">
+        <div class="col-33p tab--col-100p">
             <div class="grid-label grid-label-even">
                 33%
+                <span class="hidden-on-full">(élargi à 100%)</span>
+            </div>
+        </div>
+    </div>
+    <div class="cssc-grid fluid-grid fluid-grid--responsive">
+        <div class="col-25p tab--col-50p mob--col-100p">
+            <div class="grid-label">
+                25%
+                <span class="visible-only-tablet">(élargi à 50%)</span>
+                <span class="visible-only-phone">(élargi à 100%)</span>
+            </div>
+        </div>
+        <div class="col-25p tab--col-50p mob--col-100p">
+            <div class="grid-label">
+                25%
+                <span class="visible-only-tablet">(élargi à 50%)</span>
+                <span class="visible-only-phone">(élargi à 100%)</span>
+            </div>
+        </div>
+        <div class="col-25p tab--col-50p mob--col-100p">
+            <div class="grid-label">
+                25%
+                <span class="visible-only-tablet">(élargi à 50%)</span>
+                <span class="visible-only-phone">(élargi à 100%)</span>
+            </div>
+        </div>
+        <div class="col-25p tab--col-50p mob--col-100p">
+            <div class="grid-label">
+                25%
                 <span class="visible-only-tablet">(élargi à 50%)</span>
                 <span class="visible-only-phone">(élargi à 100%)</span>
             </div>
         </div>
     </div>
     <div class="cssc-grid fluid-grid fluid-grid--responsive">
-        <div class="col-25p">
-            <div class="grid-label">
-                25%
+        <div class="col-20p tab--col-50p mob--col-100p">
+            <div class="grid-label grid-label-even">
+                20%
                 <span class="visible-only-tablet">(élargi à 50%)</span>
                 <span class="visible-only-phone">(élargi à 100%)</span>
             </div>
         </div>
-        <div class="col-25p">
-            <div class="grid-label">
-                25%
+        <div class="col-20p tab--col-50p mob--col-100p">
+            <div class="grid-label grid-label-even">
+                20%
                 <span class="visible-only-tablet">(élargi à 50%)</span>
                 <span class="visible-only-phone">(élargi à 100%)</span>
             </div>
         </div>
-        <div class="col-25p">
-            <div class="grid-label">
-                25%
-                <span class="visible-only-tablet">(élargi à 50%)</span>
+        <div class="col-20p tab--col-33p mob--col-100p">
+            <div class="grid-label grid-label-even">
+                20%
+                <span class="visible-only-tablet">(élargi à 33%)</span>
                 <span class="visible-only-phone">(élargi à 100%)</span>
             </div>
         </div>
-        <div class="col-25p">
-            <div class="grid-label">
-                25%
-                <span class="visible-only-tablet">(élargi à 50%)</span>
+        <div class="col-20p tab--col-33p mob--col-100p">
+            <div class="grid-label grid-label-even">
+                20%
+                <span class="visible-only-tablet">(élargi à 33%)</span>
+                <span class="visible-only-phone">(élargi à 100%)</span>
+            </div>
+        </div>
+        <div class="col-20p tab--col-33p mob--col-100p">
+            <div class="grid-label grid-label-even">
+                20%
+                <span class="visible-only-tablet">(élargi à 33%)</span>
                 <span class="visible-only-phone">(élargi à 100%)</span>
             </div>
         </div>
     </div>
     <div class="cssc-grid fluid-grid fluid-grid--responsive">
-        <div class="col-20p">
-            <div class="grid-label grid-label-even">
-                20%
-                <span class="visible-only-tablet">(élargi à 50%)</span>
-                <span class="visible-only-phone">(élargi à 100%)</span>
-            </div>
-        </div>
-        <div class="col-20p">
-            <div class="grid-label grid-label-even">
-                20%
-                <span class="visible-only-tablet">(élargi à 50%)</span>
-                <span class="visible-only-phone">(élargi à 100%)</span>
-            </div>
-        </div>
-        <div class="col-20p">
-            <div class="grid-label grid-label-even">
-                20%
-                <span class="visible-only-tablet">(élargi à 50%)</span>
-                <span class="visible-only-phone">(élargi à 100%)</span>
-            </div>
-        </div>
-        <div class="col-20p">
-            <div class="grid-label grid-label-even">
-                20%
-                <span class="visible-only-tablet">(élargi à 50%)</span>
-                <span class="visible-only-phone">(élargi à 100%)</span>
-            </div>
-        </div>
-        <div class="col-20p">
-            <div class="grid-label grid-label-even">
-                20%
-                <span class="visible-only-tablet">(élargi à 50%)</span>
-                <span class="visible-only-phone">(élargi à 100%)</span>
-            </div>
-        </div>
-    </div>
-    <div class="cssc-grid fluid-grid fluid-grid--responsive">
-        <div class="col-50p">
+        <div class="col-50p tab--col-100p">
             <div class="grid-label">
                 50%
                 <span class="hidden-on-full">(élargi à 100%)</span>
             </div>
         </div>
-        <div class="col-25p">
+        <div class="col-25p tab--col-50p mob--col-100p">
             <div class="grid-label">
                 25%
                 <span class="visible-only-tablet">(élargi à 50%)</span>
                 <span class="visible-only-phone">(élargi à 100%)</span>
             </div>
         </div>
-        <div class="col-25p">
+        <div class="col-25p tab--col-50p mob--col-100p">
             <div class="grid-label">
                 25%
                 <span class="visible-only-tablet">(élargi à 50%)</span>
@@ -198,13 +197,13 @@
         </div>
     </div>
     <div class="cssc-grid fluid-grid fluid-grid--responsive">
-        <div class="col-66p">
+        <div class="col-66p tab--col-100p">
             <div class="grid-label grid-label-even">
                 66%
                 <span class="hidden-on-full">(élargi à 100%)</span>
             </div>
         </div>
-        <div class="col-33p">
+        <div class="col-33p tab--col-50p mob--col-100p">
             <div class="grid-label grid-label-even">
                 33%
                 <span class="visible-only-tablet">(élargi à 50%)</span>

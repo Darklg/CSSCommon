@@ -95,3 +95,10 @@
         </div>
     </div>
 </div></section>
+
+<div class="cssc-modale cssc-modale--default">
+    <div class="cssc-modale__filter"></div>
+    <div class="cssc-modale__content">
+        <header class="cssc-modale__header">Lightbox header</header>
+    </div>
+</div>

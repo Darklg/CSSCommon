@@ -71,7 +71,7 @@
         </div>
         <h2 id="cssc-layouts">Grilles responsives</h2>
     </div>
-    <div class="cssc-grid fluid-grid fluid-grid--responsive">
+    <div class="cssc-grid fluid-grid">
         <div class="col-50p tab--col-100p">
             <div class="grid-label">
                 50%
@@ -85,7 +85,7 @@
             </div>
         </div>
     </div>
-    <div class="cssc-grid fluid-grid fluid-grid--responsive">
+    <div class="cssc-grid fluid-grid">
         <div class="col-33p tab--col-50p mob--col-100p">
             <div class="grid-label grid-label-even">
                 33%
@@ -107,7 +107,7 @@
             </div>
         </div>
     </div>
-    <div class="cssc-grid fluid-grid fluid-grid--responsive">
+    <div class="cssc-grid fluid-grid">
         <div class="col-25p tab--col-50p mob--col-100p">
             <div class="grid-label">
                 25%
@@ -137,7 +137,7 @@
             </div>
         </div>
     </div>
-    <div class="cssc-grid fluid-grid fluid-grid--responsive">
+    <div class="cssc-grid fluid-grid">
         <div class="col-20p tab--col-50p mob--col-100p">
             <div class="grid-label grid-label-even">
                 20%
@@ -174,7 +174,7 @@
             </div>
         </div>
     </div>
-    <div class="cssc-grid fluid-grid fluid-grid--responsive">
+    <div class="cssc-grid fluid-grid">
         <div class="col-50p tab--col-100p">
             <div class="grid-label">
                 50%
@@ -196,7 +196,7 @@
             </div>
         </div>
     </div>
-    <div class="cssc-grid fluid-grid fluid-grid--responsive">
+    <div class="cssc-grid fluid-grid">
         <div class="col-66p tab--col-100p">
             <div class="grid-label grid-label-even">
                 66%
@@ -212,17 +212,17 @@
         </div>
     </div>
 
-    <div class="cssc-grid fluid-grid fluid-grid--responsive">
+    <div class="cssc-grid fluid-grid">
         <div class="col-50p">
             <p><a href="#demo-fluid-grid-50p" class="cssc-button cssc-button--default show-html-button">Afficher HTML (50%)</a></p>
-            <pre contenteditable id="demo-fluid-grid-50p">&lt;div class=&quot;cssc-grid fluid-grid fluid-grid--responsive&quot;&gt;
+            <pre contenteditable id="demo-fluid-grid-50p">&lt;div class=&quot;cssc-grid fluid-grid&quot;&gt;
     &lt;div class="col-50p"&gt;50%&lt;/div&gt;
     &lt;div class="col-50p"&gt;50%&lt;/div&gt;
 &lt;/div&gt;</pre>
         </div>
         <div class="col-50p">
             <p><a href="#demo-fluid-grid-25p" class="cssc-button cssc-button--default show-html-button">Afficher HTML (25%)</a></p>
-            <pre contenteditable id="demo-fluid-grid-25p">&lt;div class=&quot;cssc-grid fluid-grid fluid-grid--responsive&quot;&gt;
+            <pre contenteditable id="demo-fluid-grid-25p">&lt;div class=&quot;cssc-grid fluid-grid&quot;&gt;
     &lt;div class="col-25p"&gt;25%&lt;/div&gt;
     &lt;div class="col-25p"&gt;25%&lt;/div&gt;
     &lt;div class="col-25p"&gt;25%&lt;/div&gt;

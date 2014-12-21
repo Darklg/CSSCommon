@@ -35,6 +35,9 @@ module.exports = function(grunt) {
             }
         },
         shell: {
+            regressiontest: {
+                command: 'casperjs test casper.js'
+            },
             postuglify: {
                 command: 'rm csscommon.css;',
                 stdout: true

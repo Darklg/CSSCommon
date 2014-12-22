@@ -12,7 +12,7 @@ casper.start().viewport(1280, 800);
 /* Test forms */
 casper.thenOpen('http://git.dev/CSSCommon/index.php?p=cssc-forms', function() {
     phantomCSS.screenshot('#set_form_block', 'cssc_button');
-    phantomCSS.screenshot('#cssc-forms-input li.box:first-child', 'cssc_form_field');
+    phantomCSS.screenshot('#cssc-forms-input', 'cssc_form_boxes');
     phantomCSS.screenshot('#cssc-forms-twoboxes', 'cssc_form_twoboxes');
 });
 

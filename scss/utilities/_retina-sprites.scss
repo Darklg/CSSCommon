@@ -1,7 +1,7 @@
 /*
 Name: Retina Sprites
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.9.3
+Version: 0.9.4
 License: MIT
 Forked from : @AdamBrodzinski | https://github.com/AdamBrodzinski/Retina-Sprites-for-Compass
 */
@@ -51,7 +51,7 @@ $bgSize2x: ceil(image-width(sprite-path($sprites2x)) / 2);
 //
 @mixin _retina-sprite($name, $sprites, $sprites2x, $hover, $active, $onlypos, $dimensions: true, $pad: 0) {
     @include _retina-sprite-1x($name, $sprites, $sprites2x, $hover, $active, $onlypos, $dimensions, $pad);
-    @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
         @include _retina-sprite-2x($name, $sprites, $sprites2x, $hover, $active, $onlypos, $dimensions, $pad);
     }
 }
@@ -125,7 +125,7 @@ $bgSize2x: ceil(image-width(sprite-path($sprites2x)) / 2);
             @include _retina-sprite-1x(#{$clazz}, $sprites, $sprites2x, 0 ,0, true);
         }
     }
-    @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
         .spritesimg2x {
             background: $sprites2x;
             background-size: $bgSize2x auto;

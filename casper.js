@@ -1,4 +1,3 @@
-
 /* Init PhantomCSS */
 var phantomCSS = require('node_modules/phantomcss/phantomcss.js');
 phantomCSS.init({
@@ -22,9 +21,27 @@ casper.thenOpen('http://git.dev/CSSCommon/index.php?p=cssc-forms', function() {
     phantomCSS.screenshot('#cssc-forms-twoboxes', 'cssc_form_twoboxes');
 });
 
+casper.then(function() {
+    this.mouse.move('#set_form_block'); // Test for :hover
+});
+casper.then(function() {
+    this.mouse.down('#set_form_block'); // Test for :active
+});
+casper.on('mouse.move', function(resource) {
+    phantomCSS.screenshot('#set_form_block', 'cssc_button-hover');
+});
+casper.on('mouse.down', function(resource) {
+    phantomCSS.screenshot('#set_form_block', 'cssc_button-active');
+});
+
 /* Generate PNG Diffs */
 casper
-    .then(function now_check_the_screenshots() {phantomCSS.compareAll();})
-    .then(function end_it() {casper.test.done();})
-    .run(function() {phantom.exit(phantomCSS.getExitStatus());});
-
+    .then(function now_check_the_screenshots() {
+        phantomCSS.compareAll();
+    })
+    .then(function end_it() {
+        casper.test.done();
+    })
+    .run(function() {
+        phantom.exit(phantomCSS.getExitStatus());
+    });

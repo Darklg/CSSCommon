@@ -39,7 +39,7 @@
                 </ol>
             </div>
         </div>
-        <div class="col-33p">
+        <div class="col-33p" id="cssc-content-text">
             <h3>Content</h3>
             <div class="cssc-content">
                 <p>
@@ -61,7 +61,7 @@
                 </p>
                 </div>
         </div>
-        <div class="col-33p">
+        <div class="col-33p" id="cssc-content-titles-quotes-labels">
             <div class="cssc-content">
                 <h1>Title lvl. 1</h1>
                 <h2>Title lvl. 2</h2>

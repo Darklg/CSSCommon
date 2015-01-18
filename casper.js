@@ -9,6 +9,12 @@ phantomCSS.init({
 /* Start casper */
 casper.start().viewport(1280, 800);
 
+/* Test content */
+casper.thenOpen('http://git.dev/CSSCommon/', function() {
+    phantomCSS.screenshot('#cssc-content-text', 'cssc_content_text');
+    phantomCSS.screenshot('#cssc-content-titles-quotes-labels', 'cssc_content_titles_quotes_labels');
+});
+
 /* Test forms */
 casper.thenOpen('http://git.dev/CSSCommon/index.php?p=cssc-forms', function() {
     phantomCSS.screenshot('#set_form_block', 'cssc_button');

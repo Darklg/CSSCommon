@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.5
+Version: 2.5.1
 License: MIT
 */
 
@@ -183,12 +183,12 @@ License: MIT
     overflow: hidden;
 }
 
-.bmedia >:first-child {
+.bmedia > :first-child {
     float: left;
     margin-right: 10px;
 }
 
-.bmedia-right >:first-child {
+.bmedia-right > :first-child {
     float: right;
     margin-left: 10px;
 }
@@ -642,7 +642,9 @@ pre {
     content: '';
     z-index: 1;
     position: absolute;
-    left: 50%;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 .cssc-sep-before:before {
@@ -664,7 +666,6 @@ pre {
 .cssc-sep--default:after {
     width: 20px;
     height: 5px;
-    margin-left: -10px;
     border-radius: 10px;
     background-color: #BDF;
 }

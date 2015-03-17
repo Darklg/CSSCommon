@@ -3,7 +3,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.5.1
+Version: 2.5.2
 License: MIT
 */
 
@@ -183,12 +183,12 @@ License: MIT
     overflow: hidden;
 }
 
-.bmedia > :first-child {
+.bmedia >:first-child {
     float: left;
     margin-right: 10px;
 }
 
-.bmedia-right > :first-child {
+.bmedia-right >:first-child {
     float: right;
     margin-left: 10px;
 }
@@ -391,6 +391,8 @@ pre {
     padding: 10px;
     color: #333;
     background-color: #e0e0e0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 /* Triangle bubble */

@@ -4,10 +4,16 @@
   Config
 ---------------------------------------------------------- */
 
-/* Colors & fonts */
+/* Fonts */
+
+$font-main: Helvetica, Arial, sans-serif;
+
+/* Colors */
 
 $color-main: #333333;
-$font-main: Helvetica, Arial, sans-serif;
+$color-fb: #3B5998;
+$color-twitter: #00ACED;
+$color-gplus: #DD4B39;
 
 /* Breakpoints */
 
@@ -15,6 +21,11 @@ $mobile-max: 767px;
 $tablet-min: 768px;
 $tablet-max: 1023px;
 $desktop-min: 1024px;
+
+/* Basic queries */
+
+$desktop_only:'min-width:'$desktop-min;
+$mobile_only:'max-width:'$mobile-max;
 
 /* Sprites */
 

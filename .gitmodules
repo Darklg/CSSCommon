@@ -1,0 +1,3 @@
+[submodule "scss/csscommon"]
+	path = scss/csscommon
+	url = git@github.com:Darklg/SassCSSCommon.git

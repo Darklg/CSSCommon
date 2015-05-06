@@ -1,74 +1,71 @@
 @charset "UTF-8";
-
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
 Version: 2.2.2
 License: MIT
 */
-
+/* ----------------------------------------------------------
+  Form : Core
+---------------------------------------------------------- */
 .cssc-form {
-    clear: both;
+  clear: both;
 }
 
 .cssc-form:after,
 .form-append:after,
 .cssc-form .twoboxes:after,
 .cssc-form .box:after {
-    content: " ";
-    display: block;
-    visibility: hidden;
-    clear: both;
-    height: 0;
+  content: " ";
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
 }
 
 /* Boxes
 -------------------------- */
-
 .cssc-form .box {
-    z-index: 1;
-    position: relative;
-    vertical-align: baseline;
+  z-index: 1;
+  position: relative;
+  vertical-align: baseline;
 }
 
 /* Submit box */
-
 .cssc-form .submit-box {
-    z-index: 1;
-    position: relative;
+  z-index: 1;
+  position: relative;
 }
 
 .cssc-form .submit-box button {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    right: 0;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* Two boxes side to side */
-
 .cssc-form .twoboxes li.box {
-    float: left;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 50%;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
 }
 
 /* Labels
 -------------------------- */
-
 .cssc-form .fake-label,
 .cssc-form label {
-    display: block;
-    line-height: inherit;
+  display: block;
+  line-height: inherit;
 }
 
 .float-form .fake-label,
 .float-form label {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .cssc-form .radio-box label,
@@ -77,37 +74,35 @@ License: MIT
 .cssc-form .checked-box label,
 .cssc-form.block-form .checked-box label,
 .cssc-form.float-form .checked-box label {
-    display: inline-block;
-    position: static;
-    width: auto;
-    padding: 0;
-    font-weight: normal;
-    line-height: inherit;
-    vertical-align: baseline;
+  display: inline-block;
+  position: static;
+  width: auto;
+  padding: 0;
+  font-weight: normal;
+  line-height: inherit;
+  vertical-align: baseline;
 }
 
 /* Fields
 -------------------------- */
-
 textarea {
-    max-width: 100%;
-    overflow: auto;
-    resize: vertical;
+  max-width: 100%;
+  overflow: auto;
+  resize: vertical;
 }
 
 input[type="submit"],
 input[type="image"],
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .cssc-form input[type=radio],
 .cssc-form input[type=checkbox] {
-    vertical-align: 0;
+  vertical-align: 0;
 }
 
 /* Reset */
-
 .inputreset,
 .inputbase,
 .cssc-form textarea,
@@ -116,237 +111,228 @@ button {
 .cssc-form input[type=url],
 .cssc-form input[type=email],
 .cssc-form input[type=password] {
-    -webkit-appearance: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-family: inherit;
-    vertical-align: middle;
-    outline: 0;
+  -webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: inherit;
+  vertical-align: middle;
+  outline: 0;
 }
 
 .cssc-form .fake-input {
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
 }
 
 .cssc-form .fake-input,
 .cssc-form [disabled] {
-    cursor: not-allowed;
+  cursor: not-allowed;
 }
 
 /* Select */
-
 .cssc-select {
-    display: block;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    overflow: hidden;
-    text-align: left;
-    text-indent: 0.01px;
-    text-overflow: ellipsis;
-    line-height: 1;
-    white-space: nowrap;
-    cursor: pointer;
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  text-align: left;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 .cssc-select:focus {
-    outline: none;
+  outline: none;
 }
 
 /* Help
 -------------------------- */
-
 .cssc-form small {
-    display: block;
+  display: block;
 }
 
 .cssc-form.block-form .side-small {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    right: 0;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* Autocomplete
 -------------------------- */
-
 .cssc-form .box.has-autocomplete {
-    z-index: 2;
+  z-index: 2;
 }
 
 .cssc-form .box-autocomplete {
-    z-index: 1;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    margin-top: 1px;
-    background-color: #fff;
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  margin-top: 1px;
+  background-color: #fff;
 }
 
 /* Append form
    ----------------------- */
-
 .form-append {
-    min-height: 1;
-    overflow: auto;
+  min-height: 1;
+  overflow: auto;
 }
 
 .form-append > * {
-    float: left;
-    width: auto;
+  float: left;
+  width: auto;
 }
 
 /* Responsive float form
 -------------------------- */
-
 /* fix float form */
+@media (max-width: 720px) {
+  .float-form.cssc-form--responsive .box {
+    padding-left: 0 !important;
+  }
 
-@media(max-width:720px) {
-    .float-form.cssc-form--responsive .box {
-        padding-left: 0!important;
-    }
+  .float-form.cssc-form--responsive .fake-label,
+  .float-form.cssc-form--responsive .box:not(.checked-box):not(.radio-box) label {
+    display: block;
+    position: static;
+    width: auto !important;
+    padding-right: 0 !important;
+    text-align: left;
+  }
 
-    .float-form.cssc-form--responsive .fake-label,
-    .float-form.cssc-form--responsive .box:not(.checked-box):not(.radio-box) label {
-        display: block;
-        position: static;
-        width: auto!important;
-        padding-right: 0!important;
-        text-align: left;
-    }
-
-    .float-form.cssc-form--responsive .box .long-label {
-        line-height: inherit!important;
-    }
+  .float-form.cssc-form--responsive .box .long-label {
+    line-height: inherit !important;
+  }
 }
-
 /* fix twoboxes */
-
-@media(max-width:720px) {
-    .cssc-form.cssc-form--responsive .twoboxes .box {
-        display: block;
-        float: none;
-        width: auto;
-        padding-right: 0!important;
-        padding-left: 0!important;
-    }
+@media (max-width: 720px) {
+  .cssc-form.cssc-form--responsive .twoboxes .box {
+    display: block;
+    float: none;
+    width: auto;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
 }
-
+/*
+Name: Forms
+URL: http://github.com/Darklg/CSSCommon
+Version: 2.2.2
+License: MIT
+*/
 /* ----------------------------------------------------------
-  Form theme
+  Form : Theme
 ---------------------------------------------------------- */
-
 .cssc-form--default {
-    margin-bottom: 20px;
-    max-width: 100%;
+  margin-bottom: 20px;
+  max-width: 100%;
 }
 
 /* Fieldsets */
-
 .cssc-form--default fieldset {
-    margin-bottom: 15px;
-    border-top: 1px solid #e0e0e0;
+  margin-bottom: 15px;
+  border-top: 1px solid #e0e0e0;
 }
 
 .cssc-form--default fieldset:last-child {
-    padding-bottom: 15px;
-    border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .cssc-form--default legend {
-    display: block;
-    margin-bottom: 10px;
-    padding-right: 5px;
-    font-size: 14px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  padding-right: 5px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 /* Boxes
 -------------------------- */
-
 .cssc-form--default .box {
-    margin-bottom: 10px;
-    min-height: 25px;
-    line-height: 25px;
+  margin-bottom: 10px;
+  min-height: 25px;
+  line-height: 25px;
 }
 
 .cssc-form--default .box:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .cssc-form--default .twoboxes li.box:first-child {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 .cssc-form--default .twoboxes li.box + li.box {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .cssc-form--default.float-form .twoboxes li.box + li.box {
-    padding-left: 140px;
+  padding-left: 140px;
 }
 
 /* Boxes with multiple fields */
-
 .cssc-form.cssc-form--default .multibox-box input[type=text],
 .cssc-form.cssc-form--default .multibox-box input[type=url],
 .cssc-form.cssc-form--default .multibox-box input[type=email],
 .cssc-form.cssc-form--default .multibox-box input[type=password] {
-    width: 65px;
+  width: 65px;
 }
 
 .cssc-form.cssc-form--default .multibox-box input.halfling {
-    width: 45px;
+  width: 45px;
 }
 
 /* Labels
 -------------------------- */
-
 .cssc-form--default.float-form .box {
-    padding-left: 130px;
+  padding-left: 130px;
 }
 
 .cssc-form--default.float-form .fake-label,
 .cssc-form--default.float-form label {
-    width: 120px;
-    padding-right: 10px;
-    text-align: right;
+  width: 120px;
+  padding-right: 10px;
+  text-align: right;
 }
 
 .cssc-form--default .fake-label,
 .cssc-form--default label {
-    font-size: 12px;
-    font-weight: bold;
-    cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .cssc-form--default.float-form .box .long-label {
-    top: -1px;
-    line-height: 13px;
+  top: -1px;
+  line-height: 13px;
 }
 
 .cssc-form--default .fake-label em,
 .cssc-form--default label em {
-    font-style: normal;
-    font-weight: bold;
-    color: #369;
+  font-style: normal;
+  font-weight: bold;
+  color: #369;
 }
 
 /* Fields
 -------------------------- */
-
 .inputbase,
 .cssc-select,
 .cssc-form--default textarea,
@@ -355,20 +341,20 @@ button {
 .cssc-form--default input[type=url],
 .cssc-form--default input[type=email],
 .cssc-form--default input[type=password] {
-    height: 25px;
-    padding: 0 5px;
-    border: 1px solid #999;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    font-size: 12px;
-    color: #333;
-    background: #fafafa no-repeat center right;
+  height: 25px;
+  padding: 0 5px;
+  border: 1px solid #999;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #333;
+  background: #fafafa no-repeat center right;
 }
 
 .cssc-select {
-    padding: 3px 23px 3px 5px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAQAAADvCgS4AAAAGklEQVR4AWNg+I8BcQGCyhAAXRlhpcQAQsoAMGIY6KADYAUAAAAASUVORK5CYII=);
+  padding: 3px 23px 3px 5px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAQAAADvCgS4AAAAGklEQVR4AWNg+I8BcQGCyhAAXRlhpcQAQsoAMGIY6KADYAUAAAAASUVORK5CYII=);
 }
 
 .cssc-form--default .fake-input,
@@ -377,12 +363,12 @@ button {
 .lt_ie9 .cssc-form--default input[type=url],
 .lt_ie9 .cssc-form--default input[type=email],
 .lt_ie9 .cssc-form--default input[type=password] {
-    line-height: 25px;
+  line-height: 25px;
 }
 
 .cssc-form--default textarea {
-    padding: 5px;
-    min-height: 80px;
+  padding: 5px;
+  min-height: 80px;
 }
 
 .inputbase:focus,
@@ -392,131 +378,125 @@ button {
 .cssc-form--default input[type=url]:focus,
 .cssc-form--default input[type=email]:focus,
 .cssc-form--default input[type=password]:focus {
-    border-color: #333;
-    color: #000;
-    background-color: #fff;
+  border-color: #333;
+  color: #000;
+  background-color: #fff;
 }
 
 .cssc-form--default input[type=radio],
 .cssc-form--default input[type=checkbox] {
-    width: 12px;
-    height: 12px;
+  width: 12px;
+  height: 12px;
 }
 
 /* Help
 -------------------------- */
-
 .cssc-form--default small {
-    font-size: 11px;
-    line-height: 16px;
-    color: #676767;
+  font-size: 11px;
+  line-height: 16px;
+  color: #676767;
 }
 
 .cssc-form--default.block-form .side-small {
-    line-height: 25px;
+  line-height: 25px;
 }
 
 /* Errors
 -------------------------- */
-
 .cssc-form input[type=url]:not(:focus):not(:default):invalid,
 .cssc-form input[type=email]:not(:focus):not(:default):invalid {
-    border-color: #C33;
+  border-color: #C33;
 }
 
 /* Placeholder colors : dont merge selectors ! */
-
 .cssc-form [disabled],
 .cssc-form .fake-input {
-    color: #B0B0B0;
+  color: #B0B0B0;
 }
 
 ::-webkit-input-placeholder {
-    color: #A0A0A0;
+  color: #A0A0A0;
 }
 
 :-moz-placeholder {
-    color: #A0A0A0;
+  color: #A0A0A0;
 }
 
 :-ms-input-placeholder {
-    color: #A0A0A0;
+  color: #A0A0A0;
 }
 
 /* Validation messages forms */
-
 ::-webkit-validation-bubble-message,
 ::-webkit-validation-bubble-arrow {
-    border-color: rgba(0,0,0,.2);
-    color: #333;
-    background: rgba(255,255,255,.95);
-    box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.2);
+  color: #333;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: none;
 }
 
 ::-webkit-validation-bubble-text-block {
-    font: 13px/1.4 sans-serif;
+  font: 13px/1.4 sans-serif;
 }
 
 /* Autocomplete
 -------------------------- */
-
 .cssc-form .box-autocomplete,
 .cssc-form .box-autocomplete .result {
-    -webkit-transition: background 0.3s ease,color 0.3s ease;
-    transition: background 0.3s ease,color 0.3s ease;
+  -webkit-transition: background 0.3s ease,color 0.3s ease;
+  transition: background 0.3s ease,color 0.3s ease;
 }
 
 .cssc-form .box-autocomplete {
-    border: 1px solid #f0f0f0;
-    border-top: 0;
-    background: #FFF;
-    background-color: rgba(255,255,255,.9);
+  border: 1px solid #f0f0f0;
+  border-top: 0;
+  background: #FFF;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .cssc-form--default.float-form .box-autocomplete {
-    top: 25px;
-    left: 130px;
+  top: 25px;
+  left: 130px;
 }
 
 .cssc-form--default .box:hover .box-autocomplete {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .cssc-form--default .box-autocomplete .result {
-    padding: 0 10px;
-    font-size: 13px;
-    line-height: 25px;
-    color: #999;
-    cursor: pointer;
+  padding: 0 10px;
+  font-size: 13px;
+  line-height: 25px;
+  color: #999;
+  cursor: pointer;
 }
 
 .cssc-form--default .box-autocomplete .result:hover {
-    color: #333;
-    background-color: #EEE;
+  color: #333;
+  background-color: #EEE;
 }
 
 /* Form append
 -------------------------- */
-
 .form-append--default {
-    min-height: 25px;
+  min-height: 25px;
 }
 
 .form-append--default input {
-    -webkit-border-top-right-radius: 0;
-    -webkit-border-bottom-right-radius: 0;
-    -moz-border-radius-topright: 0;
-    -moz-border-radius-bottomright: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .form-append--default button {
-    border-left: 0;
-    -webkit-border-top-left-radius: 0;
-    -webkit-border-bottom-left-radius: 0;
-    -moz-border-radius-topleft: 0;
-    -moz-border-radius-bottomleft: 0;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+  border-left: 0;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }

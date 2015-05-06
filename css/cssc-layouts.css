@@ -1,285 +1,259 @@
 @charset "UTF-8";
-
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSCommon
 Version: 1.10.1
 License: MIT
 */
-
 /* ----------------------------------------------------------
   Containers
 ---------------------------------------------------------- */
-
 /* Dimensions
 -------------------------- */
-
 .centered-container {
-    padding: 0 10px;
-    min-width: 960px;
+  padding: 0 10px;
+  min-width: 960px;
 }
 
 .centered-container > * {
-    max-width: 940px;
+  max-width: 940px;
 }
 
 /* Core
 -------------------------- */
-
 /* Container centré */
-
 .centered-container {
-    z-index: 1;
-    clear: both;
-    position: relative;
-    text-align: center;
+  z-index: 1;
+  clear: both;
+  position: relative;
+  text-align: center;
 }
 
 .cssc-is-responsive .centered-container {
-    min-width: 0;
+  min-width: 0;
 }
 
 /* Contenu flottant */
-
 .centered-container > * {
-    margin: 0 auto;
-    text-align: left;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .cssc-is-responsive .centered-container > * {
-    width: auto;
+  width: auto;
 }
 
 .centered-container .cc-full {
-    width: auto;
-    max-width: none;
+  width: auto;
+  max-width: none;
 }
 
 .centered-container .cc-full-bg,
 .centered-container .cc-full-image {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    max-width: none;
-    background: transparent repeat top center;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  background: transparent repeat top center;
 }
 
 /* Full image is a separate background with a cover image for animating or effects */
-
 .centered-container .cc-full-image {
-    background-position: center center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 
 /* Needed to be over a cc-full-image/bg background */
-
 .centered-container .cc-content {
-    z-index: 2;
-    position: relative;
+  z-index: 2;
+  position: relative;
 }
 
 /* ----------------------------------------------------------
   Base des layouts
 ---------------------------------------------------------- */
-
 .cssc-lay {
-    display: table;
-    clear: both;
-    width: 100%;
-    table-layout: fixed;
+  display: table;
+  clear: both;
+  width: 100%;
+  table-layout: fixed;
 }
 
 .cssc-lay > * {
-    display: table-cell;
-    vertical-align: top;
+  display: table-cell;
+  vertical-align: top;
 }
 
 .lt_ie8 .cssc-lay {
-    display: block;
+  display: block;
 }
 
 .lt_ie8 .cssc-lay > * {
-    display: block;
-    float: left;
+  display: block;
+  float: left;
 }
 
 .cssc-lay > .col-main {
-    width: auto;
+  width: auto;
 }
 
 /* Base de style */
-
 .cssc-lay > .col-side {
-    width: 220px;
+  width: 220px;
 }
 
 .lt_ie8 .cssc-lay > .col-main {
-    width: 720px;
+  width: 720px;
 }
 
 /* Wide layout d'exemple */
-
 .clay-wide > .col-side {
-    width: 300px;
+  width: 300px;
 }
 
 .lt_ie8 .clay-wide > .col-main {
-    width: 640px;
+  width: 640px;
 }
 
 /* Responsive Layout */
-
 .clay-resp {
-    max-width: 940px;
+  max-width: 940px;
 }
 
 .lt_ie9 .clay-resp {
-    min-width: 800px;
+  min-width: 800px;
 }
 
 .clay-resp > .col-side {
-    width: 220px;
+  width: 220px;
 }
 
-@media all and (max-width:600px) {
-    .cssc-is-responsive .clay-resp {
-        display: block;
-        width: auto;
-    }
+@media all and (max-width: 600px) {
+  .cssc-is-responsive .clay-resp {
+    display: block;
+    width: auto;
+  }
 
-    .cssc-is-responsive .clay-resp > .col-side,
-    .cssc-is-responsive .clay-resp > .col-main {
-        display: block;
-        width: auto;
-    }
+  .cssc-is-responsive .clay-resp > .col-side,
+  .cssc-is-responsive .clay-resp > .col-main {
+    display: block;
+    width: auto;
+  }
 
-    .cssc-is-responsive .clay-resp > .col-side .liste-widgets > * {
-        display: inline-block;
-        width: 48%;
-    }
+  .cssc-is-responsive .clay-resp > .col-side .liste-widgets > * {
+    display: inline-block;
+    width: 48%;
+  }
 
-    .cssc-is-responsive .clay-resp > .col-side .liste-widgets >:nth-child(even) {
-        margin-left: 2%;
-    }
+  .cssc-is-responsive .clay-resp > .col-side .liste-widgets > :nth-child(even) {
+    margin-left: 2%;
+  }
 }
+@media all and (max-width: 400px) {
+  .cssc-is-responsive .clay-resp > .col-side .liste-widgets > * {
+    display: block;
+  }
 
-@media all and (max-width:400px) {
-    .cssc-is-responsive .clay-resp > .col-side .liste-widgets > * {
-        display: block;
-    }
-
-    .cssc-is-responsive .clay-resp > .col-side .liste-widgets >:nth-child(even) {
-        margin-left: 0;
-    }
+  .cssc-is-responsive .clay-resp > .col-side .liste-widgets > :nth-child(even) {
+    margin-left: 0;
+  }
 }
-
 /* ----------------------------------------------------------
   Elements visibility depending on used device
 ---------------------------------------------------------- */
-
 .lt_ie9 .hidden-on-full,
 .lt_ie9 .visible-only-tablet,
 .lt_ie9 .visible-only-phone {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .hidden-on-full,
+  .visible-only-tablet,
+  .visible-only-phone {
     display: none;
+  }
 }
-
-@media(min-width:1024px) {
-    .hidden-on-full,
-    .visible-only-tablet,
-    .visible-only-phone {
-        display: none;
-    }
+@media (max-width: 1023px) and (min-width: 501px) {
+  .hidden-on-tablet,
+  .visible-only-full,
+  .visible-only-phone {
+    display: none;
+  }
 }
-
-@media(max-width:1023px) and (min-width:501px) {
-    .hidden-on-tablet,
-    .visible-only-full,
-    .visible-only-phone {
-        display: none;
-    }
+@media (max-width: 500px) {
+  .hidden-on-phone,
+  .visible-only-full,
+  .visible-only-tablet {
+    display: none;
+  }
 }
-
-@media(max-width:500px) {
-    .hidden-on-phone,
-    .visible-only-full,
-    .visible-only-tablet {
-        display: none;
-    }
-}
-
 /* ----------------------------------------------------------
   Fullscreen
 ---------------------------------------------------------- */
-
 /* Layouts
 -------------------------- */
-
 .cssc-is-fullscreen #main-container,
 .cssc-is-fullscreen body,
 .cssc-is-fullscreen {
-    height: 100%;
+  height: 100%;
 }
 
 .cssc-fullscreen {
-    z-index: 1;
-    position: relative;
-    height: 100%;
-    text-align: center;
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  text-align: center;
 }
 
 /* Centered block
 -------------------------- */
-
 .cssc-fullscreen__centered {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .cssc-fullscreen__centered > * {
-    display: inline-block;
-    line-height: 1.3;
-    vertical-align: middle;
+  display: inline-block;
+  line-height: 1.3;
+  vertical-align: middle;
 }
 
-@media(max-height:400px) {
-    .cssc-fullscreen__centered {
-        position: static;
-        height: auto;
-        line-height: inherit;
-    }
+@media (max-height: 400px) {
+  .cssc-fullscreen__centered {
+    position: static;
+    height: auto;
+    line-height: inherit;
+  }
 }
-
 /* Default theme */
-
 .cssc-fullscreen--default .cssc-fullscreen__centered {
-    height: 400px;
-    line-height: 400px;
+  height: 400px;
+  line-height: 400px;
 }
 
-@media(max-height:400px) {
-    .cssc-fullscreen--default .cssc-fullscreen__centered {
-        position: static;
-        height: auto;
-        line-height: inherit;
-    }
+@media (max-height: 400px) {
+  .cssc-fullscreen--default .cssc-fullscreen__centered {
+    position: static;
+    height: auto;
+    line-height: inherit;
+  }
 }
-
 /* Block options
 -------------------------- */
-
 .cssc-fullscreen--parallax {
-    background: fixed no-repeat center center;
-    -webkit-background-size: cover;
-    background-size: cover;
+  background: fixed no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
 }

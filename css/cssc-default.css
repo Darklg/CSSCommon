@@ -1,61 +1,55 @@
-@charset "UTF-8";
-
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
 Version: 2.7.12
 License: MIT
 */
-
 /* ----------------------------------------------------------
   Reset
 ---------------------------------------------------------- */
-
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
-a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,
-small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,
-form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,
-audio,canvas,datagrid,datalist,details,dialog,figure,footer,header,
-menu,nav,section,video,abbr,eventsource,mark,meter,time,progress,output,bb {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent no-repeat top left;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside,
+audio, canvas, datagrid, datalist, details, dialog, figure, footer, header,
+menu, nav, section, video, abbr, eventsource, mark, meter, time, progress, output, bb {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent no-repeat top left;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
+  content: '';
 }
 
 a,
 ins {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* ----------------------------------------------------------
   Normalize
 ---------------------------------------------------------- */
-
 /* HTML5 Default behavior
 -------------------------- */
-
 article,
 aside,
 audio,
@@ -74,7 +68,7 @@ main,
 nav,
 section,
 video {
-    display: block;
+  display: block;
 }
 
 abbr,
@@ -85,171 +79,158 @@ time,
 progress,
 output,
 bb {
-    display: inline;
+  display: inline;
 }
 
 /* tables still need 'cellspacing="0"' in the markup */
-
 table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 nav ul {
-    list-style: none;
+  list-style: none;
 }
 
 /* Forms
 -------------------------- */
-
 input,
 button,
 select {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-    margin: 0;
-    vertical-align: text-bottom;
+  margin: 0;
+  vertical-align: text-bottom;
 }
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 .lt_ie8 input[type="checkbox"] {
-    vertical-align: baseline;
+  vertical-align: baseline;
 }
 
 input:focus {
-    outline: 0;
+  outline: 0;
 }
 
 input:-webkit-autofill {
-    background-color: #ccc!important;
+  background-color: #ccc !important;
 }
 
 /* Number & Search resets */
-
 input[type=number],
 input[type=search] {
-    -webkit-appearance: textfield;
-    -moz-appearance: textfield;
-    appearance: textfield;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input[type="search"]::-webkit-search-cancel-button {
-    -webkit-appearance: none;
-    width: 0;
-    height: 0;
+  -webkit-appearance: none;
+  width: 0;
+  height: 0;
 }
 
 input[type=search]::-webkit-search-decoration,
 input[type=search]::-webkit-search-cancel-button,
 input[type=search]::-webkit-search-results-button,
 input[type=search]::-webkit-search-results-decoration {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 /* Input type date */
-
 input[type=date]::-webkit-clear-button,
 input[type=date]::-webkit-inner-spin-button,
 input[type=date]::-webkit-calendar-picker-indicator {
-    display: none;
+  display: none;
 }
 
 /* Bug with Firefox and buttons */
-
 input[type="submit"]::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
 button::-moz-focus-inner {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 /* Better cursor for buttons */
-
 input[type="submit"],
 input[type="image"],
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* Medias
 -------------------------- */
-
 video,
 img,
 object {
-    height: auto;
-    max-width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 iframe {
-    border: 0;
+  border: 0;
 }
 
 /* Bugfix for Google Maps */
-
 .gm-style img,
 .gmnoprint img {
-    max-width: none;
+  max-width: none;
 }
 
 /* bicubic resizing for non-native sized IMG | code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
-
 .lt_ie8 img {
-    -ms-interpolation-mode: bicubic;
+  -ms-interpolation-mode: bicubic;
 }
 
 /* Inline images are aligned on text */
-
 img,
 input[type=image] {
-    vertical-align: bottom;
+  vertical-align: bottom;
 }
 
 p img {
-    vertical-align: baseline;
+  vertical-align: baseline;
 }
 
 /* Various elements
 -------------------------- */
-
 /* Address styling not present in IE 8/9. | necolas.github.io/normalize.css/ */
-
 [hidden] {
-    display: none;
+  display: none;
 }
 
 /* Common elements
 -------------------------- */
-
 html {
-    min-height: 100%;
-    background: #fff;
+  min-height: 100%;
+  background: #fff;
 }
 
 body {
-    position: relative;
-    min-height: 100%;
-    font: 62.5%/1 sans-serif;
-    color: #212121;
-    -webkit-text-size-adjust: none;
+  position: relative;
+  min-height: 100%;
+  font: 62.5%/1 sans-serif;
+  color: #212121;
+  -webkit-text-size-adjust: none;
 }
 
 .lt_ie8 body {
-    height: 100%;
+  height: 100%;
 }
 
 h1, .h1,
@@ -258,208 +239,202 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    line-height: 1.3;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  line-height: 1.3;
 }
 
 h1, .h1 {
-    margin-bottom: 10px;
-    font-size: 25px;
+  margin-bottom: 10px;
+  font-size: 25px;
 }
 
 h2, .h2 {
-    margin-bottom: 7px;
-    font-size: 20px;
+  margin-bottom: 7px;
+  font-size: 20px;
 }
 
 h3, .h3 {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 h4, .h4 {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 h5, .h5 {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 h6, .h6 {
-    font-size: 11px;
+  font-size: 11px;
 }
 
 p,
 dl,
 li {
-    font-size: 13px;
-    line-height: 1.4;
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 p {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 blockquote p:last-child,
 p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 del {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 ins {
-    border-bottom: 1px dotted #DDD;
+  border-bottom: 1px dotted #DDD;
 }
 
 mark {
-    background-color: #FF9;
+  background-color: #FF9;
 }
 
 em {
-    font-style: italic;
+  font-style: italic;
 }
 
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* Prevents sub and sup affecting line-height in all browsers | gist.github.com/413930 */
-
 sub,
 sup {
-    position: relative;
-    margin: 0 1px;
-    font-size: 80%;
-    line-height: 0;
-    vertical-align: baseline;
+  position: relative;
+  margin: 0 1px;
+  font-size: 80%;
+  line-height: 0;
+  vertical-align: baseline;
 }
 
 sup {
-    top: -0.5em;
+  top: -0.5em;
 }
 
 sub {
-    bottom: -0.25em;
+  bottom: -0.25em;
 }
 
 small {
-    font-size: 80%;
+  font-size: 80%;
 }
 
 abbr[title],
 acronym[title] {
-    border-bottom: 1px dashed #ccc;
-    border-color: rgba(0,0,0,.2);
-    cursor: help;
+  border-bottom: 1px dashed #ccc;
+  border-color: rgba(0, 0, 0, 0.2);
+  cursor: help;
 }
 
 blockquote {
-    display: block;
-    padding: 5px 0 5px 10px;
-    border-left: 5px solid #DDD;
-    border-color: rgba(0,0,0,.1);
-    font-size: 12px;
+  display: block;
+  padding: 5px 0 5px 10px;
+  border-left: 5px solid #DDD;
+  border-color: rgba(0, 0, 0, 0.1);
+  font-size: 12px;
 }
 
 blockquote p {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 hr {
-    clear: both;
-    border: 0;
-    border-top: 1px solid #aaa;
-    border-bottom: 1px solid #f0f0f0;
+  clear: both;
+  border: 0;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 /* ----------------------------------------------------------
   Clearfix
 ---------------------------------------------------------- */
-
 .clearfix,
 .cssc-grid:before,
 .cssc-grid:after,
 .clearfix:after,
 .subfloat:after {
-    content: " ";
-    display: block;
-    visibility: hidden;
-    clear: both;
-    max-height: 0;
-    overflow: hidden;
+  content: " ";
+  display: block;
+  visibility: hidden;
+  clear: both;
+  max-height: 0;
+  overflow: hidden;
 }
 
 hr.clearfix {
-    height: 0;
-    border: 0;
-    outline: 0;
-    background: transparent;
+  height: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
 }
 
 /* ----------------------------------------------------------
   Selection style
 ---------------------------------------------------------- */
-
 ::-moz-selection {
-    color: #000;
-    background: rgba(51,102,153,.3);
+  color: #000;
+  background: rgba(51, 102, 153, 0.3);
 }
 
 ::selection {
-    color: #000;
-    background: rgba(51,102,153,.3);
+  color: #000;
+  background: rgba(51, 102, 153, 0.3);
 }
 
 /* ----------------------------------------------------------
    Links
 ---------------------------------------------------------- */
-
 a {
-    color: #69C;
+  color: #69C;
 }
 
 a:focus,
 a:hover {
-    color: #369;
+  color: #369;
 }
 
 a:active {
-    color: #000;
+  color: #000;
 }
 
 .aimginv {
-    opacity: 0.70;
-    filter: alpha(opacity=70);
+  opacity: 0.70;
+  filter: alpha(opacity=70);
 }
 
 /* .99 Opacity avoids a nasty effect on Webkit */
-
 a img,
 .aimginv:hover,
 .aimg {
-    opacity: 0.999;
-    filter: alpha(opacity=99);
+  opacity: 0.999;
+  filter: alpha(opacity=99);
 }
 
 .aimg:hover,
 a:hover img {
-    opacity: 0.80;
-    filter: alpha(opacity=80);
+  opacity: 0.80;
+  filter: alpha(opacity=80);
 }
 
 /* ----------------------------------------------------------
   Transitions
 ---------------------------------------------------------- */
-
 a,
 .trans-col {
-    -webkit-transition: color 0.3s ease;
-    -moz-transition: color 0.3s ease;
-    -o-transition: color 0.3s ease;
-    transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 a img,
@@ -467,17 +442,17 @@ a img,
 .aimginv,
 .cssc-btn,
 .trans-opa {
-    -webkit-transition: opacity 0.3s ease;
-    -moz-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .trans-all {
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 input,
@@ -486,8 +461,8 @@ textarea,
 .cssc-pagination a,
 .cssc-button,
 .trans-button {
-    -webkit-transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
-    -moz-transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
-    -o-transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
-    transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
+  -webkit-transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
+  -moz-transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
+  -o-transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
+  transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
 }

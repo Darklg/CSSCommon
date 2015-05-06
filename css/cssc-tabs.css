@@ -1,94 +1,88 @@
-@charset "UTF-8";
-
 /*
 Name: Onglets
 URL: http://github.com/Darklg/CSSCommon
 Version: 1.0.4
 License: MIT
 */
-
 /* ----------------------------------------------------------
   Base des onglets
 ---------------------------------------------------------- */
-
 /* top:1px = superposition sur le contenu */
-
 .cssc-tabs-clic {
-    position: relative;
-    top: 1px;
-    overflow: hidden;
+  position: relative;
+  top: 1px;
+  overflow: hidden;
 }
 
 .cssc-tabs-clic li {
-    float: left;
+  float: left;
 }
 
 .cssc-tabs-clic a {
-    display: block;
-    float: left;
+  display: block;
+  float: left;
 }
 
 .cssc-tabs-target > * {
-    visibility: hidden;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    -webkit-transition: opacity 0.3s ease;
-    -moz-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
+  visibility: hidden;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .lt_ie8 .cssc-tabs-target > * {
-    position: absolute;
+  position: absolute;
 }
 
 .cssc-tabs-target > .is-current {
-    visibility: visible;
-    max-height: 10000px;
-    opacity: 1;
+  visibility: visible;
+  max-height: 10000px;
+  opacity: 1;
 }
 
 .lt_ie8 .cssc-tabs-target > .is-current {
-    position: static;
+  position: static;
 }
 
 /* Default theme
 -------------------------- */
-
 .cssc-tabs-clic li {
-    margin-right: 3px;
+  margin-right: 3px;
 }
 
 .cssc-tabs-clic a {
-    padding: 3px 6px;
-    border: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    -webkit-border-top-left-radius: 3px;
-    -webkit-border-top-right-radius: 3px;
-    -moz-border-radius-topleft: 3px;
-    -moz-border-radius-topright: 3px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    background-color: #f0f0f0;
-    -webkit-background-clip: border;
-    -moz-background-clip: border;
-    background-clip: border;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  padding: 3px 6px;
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #f0f0f0;
+  -webkit-background-clip: border;
+  -moz-background-clip: border;
+  background-clip: border;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .cssc-tabs-clic a.is-current,
 .cssc-tabs-clic .is-current a,
 .cssc-tabs-clic a:hover,
 .cssc-tabs-clic a:focus {
-    border-bottom: 1px solid #fff;
-    background-color: #fff;
+  border-bottom: 1px solid #fff;
+  background-color: #fff;
 }
 
 .cssc-tabs-target {
-    padding: 6px;
-    border: 1px solid #ccc;
+  padding: 6px;
+  border: 1px solid #ccc;
 }

@@ -1,272 +1,270 @@
 @charset "UTF-8";
-
 /*
 Name: Default Buttons
 URL: http://github.com/Darklg/CSSCommon
 Version: 2.2
 License: MIT
 */
-
 /* ----------------------------------------------------------
-  Button core
+  Button : core
 ---------------------------------------------------------- */
-
 .cssc-button {
-    display: inline-block;
-    z-index: 1;
-    position: relative;
-    -webkit-appearance: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-background-clip: padding-box;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    -webkit-user-drag: none;
-    -moz-user-drag: -moz-none;
-    user-drag: none;
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+  -webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-background-clip: padding-box;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: -moz-none;
+  user-drag: none;
 }
 
 .cssc-button:hover,
 .cssc-button:focus {
-    text-decoration: none;
-    outline: 0;
+  text-decoration: none;
+  outline: 0;
 }
 
 /* Icons
 -------------------------- */
-
 .cssc-button:before,
 .cssc-button:after {
-    vertical-align: 0;
+  vertical-align: 0;
 }
 
 .cssc-button:before {
-    margin-right: 4px;
+  margin-right: 4px;
 }
 
 .cssc-button:after {
-    margin-left: 4px;
+  margin-left: 4px;
 }
 
 .cssc-button-icn-large:before,
 .cssc-button-icn-large:after {
-    font-size: 115%;
+  font-size: 115%;
 }
 
 /* ----------------------------------------------------------
-  Button Theme
+  Utilities
 ---------------------------------------------------------- */
+/* Container
+-------------------------- */
+.cssc-button-container {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+}
 
+.cssc-button-container:before {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #ddd;
+}
+
+.cssc-button-container .cssc-button {
+  z-index: 2;
+  position: relative;
+}
+
+/* Double button
+-------------------------- */
+.cssc-button.cssc-button-double {
+  height: auto;
+}
+
+.cssc-button-double > * {
+  display: block;
+}
+
+/* Buttons group
+-------------------------- */
+.button-group {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.button-group .cssc-button:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.button-group .cssc-button + .cssc-button {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/*
+Name: Default Buttons
+URL: http://github.com/Darklg/CSSCommon
+Version: 2.2.1
+License: MIT
+*/
+/* ----------------------------------------------------------
+  Button : Theme
+---------------------------------------------------------- */
 /* Default themes
 -------------------------- */
-
 .cssc-button--default {
-    height: 25px;
-    padding: 0 8px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
-    font: 12px/25px sans-serif;
-    color: #333;
-    background: #e0e0e0 no-repeat 0 0;
-    background-image: -moz-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.10) 100%);
-    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(0,0,0,0) ), color-stop(100%,rgba(0,0,0,0.10) ) );
-    background-image: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.10) 100%);
-    background-image: -o-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.10) 100%);
-    background-image: -ms-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,0.10) 100%);
-    background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,0.10) 100%);
+  height: 25px;
+  padding: 0 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+  font: 12px/25px sans-serif;
+  color: #333;
+  background: #e0e0e0 no-repeat 0 0;
+  background-image: -moz-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.1) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background-image: -webkit-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.1) 100%);
+  background-image: -o-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.1) 100%);
+  background-image: -ms-linear-gradient(top, transparent 0, rgba(0, 0, 0, 0.1) 100%);
+  background-image: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.1) 100%);
 }
 
 .cssc-button--default:focus,
 .cssc-button--default:hover {
-    border-color: #bbb;
-    color: #000;
-    background-position: 0 12px;
+  border-color: #bbb;
+  color: #000;
+  background-position: 0 12px;
 }
 
 .cssc-button--default:active {
-    border-color: #888;
-    background-position: 0 25px;
+  border-color: #888;
+  background-position: 0 25px;
 }
 
 .cssc-button--default[disabled],
 .cssc-button--default[disabled]:focus,
 .cssc-button--default[disabled]:hover,
 .cssc-button--default[disabled]:active {
-    border: 1px solid #ccc;
-    color: #333;
-    opacity: 0.66;
-    background: #e0e0e0;
-    cursor: default;
-    filter: alpha(opacity=66);
+  border: 1px solid #ccc;
+  color: #333;
+  opacity: 0.66;
+  background: #e0e0e0;
+  cursor: default;
+  filter: alpha(opacity=66);
 }
 
 /* Buttons' modes
 -------------------------- */
-
 .cssc-button--wide {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 /* Buttons' sizes
 -------------------------- */
-
 .cssc-button--small {
-    height: 20px;
-    padding: 0 5px;
-    font-size: 11px;
-    line-height: 20px;
+  height: 20px;
+  padding: 0 5px;
+  font-size: 11px;
+  line-height: 20px;
 }
 
 .cssc-button--medium {
-    height: 30px;
-    padding: 0 10px;
-    font-size: 13px;
-    line-height: 30px;
+  height: 30px;
+  padding: 0 10px;
+  font-size: 13px;
+  line-height: 30px;
 }
 
 .cssc-button--big {
-    height: 35px;
-    padding: 0 15px;
-    font-size: 14px;
-    line-height: 35px;
+  height: 35px;
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 35px;
 }
 
 /* Buttons' themes
 -------------------------- */
-
 .error-button,
 .success-button {
-    text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
-    color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+  color: #fff;
 }
 
 .error-button:hover,
 .error-button:focus,
 .success-button:focus,
 .success-button:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .error-button {
-    border-color: #f55;
-    background-color: #f66;
+  border-color: #f55;
+  background-color: #f66;
 }
 
 .success-button {
-    border-color: #1a1;
-    background-color: #0a0;
+  border-color: #1a1;
+  background-color: #0a0;
 }
 
 .round-button {
-    border-radius: 99px;
+  border-radius: 99px;
 }
 
 /* Buttons with an icon
 -------------------------- */
-
 .btn-phone:before {
-    content: '☎';
+  content: '☎';
 }
 
 .btn-eject:before {
-    content: '⏏';
+  content: '⏏';
 }
 
 .btn-download:before {
-    content: '⬇';
+  content: '⬇';
 }
 
 .btn-play:before {
-    content: '▶';
+  content: '▶';
 }
 
 .btn-go:after {
-    content: '▶';
+  content: '▶';
 }
 
 .btn-img:before {
-    content: url(../images/12x10-blue.gif);
+  content: url(../images/12x10-blue.gif);
 }
 
 /* ----------------------------------------------------------
-  Utilities
+  Double button
 ---------------------------------------------------------- */
-
-/* Container
--------------------------- */
-
-.cssc-button-container {
-    z-index: 1;
-    position: relative;
-    text-align: center;
+.cssc-button--default.cssc-button-double {
+  padding: 10px 40px;
 }
 
-.cssc-button-container:before {
-    content: '';
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    border-top: 1px solid #ddd;
+.cssc-button--default.cssc-button-double > strong {
+  font-size: 20px;
+  line-height: 25px;
 }
 
-.cssc-button-container .cssc-button {
-    z-index: 2;
-    position: relative;
-}
-
-/* Double button
--------------------------- */
-
-.cssc-button-double {
-    height: auto;
-    padding: 10px 40px;
-}
-
-.cssc-button-double> * {
-    display: block;
-}
-
-.cssc-button-double > strong {
-    font-size: 20px;
-    line-height: 25px;
-}
-
-.cssc-button-double > span {
-    font-size: 12px;
-    line-height: 16px;
-    color: #676767;
-}
-
-/* Buttons group
--------------------------- */
-
-.button-group {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.button-group .cssc-button:not(:last-child) {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.button-group .cssc-button + .cssc-button {
-    margin-left: -1px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+.cssc-button--default.cssc-button-double > span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #676767;
 }

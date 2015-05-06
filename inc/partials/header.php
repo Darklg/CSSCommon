@@ -29,7 +29,8 @@ if($is_fullscreen){
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
         <!-- Feuilles CSS Common -->
-        <link rel="stylesheet" href="css/main.css?v=<?php echo $_v; ?>" type="text/css" />
+        <link rel="stylesheet" href="csscommon.min.css?v=<?php echo $_v; ?>" type="text/css" />
+        <link rel="stylesheet" href="css/demo.css?v=<?php echo $_v; ?>" type="text/css" />
 
         <!-- Scripts -->
         <!--[if lt IE 9]><script src="js/selectivizr-min.js"></script><![endif]-->

@@ -1,176 +1,165 @@
-@charset "UTF-8";
-
 /*
 Name: Tables
 URL: http://github.com/Darklg/CSSCommon
 Version: 1.4
 License: MIT
 */
-
 .cssc-table {
-    width: 100%;
-    margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .cssc-table,
 .cssc-table tr,
 .cssc-table td,
 .cssc-table th {
-    border-collapse: collapse;
-    vertical-align: middle;
+  border-collapse: collapse;
+  vertical-align: middle;
 }
 
 /* Default Theme
 -------------------------- */
-
 .cssc-table--default td,
 .cssc-table--default th {
-    padding: 10px;
-    font-size: 12px;
-    line-height: 1.3;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 1.3;
 }
 
 .cssc-table--default td {
-    text-align: left;
+  text-align: left;
 }
 
 .cssc-table--default th {
-    text-align: left;
-    font-weight: bold;
+  text-align: left;
+  font-weight: bold;
 }
 
 .cssc-table--default tr {
-    border-bottom: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
 }
 
 .cssc-table--default thead tr {
-    border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
 }
 
 .cssc-table--default tbody tr:last-child {
-    border-bottom: 0;
+  border-bottom: 0;
 }
 
 /* "Tight" Theme
 -------------------------- */
-
 .cssc-table--tight th,
 .cssc-table--tight td {
-    padding: 3px;
-    line-height: 1.2;
+  padding: 3px;
+  line-height: 1.2;
 }
 
 /* "Basic" Theme
 -------------------------- */
-
 .cssc-table--basic {
-    color: #333;
-    background: #fff;
+  color: #333;
+  background: #fff;
 }
 
 .cssc-table--basic,
 .cssc-table--basic tr,
 .cssc-table--basic td,
 .cssc-table--basic th {
-    border: 1px solid #d0d0d0;
+  border: 1px solid #d0d0d0;
 }
 
 .cssc-table--basic tbody tr,
 .cssc-table--basic tbody td,
 .cssc-table--basic tbody th {
-    border: 1px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
 }
 
 .cssc-table--basic tr:hover {
-    color: #000;
-    background: #fafafa;
+  color: #000;
+  background: #fafafa;
 }
 
 .cssc-table--basic th {
-    background: #f0f0f0;
+  background: #f0f0f0;
 }
 
 /* "Bordered" Theme
 -------------------------- */
-
 .cssc-table--bordered td + td {
-    border-left: 1px solid #e9e9e9;
+  border-left: 1px solid #e9e9e9;
 }
 
 .cssc-table--bordered .content {
-    z-index: 1;
-    position: relative;
+  z-index: 1;
+  position: relative;
 }
 
 .cssc-table--bordered tr + tr td + td .content:before {
-    content: '';
-    z-index: 1;
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
 }
 
 /* Rounded corners
 -------------------------- */
-
 .cssc-table--rounded {
-    border: 1px solid #ccc;
-    border-collapse: separate;
-    border-spacing: 0;
-    border-radius: 10px;
+  border: 1px solid #ccc;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
 }
 
 /* Debug colors */
-
 .cssc-table--rounded tbody {
-    background-color: #F5F5F5;
+  background-color: #F5F5F5;
 }
 
 .cssc-table--rounded tfoot th {
-    background-color: #E0E0E0;
+  background-color: #E0E0E0;
 }
 
 .cssc-table--rounded thead th {
-    background-color: #E0E0E0;
+  background-color: #E0E0E0;
 }
 
 /* Borders top */
-
 .cssc-table--rounded thead:first-child,
 .cssc-table--rounded thead:first-child tr:first-child {
-    border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .cssc-table--rounded thead:first-child tr:first-child th:first-child {
-    border-radius: 10px 0 0 0;
+  border-radius: 10px 0 0 0;
 }
 
 .cssc-table--rounded thead:first-child tr:first-child th:last-child {
-    border-radius: 0 10px 0 0;
+  border-radius: 0 10px 0 0;
 }
 
 /* Borders bottom */
-
 .cssc-table--rounded thead + tbody ~ tbody:last-child,
 .cssc-table--rounded thead + tbody ~ tbody:last-child tr:last-child,
 .cssc-table--rounded thead + tbody:last-child,
 .cssc-table--rounded thead + tbody:last-child tr:last-child,
 .cssc-table--rounded tfoot,
 .cssc-table--rounded tfoot tr:last-child {
-    border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
 }
 
 .cssc-table--rounded thead + tbody ~ tbody:last-child tr:last-child td:first-child,
 .cssc-table--rounded thead + tbody:last-child tr:last-child td:first-child,
 .cssc-table--rounded tfoot tr:last-child th:first-child {
-    border-radius: 0 0 0 10px;
+  border-radius: 0 0 0 10px;
 }
 
 .cssc-table--rounded thead + tbody ~ tbody:last-child tr:last-child td:last-child,
 .cssc-table--rounded thead + tbody:last-child tr:last-child td:last-child,
 .cssc-table--rounded tfoot tr:last-child th:last-child {
-    border-radius: 0 0 10px 0;
+  border-radius: 0 0 10px 0;
 }

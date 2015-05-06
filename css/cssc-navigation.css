@@ -1,617 +1,589 @@
 @charset "UTF-8";
-
 /*
 Name: Navigation
 URL: http://github.com/Darklg/CSSCommon
 Version: 1.11
 License: MIT
 */
-
 /* ----------------------------------------------------------
   Navigation bar
 ---------------------------------------------------------- */
-
 .cssc-navbar {
-    text-align: center;
+  text-align: center;
 }
 
 /* Positions */
-
 .cssc-navbar--left {
-    float: left;
+  float: left;
 }
 
 .cssc-navbar--right {
-    float: right;
+  float: right;
 }
 
 .cssc-navbar--right > *,
 .cssc-navbar--left > * {
-    float: left;
+  float: left;
 }
 
 /* Elements */
-
 .cssc-navbar-link,
 .cssc-navbar-link > a,
 .cssc-navbar--links,
 .cssc-navbar--links > li,
 .cssc-navbar--links > li > a {
-    height: 100%;
-    line-height: inherit;
+  height: 100%;
+  line-height: inherit;
 }
 
 .cssc-navbar--links > li {
-    float: left;
+  float: left;
 }
 
 /* Theme
 -------------------------- */
-
 .cssc-navbar {
-    margin-bottom: 20px;
-    padding: 0 10px;
+  margin-bottom: 20px;
+  padding: 0 10px;
 }
 
 .cssc-navbar,
 .cssc-navbar > * {
-    height: 45px;
-    line-height: 45px;
-    background-color: #f0f0f0;
+  height: 45px;
+  line-height: 45px;
+  background-color: #f0f0f0;
 }
 
 /* Search */
-
 .cssc-navbar--search {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
 .cssc-navbar--search .inputbase {
-    display: inline-block;
-    width: auto;
-    margin-right: 4px;
-    *display: inline;
-    *zoom: 1;
+  display: inline-block;
+  width: auto;
+  margin-right: 4px;
+  *display: inline;
+  *zoom: 1;
 }
 
 /* Links */
-
 .cssc-navbar-link a,
 .cssc-navbar--links > li > a {
-    display: block;
-    padding: 0 6px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #333;
+  display: block;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
 }
 
 .cssc-navbar--links {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
 .cssc-navbar--links:first-child {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .cssc-navbar--links:last-child {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 /* ----------------------------------------------------------
   Pagination
 ---------------------------------------------------------- */
-
 /* Core
 -------------------------- */
-
 .cssc-pagination li,
 .cssc-pagination {
-    font-size: 0;
+  font-size: 0;
 }
 
 .cssc-pagination * {
-    display: inline-block;
-    vertical-align: 0;
+  display: inline-block;
+  vertical-align: 0;
 }
 
 /* Theme
 -------------------------- */
-
 .cssc-pagination--default {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .cssc-pagination--default * {
-    line-height: 30px;
+  line-height: 30px;
 }
 
 .cssc-pagination--default strong,
 .cssc-pagination--default a {
-    margin: 0 2px;
-    padding: 0 7px;
-    border: 1px solid #eee;
-    border-radius: 3px;
-    font-size: 12px;
+  margin: 0 2px;
+  padding: 0 7px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  font-size: 12px;
 }
 
 .cssc-pagination strong,
 .cssc-pagination .current,
 .cssc-pagination a:focus,
 .cssc-pagination a:hover {
-    border-color: #ccc;
+  border-color: #ccc;
 }
 
 .cssc-pagination--center {
-    text-align: center;
+  text-align: center;
 }
 
 /* Style d'exemple */
-
 /* ----------------------------------------------------------
   Menu Principal
 ---------------------------------------------------------- */
-
 .cssc-mainnav {
-    z-index: 1;
-    position: relative;
-    min-height: 10px;
-    vertical-align: middle;
+  z-index: 1;
+  position: relative;
+  min-height: 10px;
+  vertical-align: middle;
 }
 
 .cssc-mainnav:hover {
-    z-index: 2;
+  z-index: 2;
 }
 
 .cssc-mainmenu {
-    height: 100%;
+  height: 100%;
 }
 
 .cssc-mainmenuplus {
-    z-index: 4;
-    float: right;
-    position: relative;
+  z-index: 4;
+  float: right;
+  position: relative;
 }
 
 .cssc-mainmenuplus > li > a,
 .cssc-mainmenuplus > li,
 .cssc-mainmenu > li > a,
 .cssc-mainmenu > li {
-    float: left;
+  float: left;
 }
 
 .cssc-mainmenuplus > li > a,
 .cssc-mainmenu > li > a {
-    display: block;
-    vertical-align: middle;
+  display: block;
+  vertical-align: middle;
 }
 
 /* Gestion sous-menu */
-
 .cssc-mainmenu:hover,
 .cssc-mainmenu:hover > li {
-    z-index: 3;
-    position: relative;
+  z-index: 3;
+  position: relative;
 }
 
 /* Si sous-menu de largeur 100% */
-
 .cssc-mainmenu:hover > .richsubmenu {
-    position: static;
+  position: static;
 }
 
 .richsubmenu .submenu {
-    position: absolute;
-    right: 0;
-    width: auto;
-    overflow: hidden;
-    white-space: nowrap;
+  position: absolute;
+  right: 0;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /* Si sous-menu de largeur fixe*/
-
 .richsubmenu2 > .submenu {
-    width: 600px;
+  width: 600px;
 }
 
 .cssc-mainmenu .submenu {
-    visibility: hidden;
-    z-index: 2;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    white-space: nowrap;
-    opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  white-space: nowrap;
+  opacity: 0;
 }
 
 .cssc-mainmenu > li > a:focus + .submenu,
 .cssc-mainmenu > li:hover .submenu {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .cssc-mainmenu .submenu a {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .cssc-mainmenu .submenu .subcol > ul,
 .cssc-mainmenu .submenu .subcol {
-    float: left;
+  float: left;
 }
 
 /* Style d'exemple */
-
 .cssc-mainnav--default {
-    height: 30px;
-    margin-bottom: 30px;
-    border: 1px solid #eee;
+  height: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eee;
 }
 
 .cssc-mainnav--default .cssc-mainmenuplus > li > a,
 .cssc-mainnav--default .cssc-mainmenuplus > li,
 .cssc-mainnav--default .cssc-mainmenu > li > a,
 .cssc-mainnav--default .cssc-mainmenu > li {
-    line-height: 30px;
+  line-height: 30px;
 }
 
 .cssc-mainnav--default .cssc-mainmenuplus {
-    border-left: 1px solid #eee;
+  border-left: 1px solid #eee;
 }
 
 .cssc-mainnav--default .cssc-mainmenuplus > li > a,
 .cssc-mainnav--default .cssc-mainmenu > li > a {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
 .cssc-mainnav--default .cssc-mainmenu > li:hover > a,
 .cssc-mainnav--default .cssc-mainmenu > li > a:focus,
 .cssc-mainnav--default .cssc-mainmenu > .current > a {
-    color: #000;
+  color: #000;
 }
 
 .cssc-mainnav--default .cssc-mainmenu > li > a {
-    border-right: 1px solid #eee;
+  border-right: 1px solid #eee;
 }
 
 .cssc-mainnav--default .cssc-mainmenu .submenu {
-    padding: 10px;
-    border: 1px solid #eee;
-    border-width: 0 0 1px 1px;
-    background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-width: 0 0 1px 1px;
+  background: #f9f9f9;
 }
 
 .cssc-mainnav--default .cssc-mainmenu .subcol {
-    min-width: 200px;
+  min-width: 200px;
 }
 
 .cssc-mainnav--default .cssc-mainmenu .subcol > ul {
-    min-width: 150px;
+  min-width: 150px;
 }
 
 .cssc-mainnav--default .cssc-mainmenu .subcol + .subcol,
 .cssc-mainnav--default .cssc-mainmenu .subcol > ul + ul {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 /* ----------------------------------------------------------
   Fil d'ariane
 ---------------------------------------------------------- */
-
 /* Core
 -------------------------- */
-
 .cssc-ariane {
-    font-size: 0;
+  font-size: 0;
 }
 
 .cssc-ariane > li {
-    display: inline-block;
-    zoom: 1;
-    height: inherit;
-    font: inherit;
-    *display: inline;
+  display: inline-block;
+  zoom: 1;
+  height: inherit;
+  font: inherit;
+  *display: inline;
 }
 
 .cssc-ariane a,
 .cssc-ariane strong {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 /* Default theme
 -------------------------- */
-
 .cssc-ariane--default {
-    height: 20px;
-    margin-bottom: 10px;
-    line-height: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  line-height: 20px;
 }
 
 .cssc-ariane--default li:after {
-    content: '›';
-    margin: 0 5px;
-    font-size: 12px;
+  content: '›';
+  margin: 0 5px;
+  font-size: 12px;
 }
 
 .cssc-ariane--default li:last-child:after {
-    display: none;
+  display: none;
 }
 
 /* Wizard theme
 -------------------------- */
-
 .cssc-ariane--wizard {
-    height: 30px;
-    margin-bottom: 30px;
-    border: 1px solid #999;
-    line-height: 30px;
+  height: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #999;
+  line-height: 30px;
 }
 
 .cssc-ariane--wizard li {
-    position: relative;
-    border-color: inherit;
-    text-align: center;
-    background-color: #BDF;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  position: relative;
+  border-color: inherit;
+  text-align: center;
+  background-color: #BDF;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .cssc-ariane--wizard li:hover {
-    background-color: #DEF;
+  background-color: #DEF;
 }
 
 .cssc-ariane--wizard li:before,
 .cssc-ariane--wizard li:after {
-    content: '';
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 10px;
-    height: 50%;
-    border-color: inherit;
-    border-right: 1px solid #FFF;
-    background: inherit;
-    -webkit-transform: skewX(30deg);
-    transform: skewX(30deg);
-    -webkit-transform-origin: top right;
-    transform-origin: top right;
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 50%;
+  border-color: inherit;
+  border-right: 1px solid #FFF;
+  background: inherit;
+  -webkit-transform: skewX(30deg);
+  transform: skewX(30deg);
+  -webkit-transform-origin: top right;
+  transform-origin: top right;
 }
 
 .cssc-ariane--wizard li:after {
-    top: auto;
-    bottom: 0;
-    -webkit-transform: skewX(-30deg);
-    transform: skewX(-30deg);
-    -webkit-transform-origin: bottom right;
-    transform-origin: bottom right;
+  top: auto;
+  bottom: 0;
+  -webkit-transform: skewX(-30deg);
+  transform: skewX(-30deg);
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
 }
 
 .cssc-ariane--wizard a,
 .cssc-ariane--wizard strong {
-    display: inline-block;
-    padding: 0 15px 0 25px;
-    font-size: 13px;
-    vertical-align: middle;
+  display: inline-block;
+  padding: 0 15px 0 25px;
+  font-size: 13px;
+  vertical-align: middle;
 }
 
 /* ----------------------------------------------------------
   Liste en ligne
 ---------------------------------------------------------- */
-
 .cssc-inline-list_label,
 .cssc-inline-list li,
 .cssc-inline-list a,
 .cssc-inline-list {
-    display: inline-block;
-    vertical-align: middle;
-    *display: inline;
-    *zoom: 1;
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  *zoom: 1;
 }
 
 .cssc-inline-list_label {
-    margin-right: 5px;
-    font-size: 13px;
+  margin-right: 5px;
+  font-size: 13px;
 }
 
 .cssc-inline-list li,
 .cssc-inline-list {
-    height: 30px;
-    line-height: 30px;
+  height: 30px;
+  line-height: 30px;
 }
 
 .cssc-inline-list a {
-    padding: 0 5px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    border-radius: 7px;
-    line-height: 23px;
+  padding: 0 5px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  line-height: 23px;
 }
 
 .cssc-inline-list .current a {
-    color: #fff;
-    background-color: #369;
+  color: #fff;
+  background-color: #369;
 }
 
 /* ----------------------------------------------------------
   Menu vertical
 ---------------------------------------------------------- */
-
 .cssc-vertical-menu {
-    margin-bottom: 20px;
-    max-width: 300px;
-    border: 1px solid #ddd;
-    background-color: #fff;
+  margin-bottom: 20px;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  background-color: #fff;
 }
 
 .cssc-vertical-menu li + li {
-    border-top: 1px solid #eee;
+  border-top: 1px solid #eee;
 }
 
 .cssc-vertical-menu a {
-    display: block;
-    padding: 0 10px;
-    line-height: 30px;
+  display: block;
+  padding: 0 10px;
+  line-height: 30px;
 }
 
 .cssc-vertical-menu a:focus,
 .cssc-vertical-menu a:hover {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .cssc-vertical-menu .current a {
-    padding-left: 7px;
-    border-left: 3px solid #369;
+  padding-left: 7px;
+  border-left: 3px solid #369;
 }
 
 /* ----------------------------------------------------------
   Pagination bullet
 ---------------------------------------------------------- */
-
 .cssc-bullet {
-    margin-bottom: 20px;
-    overflow: hidden;
-    text-align: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .cssc-bullet li {
-    display: inline-block;
-    line-height: inherit;
-    vertical-align: middle;
-    -webkit-transition: color 0.3s ease;
-    -moz-transition: color 0.3s ease;
-    -o-transition: color 0.3s ease;
-    transition: color 0.3s ease;
-    cursor: pointer;
-    *display: inline;
-    *zoom: 1;
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: middle;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  *display: inline;
+  *zoom: 1;
 }
 
 /* Thème
 -------------------------- */
-
 .cssc-bullet {
-    height: 15px;
-    line-height: 15px;
+  height: 15px;
+  line-height: 15px;
 }
 
 .cssc-bullet li {
-    padding: 0 2px;
-    font-size: 35px;
-    color: #999;
+  padding: 0 2px;
+  font-size: 35px;
+  color: #999;
 }
 
 .cssc-bullet .current,
 .cssc-bullet li:hover {
-    color: #333;
+  color: #333;
 }
 
 /* ----------------------------------------------------------
   Responsive menu
 ---------------------------------------------------------- */
-
 .cssc-responsive-menu {
-    z-index: 1;
-    position: relative;
+  z-index: 1;
+  position: relative;
 }
 
 .cssc-responsive-menu__button,
 .cssc-responsive-menu__links {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    right: 0;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .cssc-responsive-menu__title {
-    margin: 0;
-    line-height: inherit;
+  margin: 0;
+  line-height: inherit;
 }
 
 .cssc-responsive-menu__links a,
 .cssc-responsive-menu__links li,
 .cssc-responsive-menu__links {
-    display: block;
-    line-height: inherit;
+  display: block;
+  line-height: inherit;
 }
 
 .cssc-responsive-menu__links li {
-    float: left;
+  float: left;
 }
 
 .cssc-responsive-menu__button {
-    display: none;
+  display: none;
 }
 
-@media(max-width:720px) {
-    .cssc-responsive-menu__button {
-        display: block;
-    }
+@media (max-width: 720px) {
+  .cssc-responsive-menu__button {
+    display: block;
+  }
 
-    .cssc-responsive-menu__links {
-        visibility: hidden;
-        opacity: 0;
-    }
+  .cssc-responsive-menu__links {
+    visibility: hidden;
+    opacity: 0;
+  }
 
-    .is-open .cssc-responsive-menu__links {
-        visibility: visible;
-        opacity: 0.99;
-    }
+  .is-open .cssc-responsive-menu__links {
+    visibility: visible;
+    opacity: 0.99;
+  }
 }
-
 /* Default theme
 -------------------------- */
-
 .cssc-responsive-menu--default {
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    line-height: 40px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  line-height: 40px;
 }
 
 .cssc-responsive-menu__title {
-    margin-left: 10px;
-    font-size: 16px;
+  margin-left: 10px;
+  font-size: 16px;
 }
 
 .cssc-responsive-menu__button {
-    top: 50%;
-    right: 5px;
-    height: 30px;
-    margin-top: -15px;
-    border: 1px solid #ccc;
-    font-size: 15px;
-    line-height: 20px;
-    background-color: #fff;
+  top: 50%;
+  right: 5px;
+  height: 30px;
+  margin-top: -15px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  line-height: 20px;
+  background-color: #fff;
 }
 
 .cssc-responsive-menu__button .icon {
-    display: inline-block;
-    font-size: 25px;
-    vertical-align: -1px;
+  display: inline-block;
+  font-size: 25px;
+  vertical-align: -1px;
 }
 
 .cssc-responsive-menu__links li {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
-@media(max-width:720px) {
-    .cssc-responsive-menu__links {
-        top: 100%;
-        right: -1px;
-        left: -1px;
-        margin: 0;
-        border: 1px solid #ccc;
-        background-color: #fff;
-    }
+@media (max-width: 720px) {
+  .cssc-responsive-menu__links {
+    top: 100%;
+    right: -1px;
+    left: -1px;
+    margin: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
 
-    .cssc-responsive-menu__links li + li {
-        border-top: 1px solid #ccc;
-    }
+  .cssc-responsive-menu__links li + li {
+    border-top: 1px solid #ccc;
+  }
 
-    .cssc-responsive-menu__links li {
-        float: none;
-        margin-right: 0;
-        padding: 0 10px;
-    }
+  .cssc-responsive-menu__links li {
+    float: none;
+    margin-right: 0;
+    padding: 0 10px;
+  }
 }

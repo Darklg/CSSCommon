@@ -1,1 +1,100 @@
-.compassbugfix,.icn.icn-like,.icn.icn-share-fb,.icn.icn-share-twitter,.icn.icn-user{background:url('../images/css-sprite-2x-s285d1784ea.png');background:url('../images/css-sprite-s77ae137a15.png')}.icn.icn-like{height:21px;width:22px;background-position:0 0}.icn.icn-share-fb{height:19px;width:10px;background-position:0 -31px}.icn.icn-share-twitter{height:19px;width:25px;background-position:0 -60px}.icn.icn-user{height:18px;width:15px;background-position:0 -89px}@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){.spritesimg2x,.icn.icn-like,.icn.icn-share-fb,.icn.icn-share-twitter,.icn.icn-user{background:url('../images/css-sprite-2x-s285d1784ea.png');background-size:25px auto}.icn.icn-like{background-position:0 0}.icn.icn-share-fb{background-position:0 -26px}.icn.icn-share-twitter{background-position:0 -50px}.icn.icn-user{background-position:0 -74px}}
+/* ----------------------------------------------------------
+  Config
+---------------------------------------------------------- */
+/* Fonts */
+/* Colors */
+/* Breakpoints */
+/* Basic queries */
+/* Sprites */
+/* :) */
+/* :) */
+/* ----------------------------------------------------------
+  Utilities
+---------------------------------------------------------- */
+/*
+Name: Retina Sprites
+URL: http://github.com/Darklg/CSSCommon
+Version: 0.9.4
+License: MIT
+Forked from : @AdamBrodzinski | https://github.com/AdamBrodzinski/Retina-Sprites-for-Compass
+*/
+/* Cache values
+-------------------------- */
+/* Load sprites
+-------------------------- */
+.compassbugfix, .icn.icn-like, .icn.icn-share-fb, .icn.icn-share-twitter, .icn.icn-user {
+  background: url('../images/css-sprite-2x-s285d1784ea.png');
+  background: url('../images/css-sprite-s77ae137a15.png');
+}
+
+/* Mixin
+-------------------------- */
+/* Generate icon list
+-------------------------- */
+.icn.icn-like {
+  height: 21px;
+  width: 22px;
+  background-position: 0 0;
+}
+
+.icn.icn-share-fb {
+  height: 19px;
+  width: 10px;
+  background-position: 0 -31px;
+}
+
+.icn.icn-share-twitter {
+  height: 19px;
+  width: 25px;
+  background-position: 0 -60px;
+}
+
+.icn.icn-user {
+  height: 18px;
+  width: 15px;
+  background-position: 0 -89px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+  .spritesimg2x, .icn.icn-like, .icn.icn-share-fb, .icn.icn-share-twitter, .icn.icn-user {
+    background: url('../images/css-sprite-2x-s285d1784ea.png');
+    background-size: 25px auto;
+  }
+
+  .icn.icn-like {
+    background-position: 0 0;
+  }
+
+  .icn.icn-share-fb {
+    background-position: 0 -26px;
+  }
+
+  .icn.icn-share-twitter {
+    background-position: 0 -50px;
+  }
+
+  .icn.icn-user {
+    background-position: 0 -74px;
+  }
+}
+/* ----------------------------------------------------------
+  Black & White
+---------------------------------------------------------- */
+/* ----------------------------------------------------------
+  Plugins
+---------------------------------------------------------- */
+/* ----------------------------------------------------------
+  Framework
+---------------------------------------------------------- */
+/* ----------------------------------------------------------
+  Project
+---------------------------------------------------------- */
+/* ----------------------------------------------------------
+  Layout
+---------------------------------------------------------- */
+/* ----------------------------------------------------------
+  Header
+---------------------------------------------------------- */
+/* ----------------------------------------------------------
+  Footer
+---------------------------------------------------------- */

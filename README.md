@@ -2,6 +2,10 @@
 
 A (simple) CSS Starter, like Twitter's Bootstrap or Normalize.css
 
+## How to use
+
+* Use directly https://github.com/Darklg/SassCSSCommon as a submodule or a dependency (Recommended)
+* Use the cssc-* prefixed files in the css/ folder.
 
 ## Licence MIT
 

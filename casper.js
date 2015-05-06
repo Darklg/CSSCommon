@@ -1,8 +1,8 @@
 /* Init PhantomCSS */
-var phantomCSS = require('node_modules/phantomcss/phantomcss.js');
+var phantomCSS = require('./node_modules/phantomcss/phantomcss.js');
 phantomCSS.init({
     addLabelToFailedImage: false,
-    libraryRoot: 'node_modules/phantomcss',
+    libraryRoot: './node_modules/phantomcss/',
 });
 
 /* Start casper */

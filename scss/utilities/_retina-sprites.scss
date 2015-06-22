@@ -1,12 +1,17 @@
 /*
 Name: Retina Sprites
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.9.4
+Version: 0.10
 License: MIT
 Forked from : @AdamBrodzinski | https://github.com/AdamBrodzinski/Retina-Sprites-for-Compass
 */
 
 $create-class-for-sprite-img: true;
+
+$spritefolder: "images/css-sprite/*" !default;
+$spritefolder2x: "images/css-sprite-2x/*" !default;
+$sprites: sprite-map("css-sprite/*.png", $spacing: 10px) !default;       /* :) */
+$sprites2x: sprite-map("css-sprite-2x/*.png", $spacing: 10px) !default;  /* :) */
 
 /* Cache values
 -------------------------- */
@@ -119,20 +124,21 @@ $bgSize2x: ceil(image-width(sprite-path($sprites2x)) / 2);
 -------------------------- */
 
 @if($create-class-for-sprite-img) {
-    @each $clazz in listFiles("images/css-sprite/*") {
+    .icn.icn {
+        background: no-repeat $sprites 0 0;
+    }
+    @each $clazz in listFiles($spritefolder) {
         .icn.#{$clazz} {
-            @extend .compassbugfix;
             @include _retina-sprite-1x(#{$clazz}, $sprites, $sprites2x, 0 ,0, true);
         }
     }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
-        .spritesimg2x {
-            background: $sprites2x;
+        .icn.icn {
+            background-image: $sprites2x;
             background-size: $bgSize2x auto;
         }
-        @each $clazz in listFiles("images/css-sprite-2x/*") {
+        @each $clazz in listFiles($spritefolder2x) {
             .icn.#{$clazz} {
-                @extend .spritesimg2x;
                 @include _retina-sprite-2x(#{$clazz}, $sprites, $sprites2x, 0 ,0, true);
             }
         }

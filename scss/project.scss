@@ -29,8 +29,10 @@ $mobile_only:'max-width:'$mobile-max;
 
 /* Sprites */
 
-$sprites: sprite-map("css-sprite/*.png", $spacing: 10px);       /* :) */
-$sprites2x: sprite-map("css-sprite-2x/*.png", $spacing: 10px);  /* :) */
+$spritefolder: "images/css-sprite/*";
+$spritefolder2x: "images/css-sprite-2x/*";
+$sprites: sprite-map("css-sprite/*.png", $spacing: 10px);
+$sprites2x: sprite-map("css-sprite-2x/*.png", $spacing: 10px);
 
 /* ----------------------------------------------------------
   Utilities

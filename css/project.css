@@ -6,23 +6,23 @@
 /* Breakpoints */
 /* Basic queries */
 /* Sprites */
-/* :) */
-/* :) */
 /* ----------------------------------------------------------
   Utilities
 ---------------------------------------------------------- */
 /*
 Name: Retina Sprites
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.9.4
+Version: 0.10
 License: MIT
 Forked from : @AdamBrodzinski | https://github.com/AdamBrodzinski/Retina-Sprites-for-Compass
 */
+/* :) */
+/* :) */
 /* Cache values
 -------------------------- */
 /* Load sprites
 -------------------------- */
-.compassbugfix, .icn.icn-like, .icn.icn-share-fb, .icn.icn-share-twitter, .icn.icn-user {
+.compassbugfix {
   background: url('../images/css-sprite-2x-s285d1784ea.png');
   background: url('../images/css-sprite-s77ae137a15.png');
 }
@@ -31,6 +31,10 @@ Forked from : @AdamBrodzinski | https://github.com/AdamBrodzinski/Retina-Sprites
 -------------------------- */
 /* Generate icon list
 -------------------------- */
+.icn.icn {
+  background: no-repeat url('../images/css-sprite-s77ae137a15.png') 0 0;
+}
+
 .icn.icn-like {
   height: 21px;
   width: 22px;
@@ -56,8 +60,8 @@ Forked from : @AdamBrodzinski | https://github.com/AdamBrodzinski/Retina-Sprites
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
-  .spritesimg2x, .icn.icn-like, .icn.icn-share-fb, .icn.icn-share-twitter, .icn.icn-user {
-    background: url('../images/css-sprite-2x-s285d1784ea.png');
+  .icn.icn {
+    background-image: url('../images/css-sprite-2x-s285d1784ea.png');
     background-size: 25px auto;
   }
 

@@ -2,7 +2,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.5.2
+Version: 2.6
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -364,6 +364,92 @@ pre {
 .vertical-center p {
   padding: 0 10px;
   font-size: 12px;
+}
+
+/* ----------------------------------------------------------
+  Nav toggle
+---------------------------------------------------------- */
+.nav-toggle {
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+  font-size: 5px;
+  vertical-align: middle;
+}
+
+.nav-toggle span {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.nav-toggle span:before,
+.nav-toggle span:after {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  transform-origin: center center;
+}
+
+/* Conf
+-------------------------- */
+.nav-toggle {
+  width: 6em;
+  height: 5em;
+}
+
+.nav-toggle span,
+.nav-toggle span:before,
+.nav-toggle span:after {
+  width: 6em;
+  height: 1em;
+  border-radius: 1px;
+  background-color: #000;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav-toggle span:before {
+  margin-top: -2em;
+}
+
+.nav-toggle span:after {
+  margin-top: 2em;
+}
+
+/* Active
+-------------------------- */
+.has--opened-main-menu .nav-toggle span,
+.nav-toggle--is-active,
+.nav-toggle.is-active span {
+  height: 1px;
+  background: transparent;
+}
+
+.has--opened-main-menu .nav-toggle span:before,
+.nav-toggle--is-active:before,
+.nav-toggle.is-active span:before {
+  margin-top: 0;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.has--opened-main-menu .nav-toggle span:after,
+.nav-toggle--is-active:after,
+.nav-toggle.is-active span:after {
+  margin-top: 0;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 /* ----------------------------------------------------------

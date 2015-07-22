@@ -2,7 +2,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.2.2
+Version: 2.3
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -191,7 +191,7 @@ button {
    ----------------------- */
 .form-append {
   min-height: 1;
-  overflow: auto;
+  overflow: visible;
 }
 
 .form-append > * {
@@ -230,6 +230,81 @@ button {
     padding-left: 0 !important;
   }
 }
+/* ----------------------------------------------------------
+  Fake checked items
+---------------------------------------------------------- */
+/*
+<span><input type="checkbox" name="az" value="" /><span></span></span>
+*/
+.fake-checkbox,
+.fake-radio {
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1;
+  vertical-align: -3px;
+  background-color: #CCC;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.fake-checkbox input,
+.fake-radio input {
+  z-index: 1;
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+  width: 10em;
+  height: 10em;
+  opacity: 0.01;
+  cursor: pointer;
+}
+
+.fake-checkbox span,
+.fake-radio span {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.fake-radio input:checked + span,
+.fake-checkbox input:checked + span {
+  opacity: 0.9999;
+}
+
+/* Checkbox */
+.fake-checkbox span:before {
+  content: '✓';
+  font-size: 0.8em;
+  color: #333;
+}
+
+/* Radio */
+.fake-radio,
+.fake-radio span {
+  border-radius: 99px;
+}
+
+.fake-radio span {
+  border: 5px solid #CCC;
+  background-color: #333;
+}
+
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon

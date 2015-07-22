@@ -143,6 +143,10 @@
                     <input name="form_radiobox3" id="form_radiobox4" type="radio" />
                     <label for="form_radiobox4">Radio quatre</label>
                 </li>
+                <li class="box">
+                    <label><span class="fake-checkbox"><input type="checkbox" name="az" value="" /><span></span></span></label>
+                    <label><span class="fake-radio"><input type="radio" name="aza" value="" /><span></span></span></label>
+                </li>
             </ul>
         </fieldset>
     </form>

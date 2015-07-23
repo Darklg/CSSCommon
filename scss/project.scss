@@ -24,8 +24,9 @@ $desktop-min: 1024px;
 
 /* Basic queries */
 
-$desktop_only:'min-width:'$desktop-min;
 $mobile_only:'max-width:'$mobile-max;
+$mobile_excluded:'min-width:'$tablet-min;
+$desktop_only:'min-width:'$desktop-min;
 
 /* Sprites */
 
@@ -39,7 +40,6 @@ $sprites2x: sprite-map("css-sprite-2x/*.png", $spacing: 10px);
 ---------------------------------------------------------- */
 
 @import "utilities/_retina-sprites.scss";
-@import "utilities/_mixins.scss";
 @import "utilities/_plugins.scss";
 
 /* ----------------------------------------------------------

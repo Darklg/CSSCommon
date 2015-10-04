@@ -1,7 +1,7 @@
 /*
 Name: Grids
 URL: http://github.com/Darklg/CSSCommon
-Version: 4.0
+Version: 4.1
 License: MIT
 */
 .cssc-grid {
@@ -59,6 +59,14 @@ License: MIT
 
 .fluid-grid--10 > * {
   padding: 0 10px;
+}
+
+.fluid-grid--0 {
+  margin: 0;
+}
+
+.fluid-grid--0 > * {
+  padding: 0;
 }
 
 /* Columns

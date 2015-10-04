@@ -1,7 +1,7 @@
 /*
 Name: Effects
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.11
+Version: 0.13
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -222,6 +222,46 @@ License: MIT
   left: 0;
   opacity: 0.99;
   filter: alpha(opacity=99);
+}
+
+/* ----------------------------------------------------------
+  Image Grid
+---------------------------------------------------------- */
+.image-grid-item {
+  z-index: 1;
+  position: relative;
+  height: 0;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+
+.image-grid-item .ig-item__bg {
+  z-index: 1;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  margin: auto;
+  background: transparent no-repeat center center;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.image-grid-item:hover .ig-item__bg {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.image-grid-item .ig-item__content {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 /* ----------------------------------------------------------
@@ -535,10 +575,13 @@ License: MIT
   Scroll effects
 ---------------------------------------------------------- */
 .cssc-scroll-effects {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+}
+
+.cssc-scroll-effects[data-active] {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /* Opacity */
@@ -546,68 +589,109 @@ License: MIT
   opacity: 0;
 }
 
-.js .cssc-scroll-effects--opacity[is-active] {
+.js .cssc-scroll-effects--opacity[data-active] {
   opacity: 0.9999;
 }
 
 /* Slide effects
 -------------------------- */
 .js .cssc-scroll-effects--slidefromtopleft {
-  -webkit-transform: translate3d(-10px, -10px, 0);
-  -moz-transform: translate3d(-10px, -10px, 0);
-  transform: translate3d(-10px, -10px, 0);
+  -webkit-transform: translate3d(-20px, -20px, 0);
+  -moz-transform: translate3d(-20px, -20px, 0);
+  transform: translate3d(-20px, -20px, 0);
+}
+
+.js .cssc-scroll-effects--slidefromtopleft--wide {
+  -webkit-transform: translate3d(-40px, -40px, 0);
+  -moz-transform: translate3d(-40px, -40px, 0);
+  transform: translate3d(-40px, -40px, 0);
 }
 
 .js .cssc-scroll-effects--slidefromtop {
-  -webkit-transform: translate3d(0, -10px, 0);
-  -moz-transform: translate3d(0, -10px, 0);
-  transform: translate3d(0, -10px, 0);
+  -webkit-transform: translate3d(0, -20px, 0);
+  -moz-transform: translate3d(0, -20px, 0);
+  transform: translate3d(0, -20px, 0);
+}
+
+.js .cssc-scroll-effects--slidefromtop--wide {
+  -webkit-transform: translate3d(0, -40px, 0);
+  -moz-transform: translate3d(0, -40px, 0);
+  transform: translate3d(0, -40px, 0);
 }
 
 .js .cssc-scroll-effects--slidefromtopright {
-  -webkit-transform: translate3d(10px, -10px, 0);
-  -moz-transform: translate3d(10px, -10px, 0);
-  transform: translate3d(10px, -10px, 0);
+  -webkit-transform: translate3d(20px, -20px, 0);
+  -moz-transform: translate3d(20px, -20px, 0);
+  transform: translate3d(20px, -20px, 0);
+}
+
+.js .cssc-scroll-effects--slidefromtopright--wide {
+  -webkit-transform: translate3d(40px, -40px, 0);
+  -moz-transform: translate3d(40px, -40px, 0);
+  transform: translate3d(40px, -40px, 0);
 }
 
 .js .cssc-scroll-effects--slidefromright {
-  -webkit-transform: translate3d(10px, 0, 0);
-  -moz-transform: translate3d(10px, 0, 0);
-  transform: translate3d(10px, 0, 0);
+  -webkit-transform: translate3d(20px, 0, 0);
+  -moz-transform: translate3d(20px, 0, 0);
+  transform: translate3d(20px, 0, 0);
+}
+
+.js .cssc-scroll-effects--slidefromright--wide {
+  -webkit-transform: translate3d(40px, 0, 0);
+  -moz-transform: translate3d(40px, 0, 0);
+  transform: translate3d(40px, 0, 0);
 }
 
 .js .cssc-scroll-effects--slidefrombottomright {
-  -webkit-transform: translate3d(10px, 10px, 0);
-  -moz-transform: translate3d(10px, 10px, 0);
-  transform: translate3d(10px, 10px, 0);
+  -webkit-transform: translate3d(20px, 20px, 0);
+  -moz-transform: translate3d(20px, 20px, 0);
+  transform: translate3d(20px, 20px, 0);
+}
+
+.js .cssc-scroll-effects--slidefrombottomright--wide {
+  -webkit-transform: translate3d(40px, 40px, 0);
+  -moz-transform: translate3d(40px, 40px, 0);
+  transform: translate3d(40px, 40px, 0);
 }
 
 .js .cssc-scroll-effects--slidefrombottom {
-  -webkit-transform: translate3d(0, 10px, 0);
-  -moz-transform: translate3d(0, 10px, 0);
-  transform: translate3d(0, 10px, 0);
+  -webkit-transform: translate3d(0, 20px, 0);
+  -moz-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
+}
+
+.js .cssc-scroll-effects--slidefrombottom--wide {
+  -webkit-transform: translate3d(0, 40px, 0);
+  -moz-transform: translate3d(0, 40px, 0);
+  transform: translate3d(0, 40px, 0);
 }
 
 .js .cssc-scroll-effects--slidefrombottomleft {
-  -webkit-transform: translate3d(-10px, 10px, 0);
-  -moz-transform: translate3d(-10px, 10px, 0);
-  transform: translate3d(-10px, 10px, 0);
+  -webkit-transform: translate3d(-20px, 20px, 0);
+  -moz-transform: translate3d(-20px, 20px, 0);
+  transform: translate3d(-20px, 20px, 0);
+}
+
+.js .cssc-scroll-effects--slidefrombottomleft--wide {
+  -webkit-transform: translate3d(-40px, 40px, 0);
+  -moz-transform: translate3d(-40px, 40px, 0);
+  transform: translate3d(-40px, 40px, 0);
 }
 
 .js .cssc-scroll-effects--slidefromleft {
-  -webkit-transform: translate3d(-10px, 0, 0);
-  -moz-transform: translate3d(-10px, 0, 0);
-  transform: translate3d(-10px, 0, 0);
+  -webkit-transform: translate3d(-20px, 0, 0);
+  -moz-transform: translate3d(-20px, 0, 0);
+  transform: translate3d(-20px, 0, 0);
 }
 
-.js .cssc-scroll-effects--slidefromtopleft[is-active],
-.js .cssc-scroll-effects--slidefromtop[is-active],
-.js .cssc-scroll-effects--slidefromtopright[is-active],
-.js .cssc-scroll-effects--slidefromright[is-active],
-.js .cssc-scroll-effects--slidefrombottomright[is-active],
-.js .cssc-scroll-effects--slidefrombottom[is-active],
-.js .cssc-scroll-effects--slidefrombottomleft[is-active],
-.js .cssc-scroll-effects--slidefromleft[is-active] {
+.js .cssc-scroll-effects--slidefromleft--wide {
+  -webkit-transform: translate3d(-40px, 0, 0);
+  -moz-transform: translate3d(-40px, 0, 0);
+  transform: translate3d(-40px, 0, 0);
+}
+
+.js .cssc-scroll-effects[data-active] {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);

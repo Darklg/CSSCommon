@@ -452,6 +452,68 @@ pre {
   transform: rotate(-135deg);
 }
 
+/*
+Name: Common Mixins
+URL: http://github.com/Darklg/CSSCommon
+Version: 0.1
+License: MIT
+*/
+/* ----------------------------------------------------------
+  Black & White
+---------------------------------------------------------- */
+/* ----------------------------------------------------------
+  Vertical center
+---------------------------------------------------------- */
+.vertical-center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.vertical-center-content:after,
+.vertical-center-content:before {
+  content: '';
+}
+
+.vertical-center-content:before {
+  align-self: flex-start;
+}
+
+.vertical-center-content:after {
+  align-self: flex-end;
+}
+
+/* ----------------------------------------------------------
+  Absolute cover
+---------------------------------------------------------- */
+.absolute-cover {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* ----------------------------------------------------------
+  Responsive display
+---------------------------------------------------------- */
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .hide-on-desktop {
+    display: none;
+  }
+}
 /* ----------------------------------------------------------
   Modale : Core
 ---------------------------------------------------------- */

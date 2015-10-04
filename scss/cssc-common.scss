@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+$mobile_only:'max-width:767px' !default;
+$mobile_excluded:'min-width:768px' !default;
+
 @import "csscommon/components/common";
 @import "csscommon/components/common/blockmedia";
 @import "csscommon/components/common/codepresentation";
@@ -8,6 +11,7 @@
 @import "csscommon/components/common/messages";
 @import "csscommon/components/common/verticalcenter";
 @import "csscommon/components/common/navtoggle";
+@import "csscommon/components/mixins/common";
 @import "csscommon/components/modale/core";
 @import "csscommon/components/modale/theme";
 @import "csscommon/components/progressbar/core";

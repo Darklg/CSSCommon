@@ -2,7 +2,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.3
+Version: 2.3.1
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -112,6 +112,7 @@ button {
 .cssc-form input[type=email],
 .cssc-form input[type=password] {
   -webkit-appearance: none;
+  -moz-appearance: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -152,6 +153,10 @@ button {
   line-height: 1;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.cssc-select::-ms-expand {
+  display: none;
 }
 
 .cssc-select:focus {
@@ -305,12 +310,6 @@ button {
   background-color: #333;
 }
 
-/*
-Name: Forms
-URL: http://github.com/Darklg/CSSCommon
-Version: 2.2.2
-License: MIT
-*/
 /* ----------------------------------------------------------
   Form : Theme
 ---------------------------------------------------------- */

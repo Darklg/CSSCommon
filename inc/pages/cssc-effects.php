@@ -211,3 +211,18 @@
 &lt;/a&gt;</pre>
     </div>
 </section>
+<section class="block-content centered-container">
+    <div>
+        <h2>Image grid</h2>
+        <div class="cssc-grid fluid-grid fluid-grid--0">
+            <?php for ($i = 1; $i <= 4; $i++) { ?>
+            <div class="col-25p">
+                <div class="image-grid-item">
+                    <div class="ig-item__bg" style="background-image: url(images/___x100/<?php echo $i; ?>.jpg);"></div>
+                    <div class="ig-item__content vertical-center-content"><div><p>Hello</p></div></div>
+                </div>
+            </div>
+            <?php } ?>
+        </div>
+    </div>
+</section>

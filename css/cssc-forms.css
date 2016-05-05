@@ -2,7 +2,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.3.1
+Version: 2.4.2
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -110,6 +110,7 @@ button {
 .cssc-form input[type=text],
 .cssc-form input[type=url],
 .cssc-form input[type=email],
+.cssc-form input[type=search],
 .cssc-form input[type=password] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -120,6 +121,7 @@ button {
   margin: 0;
   padding: 0;
   border: 0;
+  border-radius: 0;
   font-family: inherit;
   vertical-align: middle;
   outline: 0;
@@ -146,6 +148,7 @@ button {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
+  border: none;
   overflow: hidden;
   text-align: left;
   text-indent: 0.01px;
@@ -153,6 +156,7 @@ button {
   line-height: 1;
   white-space: nowrap;
   cursor: pointer;
+  -ms-appearance: none;
 }
 
 .cssc-select::-ms-expand {
@@ -195,8 +199,14 @@ button {
 /* Append form
    ----------------------- */
 .form-append {
-  min-height: 1;
-  overflow: visible;
+  min-height: 1px;
+}
+
+.form-append:after {
+  content: '';
+  display: table;
+  clear: both;
+  width: 100%;
 }
 
 .form-append > * {
@@ -265,9 +275,11 @@ button {
   position: absolute;
   top: -0.5em;
   left: -0.5em;
-  width: 10em;
-  height: 10em;
+  font-size: 2em;
   opacity: 0.01;
+  -webkit-transform: scale(10);
+  -moz-transform: scale(10);
+  transform: scale(10);
   cursor: pointer;
 }
 

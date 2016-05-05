@@ -87,6 +87,147 @@ Forked from : @AdamBrodzinski | https://github.com/AdamBrodzinski/Retina-Sprites
 /* ----------------------------------------------------------
   Framework
 ---------------------------------------------------------- */
+/*
+Name: Common Header
+URL: http://github.com/Darklg/CSSCommon
+Version: 0.1
+License: MIT
+*/
+/* ----------------------------------------------------------
+  Wrapper
+---------------------------------------------------------- */
+.cssc-header__wrapper,
+.cssc-header__content,
+.cssc-header {
+  z-index: 1;
+  position: relative;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.has--fixed-header .cssc-header__wrapper,
+.cssc-header {
+  z-index: 3;
+}
+
+.cssc-header__wrapper {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.has--fixed-header .cssc-header__wrapper {
+  position: fixed;
+}
+
+.cssc-header__content {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* ----------------------------------------------------------
+  Areas in header
+---------------------------------------------------------- */
+.header__logo, .header__menu, .header__links {
+  z-index: 1;
+  position: relative;
+}
+
+/* Mixins
+-------------------------- */
+.header__menu, .header__links {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+}
+
+.header__menu {
+  left: 0;
+  text-align: left;
+}
+
+.header__links {
+  right: 0;
+  text-align: right;
+}
+
+/* ----------------------------------------------------------
+  Blocks
+---------------------------------------------------------- */
+.cssc-header__block {
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+  vertical-align: top;
+}
+
+/*
+<script type="script/sass">
+.header__menu {
+    @extend %cssc-header__area;
+    @extend %cssc-header__area--pos;
+    @extend %cssc-header__area--left;
+}
+.header__links {
+    @extend %cssc-header__area;
+    @extend %cssc-header__area--pos;
+    @extend %cssc-header__area--right;
+}
+</script>
+
+<header class="cssc-header">
+    <div class="cssc-header__wrapper">
+        <div class="cssc-header__content">
+            <div class="header__menu">menu</div>
+            <h1 class="header__logo"><a href="#"><img src="http://placehold.it/100x30/?text=logo" alt="" /></a></h1>
+            <div class="header__links">
+                <div class="cssc-header__block"><a href="#">Account</a></div>
+                <div class="cssc-header__block"><a href="#">Cart</a></div>
+            </div>
+        </div>
+    </div>
+</header>
+*/
+/* ----------------------------------------------------------
+  Theme
+---------------------------------------------------------- */
+/* Header height
+-------------------------- */
+.cssc-header__wrapper,
+.cssc-header {
+  height: 100px;
+}
+
+/* Wrapper style
+-------------------------- */
+.cssc-header__wrapper {
+  padding: 10px 15px;
+  background-color: #FFF;
+}
+
+/* Content max width
+-------------------------- */
+.cssc-header__content {
+  width: 940px;
+}
+
+/* Blocks spacing
+-------------------------- */
+.cssc-header__block + .cssc-header__block {
+  margin-left: 20px;
+}
+
+/* Demo code
+-------------------------- */
+.header__logo {
+  margin: 0;
+}
+
 /* ----------------------------------------------------------
   Project
 ---------------------------------------------------------- */

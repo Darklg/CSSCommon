@@ -455,7 +455,7 @@ pre {
 /*
 Name: Common Mixins
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.1
+Version: 0.5.1
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -465,6 +465,7 @@ License: MIT
   Vertical center
 ---------------------------------------------------------- */
 .vertical-center-content {
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -473,6 +474,7 @@ License: MIT
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: center;
+  -ms-flex-align: center;
 }
 
 .vertical-center-content:after,
@@ -488,6 +490,30 @@ License: MIT
   align-self: flex-end;
 }
 
+/* ----------------------------------------------------------
+  Desktop grid
+---------------------------------------------------------- */
+.desktop-grid-table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.desktop-grid-table > * {
+  display: table-cell;
+  vertical-align: top;
+}
+
+@media (max-width: 767px) {
+  .desktop-grid-table,
+  .desktop-grid-table > * {
+    display: block;
+  }
+
+  .desktop-grid-table > * {
+    margin-bottom: 2em;
+  }
+}
 /* ----------------------------------------------------------
   Absolute cover
 ---------------------------------------------------------- */
@@ -506,14 +532,56 @@ License: MIT
 ---------------------------------------------------------- */
 @media (max-width: 767px) {
   .hide-on-mobile {
-    display: none;
+    display: none !important;
   }
 }
 @media (min-width: 768px) {
   .hide-on-desktop {
-    display: none;
+    display: none !important;
   }
 }
+/* ----------------------------------------------------------
+  Prefixed keyframes
+---------------------------------------------------------- */
+/*
+ * Thx to: http://stackoverflow.com/a/23861638
+ *
+ * Ex :
+ *
+ * @include keyframes(rotating) {
+ *    0%, 100% {
+ *        transform: rotate(0deg);
+ *    }
+ * }
+*/
+/* ----------------------------------------------------------
+  Responsive
+---------------------------------------------------------- */
+/* ----------------------------------------------------------
+  Same height children
+---------------------------------------------------------- */
+.same-height-children {
+  display: block;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+
+.same-height-children > * {
+  display: inline-block;
+}
+
+.same-height-children,
+.same-height-children > * {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
 /* ----------------------------------------------------------
   Modale : Core
 ---------------------------------------------------------- */

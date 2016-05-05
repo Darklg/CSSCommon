@@ -2,12 +2,13 @@
 /*
 Name: Default Buttons
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.2
+Version: 2.4.1
 License: MIT
 */
 /* ----------------------------------------------------------
   Button : core
 ---------------------------------------------------------- */
+.buttonreset,
 .cssc-button {
   display: inline-block;
   z-index: 1;
@@ -17,12 +18,17 @@ License: MIT
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0 1em;
   border: 0;
   text-align: center;
   text-decoration: none;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2.5;
   white-space: nowrap;
   vertical-align: middle;
+  background: #fff;
   -webkit-background-clip: padding-box;
   cursor: pointer;
   -webkit-user-select: none;
@@ -33,10 +39,17 @@ License: MIT
   user-drag: none;
 }
 
+.buttonreset:hover,
+.buttonreset:focus,
 .cssc-button:hover,
 .cssc-button:focus {
   text-decoration: none;
   outline: 0;
+}
+
+.buttonreset[disabled],
+.cssc-button[disabled] {
+  cursor: not-allowed;
 }
 
 /* Icons
@@ -114,12 +127,13 @@ License: MIT
   border-bottom-left-radius: 0;
 }
 
-/*
-Name: Default Buttons
-URL: http://github.com/Darklg/CSSCommon
-Version: 2.2.1
-License: MIT
-*/
+/* Buttons' modes
+-------------------------- */
+.cssc-button--wide {
+  display: block;
+  width: 100%;
+}
+
 /* ----------------------------------------------------------
   Button : Theme
 ---------------------------------------------------------- */
@@ -162,15 +176,7 @@ License: MIT
   color: #333;
   opacity: 0.66;
   background: #e0e0e0;
-  cursor: default;
   filter: alpha(opacity=66);
-}
-
-/* Buttons' modes
--------------------------- */
-.cssc-button--wide {
-  display: block;
-  width: 100%;
 }
 
 /* Buttons' sizes

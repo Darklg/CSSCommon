@@ -46,7 +46,8 @@ $sprites2x: sprite-map("css-sprite-2x/*.png", $spacing: 10px);
   Framework
 ---------------------------------------------------------- */
 
-// @import "csscommon/_cssc-default.scss";
+@import "csscommon/components/header/core";
+@import "csscommon/components/header/theme";
 
 /* ----------------------------------------------------------
   Project

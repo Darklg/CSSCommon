@@ -1,7 +1,43 @@
 @charset "UTF-8";
 
-$mobile_only:'max-width:767px' !default;
-$mobile_excluded:'min-width:768px' !default;
+/* ----------------------------------------------------------
+  Vars
+---------------------------------------------------------- */
+
+/* Breakpoints
+-------------------------- */
+
+$mobile-tiny: 550px;
+$mobile-max: 767px;
+$tablet-min: 768px;
+$tablet-mid: 895px;
+$tablet-max: 1023px;
+$desktop-min: 1024px;
+$desktop-mid: 1299px;
+$desktop-max: 1599px;
+$large-min: 1600px;
+
+$mobile_only: "max-width:"+$mobile-max;
+$mobile_excluded: "min-width:"+$tablet-min;
+$tablet_down: "max-width:"+$tablet-mid;
+$desktop_excluded: "max-width:"+$tablet-max;
+$desktop_only: "min-width:"+$desktop-min;
+$large_excluded: "max-width:"+$desktop-max;
+$large_only: "min-width:"+$large-min;
+
+/* Margins
+-------------------------- */
+
+$mobile-padding: 15px;
+$mobile-padding-neg: -15px;
+$tablet-padding: 30px;
+$tablet-padding-neg: -30px;
+$desktop-padding: 45px;
+$desktop-padding-neg: -45px;
+
+/* ----------------------------------------------------------
+  Imports
+---------------------------------------------------------- */
 
 @import "csscommon/components/common";
 @import "csscommon/components/common/blockmedia";

@@ -1,7 +1,7 @@
 /*
 Name: Onglets
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.0.4
+Version: 1.1
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -29,8 +29,6 @@ License: MIT
   overflow: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
-  -moz-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
@@ -60,8 +58,6 @@ License: MIT
   border-bottom: 1px solid #ccc;
   -webkit-border-top-left-radius: 3px;
   -webkit-border-top-right-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-topright: 3px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   background-color: #f0f0f0;
@@ -69,8 +65,6 @@ License: MIT
   -moz-background-clip: border;
   background-clip: border;
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 

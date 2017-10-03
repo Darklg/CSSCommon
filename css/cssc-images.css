@@ -1,7 +1,7 @@
 /*
 Name: Images
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.0
+Version: 1.1
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -11,14 +11,11 @@ License: MIT
   display: inline-block;
   position: relative;
   overflow: hidden;
-  *display: inline;
-  *zoom: 1;
 }
 
 .cssc-image img:hover,
 .cssc-image img {
   opacity: 0.99;
-  filter: alpha(opacity=99);
 }
 
 .cssc-img-content {
@@ -29,8 +26,6 @@ License: MIT
   left: 0;
   padding: 10px;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 

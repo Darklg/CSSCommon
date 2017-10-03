@@ -1,7 +1,8 @@
+@charset "UTF-8";
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.7.13
+Version: 2.9.1
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -16,10 +17,10 @@ menu, nav, section, video, abbr, eventsource, mark, meter, time, progress, outpu
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0;
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
+  outline: 0;
   background: transparent no-repeat top left;
 }
 
@@ -110,10 +111,6 @@ textarea {
   resize: vertical;
 }
 
-.lt_ie8 input[type="checkbox"] {
-  vertical-align: baseline;
-}
-
 input:focus {
   outline: 0;
 }
@@ -136,23 +133,19 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type="search"]::-webkit-search-cancel-button {
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
   width: 0;
   height: 0;
 }
 
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
-  -webkit-appearance: none;
-}
-
 /* Input type date */
-input[type=date]::-webkit-clear-button,
-input[type=date]::-webkit-inner-spin-button,
-input[type=date]::-webkit-calendar-picker-indicator {
+input[type="date"]::-webkit-clear-button,
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
 }
 
@@ -174,14 +167,12 @@ button {
 
 /* Medias
 -------------------------- */
-video,
+iframe,
 img,
-object {
+object,
+video {
   height: auto;
   max-width: 100%;
-}
-
-iframe {
   border: 0;
 }
 
@@ -189,11 +180,6 @@ iframe {
 .gm-style img,
 .gmnoprint img {
   max-width: none;
-}
-
-/* bicubic resizing for non-native sized IMG | code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
-.lt_ie8 img {
-  -ms-interpolation-mode: bicubic;
 }
 
 /* Inline images are aligned on text */
@@ -225,11 +211,8 @@ body {
   min-height: 100%;
   font: 62.5%/1 sans-serif;
   color: #212121;
+  background: inherit;
   -webkit-text-size-adjust: none;
-}
-
-.lt_ie8 body {
-  height: 100%;
 }
 
 h1, .h1,
@@ -330,16 +313,16 @@ small {
 
 abbr[title],
 acronym[title] {
-  border-bottom: 1px dashed #ccc;
   border-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px dashed #ccc;
   cursor: help;
 }
 
 blockquote {
   display: block;
   padding: 5px 0 5px 10px;
-  border-left: 5px solid #DDD;
   border-color: rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #DDD;
   font-size: 12px;
 }
 
@@ -357,7 +340,6 @@ hr {
 /* ----------------------------------------------------------
   Clearfix
 ---------------------------------------------------------- */
-.clearfix,
 .cssc-grid:before,
 .cssc-grid:after,
 .clearfix:after,
@@ -408,7 +390,6 @@ a:active {
 
 .aimginv {
   opacity: 0.70;
-  filter: alpha(opacity=70);
 }
 
 /* .99 Opacity avoids a nasty effect on Webkit */
@@ -416,13 +397,11 @@ a img,
 .aimginv:hover,
 .aimg {
   opacity: 0.999;
-  filter: alpha(opacity=99);
 }
 
 .aimg:hover,
 a:hover img {
   opacity: 0.80;
-  filter: alpha(opacity=80);
 }
 
 /* ----------------------------------------------------------
@@ -431,8 +410,6 @@ a:hover img {
 a,
 .trans-col {
   -webkit-transition: color 0.3s ease;
-  -moz-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
@@ -441,16 +418,13 @@ a img,
 .aimginv,
 .cssc-btn,
 .trans-opa {
+  outline: 1px solid transparent;
   -webkit-transition: opacity 0.3s ease;
-  -moz-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
 .trans-all {
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -461,7 +435,15 @@ textarea,
 .cssc-button,
 .trans-button {
   -webkit-transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
-  -moz-transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
-  -o-transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
   transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
+}
+
+/* ----------------------------------------------------------
+  Disable transitions
+  Thx https://twitter.com/kizmarh/status/889422529269510145
+---------------------------------------------------------- */
+@​media (prefers-reduced-motion:reduce) {
+  * {
+    transition: none !important;
+  }
 }

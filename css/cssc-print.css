@@ -2,7 +2,7 @@
 /*
 Name: Print
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.0.1
+Version: 1.0.2
 License: MIT
 */
 @media print {
@@ -30,7 +30,9 @@ License: MIT
 
   /* CSSCommon
      ----------------------- */
+  .noprint,
+  .no-print,
   .cssc-mainnav {
-    display: none;
+    display: none !important;
   }
 }

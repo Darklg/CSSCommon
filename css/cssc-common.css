@@ -1,8 +1,18 @@
 @charset "UTF-8";
+/* ----------------------------------------------------------
+  Vars
+---------------------------------------------------------- */
+/* Breakpoints
+-------------------------- */
+/* Margins
+-------------------------- */
+/* ----------------------------------------------------------
+  Imports
+---------------------------------------------------------- */
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.6
+Version: 2.7.1
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -111,16 +121,12 @@ samp,
   display: inline-block;
   padding: 3px;
   border: 1px solid #ddd;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
   text-shadow: 1px 1px 0 white;
   font: 11px/1.2 'Lucida Console',Monospace;
   vertical-align: middle;
   color: #333;
   background: #f5f5f5;
-  *display: inline;
-  *zoom: 1;
 }
 
 tt:hover,
@@ -186,7 +192,7 @@ pre {
 }
 
 .wdrw > a:focus + .submenu,
-.wdrw:hover .submenu {
+.wdrw:hover .submenu, .wdrw .submenu:focus-within {
   visibility: visible;
   z-index: 999;
   opacity: 1;
@@ -213,8 +219,6 @@ pre {
   *color: transparent;
   *font-size: 1px;
   *line-height: 0;
-  *display: inline;
-  *zoom: 1;
 }
 
 .cssc-btn-px {
@@ -240,7 +244,6 @@ pre {
 .cssc-btn:focus,
 .cssc-btn:hover {
   opacity: 0.50;
-  filter: alpha(opacity=50);
 }
 
 /* ----------------------------------------------------------
@@ -282,8 +285,6 @@ pre {
   margin-bottom: 5px;
   padding: 7px;
   border: 1px solid #ccc;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
   color: #333;
   background: #fff;
@@ -333,8 +334,6 @@ pre {
   display: inline-block;
   line-height: 1;
   vertical-align: middle;
-  *display: inline;
-  *zoom: 1;
 }
 
 /* Personalization
@@ -455,7 +454,7 @@ pre {
 /*
 Name: Common Mixins
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.5.1
+Version: 0.8
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -488,6 +487,21 @@ License: MIT
 
 .vertical-center-content:after {
   align-self: flex-end;
+}
+
+/* ----------------------------------------------------------
+  Justify items
+---------------------------------------------------------- */
+.justify-items {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-box-orient: horizontal;
 }
 
 /* ----------------------------------------------------------
@@ -530,13 +544,27 @@ License: MIT
 /* ----------------------------------------------------------
   Responsive display
 ---------------------------------------------------------- */
+/* Hide on mobile devices */
 @media (max-width: 767px) {
   .hide-on-mobile {
     display: none !important;
   }
 }
+/* Hide on desktop devices */
 @media (min-width: 768px) {
   .hide-on-desktop {
+    display: none !important;
+  }
+}
+/* Hide on devices larger than tablets */
+@media (min-width: 1024px) {
+  .hide-above-tablet {
+    display: none !important;
+  }
+}
+/* Hide on tablets and smaller devices */
+@media (max-width: 1023px) {
+  .hide-tablet-below {
     display: none !important;
   }
 }
@@ -583,6 +611,21 @@ License: MIT
 }
 
 /* ----------------------------------------------------------
+  Responsive padding
+---------------------------------------------------------- */
+/* All
+-------------------------- */
+/* Top / Bottom
+-------------------------- */
+/* Left / Right
+-------------------------- */
+/* ----------------------------------------------------------
+  Parent hover visibility
+---------------------------------------------------------- */
+/* ----------------------------------------------------------
+  Full width container : https://css-tricks.com/?p=243825
+---------------------------------------------------------- */
+/* ----------------------------------------------------------
   Modale : Core
 ---------------------------------------------------------- */
 body.has-modale {
@@ -607,7 +650,6 @@ body.has-modale {
   opacity: 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  filter: alpha(opacity=0);
 }
 
 .cssc-modale__filter {
@@ -626,12 +668,10 @@ body.has-modale {
   visibility: visible;
   opacity: 0.50;
   background-color: #333;
-  filter: alpha(opacity=50);
 }
 
 .cssc-modale--default.is-loaded .cssc-modale__filter {
   opacity: 0.70;
-  filter: alpha(opacity=70);
 }
 
 /* Content */
@@ -646,7 +686,6 @@ body.has-modale {
 .cssc-modale--default.is-loaded .cssc-modale__content {
   visibility: visible;
   opacity: 0.999;
-  filter: alpha(opacity=100);
 }
 
 /* Header */
@@ -720,8 +759,6 @@ body.has-modale {
 
 .progress-bar--default:before,
 .progress-bar--default .bar {
-  -webkit-border-radius: 999px;
-  -moz-border-radius: 999px;
   border-radius: 999px;
 }
 
@@ -788,6 +825,12 @@ body.has-modale {
   padding-bottom: 15px;
 }
 
+/*
+Name: Stars
+URL: http://github.com/Darklg/CSSCommon
+Version: 0.1
+License: MIT
+*/
 /* ----------------------------------------------------------
   Stars : Core
 ---------------------------------------------------------- */
@@ -802,8 +845,30 @@ body.has-modale {
 }
 
 .cssc-stars label {
+  z-index: 1;
   float: right;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
   cursor: pointer;
+}
+
+.cssc-stars label span {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.cssc-stars label span.default {
+  opacity: 0.99;
 }
 
 .cssc-stars input {
@@ -811,6 +876,31 @@ body.has-modale {
   position: absolute;
   top: -100px;
   left: -100px;
+}
+
+/* Content
+-------------------------- */
+.cssc-stars .current ~ label span.default,
+.cssc-stars input:checked ~ label span.default {
+  opacity: 0;
+}
+.cssc-stars .current ~ label span.current,
+.cssc-stars input:checked ~ label span.current {
+  opacity: 0.999;
+}
+
+.cssc-stars label:hover span.current,
+.cssc-stars label:hover span.default,
+.cssc-stars input:checked ~ label:hover span.current,
+.cssc-stars input:checked ~ label:hover span.default,
+.cssc-stars label:hover ~ label span.current,
+.cssc-stars label:hover ~ label span.default {
+  opacity: 0;
+}
+.cssc-stars label:hover span.hover,
+.cssc-stars input:checked ~ label:hover span.hover,
+.cssc-stars label:hover ~ label span.hover {
+  opacity: 0.999;
 }
 
 /* ----------------------------------------------------------
@@ -843,8 +933,6 @@ body.has-modale {
   position: relative;
   white-space: nowrap;
   vertical-align: middle;
-  *display: inline;
-  *zoom: 1;
 }
 
 .cssc-tags a:before,
@@ -862,8 +950,6 @@ body.has-modale {
   margin-bottom: 5px;
   padding: 1px 4px;
   border: 1px solid #e0e0e0;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
   color: #333;
 }

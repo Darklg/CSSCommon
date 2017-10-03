@@ -2,7 +2,7 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.10.1
+Version: 1.12
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -75,6 +75,8 @@ License: MIT
   position: relative;
 }
 
+/* Responsive centered
+-------------------------- */
 /* ----------------------------------------------------------
   Base des layouts
 ---------------------------------------------------------- */
@@ -90,15 +92,6 @@ License: MIT
   vertical-align: top;
 }
 
-.lt_ie8 .cssc-lay {
-  display: block;
-}
-
-.lt_ie8 .cssc-lay > * {
-  display: block;
-  float: left;
-}
-
 .cssc-lay > .col-main {
   width: auto;
 }
@@ -108,26 +101,14 @@ License: MIT
   width: 220px;
 }
 
-.lt_ie8 .cssc-lay > .col-main {
-  width: 720px;
-}
-
 /* Wide layout d'exemple */
 .clay-wide > .col-side {
   width: 300px;
 }
 
-.lt_ie8 .clay-wide > .col-main {
-  width: 640px;
-}
-
 /* Responsive Layout */
 .clay-resp {
   max-width: 940px;
-}
-
-.lt_ie9 .clay-resp {
-  min-width: 800px;
 }
 
 .clay-resp > .col-side {

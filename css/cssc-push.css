@@ -1,7 +1,7 @@
 /*
 Name: Push
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.0.7
+Version: 1.1
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -9,9 +9,8 @@ License: MIT
    ------------------------------------------------------- */
 .cssc-push {
   display: inline-block;
+  z-index: 1;
   position: relative;
-  *display: inline;
-  *zoom: 1;
 }
 
 .cssc-push,
@@ -31,14 +30,7 @@ License: MIT
   direction: ltr;
   text-align: left;
   text-indent: -9999px;
-}
-
-.cssc-push .after,
-.cssc-push .background,
-.cssc-push .before {
   -webkit-transition: opacity 0.2s ease-in;
-  -moz-transition: opacity 0.2s ease-in;
-  -o-transition: opacity 0.2s ease-in;
   transition: opacity 0.2s ease-in;
 }
 
@@ -46,8 +38,7 @@ License: MIT
 .cssc-push .after,
 .cssc-push:focus .before,
 .cssc-push:hover .before {
-  opacity: 0.0;
-  filter: alpha(opacity=0);
+  opacity: 0;
 }
 
 .cssc-push .before,
@@ -56,5 +47,4 @@ License: MIT
 .cssc-push:hover .after,
 .cssc-push:hover .background {
   opacity: 1;
-  filter: alpha(opacity=100);
 }

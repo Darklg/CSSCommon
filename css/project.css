@@ -35,18 +35,6 @@ Forked from : @AdamBrodzinski | https://github.com/AdamBrodzinski/Retina-Sprites
   background: no-repeat url('../images/css-sprite-s77ae137a15.png') 0 0;
 }
 
-.icn.icn-like {
-  height: 21px;
-  width: 22px;
-  background-position: 0 0;
-}
-
-.icn.icn-share-fb {
-  height: 19px;
-  width: 10px;
-  background-position: 0 -31px;
-}
-
 .icn.icn-share-twitter {
   height: 19px;
   width: 25px;
@@ -59,18 +47,22 @@ Forked from : @AdamBrodzinski | https://github.com/AdamBrodzinski/Retina-Sprites
   background-position: 0 -89px;
 }
 
+.icn.icn-like {
+  height: 21px;
+  width: 22px;
+  background-position: 0 0;
+}
+
+.icn.icn-share-fb {
+  height: 19px;
+  width: 10px;
+  background-position: 0 -31px;
+}
+
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
   .icn.icn {
     background-image: url('../images/css-sprite-2x-s285d1784ea.png');
     background-size: 25px auto;
-  }
-
-  .icn.icn-like {
-    background-position: 0 0;
-  }
-
-  .icn.icn-share-fb {
-    background-position: 0 -26px;
   }
 
   .icn.icn-share-twitter {
@@ -79,6 +71,14 @@ Forked from : @AdamBrodzinski | https://github.com/AdamBrodzinski/Retina-Sprites
 
   .icn.icn-user {
     background-position: 0 -74px;
+  }
+
+  .icn.icn-like {
+    background-position: 0 0;
+  }
+
+  .icn.icn-share-fb {
+    background-position: 0 -26px;
   }
 }
 /* ----------------------------------------------------------

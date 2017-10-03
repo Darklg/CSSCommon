@@ -2,7 +2,7 @@
 /*
 Name: Navigation
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.11
+Version: 1.12
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -63,8 +63,6 @@ License: MIT
   display: inline-block;
   width: auto;
   margin-right: 4px;
-  *display: inline;
-  *zoom: 1;
 }
 
 /* Links */
@@ -381,8 +379,6 @@ License: MIT
 .cssc-inline-list {
   display: inline-block;
   vertical-align: middle;
-  *display: inline;
-  *zoom: 1;
 }
 
 .cssc-inline-list_label {
@@ -398,8 +394,6 @@ License: MIT
 
 .cssc-inline-list a {
   padding: 0 5px;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
   border-radius: 7px;
   line-height: 23px;
 }
@@ -456,12 +450,8 @@ License: MIT
   line-height: inherit;
   vertical-align: middle;
   -webkit-transition: color 0.3s ease;
-  -moz-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
   cursor: pointer;
-  *display: inline;
-  *zoom: 1;
 }
 
 /* Thème

@@ -1,7 +1,7 @@
 /*
 Name: Content
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.0
+Version: 2.2
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -24,4 +24,157 @@ License: MIT
 -------------------------- */
 .center {
   text-align: center;
+}
+
+/* ----------------------------------------------------------
+  Content text
+---------------------------------------------------------- */
+.cssc-content {
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+/* Text
+-------------------------- */
+.cssc-content p,
+.cssc-content li {
+  font: inherit;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  word-wrap: break-word;
+}
+
+/* Titles
+-------------------------- */
+.cssc-content h2,
+.cssc-content h3,
+.cssc-content h4 {
+  margin-bottom: 0.5em;
+  font: inherit;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.cssc-content h2 {
+  font-size: 1.8em;
+}
+.cssc-content h3 {
+  font-size: 1.4em;
+}
+.cssc-content * + h2,
+.cssc-content *:not(h2):not(h4) + h3,
+.cssc-content *:not(h2):not(h3) + h4 {
+  margin-top: 1em;
+}
+
+/* Lists
+-------------------------- */
+.cssc-content ul {
+  list-style: inside disc;
+}
+.cssc-content ul ul {
+  list-style-type: circle;
+}
+.cssc-content ol {
+  list-style: inside decimal;
+}
+
+/* Definition lists
+-------------------------- */
+.cssc-content dd + dt {
+  margin-top: 0.5em;
+}
+.cssc-content dt {
+  font-weight: bold;
+}
+
+/* Medias
+-------------------------- */
+.cssc-content > video, .cssc-content > iframe {
+  width: 100%;
+}
+.cssc-content .alignleft {
+  float: left;
+  margin: 0 1em 0.5em 0;
+}
+.cssc-content .aligncenter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.cssc-content .alignright {
+  float: right;
+  margin: 0 0 0.5em 1em;
+}
+
+/* Margins
+-------------------------- */
+.cssc-content ul ul,
+.cssc-content ol ol {
+  margin-bottom: 0;
+  padding-left: 1em;
+}
+.cssc-content blockquote p {
+  margin-bottom: 0.5em;
+}
+
+.cssc-content p,
+.cssc-content blockquote,
+.cssc-content table,
+.cssc-content address,
+.cssc-content > iframe,
+.cssc-content > video,
+.cssc-content dl,
+.cssc-content ol,
+.cssc-content ul,
+.cssc-content,
+.cssc-block {
+  margin-bottom: 1.3em;
+}
+
+.cssc-content dl:last-child,
+.cssc-content ol:last-child,
+.cssc-content ul:last-child,
+.cssc-content blockquote:last-child,
+.cssc-content blockquote p:last-child,
+.cssc-content p:last-child,
+.cssc-block:last-child {
+  margin-bottom: 0;
+}
+
+/* Content module
+-------------------------- */
+.cssc-content-module {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  -webkit-background-clip: border-box;
+  -moz-background-clip: border-box;
+  background-clip: border-box;
+}
+
+.cssc-content-module:last-child {
+  margin-bottom: 0;
+}
+
+.cssc-content-module .cssc-cm-title {
+  margin: 0;
+  padding: 0 15px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 4px 4px 0 0;
+  font-weight: bold;
+  line-height: 30px;
+  background-color: #F0F0F0;
+  -webkit-background-clip: border-box;
+  -moz-background-clip: border-box;
+  background-clip: border-box;
+}
+
+.cssc-content-module .cssc-cm-main {
+  padding: 15px;
+}
+
+.cssc-content-module .cssc-cm-title + .cssc-cm-main {
+  border-top: 1px solid #eee;
 }

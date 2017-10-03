@@ -2,7 +2,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.4.2
+Version: 2.5.3
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -157,6 +157,10 @@ button {
   white-space: nowrap;
   cursor: pointer;
   -ms-appearance: none;
+}
+
+.cssc-select[multiple] {
+  overflow-y: auto;
 }
 
 .cssc-select::-ms-expand {
@@ -430,8 +434,6 @@ button {
   height: 25px;
   padding: 0 5px;
   border: 1px solid #999;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
   font-size: 12px;
   color: #333;

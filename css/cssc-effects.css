@@ -1,7 +1,7 @@
 /*
 Name: Effects
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.13
+Version: 0.17
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -19,7 +19,7 @@ License: MIT
 /* Theme */
 .cssc-parallax {
   height: 100px;
-  background-image: url(../images/wide-image.jpg);
+  background-image: url(images/wide-image.jpg);
 }
 
 /* Demo */
@@ -199,13 +199,11 @@ License: MIT
   left: 0;
   border-color: #333;
   opacity: 0;
-  filter: alpha(opacity=0);
 }
 
 .cssc-effects-underline--left:hover:after {
   right: 0;
   opacity: 0.99;
-  filter: alpha(opacity=99);
 }
 
 /* From center */
@@ -214,14 +212,12 @@ License: MIT
   left: 50%;
   border-color: #333;
   opacity: 0;
-  filter: alpha(opacity=0);
 }
 
 .cssc-effects-underline--center:hover:after {
   right: 0;
   left: 0;
   opacity: 0.99;
-  filter: alpha(opacity=99);
 }
 
 /* ----------------------------------------------------------
@@ -283,157 +279,79 @@ License: MIT
 .cssc-inverted-hover--images:hover a:hover img,
 .cssc-inverted-hover--images a img {
   opacity: 0.999;
-  filter: alpha(opacity=99);
 }
 
 .cssc-inverted-hover--images:hover a img {
   opacity: 0.30;
-  filter: alpha(opacity=30);
 }
 
-/* Colorized hover
+/* ----------------------------------------------------------
+  Hover transformations
+---------------------------------------------------------- */
+/* Common
 -------------------------- */
+.cssc-unblur-hover .animate-me,
 .cssc-colorized-hover .animate-me {
   display: inline-block;
   z-index: 1;
   position: relative;
-  line-height: 1;
-  vertical-align: middle;
-}
-
-.cssc-colorized-hover .animate-me img {
-  opacity: 0.999;
-  filter: alpha(opacity=999);
-}
-
-.cssc-colorized-hover .animate-me .color {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-
-.cssc-colorized-hover .animate-me .gray {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogPGZpbHRlciBpZD0iZ3JheXNjYWxlIj4KICA8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMC4zMzMzIDAuMzMzMyAwLjMzMzMgMCAwIDAuMzMzMyAwLjMzMzMgMC4zMzMzIDAgMCAwLjMzMzMgMC4zMzMzIDAuMzMzMyAwIDAgMCAwIDAgMSAwIi8+CiA8L2ZpbHRlcj4KPC9zdmc+#grayscale);
-}
-
-.cssc-colorized-hover .animate-me:hover .color {
-  opacity: 0.999;
-  filter: alpha(opacity=99);
-}
-
-/* Unblur hover
--------------------------- */
-.cssc-unblur-hover .animate-me {
-  display: inline-block;
-  z-index: 1;
-  position: relative;
   overflow: hidden;
+  text-align: left;
   line-height: 1;
   vertical-align: middle;
   outline: 1px solid rgba(0, 0, 0, 0.01);
 }
-
-.cssc-unblur-hover .animate-me img {
+.cssc-unblur-hover img,
+.cssc-colorized-hover img {
+  vertical-align: middle;
+  outline: 1px solid rgba(0, 0, 0, 0.01);
   opacity: 0.999;
-  filter: alpha(opacity=999);
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
+.cssc-colorized-hover .animate-me .color,
 .cssc-unblur-hover .animate-me .clean {
   z-index: 1;
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
+  margin: auto;
   opacity: 0;
-  filter: alpha(opacity=0);
 }
 
+/* Colorized hover
+-------------------------- */
+.cssc-colorized-hover .animate-me .gray {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.cssc-colorized-hover .animate-me:hover .color {
+  opacity: 0.999;
+}
+
+@-moz-document url-prefix() {
+  .cssc-colorized-hover .animate-me .gray {
+    filter: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogPGZpbHRlciBpZD0iZ3JheXNjYWxlIj4KICA8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMC4zMzMzIDAuMzMzMyAwLjMzMzMgMCAwIDAuMzMzMyAwLjMzMzMgMC4zMzMzIDAgMCAwLjMzMzMgMC4zMzMzIDAuMzMzMyAwIDAgMCAwIDAgMSAwIi8+CiA8L2ZpbHRlcj4KPC9zdmc+#grayscale);
+  }
+}
+/* Unblur hover
+-------------------------- */
 .cssc-unblur-hover .animate-me .blur {
   -webkit-filter: blur(1px);
   filter: blur(1px);
-  filter: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxmaWx0ZXIgaWQ9ImJsdXIiPgo8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxIiAvPgo8L2ZpbHRlcj4KPC9zdmc+#blur);
 }
-
 .cssc-unblur-hover .animate-me:hover .clean {
   opacity: 0.999;
-  filter: alpha(opacity=99);
 }
 
-/* Rotating cards
--------------------------- */
-.cssc-card {
-  display: inline-block;
-  z-index: 1;
-  position: relative;
-  vertical-align: middle;
-  -webkit-transform: translatez(0);
-  -moz-transform: translatez(0);
-  transform: translatez(0);
-  -webkit-perspective: 500px;
-  perspective: 500px;
-  *display: inline;
-  *zoom: 1;
+@-moz-document url-prefix() {
+  .cssc-unblur-hover .animate-me .blur {
+    filter: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxmaWx0ZXIgaWQ9ImJsdXIiPgo8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxIiAvPgo8L2ZpbHRlcj4KPC9zdmc+#blur);
+  }
 }
-
-.cssc-card .front,
-.cssc-card .back {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  -moz-transition: -moz-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-}
-
-.cssc-card .back {
-  -webkit-transform: rotateY(-180deg);
-  -moz-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-}
-
-.cssc-card .front,
-.cssc-card:hover .back {
-  -webkit-transform: rotateY(0);
-  -moz-transform: rotateY(0);
-  transform: rotateY(0);
-}
-
-.cssc-card:hover .front {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-
-/* Theme */
-.cssc-card {
-  width: 100px;
-  height: 100px;
-}
-
-.cssc-card .front {
-  background-color: #ccc;
-}
-
-.cssc-card .back {
-  padding: 10px;
-  font-size: 12px;
-  line-height: 1.3;
-  color: #000;
-  background-color: #f0f0f0;
-}
-
 /* ----------------------------------------------------------
   Animations
 ---------------------------------------------------------- */
@@ -571,6 +489,40 @@ License: MIT
   transform-origin: center center;
 }
 
+/* Rotate Z
+-------------------------- */
+@-webkit-keyframes cssc-animate-rotatez {
+  0% {
+    -webkit-transform: rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+  }
+}
+@-moz-keyframes cssc-animate-rotatez {
+  0% {
+    -moz-transform: rotateZ(0);
+  }
+  100% {
+    -moz-transform: rotateZ(360deg);
+  }
+}
+@keyframes cssc-animate-rotatez {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+.cssc-animate-rotatez {
+  -webkit-animation: cssc-animate-rotatez forwards 0.75s 1 ease;
+  -moz-animation: cssc-animate-rotatez forwards 0.75s 1 ease;
+  -o-animation: cssc-animate-rotatez forwards 0.75s 1 ease;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+
 /* ----------------------------------------------------------
   Scroll effects
 ---------------------------------------------------------- */
@@ -695,4 +647,71 @@ License: MIT
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+}
+
+/* ----------------------------------------------------------
+  Rotating cards
+---------------------------------------------------------- */
+.cssc-card {
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-perspective: 500px;
+  perspective: 500px;
+}
+
+.cssc-card .front,
+.cssc-card .back {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+
+.cssc-card .back {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.cssc-card .front,
+.cssc-card:hover .back {
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+.cssc-card:hover .front {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/* Theme */
+.cssc-card {
+  width: 100px;
+  height: 100px;
+}
+
+.cssc-card .front {
+  background-color: #ccc;
+}
+
+.cssc-card .back {
+  padding: 10px;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #000;
+  background-color: #f0f0f0;
 }

@@ -84,6 +84,18 @@
                         <?php } ?>
                     </div>
                 </div>
+                <div class="cssc-stars cssc-stars--default">
+                    <div class="cssc-stars-list">
+                        <?php for ($i = 5; $i>= 1; $i--) { ?>
+                        <input id="star-var-<?php echo $i; ?>" type="radio" name="star" value="<?php echo $i; ?>" <?php echo $i == 2 ? 'checked="checked"':''; ?> />
+                        <label for="star-var-<?php echo $i; ?>">
+                            <span class="default">&star;</span>
+                            <span class="hover">&bigstar;</span>
+                            <span class="current">&bigstar;</span>
+                        </label>
+                        <?php } ?>
+                    </div>
+                </div>
             </div>
             <div class="col-33p">
                 <div class="cssc-sep cssc-sep--default cssc-sep-before cssc-sep-after">

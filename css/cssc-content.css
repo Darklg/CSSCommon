@@ -1,7 +1,7 @@
 /*
 Name: Content
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.2
+Version: 2.3.1
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -30,13 +30,24 @@ License: MIT
   Content text
 ---------------------------------------------------------- */
 .cssc-content {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 61em;
   font-size: 13px;
   line-height: 1.3;
+}
+
+.cssc-content:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 /* Text
 -------------------------- */
 .cssc-content p,
+.cssc-content ul,
 .cssc-content li {
   font: inherit;
   -webkit-hyphens: auto;

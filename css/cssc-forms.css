@@ -2,7 +2,7 @@
 /*
 Name: Forms
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.5.3
+Version: 2.5.7
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -45,12 +45,20 @@ License: MIT
 }
 
 /* Two boxes side to side */
-.cssc-form .twoboxes li.box {
+.cssc-form .twoboxes .box {
   float: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 50%;
+}
+
+.cssc-form .twoboxes .box:first-child {
+  padding-right: 10px;
+}
+
+.cssc-form .twoboxes .box + .box {
+  padding-left: 10px;
 }
 
 /* Labels
@@ -97,8 +105,8 @@ button {
   cursor: pointer;
 }
 
-.cssc-form input[type=radio],
-.cssc-form input[type=checkbox] {
+.cssc-form input[type="radio"],
+.cssc-form input[type="checkbox"] {
   vertical-align: 0;
 }
 
@@ -107,11 +115,11 @@ button {
 .inputbase,
 .cssc-form textarea,
 .cssc-form .fake-input,
-.cssc-form input[type=text],
-.cssc-form input[type=url],
-.cssc-form input[type=email],
-.cssc-form input[type=search],
-.cssc-form input[type=password] {
+.cssc-form input[type="text"],
+.cssc-form input[type="url"],
+.cssc-form input[type="email"],
+.cssc-form input[type="search"],
+.cssc-form input[type="password"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-box-sizing: border-box;
@@ -365,15 +373,7 @@ button {
   margin-bottom: 0;
 }
 
-.cssc-form--default .twoboxes li.box:first-child {
-  padding-right: 10px;
-}
-
-.cssc-form--default .twoboxes li.box + li.box {
-  padding-left: 10px;
-}
-
-.cssc-form--default.float-form .twoboxes li.box + li.box {
+.cssc-form--default.float-form .twoboxes .box + .box {
   padding-left: 140px;
 }
 

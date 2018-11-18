@@ -1,7 +1,7 @@
 /*
 Name: Grids
 URL: http://github.com/Darklg/CSSCommon
-Version: 4.1
+Version: 4.3
 License: MIT
 */
 .cssc-grid {
@@ -32,7 +32,7 @@ License: MIT
   z-index: 1;
   position: relative;
   width: auto;
-  margin: 0 -10px;
+  margin: 0 -22.5px;
   max-width: none;
 }
 
@@ -40,7 +40,7 @@ License: MIT
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 10px;
+  padding: 0 22.5px;
 }
 
 /* Margin
@@ -134,6 +134,14 @@ License: MIT
 /* Responsive
 -------------------------- */
 @media (max-width: 1023px) {
+  .fluid-grid {
+    margin: 0 -15px;
+  }
+
+  .fluid-grid > * {
+    padding: 0 15px;
+  }
+
   /* Margin */
   .tab--fluid-grid--20 {
     margin: 0 -20px;
@@ -213,6 +221,14 @@ License: MIT
   }
 }
 @media (max-width: 767px) {
+  .fluid-grid {
+    margin: 0 -7.5px;
+  }
+
+  .fluid-grid > * {
+    padding: 0 7.5px;
+  }
+
   /* Margin */
   .tabv--fluid-grid--20 {
     margin: 0 -20px;

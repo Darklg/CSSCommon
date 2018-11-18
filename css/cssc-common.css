@@ -12,7 +12,7 @@
 /*
 Name: Common Objects
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.7.1
+Version: 2.8.6
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -113,24 +113,29 @@ License: MIT
   Code presentation
 ---------------------------------------------------------- */
 tt,
+var,
 pre,
 code,
 kbd,
 samp,
 .cssc-label {
   display: inline-block;
-  padding: 3px;
+  padding: 0.3em;
+  max-width: 100%;
   border: 1px solid #ddd;
-  border-radius: 2px;
+  border-radius: 0;
+  overflow: auto;
   text-shadow: 1px 1px 0 white;
-  font: 11px/1.2 'Lucida Console',Monospace;
+  font: 11px/1.2 Monospace;
   vertical-align: middle;
   color: #333;
   background: #f5f5f5;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-
-tt:hover,
-tt:focus,
+tt:hover, tt:focus,
+var:hover,
+var:focus,
 pre:hover,
 pre:focus,
 code:hover,
@@ -149,55 +154,71 @@ samp:focus,
 pre {
   display: block;
   margin-bottom: 12px;
-  max-width: 100%;
-  overflow: auto;
 }
 
 /* ----------------------------------------------------------
   Drawer : Submenu, etc
 ---------------------------------------------------------- */
-.wdrw {
-  z-index: 2;
-  position: relative;
-}
-
-.wdrw > a {
-  display: block;
-  height: 100%;
-  line-height: inherit;
-}
-
-.wdrw .submenu {
-  visibility: hidden;
-  z-index: 1;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  line-height: 1;
-  opacity: 0;
-  background-color: #fff;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-}
-
-.wdrw .submenu-r {
-  right: 0;
-  left: auto;
-}
-
-.wdrw:hover {
-  z-index: 1000;
-}
-
-.wdrw > a:focus + .submenu,
-.wdrw:hover .submenu, .wdrw .submenu:focus-within {
+/* Utility
+-------------------------- */
+.wdrw > a:focus + .submenu, .wdrw:hover .submenu, .wdrw .submenu:hover {
   visibility: visible;
   z-index: 999;
   opacity: 1;
 }
 
+/* Wrapper
+-------------------------- */
+.wdrw {
+  z-index: 2;
+  position: relative;
+}
+.wdrw:hover {
+  z-index: 1000;
+}
+
+/* Link
+-------------------------- */
+.wdrw > a {
+  display: block;
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  line-height: inherit;
+}
+
+/* Submenu
+-------------------------- */
+.wdrw .submenu {
+  visibility: hidden;
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  right: auto;
+  left: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1;
+  opacity: 0;
+  background-color: #fff;
+  -webkit-transition: opacity 0.3s ease,visibility 0.3s ease;
+  transition: opacity 0.3s ease,visibility 0.3s ease;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.wdrw .submenu-r {
+  right: 0;
+  left: auto;
+}
+
+.wdrw .submenu:focus-within {
+  visibility: visible;
+  z-index: 999;
+  opacity: 1;
+}
+
+/* Base class
+-------------------------- */
 /* ----------------------------------------------------------
   Image replacement
 ---------------------------------------------------------- */
@@ -375,76 +396,70 @@ pre {
   font-size: 5px;
   vertical-align: middle;
 }
-
-.nav-toggle span {
+.nav-toggle span,
+.nav-toggle span:before,
+.nav-toggle span:after {
   z-index: 1;
   position: absolute;
   top: 0;
+  left: 0;
+}
+.nav-toggle span {
   right: 0;
   bottom: 0;
-  left: 0;
   margin: auto;
 }
-
 .nav-toggle span:before,
 .nav-toggle span:after {
   content: '';
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
   -webkit-transform-origin: center center;
   -moz-transform-origin: center center;
   transform-origin: center center;
 }
 
-/* Conf
+/* Theme
 -------------------------- */
-.nav-toggle {
-  width: 6em;
-  height: 5em;
-}
-
 .nav-toggle span,
 .nav-toggle span:before,
 .nav-toggle span:after {
   width: 6em;
   height: 1em;
   border-radius: 1px;
-  background-color: #000;
+  background-color: currentColor;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+.nav-toggle {
+  width: 6em;
+  height: 5em;
+  color: #000;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .nav-toggle span:before {
   margin-top: -2em;
 }
-
 .nav-toggle span:after {
   margin-top: 2em;
 }
 
 /* Active
 -------------------------- */
-.has--opened-main-menu .nav-toggle span,
-.nav-toggle--is-active,
-.nav-toggle.is-active span {
+[data-bodypanel="has--opened-main-menu"] .nav-toggle span,
+.has--opened-main-menu .nav-toggle span {
   height: 1px;
   background: transparent;
 }
-
-.has--opened-main-menu .nav-toggle span:before,
-.nav-toggle--is-active:before,
-.nav-toggle.is-active span:before {
+[data-bodypanel="has--opened-main-menu"] .nav-toggle span:before,
+.has--opened-main-menu .nav-toggle span:before {
   margin-top: 0;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   transform: rotate(135deg);
 }
-
-.has--opened-main-menu .nav-toggle span:after,
-.nav-toggle--is-active:after,
-.nav-toggle.is-active span:after {
+[data-bodypanel="has--opened-main-menu"] .nav-toggle span:after,
+.has--opened-main-menu .nav-toggle span:after {
   margin-top: 0;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
@@ -454,7 +469,7 @@ pre {
 /*
 Name: Common Mixins
 URL: http://github.com/Darklg/CSSCommon
-Version: 0.8
+Version: 0.15.1
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -475,18 +490,18 @@ License: MIT
   text-align: center;
   -ms-flex-align: center;
 }
-
 .vertical-center-content:after,
 .vertical-center-content:before {
   content: '';
 }
-
 .vertical-center-content:before {
   align-self: flex-start;
 }
-
 .vertical-center-content:after {
   align-self: flex-end;
+}
+.vertical-center-content > * {
+  width: 100%;
 }
 
 /* ----------------------------------------------------------
@@ -512,20 +527,36 @@ License: MIT
   width: 100%;
   table-layout: fixed;
 }
-
 .desktop-grid-table > * {
   display: table-cell;
   vertical-align: top;
 }
+.desktop-grid-table > *:not(:last-child) {
+  padding-right: 22.5px;
+}
+.desktop-grid-table > * + * {
+  padding-left: 22.5px;
+}
 
+@media (max-width: 1023px) {
+  .desktop-grid-table > *:not(:last-child) {
+    padding-right: 15px;
+  }
+
+  .desktop-grid-table > * + * {
+    padding-left: 15px;
+  }
+}
 @media (max-width: 767px) {
   .desktop-grid-table,
   .desktop-grid-table > * {
     display: block;
   }
 
-  .desktop-grid-table > * {
-    margin-bottom: 2em;
+  .desktop-grid-table > *:not(:last-child) {
+    margin-bottom: 15px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 /* ----------------------------------------------------------
@@ -588,28 +619,6 @@ License: MIT
 /* ----------------------------------------------------------
   Same height children
 ---------------------------------------------------------- */
-.same-height-children {
-  display: block;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-}
-
-.same-height-children > * {
-  display: inline-block;
-}
-
-.same-height-children,
-.same-height-children > * {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-}
-
 /* ----------------------------------------------------------
   Responsive padding
 ---------------------------------------------------------- */
@@ -620,10 +629,25 @@ License: MIT
 /* Left / Right
 -------------------------- */
 /* ----------------------------------------------------------
-  Parent hover visibility
+  Visibility switch
 ---------------------------------------------------------- */
+/* Parent hover
+-------------------------- */
+/* Class visibility
+-------------------------- */
+/* Attribute visibility
+-------------------------- */
 /* ----------------------------------------------------------
   Full width container : https://css-tricks.com/?p=243825
+---------------------------------------------------------- */
+/* ----------------------------------------------------------
+  Columns
+---------------------------------------------------------- */
+/* ----------------------------------------------------------
+  Counter
+---------------------------------------------------------- */
+/* ----------------------------------------------------------
+  Reset table
 ---------------------------------------------------------- */
 /* ----------------------------------------------------------
   Modale : Core

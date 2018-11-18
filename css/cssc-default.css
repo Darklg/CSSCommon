@@ -2,7 +2,7 @@
 /*
 Name: Default
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.9.1
+Version: 2.9.8
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -33,9 +33,7 @@ blockquote,
 q {
   quotes: none;
 }
-
-blockquote:before,
-blockquote:after,
+blockquote:before, blockquote:after,
 q:before,
 q:after {
   content: '';
@@ -171,9 +169,12 @@ iframe,
 img,
 object,
 video {
-  height: auto;
   max-width: 100%;
   border: 0;
+}
+
+img {
+  height: auto;
 }
 
 /* Bugfix for Google Maps */
@@ -281,10 +282,12 @@ mark {
   background-color: #FF9;
 }
 
+i,
 em {
   font-style: italic;
 }
 
+b,
 strong {
   font-weight: bold;
 }
@@ -313,8 +316,7 @@ small {
 
 abbr[title],
 acronym[title] {
-  border-color: rgba(0, 0, 0, 0.2);
-  border-bottom: 1px dashed #ccc;
+  text-decoration: underline dotted;
   cursor: help;
 }
 
@@ -352,7 +354,7 @@ hr {
   overflow: hidden;
 }
 
-hr.clearfix {
+hr[class*="clearfix"] {
   height: 0;
   border: 0;
   outline: 0;
@@ -378,21 +380,26 @@ hr.clearfix {
 a {
   color: #69C;
 }
-
 a:focus,
 a:hover {
   color: #369;
 }
-
 a:active {
   color: #000;
 }
+a:focus:not(:hover) {
+  outline: 1px dotted rgba(0, 0, 0, 0.3);
+  outline-offset: 2px;
+}
+a:focus:not(:focus-visible) {
+  outline: none;
+}
 
+/* .99 Opacity avoids a nasty effect on Webkit */
 .aimginv {
   opacity: 0.70;
 }
 
-/* .99 Opacity avoids a nasty effect on Webkit */
 a img,
 .aimginv:hover,
 .aimg {
@@ -407,7 +414,6 @@ a:hover img {
 /* ----------------------------------------------------------
   Transitions
 ---------------------------------------------------------- */
-a,
 .trans-col {
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
@@ -428,14 +434,14 @@ a img,
   transition: all 0.3s ease;
 }
 
+a,
 input,
 button,
 textarea,
-.cssc-pagination a,
 .cssc-button,
 .trans-button {
-  -webkit-transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
-  transition: border 0.3s ease,background 0.3s ease,color 0.3s ease;
+  -webkit-transition: border-color 0.3s ease,background 0.3s ease,color 0.3s ease;
+  transition: border-color 0.3s ease,background 0.3s ease,color 0.3s ease;
 }
 
 /* ----------------------------------------------------------
@@ -446,4 +452,23 @@ textarea,
   * {
     transition: none !important;
   }
+}
+/* ----------------------------------------------------------
+  Avoid display of inline scripts
+---------------------------------------------------------- */
+script {
+  display: none !important;
+}
+
+/* ----------------------------------------------------------
+  Fix double em/strong
+---------------------------------------------------------- */
+i i,
+em em {
+  font-style: normal;
+}
+
+b b,
+strong strong {
+  font-weight: normal;
 }

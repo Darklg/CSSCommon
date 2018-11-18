@@ -2,7 +2,7 @@
 /*
 Name: Default Buttons
 URL: http://github.com/Darklg/CSSCommon
-Version: 2.5
+Version: 2.5.2
 License: MIT
 */
 /* ----------------------------------------------------------
@@ -20,6 +20,7 @@ License: MIT
   margin: 0;
   padding: 0;
   border: 0;
+  border-radius: 0;
   text-align: center;
   text-decoration: none;
   font: inherit;
@@ -35,6 +36,11 @@ License: MIT
   -moz-user-drag: -moz-none;
   user-drag: none;
 }
+.buttonreset::-moz-focus-inner,
+.cssc-button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
 .buttonreset:hover, .buttonreset:focus,
 .cssc-button:hover,
 .cssc-button:focus {
@@ -43,7 +49,7 @@ License: MIT
 }
 .buttonreset[disabled],
 .cssc-button[disabled] {
-  cursor: not-allowed;
+  cursor: default;
 }
 
 .cssc-button {
@@ -62,17 +68,14 @@ License: MIT
 .cssc-button:after {
   vertical-align: 0;
 }
-
 .cssc-button:before {
   margin-right: 0.5em;
 }
-
 .cssc-button:after {
   margin-left: 0.5em;
 }
 
-.cssc-button-icn-large:before,
-.cssc-button-icn-large:after {
+.cssc-button-icn-large:before, .cssc-button-icn-large:after {
   font-size: 1.15em;
 }
 

@@ -2,47 +2,36 @@
 /*
 Name: Layouts de page
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.12
+Version: 1.13
 License: MIT
 */
 /* ----------------------------------------------------------
   Containers
 ---------------------------------------------------------- */
-/* Dimensions
--------------------------- */
-.centered-container {
-  padding: 0 10px;
-  min-width: 960px;
-}
-
-.centered-container > * {
-  max-width: 940px;
-}
-
-/* Core
--------------------------- */
 /* Container centré */
 .centered-container {
   z-index: 1;
   clear: both;
   position: relative;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
   text-align: center;
-}
-
-.cssc-is-responsive .centered-container {
-  min-width: 0;
 }
 
 /* Contenu flottant */
 .centered-container > * {
-  margin: 0 auto;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 940px;
   text-align: left;
 }
 
-.cssc-is-responsive .centered-container > * {
-  width: auto;
-}
-
+/* Items
+-------------------------- */
 .centered-container .cc-full {
   width: auto;
   max-width: none;
@@ -75,8 +64,6 @@ License: MIT
   position: relative;
 }
 
-/* Responsive centered
--------------------------- */
 /* ----------------------------------------------------------
   Base des layouts
 ---------------------------------------------------------- */

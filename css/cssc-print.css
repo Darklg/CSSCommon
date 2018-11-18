@@ -2,7 +2,7 @@
 /*
 Name: Print
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.0.2
+Version: 1.1.0
 License: MIT
 */
 @media print {
@@ -26,6 +26,12 @@ License: MIT
   a:after {
     content: " (" attr(href) ") ";
     font-weight: normal;
+  }
+
+  a:not([href]):after,
+  a[href="#"]:after,
+  a[href=""]:after {
+    display: none;
   }
 
   /* CSSCommon

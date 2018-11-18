@@ -1,9 +1,12 @@
 /*
 Name: Tables
 URL: http://github.com/Darklg/CSSCommon
-Version: 1.4
+Version: 1.5.1
 License: MIT
 */
+/* ----------------------------------------------------------
+  Main
+---------------------------------------------------------- */
 .cssc-table {
   width: 100%;
   margin-bottom: 20px;
@@ -163,3 +166,7 @@ License: MIT
 .cssc-table--rounded tfoot tr:last-child th:last-child {
   border-radius: 0 0 10px 0;
 }
+
+/* ----------------------------------------------------------
+  Responsive Tables
+---------------------------------------------------------- */
